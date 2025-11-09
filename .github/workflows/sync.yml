@@ -1,0 +1,182 @@
+name: Sync Brreg Data
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Run daily at 2 AM UTC
+  workflow_dispatch:
+
+jobs:
+  preprocess:
+    name: Extract Companies
+    runs-on: ubuntu-latest
+    outputs:
+      org_count: ${{ steps.count.outputs.count }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download company list from Brreg
+        run: |
+          echo "Downloading company list..."
+          curl -L -o companies.json.gz https://data.brreg.no/enhetsregisteret/api/enheter/lastned
+          ls -lh companies.json.gz
+          echo "File size: $(du -h companies.json.gz | cut -f1)"
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Extract companies
+        run: |
+          echo "Extracting companies to individual files..."
+          go run . extract --list companies.json.gz --data data
+          rm companies.json.gz
+
+      - name: Count extracted companies
+        id: count
+        run: |
+          ORG_COUNT=$(find data -type d -maxdepth 1 | tail -n +2 | wc -l)
+          echo "Total companies extracted: $ORG_COUNT"
+          echo "count=$ORG_COUNT" >> $GITHUB_OUTPUT
+          echo "$ORG_COUNT companies to process across 256 batches (~$((ORG_COUNT / 256)) per batch)"
+
+      - name: Commit extracted data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "Extract company data"
+            git push
+          else
+            echo "No new companies to extract"
+          fi
+
+  matrix-sync:
+    name: Batch ${{ matrix.batch }}
+    needs: preprocess
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 256
+      matrix:
+        batch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Fetch roles for batch
+        run: |
+          go run . -batch ${{ matrix.batch }} -total 256 -workers 1 -data data
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        id: commit
+        run: |
+          BRANCH_NAME="sync-batch-${{ matrix.batch }}"
+          git checkout -b $BRANCH_NAME
+          git add data/
+
+          if git diff --staged --quiet; then
+            echo "No changes detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "Sync batch ${{ matrix.batch }}"
+            git push -f origin $BRANCH_NAME
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
+
+  merge-all:
+    name: Merge All Batches
+    needs: [preprocess, matrix-sync]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Summary
+        run: |
+          echo "Processed ${{ needs.preprocess.outputs.org_count }} organizations across 256 batches"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge all batch branches
+        run: |
+          MERGE_BRANCH="sync-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b $MERGE_BRANCH
+
+          MERGED_COUNT=0
+          for i in {0..255}; do
+            BRANCH="sync-batch-$i"
+            if git ls-remote --heads origin $BRANCH | grep -q $BRANCH; then
+              echo "Merging $BRANCH..."
+              git fetch origin $BRANCH
+              git merge --no-edit origin/$BRANCH || {
+                echo "Merge conflict in $BRANCH, using theirs strategy"
+                git merge --strategy-option theirs origin/$BRANCH
+              }
+              MERGED_COUNT=$((MERGED_COUNT + 1))
+            fi
+          done
+
+          echo "Merged $MERGED_COUNT branches"
+
+          if [ $MERGED_COUNT -gt 0 ]; then
+            git push origin $MERGE_BRANCH
+            echo "merge_branch=$MERGE_BRANCH" >> $GITHUB_ENV
+            echo "has_changes=true" >> $GITHUB_ENV
+          else
+            echo "has_changes=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create Pull Request
+        if: env.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --title "Brreg data sync $(date +%Y-%m-%d)" \
+            --body "Automated sync of Brreg company data and roles" \
+            --base main \
+            --head ${{ env.merge_branch }}
+
+      - name: Auto-merge PR
+        if: env.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER=$(gh pr list --head ${{ env.merge_branch }} --json number --jq '.[0].number')
+          gh pr merge $PR_NUMBER --squash --auto
+
+      - name: Cleanup branches
+        if: always()
+        run: |
+          for i in {0..255}; do
+            BRANCH="sync-batch-$i"
+            if git ls-remote --heads origin $BRANCH | grep -q $BRANCH; then
+              git push origin --delete $BRANCH || true
+            fi
+          done
