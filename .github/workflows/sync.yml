@@ -125,6 +125,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Ensure state file is in sparse checkout (already should be, but be explicit)
+          git sparse-checkout add "data/.sync-state.json" 2>/dev/null || true
+
           # Add all modified/new files to sparse checkout pattern
           # This allows git to track them without downloading the entire repo
           if [ -d data ]; then
