@@ -99,6 +99,12 @@ jobs:
               path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/\1\/\2\/\3/')
               if [ -d "$path" ]; then
                 echo "Deleting: $path"
+                # Add to sparse checkout so git can track the deletion
+                cd ..
+                find "data/$path" -type f -o -type l | while read file; do
+                  git sparse-checkout add "$file" 2>/dev/null || true
+                done
+                cd data
                 git rm -r "$path" || true
               fi
             done < .deleted-entities
@@ -114,6 +120,15 @@ jobs:
           cd data
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add all modified/new files to sparse checkout pattern
+          # This allows git to track them without downloading the entire repo
+          if [ -d data ]; then
+            find data -type f -o -type l | while read file; do
+              git sparse-checkout add "$file" 2>/dev/null || true
+            done
+          fi
+
           git add .
 
           # Show what changed
