@@ -8,10 +8,27 @@ import (
 	"path/filepath"
 )
 
-// GenerateEntityHTML generates HTML for a single entity using Hugo
-func GenerateEntityHTML(orgnum, markdown, templateDir, outputDir string) error {
-	// Create temporary directory for Hugo site
-	tmpDir, err := os.MkdirTemp("", fmt.Sprintf("entity-%s-*", orgnum))
+// WriteEntityMarkdown writes markdown for an entity to the Hugo content directory
+func WriteEntityMarkdown(orgnum, markdown, contentDir string) error {
+	// Create section directory: content/810/034/882/
+	sectionPath := filepath.Join(contentDir, orgnumToPath(orgnum))
+	if err := os.MkdirAll(sectionPath, 0755); err != nil {
+		return fmt.Errorf("failed to create section dir: %w", err)
+	}
+
+	// Write _index.md
+	mdPath := filepath.Join(sectionPath, "_index.md")
+	if err := os.WriteFile(mdPath, []byte(markdown), 0644); err != nil {
+		return fmt.Errorf("failed to write markdown: %w", err)
+	}
+
+	return nil
+}
+
+// BuildAllWithHugo runs Hugo once to build all entity pages
+func BuildAllWithHugo(templateDir, contentDir, outputDir string) error {
+	// Create temporary Hugo site
+	tmpDir, err := os.MkdirTemp("", "hugo-build-*")
 	if err != nil {
 		return fmt.Errorf("failed to create temp dir: %w", err)
 	}
@@ -22,42 +39,47 @@ func GenerateEntityHTML(orgnum, markdown, templateDir, outputDir string) error {
 		return fmt.Errorf("failed to copy template: %w", err)
 	}
 
-	// Write markdown content
-	contentDir := filepath.Join(tmpDir, "content")
-	if err := os.MkdirAll(contentDir, 0755); err != nil {
-		return fmt.Errorf("failed to create content dir: %w", err)
+	// Copy content directory to Hugo site
+	hugoContentDir := filepath.Join(tmpDir, "content")
+	if err := os.RemoveAll(hugoContentDir); err != nil {
+		return fmt.Errorf("failed to remove default content: %w", err)
 	}
-
-	mdPath := filepath.Join(contentDir, "_index.md")
-	if err := os.WriteFile(mdPath, []byte(markdown), 0644); err != nil {
-		return fmt.Errorf("failed to write markdown: %w", err)
+	if err := copyDir(contentDir, hugoContentDir); err != nil {
+		return fmt.Errorf("failed to copy content: %w", err)
 	}
 
 	// Run Hugo
 	hugoOutputDir := filepath.Join(tmpDir, "public")
+	fmt.Println("Running Hugo to generate all pages...")
 	if err := runHugo(tmpDir, hugoOutputDir); err != nil {
 		return fmt.Errorf("hugo build failed: %w", err)
 	}
 
-	// Copy generated HTML to final location
-	htmlSource := filepath.Join(hugoOutputDir, "index.html")
-	htmlDest := filepath.Join(outputDir, orgnumToPath(orgnum)+".html")
-
-	if err := os.MkdirAll(filepath.Dir(htmlDest), 0755); err != nil {
-		return fmt.Errorf("failed to create output dir: %w", err)
-	}
-
-	if err := copyFile(htmlSource, htmlDest); err != nil {
-		return fmt.Errorf("failed to copy HTML: %w", err)
-	}
-
-	// Copy assets (CSS, JS) if they exist
-	if err := copyAssets(hugoOutputDir, filepath.Dir(outputDir)); err != nil {
-		// Not fatal, just log
-		fmt.Printf("Warning: failed to copy assets: %v\n", err)
+	// Copy all generated HTML files to output directory
+	fmt.Println("Copying generated HTML files to output...")
+	if err := copyDir(hugoOutputDir, outputDir); err != nil {
+		return fmt.Errorf("failed to copy output: %w", err)
 	}
 
 	return nil
+}
+
+// GenerateEntityHTML generates HTML for a single entity using Hugo (legacy single-entity mode)
+func GenerateEntityHTML(orgnum, markdown, templateDir, outputDir string) error {
+	// Create temporary content directory
+	tmpContentDir, err := os.MkdirTemp("", "hugo-content-*")
+	if err != nil {
+		return fmt.Errorf("failed to create temp content dir: %w", err)
+	}
+	defer os.RemoveAll(tmpContentDir)
+
+	// Write markdown
+	if err := WriteEntityMarkdown(orgnum, markdown, tmpContentDir); err != nil {
+		return err
+	}
+
+	// Build with Hugo
+	return BuildAllWithHugo(templateDir, tmpContentDir, outputDir)
 }
 
 // runHugo executes Hugo to build the site
@@ -123,33 +145,4 @@ func copyFile(src, dst string) error {
 	}
 
 	return dstFile.Sync()
-}
-
-// copyAssets copies CSS and JS files to the output directory
-func copyAssets(hugoOutputDir, baseOutputDir string) error {
-	// Copy CSS
-	cssSrc := filepath.Join(hugoOutputDir, "css")
-	cssDst := filepath.Join(baseOutputDir, "css")
-	if _, err := os.Stat(cssSrc); err == nil {
-		if err := os.MkdirAll(cssDst, 0755); err != nil {
-			return err
-		}
-		if err := copyDir(cssSrc, cssDst); err != nil {
-			return err
-		}
-	}
-
-	// Copy JS
-	jsSrc := filepath.Join(hugoOutputDir, "js")
-	jsDst := filepath.Join(baseOutputDir, "js")
-	if _, err := os.Stat(jsSrc); err == nil {
-		if err := os.MkdirAll(jsDst, 0755); err != nil {
-			return err
-		}
-		if err := copyDir(jsSrc, jsDst); err != nil {
-			return err
-		}
-	}
-
-	return nil
 }

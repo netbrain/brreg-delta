@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"os/exec"
 	"path/filepath"
 	"strings"
@@ -248,4 +249,261 @@ func orgnumToPath(orgnum string) string {
 		parts = append(parts, orgnum[i:end])
 	}
 	return strings.Join(parts, "/")
+}
+
+// pathToOrgnum extracts orgnum from sharded path
+// Example: "data/810/034/882/enhet.json" -> "810034882"
+func pathToOrgnum(path string) string {
+	// Remove "data/" prefix
+	path = strings.TrimPrefix(path, "data/")
+
+	// Split by / and take first 3 parts
+	parts := strings.Split(path, "/")
+	if len(parts) < 3 {
+		return ""
+	}
+
+	return parts[0] + parts[1] + parts[2]
+}
+
+// GitHistoryCache caches all git history for efficient lookup
+type GitHistoryCache struct {
+	// Map of orgnum -> list of changes
+	entityChanges map[string][]EntityChange
+}
+
+// BuildGitHistoryCache builds a cache of git history for specific entities
+func BuildGitHistoryCache(dataDir string, orgnums []string) (*GitHistoryCache, error) {
+	log.Printf("Building git history cache for %d entities...", len(orgnums))
+
+	// Build patterns for entities to limit git log output
+	// Example: data/810/034/882/*.json
+	patterns := make([]string, 0, len(orgnums))
+	for _, orgnum := range orgnums {
+		pattern := filepath.Join("data", orgnumToPath(orgnum), "*.json")
+		patterns = append(patterns, pattern)
+	}
+
+	// If too many patterns, just use data/ and filter
+	var cmd *exec.Cmd
+	if len(patterns) > 1000 {
+		log.Printf("Too many entities (%d), using full git log with filtering...", len(orgnums))
+		cmd = exec.Command("git", "log",
+			"--name-only",
+			"--pretty=format:%H|%at|%s",
+			"--", "data/")
+	} else {
+		// Use specific patterns for smaller batches
+		args := []string{"log", "--name-only", "--pretty=format:%H|%at|%s", "--"}
+		args = append(args, patterns...)
+		cmd = exec.Command("git", args...)
+	}
+	cmd.Dir = dataDir
+
+	log.Println("Running git log...")
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return nil, fmt.Errorf("git log failed: %w", err)
+	}
+
+	log.Println("Parsing git log output...")
+
+	// Create orgnum set for fast filtering
+	orgnumSet := make(map[string]bool)
+	for _, orgnum := range orgnums {
+		orgnumSet[orgnum] = true
+	}
+
+	// Parse output and group by entity
+	cache := &GitHistoryCache{
+		entityChanges: make(map[string][]EntityChange),
+	}
+
+	lines := strings.Split(string(output), "\n")
+	var currentCommit, currentMessage string
+	var currentTimestamp int64
+	var filesInCommit []string
+
+	for i := 0; i < len(lines); i++ {
+		line := strings.TrimSpace(lines[i])
+
+		if line == "" {
+			// Empty line marks end of file list for this commit
+			if currentCommit != "" && len(filesInCommit) > 0 {
+				// Process all files in this commit (only for our entities)
+				cache.addCommitFilesFiltered(dataDir, currentCommit, currentTimestamp, currentMessage, filesInCommit, orgnumSet)
+				filesInCommit = nil
+			}
+			continue
+		}
+
+		// Check if this is a commit line (contains |)
+		if strings.Contains(line, "|") {
+			parts := strings.SplitN(line, "|", 3)
+			if len(parts) == 3 {
+				currentCommit = parts[0]
+				fmt.Sscanf(parts[1], "%d", &currentTimestamp)
+				currentMessage = parts[2]
+			}
+			continue
+		}
+
+		// This is a file path
+		if strings.HasPrefix(line, "data/") && strings.HasSuffix(line, ".json") {
+			filesInCommit = append(filesInCommit, line)
+		}
+	}
+
+	// Process last commit
+	if currentCommit != "" && len(filesInCommit) > 0 {
+		cache.addCommitFilesFiltered(dataDir, currentCommit, currentTimestamp, currentMessage, filesInCommit, orgnumSet)
+	}
+
+	log.Printf("Git history cache built: %d entities with history", len(cache.entityChanges))
+	return cache, nil
+}
+
+// addCommitFilesFiltered adds files from a commit to the cache (only for specified entities)
+func (c *GitHistoryCache) addCommitFilesFiltered(dataDir, commitHash string, timestamp int64, message string, files []string, orgnumSet map[string]bool) {
+	date := time.Unix(timestamp, 0)
+
+	for _, filePath := range files {
+		orgnum := pathToOrgnum(filePath)
+		if orgnum == "" {
+			continue
+		}
+
+		// Skip if not in our entity set
+		if !orgnumSet[orgnum] {
+			continue
+		}
+
+		// Get file content at this commit
+		data, err := getFileAtCommit(dataDir, commitHash, filePath)
+		if err != nil {
+			continue
+		}
+
+		change := EntityChange{
+			CommitHash: commitHash,
+			Date:       date,
+			Message:    message,
+			FilePath:   filePath,
+			Data:       data,
+		}
+
+		c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
+	}
+}
+
+// GetEntityHistory retrieves changes for an entity from the cache
+func (c *GitHistoryCache) GetEntityHistory(orgnum string) ([]EntityChange, error) {
+	changes, ok := c.entityChanges[orgnum]
+	if !ok || len(changes) == 0 {
+		return nil, fmt.Errorf("no history found for entity %s", orgnum)
+	}
+
+	return changes, nil
+}
+
+// GetAllEntities returns all entity orgnums in the cache
+func (c *GitHistoryCache) GetAllEntities() []string {
+	orgnums := make([]string, 0, len(c.entityChanges))
+	for orgnum := range c.entityChanges {
+		orgnums = append(orgnums, orgnum)
+	}
+	return orgnums
+}
+
+// BuildGitHistoryCacheByShard builds cache for a single shard directory
+func BuildGitHistoryCacheByShard(dataDir, shardPath string) (*GitHistoryCache, error) {
+	log.Printf("Building git history cache for shard: %s", shardPath)
+
+	// Run git log for this specific shard directory
+	cmd := exec.Command("git", "log",
+		"--name-only",
+		"--pretty=format:%H|%at|%s",
+		"--", shardPath+"/")
+	cmd.Dir = dataDir
+
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return nil, fmt.Errorf("git log failed for shard %s: %w", shardPath, err)
+	}
+
+	// Parse output
+	cache := &GitHistoryCache{
+		entityChanges: make(map[string][]EntityChange),
+	}
+
+	lines := strings.Split(string(output), "\n")
+	var currentCommit, currentMessage string
+	var currentTimestamp int64
+	var filesInCommit []string
+
+	for i := 0; i < len(lines); i++ {
+		line := strings.TrimSpace(lines[i])
+
+		if line == "" {
+			// Empty line marks end of file list for this commit
+			if currentCommit != "" && len(filesInCommit) > 0 {
+				// Process all files in this commit
+				cache.addCommitFilesAll(dataDir, currentCommit, currentTimestamp, currentMessage, filesInCommit)
+				filesInCommit = nil
+			}
+			continue
+		}
+
+		// Check if this is a commit line (contains |)
+		if strings.Contains(line, "|") {
+			parts := strings.SplitN(line, "|", 3)
+			if len(parts) == 3 {
+				currentCommit = parts[0]
+				fmt.Sscanf(parts[1], "%d", &currentTimestamp)
+				currentMessage = parts[2]
+			}
+			continue
+		}
+
+		// This is a file path
+		if strings.HasPrefix(line, "data/") && strings.HasSuffix(line, ".json") {
+			filesInCommit = append(filesInCommit, line)
+		}
+	}
+
+	// Process last commit
+	if currentCommit != "" && len(filesInCommit) > 0 {
+		cache.addCommitFilesAll(dataDir, currentCommit, currentTimestamp, currentMessage, filesInCommit)
+	}
+
+	log.Printf("Git history cache built for shard %s: %d entities", shardPath, len(cache.entityChanges))
+	return cache, nil
+}
+
+// addCommitFilesAll adds all files from a commit to the cache (no filtering)
+func (c *GitHistoryCache) addCommitFilesAll(dataDir, commitHash string, timestamp int64, message string, files []string) {
+	date := time.Unix(timestamp, 0)
+
+	for _, filePath := range files {
+		orgnum := pathToOrgnum(filePath)
+		if orgnum == "" {
+			continue
+		}
+
+		// Get file content at this commit
+		data, err := getFileAtCommit(dataDir, commitHash, filePath)
+		if err != nil {
+			continue
+		}
+
+		change := EntityChange{
+			CommitHash: commitHash,
+			Date:       date,
+			Message:    message,
+			FilePath:   filePath,
+			Data:       data,
+		}
+
+		c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
+	}
 }

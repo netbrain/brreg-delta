@@ -151,46 +151,188 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 		return nil
 	}
 
-	// Process in parallel
-	return ProcessInParallel(orgnums, workers, func(orgnum string) error {
+	// Create temporary content directory
+	contentDir, err := os.MkdirTemp("", "hugo-content-*")
+	if err != nil {
+		return fmt.Errorf("failed to create content dir: %w", err)
+	}
+	defer os.RemoveAll(contentDir)
+
+	// For incremental mode with small number of entities, use per-entity git log
+	log.Printf("Generating markdown for %d entities...", len(orgnums))
+	err = ProcessInParallel(orgnums, workers, func(orgnum string) error {
+		// Get full history for this entity
 		changes, err := GetEntityHistory(dataDir, orgnum)
 		if err != nil {
 			return err
 		}
 
+		// Generate markdown
 		markdown, err := GenerateTimelineMarkdown(orgnum, changes)
 		if err != nil {
 			return err
 		}
 
-		return GenerateEntityHTML(orgnum, markdown, templateDir, output)
+		return WriteEntityMarkdown(orgnum, markdown, contentDir)
 	})
+	if err != nil {
+		return fmt.Errorf("markdown generation failed: %w", err)
+	}
+
+	log.Println("\n=== Running Hugo ===")
+
+	// Run Hugo once to build all pages
+	return BuildAllWithHugo(templateDir, contentDir, output)
 }
 
 func generateAll(dataDir, templateDir, output string, workers int) error {
 	log.Printf("Generating histories for ALL entities with %d workers", workers)
 	log.Println("WARNING: This will take a very long time (hours to days)")
 
-	// Get all entities
-	orgnums, err := GetAllEntities(dataDir)
+	// Get all top-level shard directories (000-999)
+	shardDirs, err := getShardDirectories(dataDir)
 	if err != nil {
-		return fmt.Errorf("failed to get all entities: %w", err)
+		return fmt.Errorf("failed to get shard directories: %w", err)
 	}
 
-	log.Printf("Found %d total entities", len(orgnums))
+	log.Printf("Found %d shard directories to process", len(shardDirs))
 
-	// Process in parallel
-	return ProcessInParallel(orgnums, workers, func(orgnum string) error {
-		changes, err := GetEntityHistory(dataDir, orgnum)
+	// Create temporary content directory
+	contentDir, err := os.MkdirTemp("", "hugo-content-*")
+	if err != nil {
+		return fmt.Errorf("failed to create content dir: %w", err)
+	}
+	defer os.RemoveAll(contentDir)
+
+	// Process each shard directory
+	return processAllShardDirs(dataDir, shardDirs, contentDir, workers, templateDir, output)
+}
+
+// getShardDirectories returns all top-level shard directories in data/
+func getShardDirectories(dataDir string) ([]string, error) {
+	dataPath := filepath.Join(dataDir, "data")
+	entries, err := os.ReadDir(dataPath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read data directory: %w", err)
+	}
+
+	var shardDirs []string
+	for _, entry := range entries {
+		if entry.IsDir() && len(entry.Name()) == 3 {
+			shardDirs = append(shardDirs, entry.Name())
+		}
+	}
+
+	return shardDirs, nil
+}
+
+
+// processAllShardDirs processes all shard directories for full generation
+func processAllShardDirs(dataDir string, shardDirs []string, contentDir string, workers int, templateDir, output string) error {
+	total := len(shardDirs)
+
+	log.Printf("Processing %d shards with up to %d parallel shard workers", total, workers)
+
+	// Process shards in parallel up to workers limit with progress tracking
+	err := ProcessInParallelWithProgress(shardDirs, workers, total, func(shard string) error {
+		shardPath := filepath.Join("data", shard)
+
+		log.Printf("Shard %s: Starting", shard)
+
+		// Build git history cache for this shard directory
+		cache, err := BuildGitHistoryCacheByShard(dataDir, shardPath)
 		if err != nil {
-			return err
+			return fmt.Errorf("failed to build git history cache: %w", err)
 		}
 
-		markdown, err := GenerateTimelineMarkdown(orgnum, changes)
-		if err != nil {
-			return err
+		// Get all entities in this shard from the cache
+		shardEntities := cache.GetAllEntities()
+
+		log.Printf("Shard %s: Processing %d entities", shard, len(shardEntities))
+
+		// Generate markdown for entities in this shard sequentially (to avoid spawning workers*workers goroutines)
+		for _, orgnum := range shardEntities {
+			changes, err := cache.GetEntityHistory(orgnum)
+			if err != nil {
+				return err
+			}
+
+			markdown, err := GenerateTimelineMarkdown(orgnum, changes)
+			if err != nil {
+				return err
+			}
+
+			if err := WriteEntityMarkdown(orgnum, markdown, contentDir); err != nil {
+				return err
+			}
 		}
 
-		return GenerateEntityHTML(orgnum, markdown, templateDir, output)
+		log.Printf("Shard %s: Complete (%d entities)", shard, len(shardEntities))
+		return nil
 	})
+
+	if err != nil {
+		return fmt.Errorf("shard processing failed: %w", err)
+	}
+
+	log.Println("\n=== All shards complete, running Hugo ===")
+
+	// Run Hugo once to build all pages
+	return BuildAllWithHugo(templateDir, contentDir, output)
+}
+
+// Old batch-based function - keeping for reference but unused
+func generateInBatches(dataDir string, orgnums []string, contentDir string, workers, batchSize int, templateDir, output string) error {
+	total := len(orgnums)
+	numBatches := (total + batchSize - 1) / batchSize
+
+	log.Printf("Processing %d entities in %d batches of %d", total, numBatches, batchSize)
+
+	for i := 0; i < total; i += batchSize {
+		end := i + batchSize
+		if end > total {
+			end = total
+		}
+
+		batch := orgnums[i:end]
+		batchNum := i/batchSize + 1
+
+		log.Printf("\n=== Batch %d/%d: Processing %d entities ===", batchNum, numBatches, len(batch))
+
+		// Build git history cache for this batch only
+		cache, err := BuildGitHistoryCache(dataDir, batch)
+		if err != nil {
+			return fmt.Errorf("batch %d: failed to build git history cache: %w", batchNum, err)
+		}
+
+		// Generate markdown for this batch
+		log.Printf("Batch %d/%d: Generating markdown files...", batchNum, numBatches)
+		err = ProcessInParallel(batch, workers, func(orgnum string) error {
+			changes, err := cache.GetEntityHistory(orgnum)
+			if err != nil {
+				return err
+			}
+
+			markdown, err := GenerateTimelineMarkdown(orgnum, changes)
+			if err != nil {
+				return err
+			}
+
+			return WriteEntityMarkdown(orgnum, markdown, contentDir)
+		})
+		if err != nil {
+			return fmt.Errorf("batch %d: markdown generation failed: %w", batchNum, err)
+		}
+
+		// Clear cache to free memory
+		cache = nil
+
+		log.Printf("Batch %d/%d: Complete (%.1f%% total progress)",
+			batchNum, numBatches, float64(end)/float64(total)*100)
+	}
+
+	log.Println("\n=== All batches complete, running Hugo ===")
+
+	// Run Hugo once to build all pages
+	return BuildAllWithHugo(templateDir, contentDir, output)
 }
