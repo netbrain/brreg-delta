@@ -94,6 +94,7 @@ func (c *Client) doRequestWithRetry(ctx context.Context, url string) (*http.Resp
 // Enhet represents an entity (company)
 type Enhet struct {
 	Organisasjonsnummer string          `json:"organisasjonsnummer"`
+	ResponsKlasse       string          `json:"respons_klasse"`
 	RawData             json.RawMessage `json:"-"`
 }
 
@@ -115,6 +116,7 @@ func (e *Enhet) UnmarshalJSON(data []byte) error {
 type Underenhet struct {
 	Organisasjonsnummer string          `json:"organisasjonsnummer"`
 	OverordnetEnhet     string          `json:"overordnetEnhet"`
+	ResponsKlasse       string          `json:"respons_klasse"`
 	RawData             json.RawMessage `json:"-"`
 }
 

@@ -195,6 +195,21 @@ func processEnhetUpdate(client *Client, storage *Storage, orgnum string) error {
 		return fmt.Errorf("failed to fetch enhet: %w", err)
 	}
 
+	// Parse to check if deleted
+	var enhet Enhet
+	if err := enhet.UnmarshalJSON(enhetData); err != nil {
+		return fmt.Errorf("failed to parse enhet: %w", err)
+	}
+
+	// Check if this is a deleted entity (respons_klasse: "SlettetEnhet")
+	if enhet.ResponsKlasse == "SlettetEnhet" {
+		log.Printf("Entity deleted (respons_klasse): %s - recording for cleanup", orgnum)
+		if err := storage.RecordDeletedEntity(orgnum); err != nil {
+			return fmt.Errorf("failed to record deleted entity: %w", err)
+		}
+		return nil
+	}
+
 	// Save enhet
 	if err := storage.SaveEnhet(orgnum, enhetData); err != nil {
 		return fmt.Errorf("failed to save enhet: %w", err)
@@ -233,6 +248,15 @@ func processUnderenhetUpdate(client *Client, storage *Storage, orgnum string) er
 	var underenhet Underenhet
 	if err := underenhet.UnmarshalJSON(underenhetData); err != nil {
 		return fmt.Errorf("failed to parse underenhet: %w", err)
+	}
+
+	// Check if this is a deleted entity (respons_klasse: "SlettetEnhet")
+	if underenhet.ResponsKlasse == "SlettetEnhet" {
+		log.Printf("Entity deleted (respons_klasse): %s - recording for cleanup", orgnum)
+		if err := storage.RecordDeletedEntity(orgnum); err != nil {
+			return fmt.Errorf("failed to record deleted entity: %w", err)
+		}
+		return nil
 	}
 
 	parentOrgnum := underenhet.OverordnetEnhet
