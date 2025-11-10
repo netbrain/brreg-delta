@@ -4,6 +4,27 @@ on:
   schedule:
     - cron: '30 5 * * *'  # Run daily at 5:30 AM UTC (after Brreg releases at 5:00 AM)
   workflow_dispatch:
+    inputs:
+      rate-limit:
+        description: 'API requests per second'
+        required: false
+        default: '10.0'
+        type: string
+      rate-burst:
+        description: 'Maximum burst size for rate limiter'
+        required: false
+        default: '20'
+        type: string
+      workers:
+        description: 'Number of concurrent workers'
+        required: false
+        default: '10'
+        type: string
+      max-failures:
+        description: 'Maximum consecutive failures before exit'
+        required: false
+        default: '50'
+        type: string
 
 jobs:
   sync:
@@ -47,7 +68,27 @@ jobs:
       - name: Run sync
         run: |
           cd code
-          go run . -data ../data
+
+          # Build flags based on workflow inputs (use defaults if not manually triggered)
+          FLAGS="-data ../data"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual trigger - use provided inputs
+            FLAGS="$FLAGS -rate-limit ${{ inputs.rate-limit }}"
+            FLAGS="$FLAGS -rate-burst ${{ inputs.rate-burst }}"
+            FLAGS="$FLAGS -workers ${{ inputs.workers }}"
+            FLAGS="$FLAGS -max-failures ${{ inputs.max-failures }}"
+
+            echo "Running with custom configuration:"
+            echo "  Rate limit: ${{ inputs.rate-limit }} req/s"
+            echo "  Rate burst: ${{ inputs.rate-burst }}"
+            echo "  Workers: ${{ inputs.workers }}"
+            echo "  Max failures: ${{ inputs.max-failures }}"
+          else
+            echo "Running with default configuration"
+          fi
+
+          go run . $FLAGS
 
       - name: Process deleted entities
         run: |

@@ -2,12 +2,17 @@ package main
 
 import (
 	"compress/gzip"
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
+	"math"
 	"net/http"
 	"os"
 	"time"
+
+	"golang.org/x/time/rate"
 )
 
 const (
@@ -25,14 +30,65 @@ func (e *EntityDeletedError) Error() string {
 
 type Client struct {
 	httpClient *http.Client
+	limiter    *rate.Limiter
 }
 
+const (
+	defaultRateLimit = 10.0
+	defaultRateBurst = 20
+)
+
+// NewClient creates a new client with default rate limiting (10 req/s, burst 20)
 func NewClient() *Client {
 	return &Client{
 		httpClient: &http.Client{
 			Timeout: 30 * time.Second,
 		},
+		limiter: rate.NewLimiter(rate.Limit(defaultRateLimit), defaultRateBurst),
 	}
+}
+
+// NewClientWithOptions creates a new client with custom rate limiting
+func NewClientWithOptions(rateLimit float64, rateBurst int) *Client {
+	return &Client{
+		httpClient: &http.Client{
+			Timeout: 30 * time.Second,
+		},
+		limiter: rate.NewLimiter(rate.Limit(rateLimit), rateBurst),
+	}
+}
+
+// doRequestWithRetry performs an HTTP GET with exponential backoff retry
+func (c *Client) doRequestWithRetry(ctx context.Context, url string) (*http.Response, error) {
+	const maxRetries = 5
+	baseDelay := 1 * time.Second
+
+	for attempt := 0; attempt <= maxRetries; attempt++ {
+		// Wait for rate limiter before making request
+		if err := c.limiter.Wait(ctx); err != nil {
+			return nil, fmt.Errorf("rate limiter error: %w", err)
+		}
+
+		resp, err := c.httpClient.Get(url)
+		if err == nil {
+			return resp, nil
+		}
+
+		// If this was the last attempt, return the error
+		if attempt == maxRetries {
+			log.Printf("Request failed after %d retries: %v", maxRetries, err)
+			return nil, fmt.Errorf("request failed after %d retries: %w", maxRetries, err)
+		}
+
+		// Calculate exponential backoff delay
+		delay := time.Duration(float64(baseDelay) * math.Pow(2, float64(attempt)))
+		log.Printf("Request failed (attempt %d/%d), retrying in %v: %v", attempt+1, maxRetries+1, delay, err)
+
+		time.Sleep(delay)
+	}
+
+	// Should never reach here
+	return nil, fmt.Errorf("unexpected error in retry logic")
 }
 
 // Enhet represents an entity (company)
@@ -169,7 +225,7 @@ func (c *Client) FetchRoles(orgnum string) (json.RawMessage, error) {
 func (c *Client) FetchEnhet(orgnum string) (json.RawMessage, error) {
 	url := fmt.Sprintf("%s/enheter/%s", baseURL, orgnum)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch enhet %s: %w", orgnum, err)
 	}
@@ -201,7 +257,7 @@ func (c *Client) FetchEnhet(orgnum string) (json.RawMessage, error) {
 func (c *Client) FetchUnderenhet(orgnum string) (json.RawMessage, error) {
 	url := fmt.Sprintf("%s/underenheter/%s", baseURL, orgnum)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch underenhet %s: %w", orgnum, err)
 	}
@@ -233,7 +289,7 @@ func (c *Client) FetchUnderenhet(orgnum string) (json.RawMessage, error) {
 func (c *Client) FetchEnhetRoller(orgnum string) (json.RawMessage, error) {
 	url := fmt.Sprintf("%s/enheter/%s/roller", baseURL, orgnum)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch roles for enhet %s: %w", orgnum, err)
 	}
@@ -260,7 +316,7 @@ func (c *Client) FetchEnhetRoller(orgnum string) (json.RawMessage, error) {
 func (c *Client) FetchUnderenhetRoller(orgnum string) (json.RawMessage, error) {
 	url := fmt.Sprintf("%s/underenheter/%s/roller", baseURL, orgnum)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch roles for underenhet %s: %w", orgnum, err)
 	}
@@ -287,7 +343,7 @@ func (c *Client) FetchUnderenhetRoller(orgnum string) (json.RawMessage, error) {
 func (c *Client) FetchEnheterUpdates(fraOppdateringsid int64, size int) (*OppdaterteEnheter, error) {
 	url := fmt.Sprintf("%s/oppdateringer/enheter?oppdateringsid=%d&size=%d", baseURL, fraOppdateringsid, size)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch enheter updates: %w", err)
 	}
@@ -314,7 +370,7 @@ func (c *Client) FetchEnheterUpdates(fraOppdateringsid int64, size int) (*Oppdat
 func (c *Client) FetchUnderenheterUpdates(fraOppdateringsid int64, size int) (*OppdaterteUnderenheter, error) {
 	url := fmt.Sprintf("%s/oppdateringer/underenheter?oppdateringsid=%d&size=%d", baseURL, fraOppdateringsid, size)
 
-	resp, err := c.httpClient.Get(url)
+	resp, err := c.doRequestWithRetry(context.Background(), url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch underenheter updates: %w", err)
 	}

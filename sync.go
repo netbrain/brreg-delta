@@ -5,32 +5,50 @@ import (
 	"errors"
 	"fmt"
 	"log"
+	"os"
+	"sync"
 	"time"
 )
 
+// updateJob represents a single entity update to process
+type updateJob struct {
+	orgnum       string
+	isEnhet      bool
+	oppdateringsid int64
+}
+
+// updateResult represents the result of processing an update
+type updateResult struct {
+	orgnum  string
+	success bool
+	err     error
+}
+
 // RunSync performs either initial sync or incremental sync based on state
-func RunSync(dataDir string) error {
+func RunSync(config *SyncConfig) error {
+	dataDir := config.DataDir
 	if IsInitialSync(dataDir) {
 		log.Println("No state file found - performing initial sync")
-		return runInitialSync(dataDir)
+		return runInitialSync(config)
 	}
 
 	// Check if state has valid oppdateringsid (non-zero)
 	state, err := LoadState(dataDir)
 	if err == nil && (state.LastEnheterOppdateringsid == 0 || state.LastUnderenheterOppdateringsid == 0) {
 		log.Println("State file exists but oppdateringsid is 0 - performing initial sync")
-		return runInitialSync(dataDir)
+		return runInitialSync(config)
 	}
 
 	log.Println("State file exists - performing incremental sync")
-	return runIncrementalSync(dataDir)
+	return runIncrementalSync(config)
 }
 
 // runInitialSync downloads complete datasets and extracts to files
-func runInitialSync(dataDir string) error {
+func runInitialSync(config *SyncConfig) error {
 	log.Println("Starting initial sync...")
 
-	client := NewClient()
+	dataDir := config.DataDir
+	client := NewClientWithOptions(config.RateLimit, config.RateBurst)
 	storage := NewStorage(dataDir)
 
 	// Initialize state with current timestamp
@@ -160,11 +178,114 @@ func runInitialSync(dataDir string) error {
 	return nil
 }
 
+// processEnhetUpdate processes a single enhet update
+func processEnhetUpdate(client *Client, storage *Storage, orgnum string) error {
+	// Fetch latest enhet data
+	enhetData, err := client.FetchEnhet(orgnum)
+	if err != nil {
+		// Check if entity was deleted (410 Gone)
+		var deletedErr *EntityDeletedError
+		if errors.As(err, &deletedErr) {
+			log.Printf("Entity deleted: %s - recording for cleanup", orgnum)
+			if err := storage.RecordDeletedEntity(orgnum); err != nil {
+				return fmt.Errorf("failed to record deleted entity: %w", err)
+			}
+			return nil
+		}
+		return fmt.Errorf("failed to fetch enhet: %w", err)
+	}
+
+	// Save enhet
+	if err := storage.SaveEnhet(orgnum, enhetData); err != nil {
+		return fmt.Errorf("failed to save enhet: %w", err)
+	}
+
+	// Fetch and save roles
+	rollerData, err := client.FetchEnhetRoller(orgnum)
+	if err != nil {
+		return fmt.Errorf("failed to fetch roles: %w", err)
+	}
+	if err := storage.SaveEnhetRoller(orgnum, rollerData); err != nil {
+		return fmt.Errorf("failed to save roles: %w", err)
+	}
+
+	return nil
+}
+
+// processUnderenhetUpdate processes a single underenhet update
+func processUnderenhetUpdate(client *Client, storage *Storage, orgnum string) error {
+	// Fetch latest underenhet data
+	underenhetData, err := client.FetchUnderenhet(orgnum)
+	if err != nil {
+		// Check if entity was deleted (410 Gone)
+		var deletedErr *EntityDeletedError
+		if errors.As(err, &deletedErr) {
+			log.Printf("Entity deleted: %s - recording for cleanup", orgnum)
+			if err := storage.RecordDeletedEntity(orgnum); err != nil {
+				return fmt.Errorf("failed to record deleted entity: %w", err)
+			}
+			return nil
+		}
+		return fmt.Errorf("failed to fetch underenhet: %w", err)
+	}
+
+	// Parse to get parent orgnum
+	var underenhet Underenhet
+	if err := underenhet.UnmarshalJSON(underenhetData); err != nil {
+		return fmt.Errorf("failed to parse underenhet: %w", err)
+	}
+
+	parentOrgnum := underenhet.OverordnetEnhet
+	if parentOrgnum == "" {
+		return fmt.Errorf("underenhet has no parent")
+	}
+
+	// Save underenhet
+	if err := storage.SaveUnderenhet(parentOrgnum, orgnum, underenhetData); err != nil {
+		return fmt.Errorf("failed to save underenhet: %w", err)
+	}
+
+	// Create/update symlink
+	if err := storage.CreateSymlink(orgnum, parentOrgnum); err != nil {
+		return fmt.Errorf("failed to create symlink: %w", err)
+	}
+
+	// Fetch and save roles
+	rollerData, err := client.FetchUnderenhetRoller(orgnum)
+	if err != nil {
+		return fmt.Errorf("failed to fetch roles: %w", err)
+	}
+	if err := storage.SaveUnderenhetRoller(parentOrgnum, orgnum, rollerData); err != nil {
+		return fmt.Errorf("failed to save roles: %w", err)
+	}
+
+	return nil
+}
+
+// worker processes update jobs from the jobs channel
+func worker(id int, jobs <-chan updateJob, results chan<- updateResult, client *Client, storage *Storage) {
+	for job := range jobs {
+		var err error
+		if job.isEnhet {
+			err = processEnhetUpdate(client, storage, job.orgnum)
+		} else {
+			err = processUnderenhetUpdate(client, storage, job.orgnum)
+		}
+
+		results <- updateResult{
+			orgnum:  job.orgnum,
+			success: err == nil,
+			err:     err,
+		}
+	}
+}
+
 // runIncrementalSync fetches updates since last sync
-func runIncrementalSync(dataDir string) error {
+func runIncrementalSync(config *SyncConfig) error {
 	log.Println("Starting incremental sync...")
 
-	client := NewClient()
+	dataDir := config.DataDir
+	client := NewClientWithOptions(config.RateLimit, config.RateBurst)
 	storage := NewStorage(dataDir)
 
 	// Load current state
@@ -187,6 +308,40 @@ func runIncrementalSync(dataDir string) error {
 	enheterUpdated := 0
 	underenheterUpdated := 0
 	errorCount := 0
+	consecutiveFailures := 0
+
+	// Setup worker pool
+	jobs := make(chan updateJob, 100)
+	results := make(chan updateResult, 100)
+
+	var wg sync.WaitGroup
+	for w := 1; w <= config.NumWorkers; w++ {
+		wg.Add(1)
+		go func(workerID int) {
+			defer wg.Done()
+			worker(workerID, jobs, results, client, storage)
+		}(w)
+	}
+
+	// Results collector goroutine
+	resultsDone := make(chan bool)
+	go func() {
+		for result := range results {
+			if result.success {
+				consecutiveFailures = 0
+			} else {
+				consecutiveFailures++
+				errorCount++
+				log.Printf("Warning: failed to process %s: %v", result.orgnum, result.err)
+
+				if consecutiveFailures >= config.MaxFailures {
+					log.Printf("FATAL: %d consecutive failures - exiting application", consecutiveFailures)
+					os.Exit(1)
+				}
+			}
+		}
+		resultsDone <- true
+	}()
 
 	// Fetch enheter updates
 	log.Println("Fetching enheter updates...")
@@ -195,6 +350,10 @@ func runIncrementalSync(dataDir string) error {
 	for {
 		updates, err := client.FetchEnheterUpdates(maxEnheterOppdateringsid, 1000)
 		if err != nil {
+			close(jobs)
+			wg.Wait()
+			close(results)
+			<-resultsDone
 			return fmt.Errorf("failed to fetch enheter updates: %w", err)
 		}
 
@@ -211,41 +370,11 @@ func runIncrementalSync(dataDir string) error {
 				maxEnheterOppdateringsid = update.Oppdateringsid
 			}
 
-			// Fetch latest enhet data
-			enhetData, err := client.FetchEnhet(update.Organisasjonsnummer)
-			if err != nil {
-				// Check if entity was deleted (410 Gone)
-				var deletedErr *EntityDeletedError
-				if errors.As(err, &deletedErr) {
-					log.Printf("Entity deleted: %s - recording for cleanup", update.Organisasjonsnummer)
-					if err := storage.RecordDeletedEntity(update.Organisasjonsnummer); err != nil {
-						log.Printf("Warning: failed to record deleted entity %s: %v", update.Organisasjonsnummer, err)
-					}
-					enheterUpdated++
-					continue
-				}
-				log.Printf("Warning: failed to fetch enhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-				continue
+			jobs <- updateJob{
+				orgnum:       update.Organisasjonsnummer,
+				isEnhet:      true,
+				oppdateringsid: update.Oppdateringsid,
 			}
-
-			// Save enhet
-			if err := storage.SaveEnhet(update.Organisasjonsnummer, enhetData); err != nil {
-				log.Printf("Warning: failed to save enhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-				continue
-			}
-
-			// Fetch and save roles
-			rollerData, err := client.FetchEnhetRoller(update.Organisasjonsnummer)
-			if err != nil {
-				log.Printf("Warning: failed to fetch roles for enhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-			} else if err := storage.SaveEnhetRoller(update.Organisasjonsnummer, rollerData); err != nil {
-				log.Printf("Warning: failed to save roles for enhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-			}
-
 			enheterUpdated++
 		}
 
@@ -262,6 +391,10 @@ func runIncrementalSync(dataDir string) error {
 	for {
 		updates, err := client.FetchUnderenheterUpdates(maxUnderenheterOppdateringsid, 1000)
 		if err != nil {
+			close(jobs)
+			wg.Wait()
+			close(results)
+			<-resultsDone
 			return fmt.Errorf("failed to fetch underenheter updates: %w", err)
 		}
 
@@ -278,62 +411,11 @@ func runIncrementalSync(dataDir string) error {
 				maxUnderenheterOppdateringsid = update.Oppdateringsid
 			}
 
-			// Fetch latest underenhet data
-			underenhetData, err := client.FetchUnderenhet(update.Organisasjonsnummer)
-			if err != nil {
-				// Check if entity was deleted (410 Gone)
-				var deletedErr *EntityDeletedError
-				if errors.As(err, &deletedErr) {
-					log.Printf("Entity deleted: %s - recording for cleanup", update.Organisasjonsnummer)
-					if err := storage.RecordDeletedEntity(update.Organisasjonsnummer); err != nil {
-						log.Printf("Warning: failed to record deleted entity %s: %v", update.Organisasjonsnummer, err)
-					}
-					underenheterUpdated++
-					continue
-				}
-				log.Printf("Warning: failed to fetch underenhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-				continue
+			jobs <- updateJob{
+				orgnum:       update.Organisasjonsnummer,
+				isEnhet:      false,
+				oppdateringsid: update.Oppdateringsid,
 			}
-
-			// Parse to get parent orgnum
-			var underenhet Underenhet
-			if err := underenhet.UnmarshalJSON(underenhetData); err != nil {
-				log.Printf("Warning: failed to parse underenhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-				continue
-			}
-
-			parentOrgnum := underenhet.OverordnetEnhet
-			if parentOrgnum == "" {
-				log.Printf("Warning: underenhet %s has no parent", update.Organisasjonsnummer)
-				errorCount++
-				continue
-			}
-
-			// Save underenhet
-			if err := storage.SaveUnderenhet(parentOrgnum, update.Organisasjonsnummer, underenhetData); err != nil {
-				log.Printf("Warning: failed to save underenhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-				continue
-			}
-
-			// Create/update symlink
-			if err := storage.CreateSymlink(update.Organisasjonsnummer, parentOrgnum); err != nil {
-				log.Printf("Warning: failed to create symlink for %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-			}
-
-			// Fetch and save roles
-			rollerData, err := client.FetchUnderenhetRoller(update.Organisasjonsnummer)
-			if err != nil {
-				log.Printf("Warning: failed to fetch roles for underenhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-			} else if err := storage.SaveUnderenhetRoller(parentOrgnum, update.Organisasjonsnummer, rollerData); err != nil {
-				log.Printf("Warning: failed to save roles for underenhet %s: %v", update.Organisasjonsnummer, err)
-				errorCount++
-			}
-
 			underenheterUpdated++
 		}
 
@@ -342,6 +424,12 @@ func runIncrementalSync(dataDir string) error {
 			break
 		}
 	}
+
+	// Close jobs channel and wait for all workers to finish
+	close(jobs)
+	wg.Wait()
+	close(results)
+	<-resultsDone
 
 	// Update state with new oppdateringsid and successful completion
 	state.LastEnheterOppdateringsid = maxEnheterOppdateringsid
