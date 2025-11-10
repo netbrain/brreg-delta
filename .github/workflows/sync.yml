@@ -97,24 +97,27 @@ jobs:
         run: |
           cd data/data
           if [ -f .deleted-entities ]; then
-            echo "Processing deleted entities..."
+            entity_count=$(wc -l < .deleted-entities)
+            echo "Processing $entity_count deleted entities..."
+
+            count=0
             while IFS= read -r orgnum; do
               # Convert orgnum to path (triple-digit sharding)
               path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/\1\/\2\/\3/')
               if [ -d "$path" ]; then
-                echo "Deleting: $path"
-                # Add to sparse checkout so git can track the deletion
+                count=$((count + 1))
+                echo "[$count/$entity_count] Deleting: $path (orgnum: $orgnum)"
+                # Use git rm with --sparse to remove files without expanding sparse checkout
                 cd ..
-                find "data/$path" -type f -o -type l | while read file; do
-                  git sparse-checkout add "$file" 2>/dev/null || true
-                done
+                git rm -r --sparse "data/$path" 2>/dev/null || echo "  Warning: Failed to delete $path"
                 cd data
-                git rm -r "$path" || true
+              else
+                echo "Skipping non-existent path: $path (orgnum: $orgnum)"
               fi
             done < .deleted-entities
             # Clear the deleted entities file after processing
             > .deleted-entities
-            echo "Deleted entities processed"
+            echo "Deleted entities processed: $count directories removed"
           else
             echo "No deleted entities to process"
           fi
@@ -122,29 +125,26 @@ jobs:
       - name: Commit changes
         run: |
           cd data
+          echo "Configuring git..."
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Ensure state file is in sparse checkout (already should be, but be explicit)
-          git sparse-checkout add "data/.sync-state.json" 2>/dev/null || true
-
-          # Add all modified/new files to sparse checkout pattern
-          # This allows git to track them without downloading the entire repo
-          if [ -d data ]; then
-            find data -type f -o -type l | while read file; do
-              git sparse-checkout add "$file" 2>/dev/null || true
-            done
-          fi
-
-          git add .
+          echo "Adding files with --sparse flag..."
+          # Use --sparse flag to add files outside sparse checkout without expanding it
+          time git add --sparse .
 
           # Show what changed
           echo "Changed files:"
-          git status --short
+          git status --short | head -50
+          total_changes=$(git status --short | wc -l)
+          echo "Total files changed: $total_changes"
 
           if git diff --staged --quiet; then
             echo "No changes detected"
           else
+            echo "Creating commit..."
             git commit -m "Sync Brreg data $(date +%Y-%m-%d)"
+            echo "Pushing to data branch..."
             git push origin data
+            echo "Push complete"
           fi
