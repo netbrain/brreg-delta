@@ -26,6 +26,10 @@ on:
         default: '50'
         type: string
 
+concurrency:
+  group: brreg-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     name: Sync Brreg Data
