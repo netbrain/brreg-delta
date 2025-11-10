@@ -16,6 +16,7 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             skeletons.packages.${system}.intent-classifier
+            hugo
             # Common development tools
             # Add more tools based on your stack:
             # go, gopls, gotools (for Go)

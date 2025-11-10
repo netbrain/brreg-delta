@@ -1,0 +1,15 @@
+baseURL = "https://netbrain.github.io/brreg-history/"
+title = "Entity History"
+languageCode = "nb-NO"
+
+# Disable features we don't need for faster builds
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown for details/summary tags
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

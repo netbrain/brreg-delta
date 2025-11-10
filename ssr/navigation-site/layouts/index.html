@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <meta name="description" content="Se historiske endringer for norske enheter registrert i Brønnøysundregistrene">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        {{ .Content }}
+
+        <section>
+            <form id="orgnum-form">
+                <label for="orgnum">Organisasjonsnummer</label>
+                <input
+                    type="text"
+                    id="orgnum"
+                    name="orgnum"
+                    placeholder="9 siffer (f.eks. 810034882)"
+                    pattern="[0-9]{9}"
+                    required
+                    autofocus
+                />
+                <button type="submit">Vis historikk</button>
+            </form>
+        </section>
+
+        <footer>
+            <small>
+                Data fra <a href="https://data.brreg.no" target="_blank">Brønnøysundregistrene</a>
+                • Kildekode: <a href="https://github.com/netbrain/brreg-delta" target="_blank">GitHub</a>
+            </small>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('orgnum-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const orgnum = document.getElementById('orgnum').value.trim();
+
+            if (orgnum.length === 9 && /^\d+$/.test(orgnum)) {
+                // Convert orgnum to path: 810034882 -> 810/034/882
+                const parts = [];
+                for (let i = 0; i < orgnum.length; i += 3) {
+                    parts.push(orgnum.substring(i, i + 3));
+                }
+                window.location.href = '/' + parts.join('/') + '.html';
+            }
+        });
+    </script>
+</body>
+</html>

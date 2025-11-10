@@ -1,0 +1,104 @@
+name: Generate Entity History Pages
+
+on:
+  workflow_run:
+    workflows: ["Sync Brreg Data"]
+    types:
+      - completed
+    branches:
+      - data
+  workflow_dispatch:
+    inputs:
+      full-rebuild:
+        description: 'Rebuild all entities (not just changed)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: history-generation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360  # 6 hours max
+    # Only run if sync workflow succeeded (or if manually triggered)
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout brreg-delta (master)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: brreg-delta
+
+      - name: Checkout data branch
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: brreg-data
+          fetch-depth: 0  # Full history needed for git log
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Install Hugo
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v0.140.0/hugo_extended_0.140.0_linux-amd64.deb
+          sudo dpkg -i hugo_*.deb
+          hugo version
+
+      - name: Build gen-history tool
+        run: |
+          cd brreg-delta/ssr/gen-history
+          go build -o ../../../gen-history
+          cd ../../..
+          ./gen-history  # Show usage
+
+      - name: Generate entity pages
+        run: |
+          cd brreg-data
+
+          # Check if this is the first run (no .last-history-commit state file)
+          if [ ! -f ../gh-pages/.last-history-commit ]; then
+            echo "First run detected - performing full rebuild of all entities"
+            ../gen-history all --output ../gh-pages --workers 20 --template ../brreg-delta/ssr/entity-template
+          elif [ "${{ inputs.full-rebuild }}" = "true" ]; then
+            echo "Full rebuild requested"
+            ../gen-history all --output ../gh-pages --workers 20 --template ../brreg-delta/ssr/entity-template
+          else
+            echo "Incremental generation (only changed entities)"
+            ../gen-history generate --incremental --output ../gh-pages --workers 10 --template ../brreg-delta/ssr/entity-template
+          fi
+
+          # Save current commit as last processed
+          git rev-parse HEAD > ../gh-pages/.last-history-commit
+
+      - name: Build navigation site
+        run: |
+          cd brreg-delta/ssr/navigation-site
+          hugo --minify --destination ../../../gh-pages/
+
+      - name: Commit and push to gh-pages
+        run: |
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update entity histories $(date +%Y-%m-%d)"
+            git push
+            echo "Changes pushed successfully"
+          fi
