@@ -14,6 +14,15 @@ const (
 	baseURL = "https://data.brreg.no/enhetsregisteret/api"
 )
 
+// EntityDeletedError indicates an entity was deleted (410 Gone)
+type EntityDeletedError struct {
+	Orgnum string
+}
+
+func (e *EntityDeletedError) Error() string {
+	return fmt.Sprintf("entity deleted: %s", e.Orgnum)
+}
+
 type Client struct {
 	httpClient *http.Client
 }
@@ -166,9 +175,14 @@ func (c *Client) FetchEnhet(orgnum string) (json.RawMessage, error) {
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusCode == http.StatusNotFound || resp.StatusCode == http.StatusGone {
-		// Entity not found or deleted (410 Gone)
-		return nil, fmt.Errorf("enhet not found or deleted: %s (status %d)", orgnum, resp.StatusCode)
+	if resp.StatusCode == http.StatusGone {
+		// Entity deleted (410 Gone)
+		return nil, &EntityDeletedError{Orgnum: orgnum}
+	}
+
+	if resp.StatusCode == http.StatusNotFound {
+		// Entity not found (404)
+		return nil, fmt.Errorf("enhet not found: %s", orgnum)
 	}
 
 	if resp.StatusCode != http.StatusOK {
@@ -193,9 +207,14 @@ func (c *Client) FetchUnderenhet(orgnum string) (json.RawMessage, error) {
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusCode == http.StatusNotFound || resp.StatusCode == http.StatusGone {
-		// Entity not found or deleted (410 Gone)
-		return nil, fmt.Errorf("underenhet not found or deleted: %s (status %d)", orgnum, resp.StatusCode)
+	if resp.StatusCode == http.StatusGone {
+		// Entity deleted (410 Gone)
+		return nil, &EntityDeletedError{Orgnum: orgnum}
+	}
+
+	if resp.StatusCode == http.StatusNotFound {
+		// Entity not found (404)
+		return nil, fmt.Errorf("underenhet not found: %s", orgnum)
 	}
 
 	if resp.StatusCode != http.StatusOK {

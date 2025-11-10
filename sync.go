@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"time"
@@ -185,7 +186,7 @@ func runIncrementalSync(dataDir string) error {
 	// Track progress
 	enheterUpdated := 0
 	underenheterUpdated := 0
-	errors := 0
+	errorCount := 0
 
 	// Fetch enheter updates
 	log.Println("Fetching enheter updates...")
@@ -213,15 +214,25 @@ func runIncrementalSync(dataDir string) error {
 			// Fetch latest enhet data
 			enhetData, err := client.FetchEnhet(update.Organisasjonsnummer)
 			if err != nil {
+				// Check if entity was deleted (410 Gone)
+				var deletedErr *EntityDeletedError
+				if errors.As(err, &deletedErr) {
+					log.Printf("Entity deleted: %s - recording for cleanup", update.Organisasjonsnummer)
+					if err := storage.RecordDeletedEntity(update.Organisasjonsnummer); err != nil {
+						log.Printf("Warning: failed to record deleted entity %s: %v", update.Organisasjonsnummer, err)
+					}
+					enheterUpdated++
+					continue
+				}
 				log.Printf("Warning: failed to fetch enhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 				continue
 			}
 
 			// Save enhet
 			if err := storage.SaveEnhet(update.Organisasjonsnummer, enhetData); err != nil {
 				log.Printf("Warning: failed to save enhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 				continue
 			}
 
@@ -229,10 +240,10 @@ func runIncrementalSync(dataDir string) error {
 			rollerData, err := client.FetchEnhetRoller(update.Organisasjonsnummer)
 			if err != nil {
 				log.Printf("Warning: failed to fetch roles for enhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 			} else if err := storage.SaveEnhetRoller(update.Organisasjonsnummer, rollerData); err != nil {
 				log.Printf("Warning: failed to save roles for enhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 			}
 
 			enheterUpdated++
@@ -270,8 +281,18 @@ func runIncrementalSync(dataDir string) error {
 			// Fetch latest underenhet data
 			underenhetData, err := client.FetchUnderenhet(update.Organisasjonsnummer)
 			if err != nil {
+				// Check if entity was deleted (410 Gone)
+				var deletedErr *EntityDeletedError
+				if errors.As(err, &deletedErr) {
+					log.Printf("Entity deleted: %s - recording for cleanup", update.Organisasjonsnummer)
+					if err := storage.RecordDeletedEntity(update.Organisasjonsnummer); err != nil {
+						log.Printf("Warning: failed to record deleted entity %s: %v", update.Organisasjonsnummer, err)
+					}
+					underenheterUpdated++
+					continue
+				}
 				log.Printf("Warning: failed to fetch underenhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 				continue
 			}
 
@@ -279,38 +300,38 @@ func runIncrementalSync(dataDir string) error {
 			var underenhet Underenhet
 			if err := underenhet.UnmarshalJSON(underenhetData); err != nil {
 				log.Printf("Warning: failed to parse underenhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 				continue
 			}
 
 			parentOrgnum := underenhet.OverordnetEnhet
 			if parentOrgnum == "" {
 				log.Printf("Warning: underenhet %s has no parent", update.Organisasjonsnummer)
-				errors++
+				errorCount++
 				continue
 			}
 
 			// Save underenhet
 			if err := storage.SaveUnderenhet(parentOrgnum, update.Organisasjonsnummer, underenhetData); err != nil {
 				log.Printf("Warning: failed to save underenhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 				continue
 			}
 
 			// Create/update symlink
 			if err := storage.CreateSymlink(update.Organisasjonsnummer, parentOrgnum); err != nil {
 				log.Printf("Warning: failed to create symlink for %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 			}
 
 			// Fetch and save roles
 			rollerData, err := client.FetchUnderenhetRoller(update.Organisasjonsnummer)
 			if err != nil {
 				log.Printf("Warning: failed to fetch roles for underenhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 			} else if err := storage.SaveUnderenhetRoller(parentOrgnum, update.Organisasjonsnummer, rollerData); err != nil {
 				log.Printf("Warning: failed to save roles for underenhet %s: %v", update.Organisasjonsnummer, err)
-				errors++
+				errorCount++
 			}
 
 			underenheterUpdated++
@@ -334,7 +355,7 @@ func runIncrementalSync(dataDir string) error {
 	log.Printf("Incremental sync complete:")
 	log.Printf("  Enheter updated: %d", enheterUpdated)
 	log.Printf("  Underenheter updated: %d", underenheterUpdated)
-	log.Printf("  Errors: %d", errors)
+	log.Printf("  Errors: %d", errorCount)
 	log.Printf("  New enheter oppdateringsid: %d", maxEnheterOppdateringsid)
 	log.Printf("  New underenheter oppdateringsid: %d", maxUnderenheterOppdateringsid)
 

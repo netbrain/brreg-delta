@@ -49,12 +49,36 @@ jobs:
           cd code
           go run . -data ../data
 
+      - name: Process deleted entities
+        run: |
+          cd data
+          if [ -f .deleted-entities ]; then
+            echo "Processing deleted entities..."
+            while IFS= read -r orgnum; do
+              # Convert orgnum to path (triple-digit sharding)
+              path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/\1\/\2\/\3/')
+              if [ -d "$path" ]; then
+                echo "Deleting: $path"
+                git rm -r "$path" || true
+              fi
+            done < .deleted-entities
+            # Clear the deleted entities file after processing
+            > .deleted-entities
+            echo "Deleted entities processed"
+          else
+            echo "No deleted entities to process"
+          fi
+
       - name: Commit changes
         run: |
           cd data
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
+
+          # Show what changed
+          echo "Changed files:"
+          git status --short
 
           if git diff --staged --quiet; then
             echo "No changes detected"

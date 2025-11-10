@@ -82,6 +82,25 @@ func (s *Storage) SaveUnderenhetRoller(parentOrgnum, underenhetOrgnum string, da
 	return s.save(path, data)
 }
 
+// RecordDeletedEntity appends deleted orgnum to .deleted-entities file (stored in data dir root)
+func (s *Storage) RecordDeletedEntity(orgnum string) error {
+	deletedFile := filepath.Join(s.baseDir, ".deleted-entities")
+
+	// Open file for appending (create if doesn't exist)
+	f, err := os.OpenFile(deletedFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		return fmt.Errorf("failed to open deleted-entities file: %w", err)
+	}
+	defer f.Close()
+
+	// Write orgnum with newline
+	if _, err := f.WriteString(orgnum + "\n"); err != nil {
+		return fmt.Errorf("failed to write to deleted-entities file: %w", err)
+	}
+
+	return nil
+}
+
 // CreateSymlink creates a symlink from parent's underenhet/ directory to underenhet's canonical location
 // Example: data/810/034/882/underenhet/914930553 -> ../../../../914/930/553
 func (s *Storage) CreateSymlink(underenhetOrgnum, parentOrgnum string) error {
