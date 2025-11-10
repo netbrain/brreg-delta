@@ -38,15 +38,14 @@ jobs:
           ref: master
           path: code
 
-      - name: Checkout data branch (sparse - only state file)
-        run: |
-          git clone --depth 1 --filter=blob:none --branch data --single-branch --no-checkout https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git data-repo
-          cd data-repo
-          git sparse-checkout set --no-cone 'data/.sync-state.json' 'README.md'
-          git checkout data
-          mv data ../data
-          cd ..
-          rm -rf data-repo
+      - name: Checkout data branch
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data
+          sparse-checkout: |
+            data/.sync-state.json
+            README.md
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -55,7 +54,7 @@ jobs:
 
       - name: Download bulk files if initial sync
         run: |
-          if [ ! -f data/.sync-state.json ]; then
+          if [ ! -f data/data/.sync-state.json ]; then
             echo "Initial sync detected - downloading bulk files..."
             curl -L -o enheter.json.gz https://data.brreg.no/enhetsregisteret/api/enheter/lastned
             curl -L -o underenheter.json.gz https://data.brreg.no/enhetsregisteret/api/underenheter/lastned
@@ -70,7 +69,7 @@ jobs:
           cd code
 
           # Build flags based on workflow inputs (use defaults if not manually triggered)
-          FLAGS="-data ../data"
+          FLAGS="-data ../data/data"
 
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             # Manual trigger - use provided inputs
@@ -92,7 +91,7 @@ jobs:
 
       - name: Process deleted entities
         run: |
-          cd data
+          cd data/data
           if [ -f .deleted-entities ]; then
             echo "Processing deleted entities..."
             while IFS= read -r orgnum; do
