@@ -1,0 +1,119 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921887809"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921887809/roller"
+    }
+  },
+  "organisasjonsnummer": "921887809",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1977-07-13",
+            "navn": {
+              "etternavn": "Garen",
+              "fornavn": "Kristian Juan Carlos"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
+              }
+            },
+            "beskrivelse": "Forretningsfører",
+            "kode": "FFØR"
+          }
+        }
+      ],
+      "sistEndret": "2018-12-14",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/FFØR"
+          }
+        },
+        "beskrivelse": "Forretningsfører",
+        "kode": "FFØR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "ansvarsandel": "5 %",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1977-07-13",
+            "navn": {
+              "etternavn": "Garen",
+              "fornavn": "Kristian Juan Carlos"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        },
+        {
+          "ansvarsandel": "95 %",
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922287074"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "PARTNERS INVESTMENT DA"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/DA"
+                }
+              },
+              "beskrivelse": "Ansvarlig selskap, delt ansvar",
+              "kode": "DA"
+            },
+            "organisasjonsnummer": "922287074"
+          },
+          "fratraadt": false,
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        }
+      ],
+      "sistEndret": "2019-12-06",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

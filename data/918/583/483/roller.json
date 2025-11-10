@@ -1,0 +1,91 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918583483"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918583483/roller"
+    }
+  },
+  "organisasjonsnummer": "918583483",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1963-02-01",
+            "navn": {
+              "etternavn": "Tengesdal",
+              "fornavn": "Gunn"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+              }
+            },
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1965-03-29",
+            "navn": {
+              "etternavn": "Engåvoll",
+              "fornavn": "Cathrine",
+              "mellomnavn": "Lie"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": true,
+            "fodselsdato": "1938-05-22",
+            "navn": {
+              "etternavn": "Røsten",
+              "fornavn": "Torvald"
+            }
+          },
+          "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        }
+      ],
+      "sistEndret": "2020-01-04",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+          }
+        },
+        "beskrivelse": "Styre",
+        "kode": "STYR"
+      }
+    }
+  ]
+}

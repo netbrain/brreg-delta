@@ -1,0 +1,96 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999617379"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999617379/roller"
+    }
+  },
+  "organisasjonsnummer": "999617379",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1977-12-28",
+            "navn": {
+              "etternavn": "Lilleklev",
+              "fornavn": "Lars Gunnar"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2021-03-25",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999617417"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "TIA TECHNOLOGY A/S"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+                }
+              },
+              "beskrivelse": "Utenlandsk enhet",
+              "kode": "UTLA"
+            },
+            "organisasjonsnummer": "999617417"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/HFOR"
+              }
+            },
+            "beskrivelse": "Oppl om foretaket i hjemlandet",
+            "kode": "HFOR"
+          }
+        }
+      ],
+      "sistEndret": "2013-01-30",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/HFOR"
+          }
+        },
+        "beskrivelse": "Hovedforetak",
+        "kode": "HFOR"
+      }
+    }
+  ]
+}

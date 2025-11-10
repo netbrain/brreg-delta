@@ -1,0 +1,106 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/950692480"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/950692480/roller"
+    }
+  },
+  "organisasjonsnummer": "950692480",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1955-03-03",
+            "navn": {
+              "etternavn": "Nordli",
+              "fornavn": "Torfinn"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2018-05-22",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "ansvarsandel": "Andel: 50%.",
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1955-03-03",
+            "navn": {
+              "etternavn": "Nordli",
+              "fornavn": "Torfinn"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        },
+        {
+          "ansvarsandel": "Andel: 50%.",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1964-07-15",
+            "navn": {
+              "etternavn": "Aas",
+              "fornavn": "Geir"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        }
+      ],
+      "sistEndret": "2001-06-07",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

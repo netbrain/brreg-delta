@@ -1,0 +1,117 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982247594"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982247594/roller"
+    }
+  },
+  "organisasjonsnummer": "982247594",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974498006"
+              }
+            },
+            "erSlettet": true,
+            "navn": [
+              "KAJO AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "974498006"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
+              }
+            },
+            "beskrivelse": "Forretningsfører",
+            "kode": "FFØR"
+          }
+        }
+      ],
+      "sistEndret": "2000-08-11",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/FFØR"
+          }
+        },
+        "beskrivelse": "Forretningsfører",
+        "kode": "FFØR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1979-01-22",
+            "navn": {
+              "etternavn": "Lorentzen",
+              "fornavn": "Trygve"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTSO"
+              }
+            },
+            "beskrivelse": "Deltaker med fullt ansvar",
+            "kode": "DTSO"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1972-12-04",
+            "navn": {
+              "etternavn": "Fatland",
+              "fornavn": "Roy"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTSO"
+              }
+            },
+            "beskrivelse": "Deltaker med fullt ansvar",
+            "kode": "DTSO"
+          }
+        }
+      ],
+      "sistEndret": "2000-08-11",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

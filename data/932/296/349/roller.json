@@ -1,0 +1,83 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932296349"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932296349/roller"
+    }
+  },
+  "organisasjonsnummer": "932296349",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "2002-11-26",
+            "navn": {
+              "etternavn": "Rønsberg",
+              "fornavn": "Jørgen"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+              }
+            },
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "2003-01-25",
+            "navn": {
+              "etternavn": "Pedersen",
+              "fornavn": "Idar",
+              "mellomnavn": "Vavik"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
+          }
+        }
+      ],
+      "sistEndret": "2023-10-20",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+          }
+        },
+        "beskrivelse": "Styre",
+        "kode": "STYR"
+      }
+    },
+    {
+      "roller": [],
+      "sistEndret": "2025-10-27",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+          }
+        },
+        "beskrivelse": "Signatur",
+        "kode": "SIGN"
+      }
+    }
+  ]
+}

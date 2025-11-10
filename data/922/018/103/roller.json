@@ -1,0 +1,87 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922018103"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922018103/roller"
+    }
+  },
+  "organisasjonsnummer": "922018103",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1970-03-22",
+            "navn": {
+              "etternavn": "Brendesæter",
+              "fornavn": "Geirmund"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2024-12-19",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1970-03-22",
+            "navn": {
+              "etternavn": "Brendesæter",
+              "fornavn": "Geirmund"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+              }
+            },
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          },
+          "valgtAv": {
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
+        }
+      ],
+      "sistEndret": "2025-09-03",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+          }
+        },
+        "beskrivelse": "Styre",
+        "kode": "STYR"
+      }
+    }
+  ]
+}

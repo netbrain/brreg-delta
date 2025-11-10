@@ -1,0 +1,106 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985242852"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985242852/roller"
+    }
+  },
+  "organisasjonsnummer": "985242852",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1969-03-01",
+            "navn": {
+              "etternavn": "Holmberg",
+              "fornavn": "Børre"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+              }
+            },
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
+          }
+        }
+      ],
+      "sistEndret": "2004-10-28",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+          }
+        },
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
+      }
+    },
+    {
+      "roller": [
+        {
+          "ansvarsandel": "50%",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1972-11-24",
+            "navn": {
+              "etternavn": "Andengaard",
+              "fornavn": "Stig Arild"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        },
+        {
+          "ansvarsandel": "50%",
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1969-03-01",
+            "navn": {
+              "etternavn": "Holmberg",
+              "fornavn": "Børre"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        }
+      ],
+      "sistEndret": "2004-10-19",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

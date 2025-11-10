@@ -1,0 +1,69 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922952140"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922952140/roller"
+    }
+  },
+  "organisasjonsnummer": "922952140",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1987-02-17",
+            "navn": {
+              "etternavn": "Johansen",
+              "fornavn": "Joachim"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+              }
+            },
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1959-06-15",
+            "navn": {
+              "etternavn": "Nyhus",
+              "fornavn": "Marianne"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
+          }
+        }
+      ],
+      "sistEndret": "2022-05-20",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+          }
+        },
+        "beskrivelse": "Styre",
+        "kode": "STYR"
+      }
+    }
+  ]
+}

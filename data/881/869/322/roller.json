@@ -1,0 +1,96 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/881869322"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/881869322/roller"
+    }
+  },
+  "organisasjonsnummer": "881869322",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1968-04-09",
+            "navn": {
+              "etternavn": "Olsen",
+              "fornavn": "Dag Oscar"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REPR"
+              }
+            },
+            "beskrivelse": "Norsk repr. for utenl. enhet",
+            "kode": "REPR"
+          }
+        }
+      ],
+      "sistEndret": "2018-10-22",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REPR"
+          }
+        },
+        "beskrivelse": "Norsk repr. for utenl. enhet",
+        "kode": "REPR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/975624412"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "MEMORY DATA AB"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+                }
+              },
+              "beskrivelse": "Utenlandsk enhet",
+              "kode": "UTLA"
+            },
+            "organisasjonsnummer": "975624412"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/HFOR"
+              }
+            },
+            "beskrivelse": "Oppl om foretaket i hjemlandet",
+            "kode": "HFOR"
+          }
+        }
+      ],
+      "sistEndret": "2000-04-06",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/HFOR"
+          }
+        },
+        "beskrivelse": "Hovedforetak",
+        "kode": "HFOR"
+      }
+    }
+  ]
+}

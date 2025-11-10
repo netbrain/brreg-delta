@@ -1,0 +1,97 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999098118"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999098118/roller"
+    }
+  },
+  "organisasjonsnummer": "999098118",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1979-12-21",
+            "navn": {
+              "etternavn": "Wäseby",
+              "fornavn": "Svante Thomas"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2012-11-17",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999098150"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "CITEC ENGINEERING INDIA",
+              "PRIVATE LIMITED"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+                }
+              },
+              "beskrivelse": "Utenlandsk enhet",
+              "kode": "UTLA"
+            },
+            "organisasjonsnummer": "999098150"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/HFOR"
+              }
+            },
+            "beskrivelse": "Oppl om foretaket i hjemlandet",
+            "kode": "HFOR"
+          }
+        }
+      ],
+      "sistEndret": "2012-11-17",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/HFOR"
+          }
+        },
+        "beskrivelse": "Hovedforetak",
+        "kode": "HFOR"
+      }
+    }
+  ]
+}

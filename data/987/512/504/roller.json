@@ -1,0 +1,96 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987512504"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987512504/roller"
+    }
+  },
+  "organisasjonsnummer": "987512504",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": true,
+            "fodselsdato": "1940-05-24",
+            "navn": {
+              "etternavn": "Alvestad",
+              "fornavn": "Leonhard Andreas"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REPR"
+              }
+            },
+            "beskrivelse": "Norsk repr. for utenl. enhet",
+            "kode": "REPR"
+          }
+        }
+      ],
+      "sistEndret": "2007-10-31",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REPR"
+          }
+        },
+        "beskrivelse": "Norsk repr. for utenl. enhet",
+        "kode": "REPR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987512512"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ESTRADE CONSULTING MTÜ"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+                }
+              },
+              "beskrivelse": "Utenlandsk enhet",
+              "kode": "UTLA"
+            },
+            "organisasjonsnummer": "987512512"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/HFOR"
+              }
+            },
+            "beskrivelse": "Oppl om foretaket i hjemlandet",
+            "kode": "HFOR"
+          }
+        }
+      ],
+      "sistEndret": "2004-12-21",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/HFOR"
+          }
+        },
+        "beskrivelse": "Hovedforetak",
+        "kode": "HFOR"
+      }
+    }
+  ]
+}

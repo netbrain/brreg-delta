@@ -1,0 +1,99 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/816492432"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/816492432/roller"
+    }
+  },
+  "organisasjonsnummer": "816492432",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1969-07-01",
+            "navn": {
+              "etternavn": "Johnsen",
+              "fornavn": "Bjørn Gunnar"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+              }
+            },
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1975-08-02",
+            "navn": {
+              "etternavn": "Anttila",
+              "fornavn": "Ari Heikki Juhani"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
+        }
+      ],
+      "sistEndret": "2025-10-27",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+          }
+        },
+        "beskrivelse": "Styre",
+        "kode": "STYR"
+      }
+    },
+    {
+      "roller": [],
+      "sistEndret": "2021-06-02",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+          }
+        },
+        "beskrivelse": "Signatur",
+        "kode": "SIGN"
+      }
+    },
+    {
+      "roller": [],
+      "sistEndret": "2021-08-25",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
+          }
+        },
+        "beskrivelse": "Prokura",
+        "kode": "PROK"
+      }
+    }
+  ]
+}

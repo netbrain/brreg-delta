@@ -1,0 +1,121 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935055229"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935055229/roller"
+    }
+  },
+  "organisasjonsnummer": "935055229",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1968-05-04",
+            "navn": {
+              "etternavn": "Kanstad",
+              "fornavn": "Kristin",
+              "mellomnavn": "Bothner"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2025-02-18",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "ansvarsandel": "50 %",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1970-05-09",
+            "navn": {
+              "etternavn": "Kanstad",
+              "fornavn": "Gørild",
+              "mellomnavn": "Bothner"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        },
+        {
+          "ansvarsandel": "50 %",
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930668435"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "VÆREKRAFT AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "930668435"
+          },
+          "fratraadt": false,
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        }
+      ],
+      "sistEndret": "2025-02-18",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

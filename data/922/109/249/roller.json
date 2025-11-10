@@ -1,0 +1,97 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922109249"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922109249/roller"
+    }
+  },
+  "organisasjonsnummer": "922109249",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1984-02-02",
+            "navn": {
+              "etternavn": "Raknerud",
+              "fornavn": "Kjetil",
+              "mellomnavn": "Vinnes"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2019-02-02",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987696923"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ALFA LAVAL CORPORATE AB"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+                }
+              },
+              "beskrivelse": "Utenlandsk enhet",
+              "kode": "UTLA"
+            },
+            "organisasjonsnummer": "987696923"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/HFOR"
+              }
+            },
+            "beskrivelse": "Oppl om foretaket i hjemlandet",
+            "kode": "HFOR"
+          }
+        }
+      ],
+      "sistEndret": "2019-02-02",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/HFOR"
+          }
+        },
+        "beskrivelse": "Hovedforetak",
+        "kode": "HFOR"
+      }
+    }
+  ]
+}

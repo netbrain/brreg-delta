@@ -1,0 +1,107 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986737030"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986737030/roller"
+    }
+  },
+  "organisasjonsnummer": "986737030",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": true,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1963-08-25",
+            "navn": {
+              "etternavn": "Edvardsen",
+              "fornavn": "Robert",
+              "mellomnavn": "Tanum"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2024-01-30",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "ansvarsandel": "1/2",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1965-08-30",
+            "navn": {
+              "etternavn": "Olsen",
+              "fornavn": "Henning Fartein"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        },
+        {
+          "ansvarsandel": "1/2",
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1961-04-25",
+            "navn": {
+              "etternavn": "Lindahl",
+              "fornavn": "Tom"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DTPR"
+              }
+            },
+            "beskrivelse": "Deltaker med delt ansvar",
+            "kode": "DTPR"
+          }
+        }
+      ],
+      "sistEndret": "2005-09-08",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DELT"
+          }
+        },
+        "beskrivelse": "Deltakere",
+        "kode": "DELT"
+      }
+    }
+  ]
+}

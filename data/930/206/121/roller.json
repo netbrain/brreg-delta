@@ -1,0 +1,96 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930206121"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930206121/roller"
+    }
+  },
+  "organisasjonsnummer": "930206121",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1958-01-05",
+            "navn": {
+              "etternavn": "Eriksen",
+              "fornavn": "Per Christian"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/BOBE"
+              }
+            },
+            "beskrivelse": "Bostyrer",
+            "kode": "BOBE"
+          }
+        }
+      ],
+      "sistEndret": "2022-11-10",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/BOBE"
+          }
+        },
+        "beskrivelse": "Bostyrer",
+        "kode": "BOBE"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923081135"
+              }
+            },
+            "erSlettet": true,
+            "navn": [
+              "DB RETAIL AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "923081135"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KDEB"
+              }
+            },
+            "beskrivelse": "Konkursdebitor",
+            "kode": "KDEB"
+          }
+        }
+      ],
+      "sistEndret": "2022-11-10",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KDEB"
+          }
+        },
+        "beskrivelse": "Konkursdebitor",
+        "kode": "KDEB"
+      }
+    }
+  ]
+}

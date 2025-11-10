@@ -1,0 +1,97 @@
+{
+  "_links": {
+    "enhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999234534"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999234534/roller"
+    }
+  },
+  "organisasjonsnummer": "999234534",
+  "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1977-08-28",
+            "navn": {
+              "etternavn": "Nguyen",
+              "fornavn": "Hoa",
+              "mellomnavn": "Van"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/INNH"
+              }
+            },
+            "beskrivelse": "Innehaver",
+            "kode": "INNH"
+          }
+        }
+      ],
+      "sistEndret": "2012-12-06",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/INNH"
+          }
+        },
+        "beskrivelse": "Innehaver",
+        "kode": "INNH"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992342463"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "T \u0026 M REGNSKAPSKONTOR Tony Nguyen"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/ENK"
+                }
+              },
+              "beskrivelse": "Enkeltpersonforetak",
+              "kode": "ENK"
+            },
+            "organisasjonsnummer": "992342463"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2012-12-06",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
+      }
+    }
+  ]
+}
