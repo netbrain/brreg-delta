@@ -1,13 +1,14 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"os"
 	"path/filepath"
 	"testing"
 )
 
-func TestSaveIfChanged(t *testing.T) {
+func TestSaveEnhet(t *testing.T) {
 	tmpDir, err := os.MkdirTemp("", "storage-test-")
 	if err != nil {
 		t.Fatalf("Failed to create temp dir: %v", err)
@@ -15,50 +16,41 @@ func TestSaveIfChanged(t *testing.T) {
 	defer os.RemoveAll(tmpDir)
 
 	storage := NewStorage(tmpDir)
+	orgnum := "123456789"
 
-	data1 := json.RawMessage(`{"name": "Test Company", "value": 123}`)
-	data2 := json.RawMessage(`{"name": "Test Company", "value": 456}`)
-	data3 := json.RawMessage(`{"name": "Test Company", "value": 123}`) // Same as data1
+	enhetData := json.RawMessage(`{"organisasjonsnummer": "123456789", "navn": "Test AS"}`)
+	rollerData := json.RawMessage(`{"roller": [{"type": "DAGL", "navn": "John Doe"}]}`)
 
-	// First save - should return true (new file)
-	changed, err := storage.SaveIfChanged("123456789", "test.json", data1)
-	if err != nil {
-		t.Fatalf("First save failed: %v", err)
-	}
-	if !changed {
-		t.Error("First save should indicate change")
+	// Save enhet
+	if err := storage.SaveEnhet(orgnum, enhetData); err != nil {
+		t.Fatalf("SaveEnhet failed: %v", err)
 	}
 
-	// Save same data - should return false (no change)
-	changed, err = storage.SaveIfChanged("123456789", "test.json", data3)
-	if err != nil {
-		t.Fatalf("Second save failed: %v", err)
-	}
-	if changed {
-		t.Error("Saving identical data should not indicate change")
+	// Save roller
+	if err := storage.SaveEnhetRoller(orgnum, rollerData); err != nil {
+		t.Fatalf("SaveEnhetRoller failed: %v", err)
 	}
 
-	// Save different data - should return true (changed)
-	changed, err = storage.SaveIfChanged("123456789", "test.json", data2)
-	if err != nil {
-		t.Fatalf("Third save failed: %v", err)
-	}
-	if !changed {
-		t.Error("Saving different data should indicate change")
+	// Verify directory structure with triple-digit sharding (123/456/789)
+	enhetPath := filepath.Join(tmpDir, "123", "456", "789", "enhet.json")
+	rollerPath := filepath.Join(tmpDir, "123", "456", "789", "roller.json")
+
+	if _, err := os.Stat(enhetPath); os.IsNotExist(err) {
+		t.Error("enhet.json should exist")
 	}
 
-	// Verify final content
-	savedData, err := os.ReadFile(filepath.Join(tmpDir, "123456789", "test.json"))
-	if err != nil {
-		t.Fatalf("Failed to read saved file: %v", err)
+	if _, err := os.Stat(rollerPath); os.IsNotExist(err) {
+		t.Error("roller.json should exist")
 	}
 
-	if string(savedData) != string(data2) {
-		t.Error("Saved data does not match expected data")
+	// Verify prettification
+	savedData, _ := os.ReadFile(enhetPath)
+	if !bytes.Contains(savedData, []byte("\n")) {
+		t.Error("Saved data should be prettified with newlines")
 	}
 }
 
-func TestSaveCompanyAndRoles(t *testing.T) {
+func TestSaveUnderenhet(t *testing.T) {
 	tmpDir, err := os.MkdirTemp("", "storage-test-")
 	if err != nil {
 		t.Fatalf("Failed to create temp dir: %v", err)
@@ -66,63 +58,36 @@ func TestSaveCompanyAndRoles(t *testing.T) {
 	defer os.RemoveAll(tmpDir)
 
 	storage := NewStorage(tmpDir)
-	orgnum := "987654321"
+	parentOrgnum := "123456789"
+	underenhetOrgnum := "987654321"
 
-	companyData := json.RawMessage(`{"organisasjonsnummer": "987654321", "navn": "Test AS"}`)
-	rolesData := json.RawMessage(`{"roller": [{"type": "DAGL", "navn": "John Doe"}]}`)
+	underenhetData := json.RawMessage(`{"organisasjonsnummer": "987654321", "overordnetEnhet": "123456789", "navn": "Test Underenhet"}`)
+	rollerData := json.RawMessage(`{"roller": [{"type": "LEDE", "navn": "Jane Doe"}]}`)
 
-	// Save company
-	changed, err := storage.SaveCompany(orgnum, companyData)
-	if err != nil {
-		t.Fatalf("SaveCompany failed: %v", err)
-	}
-	if !changed {
-		t.Error("SaveCompany should indicate change for new file")
+	// Save underenhet
+	if err := storage.SaveUnderenhet(parentOrgnum, underenhetOrgnum, underenhetData); err != nil {
+		t.Fatalf("SaveUnderenhet failed: %v", err)
 	}
 
-	// Save roles
-	changed, err = storage.SaveRoles(orgnum, rolesData)
-	if err != nil {
-		t.Fatalf("SaveRoles failed: %v", err)
-	}
-	if !changed {
-		t.Error("SaveRoles should indicate change for new file")
+	// Save roller for underenhet
+	if err := storage.SaveUnderenhetRoller(parentOrgnum, underenhetOrgnum, rollerData); err != nil {
+		t.Fatalf("SaveUnderenhetRoller failed: %v", err)
 	}
 
-	// Verify directory structure
-	companyPath := filepath.Join(tmpDir, orgnum, "company.json")
-	rolesPath := filepath.Join(tmpDir, orgnum, "roles.json")
+	// Verify underenhet is stored at its own canonical path with triple-digit sharding (987/654/321)
+	underenhetPath := filepath.Join(tmpDir, "987", "654", "321", "underenhet.json")
+	rollerPath := filepath.Join(tmpDir, "987", "654", "321", "roller.json")
 
-	if _, err := os.Stat(companyPath); os.IsNotExist(err) {
-		t.Error("company.json should exist")
+	if _, err := os.Stat(underenhetPath); os.IsNotExist(err) {
+		t.Error("underenhet.json should exist in nested path")
 	}
 
-	if _, err := os.Stat(rolesPath); os.IsNotExist(err) {
-		t.Error("roles.json should exist")
+	if _, err := os.Stat(rollerPath); os.IsNotExist(err) {
+		t.Error("roller.json should exist for underenhet")
 	}
 }
 
-func TestHashConsistency(t *testing.T) {
-	// Test that the same data produces the same hash
-	data := json.RawMessage(`{"test": "data"}`)
-
-	hash1 := hashData(data)
-	hash2 := hashData(data)
-
-	if hash1 != hash2 {
-		t.Error("Same data should produce same hash")
-	}
-
-	// Different data should produce different hash
-	differentData := json.RawMessage(`{"test": "different"}`)
-	hash3 := hashData(differentData)
-
-	if hash1 == hash3 {
-		t.Error("Different data should produce different hash")
-	}
-}
-
-func TestWhitespaceChanges(t *testing.T) {
+func TestCreateSymlink(t *testing.T) {
 	tmpDir, err := os.MkdirTemp("", "storage-test-")
 	if err != nil {
 		t.Fatalf("Failed to create temp dir: %v", err)
@@ -130,22 +95,69 @@ func TestWhitespaceChanges(t *testing.T) {
 	defer os.RemoveAll(tmpDir)
 
 	storage := NewStorage(tmpDir)
+	parentOrgnum := "123456789"
+	underenhetOrgnum := "987654321"
 
-	// Same data with different whitespace
-	data1 := json.RawMessage(`{"name":"Test","value":123}`)
-	data2 := json.RawMessage(`{
-		"name": "Test",
-		"value": 123
-	}`)
+	// First create the underenhet directory
+	underenhetData := json.RawMessage(`{"organisasjonsnummer": "987654321"}`)
+	if err := storage.SaveUnderenhet(parentOrgnum, underenhetOrgnum, underenhetData); err != nil {
+		t.Fatalf("SaveUnderenhet failed: %v", err)
+	}
 
-	// First save
-	storage.SaveIfChanged("123", "test.json", data1)
+	// Create symlink
+	if err := storage.CreateSymlink(underenhetOrgnum, parentOrgnum); err != nil {
+		t.Fatalf("CreateSymlink failed: %v", err)
+	}
 
-	// Second save with different whitespace - should detect as change
-	// because we compare raw bytes, not semantic JSON
-	changed, _ := storage.SaveIfChanged("123", "test.json", data2)
+	// Verify symlink exists at parent/underenhet/underenhetOrgnum
+	symlinkPath := filepath.Join(tmpDir, "123", "456", "789", "underenhet", underenhetOrgnum)
+	info, err := os.Lstat(symlinkPath)
+	if err != nil {
+		t.Fatalf("Symlink should exist: %v", err)
+	}
 
-	if !changed {
-		t.Error("Different whitespace should be detected as change (byte-level comparison)")
+	if info.Mode()&os.ModeSymlink == 0 {
+		t.Error("Should be a symlink")
+	}
+
+	// Verify symlink points to correct target (relative path)
+	target, err := os.Readlink(symlinkPath)
+	if err != nil {
+		t.Fatalf("Failed to read symlink: %v", err)
+	}
+
+	// Expected: ../../../../987/654/321 (4 levels up from 123/456/789/underenhet/)
+	expectedTarget := filepath.Join("../../../../", "987", "654", "321")
+	if target != expectedTarget {
+		t.Errorf("Symlink target mismatch: got %s, want %s", target, expectedTarget)
+	}
+}
+
+func TestBackwardsCompatibility(t *testing.T) {
+	tmpDir, err := os.MkdirTemp("", "storage-test-")
+	if err != nil {
+		t.Fatalf("Failed to create temp dir: %v", err)
+	}
+	defer os.RemoveAll(tmpDir)
+
+	storage := NewStorage(tmpDir)
+	orgnum := "123456789"
+
+	companyData := json.RawMessage(`{"organisasjonsnummer": "123456789"}`)
+	rolesData := json.RawMessage(`{"roller": []}`)
+
+	// Old method names should still work
+	if err := storage.SaveCompany(orgnum, companyData); err != nil {
+		t.Fatalf("SaveCompany (backwards compat) failed: %v", err)
+	}
+
+	if err := storage.SaveRoles(orgnum, rolesData); err != nil {
+		t.Fatalf("SaveRoles (backwards compat) failed: %v", err)
+	}
+
+	// But should create files with new naming and triple-digit sharding
+	enhetPath := filepath.Join(tmpDir, "123", "456", "789", "enhet.json")
+	if _, err := os.Stat(enhetPath); os.IsNotExist(err) {
+		t.Error("Backwards compat should create enhet.json with triple-digit sharding")
 	}
 }

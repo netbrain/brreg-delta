@@ -5,107 +5,68 @@ Historical tracking system for Norwegian company data from [Brønnøysundregistr
 ## Overview
 
 Brreg.no only provides snapshot data. This project tracks changes over time by:
-- Fetching company data and roles from Brreg.no API
-- Storing data as JSON files in git
-- Using hash-based change detection to track only what changed
-- Running distributed scraping via GitHub Actions (256 parallel jobs)
+- Fetching enheter (companies) and underenheter (sub-units) from Brreg.no API
+- Storing data as prettified JSON files in git
+- Using rolling updates to track only what changed
+- Running efficient incremental sync via GitHub Actions
 
 ## Architecture
 
 ### Data Collection
 - **Source**: Brreg.no Enhetsregisteret API
-- **Data**: Company details + roles/representatives for ~1.1M Norwegian companies
-- **Storage**: `data/{orgnum}/company.json` and `data/{orgnum}/roles.json`
-- **Change Detection**: SHA256 hash comparison - only saves when data changes
+- **Data**: Enheter + underenheter + roles for ~1.1M Norwegian entities
+- **Storage**: Triple-digit sharding (e.g., `810/034/882/`)
+  - `data/{xxx}/{yyy}/{zzz}/enhet.json` - Entity details
+  - `data/{xxx}/{yyy}/{zzz}/roller.json` - Roles and representatives
+  - `data/{xxx}/{yyy}/{zzz}/underenhet.json` - Sub-unit details (if underenhet)
+  - Symlinks in parent's `underenhet/` directory for navigation
+- **Change Detection**: Git-native (no manual hashing)
+- **State Management**: `.sync-state.json` tracks last oppdateringsid for both enheter and underenheter
+
+### Sync Strategy
+
+**Initial Sync** (first run):
+- Downloads `/api/enheter/lastned` (gzipped JSON)
+- Downloads `/api/underenheter/lastned` (gzipped JSON)
+- Downloads `/api/roller/totalbestand` (gzipped JSON)
+- Extracts all to individual files with triple-digit sharding
+- Creates symlinks for underenheter navigation
+- Fetches latest oppdateringsid from API and saves to state
+
+**Incremental Sync** (daily):
+- Fetches `/api/oppdateringer/enheter?oppdateringsid={last}&size=1000`
+- Fetches `/api/oppdateringer/underenheter?oppdateringsid={last}&size=1000`
+- For each changed entity, fetches current data + roles
+- Updates state file with new oppdateringsid values
 
 ### GitHub Actions Workflow
-- **Preprocessing**: Downloads & extracts all companies to individual files
-- **No Artifacts**: Company data stored in git (avoids 256 artifact downloads)
-- **Matrix Strategy**: 256 parallel jobs
-- **Distribution**: Each job processes ~4,470 companies (1.1M / 256)
-- **Workers**: 1 worker per job (256 total concurrent requests)
-- **Execution Time**: ~75 minutes total
-- **Schedule**: Daily at 2 AM UTC (configurable)
-
-### Workflow Steps
-1. **Preprocessing job**:
-   - Downloads company list from Brreg.no (~200MB gzipped)
-   - Extracts each company to `data/{orgnum}/company.json`
-   - Counts extracted companies
-   - Commits company data to git
-2. **256 matrix jobs** run in parallel:
-   - Each pulls latest company data from git
-   - Processes batch of companies (fetches roles only)
-   - Commits role updates to individual branches (`sync-batch-{N}`)
-3. **Merge job**:
-   - Combines all 256 branches
-   - Creates single PR with all changes
-   - Auto-squash and merge
+- **Single Job**: No matrix complexity
+- **Auto-detection**: Initial vs incremental based on state file
+- **Smart Downloads**: Only downloads bulk files on first run
+- **Sparse Checkout**: Fetches only .sync-state.json from data branch
+- **Schedule**: Daily at 5:30 AM UTC
+- **Data Branch**: Commits to separate `data` branch for clean history
 
 ## Usage
 
-### Local Testing
-
-Test the workflow locally before pushing to GitHub:
-
-```bash
-# Run full test (downloads, extracts, processes batch 0)
-./test-local.sh
-```
-
-This mimics the GitHub Actions workflow but processes only 1 batch with 5 workers for testing.
-
-### Run Manually
+### Run Sync
 
 ```bash
 # Build
 go build
 
-# Initial setup: Download and extract companies
-curl -L -o companies.json.gz https://data.brreg.no/enhetsregisteret/api/enheter/lastned
-./brreg-delta extract --list companies.json.gz --data data
-
-# Count extracted companies
-./brreg-delta count --data data
-
-# Or count with shell (faster)
-find data -type d -maxdepth 1 | tail -n +2 | wc -l
-
-# Process batch (fetch roles for companies)
-./brreg-delta -batch 0 -total 256 -workers 1 -data data
-
-# Or use the test script
-./test-local.sh
+# Run sync (auto-detects initial vs incremental)
+./brreg-delta -data data
 ```
 
-### Commands
-
-**extract** - Extract companies from bulk download:
-```bash
-./brreg-delta extract --list companies.json.gz --data data
-```
-
-**count** - Count extracted companies:
-```bash
-./brreg-delta count --data data
-```
-
-**Main** - Fetch roles for batch:
-```bash
-./brreg-delta -batch 0 -total 256 -workers 1 -data data
-```
+**First run**: Downloads bulk files and extracts all entities
+**Subsequent runs**: Fetches only updates since last sync
 
 ### Command Line Options
 
-| Command | Flag | Default | Description |
-|---------|------|---------|-------------|
-| extract | `--list` | (required) | Path to company list file (gzipped or plain JSON) |
-| extract | `--data` | data | Output directory |
-| count | `--data` | data | Data directory to count |
-| main | `-batch` | 0 | Batch number (0-255) |
-| main | `-total` | 256 | Total number of batches |
-| main | `-workers` | 1 | Parallel workers per batch (increase if API allows) |
-| main | `-data` | data | Data directory |
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-data` | data | Data directory |
 
 ### GitHub Actions
 
@@ -116,53 +77,77 @@ The workflow runs automatically on schedule, or can be triggered manually:
 gh workflow run sync.yml
 ```
 
-**First run**: Preprocessing extracts all companies to git
-**Subsequent runs**: Only fetches roles for existing companies
+**First run**: Downloads bulk files and performs initial sync
+**Subsequent runs**: Incremental updates only
 
 ## Data Structure
 
+Using triple-digit sharding for optimal Git performance:
+
 ```
 data/
-├── 123456789/
-│   ├── company.json    # Company details
-│   └── roles.json      # Roles and representatives
-├── 987654321/
-│   ├── company.json
-│   └── roles.json
-...
+├── .sync-state.json                     # Sync state tracking
+├── 810/                                 # First 3 digits
+│   └── 034/                             # Next 3 digits
+│       └── 882/                         # Last 3 digits (orgnum: 810034882)
+│           ├── enhet.json               # Entity details
+│           ├── roller.json              # Roles and representatives
+│           └── underenhet/              # Sub-units directory
+│               └── 914930553 -> ../../../../914/930/553  # Symlink to underenhet
+├── 914/
+│   └── 930/
+│       └── 553/                         # Underenhet (orgnum: 914930553)
+│           ├── underenhet.json          # Sub-unit details
+│           └── roller.json              # Sub-unit roles
+└── README.md                            # Data branch documentation
 ```
+
+**Sharding Benefits**:
+- Optimal Git tree performance (hundreds of entries per directory, not thousands)
+- Fast filesystem operations
+- Efficient git operations with smaller tree objects
 
 ## Performance
 
-**Preprocessing (one-time extraction)**:
-- Download: ~30 seconds (~200MB gzipped)
-- Extract: ~1 minute (1.1M companies to individual files)
-- Data size: ~6-8 GB (estimated)
+**Initial Sync** (first run):
+- Downloads 3 bulk files (enheter, underenheter, roller)
+- Extracts all entities to individual files with triple-digit sharding
+- Fetches latest oppdateringsid values
 
-**Regular Runs (roles sync)**:
-- API calls: ~1.1M (one per company for roles endpoint)
-- With 256 jobs × 1 worker: ~75 minutes (~256 req/sec)
-- Conservative rate (can increase workers if API allows)
-- Only roles change detection
-- Minimal storage growth
+**Incremental Sync** (subsequent runs):
+- Fetches only changed entities since last sync
+- Updates only modified files
+- Storage growth: Minimal (only changed files)
 
 ## API Endpoints Used
 
-- `GET /api/enheter/lastned` - Bulk company list download (preprocessing)
-- `GET /api/enheter/{orgnum}/roller` - Company roles (daily sync)
+**Initial Sync:**
+- `GET /api/enheter/lastned` - Bulk enheter download
+- `GET /api/underenheter/lastned` - Bulk underenheter download
+- `GET /api/roller/totalbestand` - Bulk roller download
+- `GET /api/oppdateringer/enheter?oppdateringsid={high}&size=1000` - Find latest oppdateringsid
+- `GET /api/oppdateringer/underenheter?oppdateringsid={high}&size=1000` - Find latest oppdateringsid
+
+**Incremental Sync:**
+- `GET /api/oppdateringer/enheter?oppdateringsid={id}&size=1000` - Enheter updates (paginated)
+- `GET /api/oppdateringer/underenheter?oppdateringsid={id}&size=1000` - Underenheter updates (paginated)
+- `GET /api/enheter/{orgnum}` - Single enhet details
+- `GET /api/underenheter/{orgnum}` - Single underenhet details
+- `GET /api/enheter/{orgnum}/roller` - Enhet roles
+- `GET /api/underenheter/{orgnum}/roller` - Underenhet roles
 
 ## Requirements
 
 - Go 1.23+
 - GitHub repository with Actions enabled
-- Storage space for company data
+- Storage space for entity data
 
 ## Configuration
 
 Edit `.github/workflows/sync.yml` to adjust:
-- Schedule: Change `cron` expression
-- Workers: Modify `-workers` flag
-- Batches: Adjust matrix size (current: 256)
+- Schedule: Change `cron` expression (default: daily at 5:30 AM UTC)
+- Data directory: Modify `-data` flag (default: `data-worktree/data`)
+- Timeout: Adjust job timeout (default: 30 minutes)
 
 ## Development
 
