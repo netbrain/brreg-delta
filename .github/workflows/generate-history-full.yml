@@ -11,42 +11,14 @@ permissions:
   contents: write
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    outputs:
-      shards: ${{ steps.generate-shards.outputs.shards }}
-    steps:
-      - name: Generate shard list
-        id: generate-shards
-        run: |
-          # Organization numbers start with 8 or 9, so we only need shards 800-999
-          shards=$(seq 800 999 | jq -R . | jq -s -c .)
-          echo "shards=$shards" >> $GITHUB_OUTPUT
-
-      - name: Create or reset temp branch
-        run: |
-          git clone --depth 1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git repo
-          cd repo
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Create orphan branch for temp storage
-          git checkout --orphan gh-pages-temp
-          git rm -rf . || true
-          echo "# Temporary branch for full rebuild" > README.md
-          git add README.md
-          git commit -m "Initialize temp branch"
-          git push -f origin gh-pages-temp
-
   generate-shard:
-    needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 60
     strategy:
       max-parallel: 200
-      fail-fast: false
+      fail-fast: true
       matrix:
-        shard: ${{ fromJson(needs.prepare.outputs.shards) }}
+        shard: [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999]
 
     steps:
       # - name: Free disk space
@@ -75,11 +47,14 @@ jobs:
           git sparse-checkout set data/${{ matrix.shard }}
           git checkout
 
-      - name: Checkout gh-pages-temp branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages-temp
-          path: gh-pages-temp
+      - name: Create shard branch
+        run: |
+          mkdir gh-pages-temp
+          cd gh-pages-temp
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -102,7 +77,7 @@ jobs:
           echo "Processing shard ${{ matrix.shard }}"
           ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
 
-      - name: Commit and push shard
+      - name: Commit and push shard to dedicated branch
         run: |
           cd gh-pages-temp
 
@@ -110,31 +85,13 @@ jobs:
           if [ -d ../output/${{ matrix.shard }} ]; then
             cp -r ../output/${{ matrix.shard }} .
 
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-
             git add ${{ matrix.shard }}
 
-            if ! git diff --staged --quiet; then
+            if ! git diff --cached --quiet; then
               git commit -m "Add shard ${{ matrix.shard }}"
-
-              # Push with rebase to handle concurrent updates
-              max_retries=10
-              retry=0
-              while [ $retry -lt $max_retries ]; do
-                if git pull --rebase origin gh-pages-temp && git push origin gh-pages-temp; then
-                  echo "Successfully pushed shard ${{ matrix.shard }}"
-                  break
-                fi
-                retry=$((retry + 1))
-                echo "Push failed, retry $retry/$max_retries"
-                sleep $((RANDOM % 10 + 5))
-              done
-
-              if [ $retry -eq $max_retries ]; then
-                echo "Failed to push after $max_retries retries"
-                exit 1
-              fi
+              # Push to dedicated branch for this shard
+              git push -f origin HEAD:gh-pages-shard-${{ matrix.shard }}
+              echo "Successfully pushed shard ${{ matrix.shard }} to gh-pages-shard-${{ matrix.shard }}"
             else
               echo "No changes for shard ${{ matrix.shard }}"
             fi
@@ -152,11 +109,29 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Checkout gh-pages-temp
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages-temp
-          path: gh-pages-temp
+      - name: Merge all shard branches
+        run: |
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages-combined
+          cd gh-pages-combined
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create orphan branch for combined output
+          git checkout --orphan gh-pages-combined
+          git rm -rf . || true
+
+          # Merge all shard branches sequentially
+          for shard in {800..999}; do
+            echo "Merging shard $shard..."
+            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
+              git checkout gh-pages-shard-$shard -- $shard 2>/dev/null || echo "Shard $shard has no content"
+            else
+              echo "Shard $shard branch does not exist, skipping"
+            fi
+          done
+
+          # Stage all merged content
+          git add .
 
       - name: Install Hugo
         run: |
@@ -166,19 +141,23 @@ jobs:
       - name: Build navigation site
         run: |
           cd brreg-delta/ssr/navigation-site
-          hugo --minify --destination ../../../gh-pages-temp/
+          hugo --minify --destination ../../../gh-pages-combined/
 
-      - name: Push temp branch to gh-pages
+      - name: Push combined branch to gh-pages
         run: |
-          cd gh-pages-temp
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cd gh-pages-combined
 
-          # Force push temp branch to gh-pages
-          git push -f origin gh-pages-temp:gh-pages
+          git add .
+          git commit -m "Full rebuild of all entity histories $(date +%Y-%m-%d)" || echo "No changes"
+          # Force push combined branch to gh-pages
+          git push -f origin gh-pages-combined:gh-pages
           echo "Full rebuild completed and pushed to gh-pages"
 
-      - name: Cleanup temp branch
+      - name: Cleanup shard branches
         run: |
-          cd gh-pages-temp
-          git push origin --delete gh-pages-temp || echo "Temp branch already deleted"
+          cd gh-pages-combined
+          for shard in {800..999}; do
+            git push origin --delete gh-pages-shard-$shard 2>/dev/null || true
+          done
+          git push origin --delete gh-pages-combined 2>/dev/null || true
+          echo "Cleanup completed"
