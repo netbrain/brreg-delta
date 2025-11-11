@@ -103,19 +103,31 @@ Creates timeline markdown with:
 
 ### HTML Generation
 
-For each entity:
-1. Create temporary Hugo site
-2. Copy entity-template
-3. Write markdown to content/
-4. Run `hugo --minify`
-5. Extract and copy HTML to sharded output path
+**Incremental mode:**
+1. Generate markdown for all changed entities to temporary content directory
+2. Run Hugo once to build all pages
+3. Copy generated HTML to output directory
+
+**Full rebuild mode:**
+1. Process shards in parallel (up to `--workers` limit)
+2. For each shard: run `git log -- data/XXX/`, build cache, generate markdown
+3. After all shards complete, run Hugo once to build all pages
+4. Copy generated HTML to output directory
 
 ### Parallel Processing
 
-Worker pool processes entities concurrently:
+**Incremental mode:**
+- Uses per-entity `GetEntityHistory()` for targeted git operations
+- Worker pool processes entities in parallel (up to `--workers` limit)
+- Fast for daily updates with ~100-1000 changed entities
 - Progress reporting every 100 entities
-- Error collection and reporting
-- Final statistics (total, successful, failed)
+
+**Full rebuild mode:**
+- Processes up to `--workers` shards in parallel
+- Each shard processes ~200k entities sequentially
+- Constant memory usage (~1-2GB per shard × workers)
+- Total progress tracking across all 1000 shards
+- Memory-efficient for processing 2M+ entities
 
 ## Sharding
 
@@ -130,15 +142,19 @@ This keeps filesystem performance reasonable with 2M+ files.
 
 ## Performance Estimates
 
-With 10 workers on typical hardware:
-
+**Incremental mode** with 10 workers:
 - **Single entity:** ~1-2 seconds
 - **100 entities:** ~1-2 minutes
 - **1,000 entities:** ~10-20 minutes
-- **10,000 entities:** ~2-3 hours
-- **2M entities (full):** ~100-400 hours (4-17 days)
+- Typical daily updates: 100-1,000 entities
 
-Incremental mode typically processes 100-1,000 entities per day.
+**Full rebuild mode** with 10 workers:
+- Processes 10 shards in parallel
+- Each shard: ~200k entities max
+- Estimated: Multiple hours to days depending on hardware
+- Memory usage: 10-20GB (10 shards × 1-2GB cache each)
+
+**Note:** Full rebuilds are rare - typically only needed for initial setup or major changes. Daily operations use incremental mode.
 
 ## Output Structure
 
