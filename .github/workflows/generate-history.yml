@@ -50,7 +50,9 @@ jobs:
 
       - name: Install Hugo
         run: |
-          go install github.com/gohugoio/hugo@latest
+          for i in 1 2 3; do
+            go install github.com/gohugoio/hugo@latest && break || sleep 10
+          done
           hugo version
 
       - name: Build gen-history tool
