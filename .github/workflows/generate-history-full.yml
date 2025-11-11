@@ -68,14 +68,12 @@ jobs:
 
       - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
         run: |
-          git clone --filter=blob:none --no-checkout --depth 1 --sparse \
+          git clone --filter=blob:none --no-checkout --branch data --sparse \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
           cd brreg-data
           git sparse-checkout init --cone
           git sparse-checkout set data/${{ matrix.shard }}
-          git checkout data
-          # Need full history for git log
-          git fetch --unshallow
+          git checkout
 
       - name: Checkout gh-pages-temp branch
         uses: actions/checkout@v4
