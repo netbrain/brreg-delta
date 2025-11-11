@@ -69,8 +69,15 @@ jobs:
           echo "Incremental generation (only changed entities)"
           ../gen-history generate --incremental --output ../gh-pages --workers 4 --templates ../brreg-delta/ssr
 
-          # Save current commit as last processed
-          git rev-parse HEAD > ../gh-pages/.last-history-commit
+      - name: Save last processed commit to data branch
+        run: |
+          cd brreg-data
+          git rev-parse HEAD > .last-history-commit
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .last-history-commit
+          git commit -m "Update last history commit marker" || echo "No changes to commit marker"
+          git push
 
       - name: Commit and push to gh-pages
         run: |

@@ -165,9 +165,9 @@ func generateSingleEntity(dataDir, orgnum, templateDir, output string) error {
 func generateIncremental(dataDir, templateDir, output string, workers int) error {
 	log.Println("Generating histories for changed entities (incremental mode)")
 
-	// Get last commit from state file
+	// Get last commit from state file (stored in data directory, not output)
 	lastCommit := "HEAD~1" // Default fallback
-	stateFile := filepath.Join(output, ".last-history-commit")
+	stateFile := filepath.Join(dataDir, ".last-history-commit")
 	if data, err := os.ReadFile(stateFile); err == nil {
 		lastCommit = strings.TrimSpace(string(data))
 		log.Printf("Found previous state: %s", lastCommit)
