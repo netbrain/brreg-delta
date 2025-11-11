@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     {{ with .Params.organisasjonsnummer }}<meta name="orgnum" content="{{ . }}">{{ end }}
     {{ with .Params.navn }}<meta name="description" content="Historikk for {{ . }}">{{ end }}
-    <style>
-        article {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            min-height: 100%;
-        }
-        article footer {
-            margin-top: auto;
-        }
-    </style>
 </head>
 <body>
     <main class="container">
@@ -30,16 +19,14 @@
             </ul>
         </nav>
 
-        <article id="article">
-            {{ .Content }}
+        {{ .Content }}
 
-            <footer>
-                <small>
-                    Data fra <a href="https://data.brreg.no" target="_blank">Brønnøysundregistrene</a>
-                    {{ with .Params.lastModified }} • Sist oppdatert: {{ . }}{{ end }}
-                </small>
-            </footer>
-        </article>
+        <footer>
+            <small>
+                Data fra <a href="https://data.brreg.no" target="_blank">Brønnøysundregistrene</a>
+                {{ with .Params.lastModified }} • Sist oppdatert: {{ . }}{{ end }}
+            </small>
+        </footer>
     </main>
 </body>
 </html>

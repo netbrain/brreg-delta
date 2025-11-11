@@ -8,11 +8,6 @@ on:
     branches:
       - data
   workflow_dispatch:
-    inputs:
-      full-rebuild:
-        description: 'Rebuild all entities (not just changed)'
-        type: boolean
-        default: false
 
 concurrency:
   group: history-generation
@@ -63,29 +58,15 @@ jobs:
           cd ../../..
           ./gen-history  # Show usage
 
-      - name: Generate entity pages
+      - name: Generate entity pages and navigation site
         run: |
           cd brreg-data
 
-          # Check if this is the first run (no .last-history-commit state file)
-          if [ ! -f ../gh-pages/.last-history-commit ]; then
-            echo "First run detected - performing full rebuild of all entities"
-            ../gen-history all --output ../gh-pages --workers 20 --template ../brreg-delta/ssr/entity-template
-          elif [ "${{ inputs.full-rebuild }}" = "true" ]; then
-            echo "Full rebuild requested"
-            ../gen-history all --output ../gh-pages --workers 20 --template ../brreg-delta/ssr/entity-template
-          else
-            echo "Incremental generation (only changed entities)"
-            ../gen-history generate --incremental --output ../gh-pages --workers 10 --template ../brreg-delta/ssr/entity-template
-          fi
+          echo "Incremental generation (only changed entities)"
+          ../gen-history generate --incremental --output ../gh-pages --workers 4 --templates ../brreg-delta/ssr
 
           # Save current commit as last processed
           git rev-parse HEAD > ../gh-pages/.last-history-commit
-
-      - name: Build navigation site
-        run: |
-          cd brreg-delta/ssr/navigation-site
-          hugo --minify --destination ../../../gh-pages/
 
       - name: Commit and push to gh-pages
         run: |

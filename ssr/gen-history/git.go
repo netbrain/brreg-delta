@@ -126,8 +126,8 @@ func getFileAtCommit(dataDir, commitHash, filePath string) (json.RawMessage, err
 
 // GetCommitDiff retrieves the git diff for a specific commit and file
 func GetCommitDiff(dataDir, commitHash, filePath string) (string, error) {
-	// Get diff for this commit compared to its parent
-	cmd := exec.Command("git", "show", "--pretty=format:", "--patch", commitHash, "--", filePath)
+	// Get diff for this commit compared to its parent (no context lines - only show changes)
+	cmd := exec.Command("git", "show", "--pretty=format:", "--patch", "--unified=0", commitHash, "--", filePath)
 	cmd.Dir = dataDir
 
 	output, err := cmd.CombinedOutput()

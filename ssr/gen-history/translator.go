@@ -240,9 +240,13 @@ func translateRollegrupperChange(oldValue, newValue interface{}) string {
 	oldRoller := extractRoller(oldValue)
 	newRoller := extractRoller(newValue)
 
+	oldGrupper := extractRollegruppeTypes(oldValue)
+	newGrupper := extractRollegruppeTypes(newValue)
+
 	// Find added and removed people
 	var added []string
 	var removed []string
+	var removedGrupper []string
 
 	// Build map of old roller by name for easy lookup
 	oldMap := make(map[string]string) // name -> role
@@ -270,6 +274,20 @@ func translateRollegrupperChange(oldValue, newValue interface{}) string {
 		}
 	}
 
+	// Find removed rollegruppetyper (entire categories removed, like SIGN)
+	for _, oldType := range oldGrupper {
+		found := false
+		for _, newType := range newGrupper {
+			if oldType == newType {
+				found = true
+				break
+			}
+		}
+		if !found {
+			removedGrupper = append(removedGrupper, oldType)
+		}
+	}
+
 	var parts []string
 	if len(added) > 0 {
 		if len(added) == 1 {
@@ -284,6 +302,12 @@ func translateRollegrupperChange(oldValue, newValue interface{}) string {
 			parts = append(parts, fmt.Sprintf("Fjernet %s", removed[0]))
 		} else {
 			parts = append(parts, fmt.Sprintf("Fjernet %s", strings.Join(removed, ", ")))
+		}
+	}
+
+	if len(removedGrupper) > 0 {
+		for _, gruppe := range removedGrupper {
+			parts = append(parts, fmt.Sprintf("Fjernet rollegruppe: %s", gruppe))
 		}
 	}
 
@@ -367,6 +391,37 @@ func extractRoller(val interface{}) []rolle {
 
 		// Suppress unused variable warning
 		_ = gruppeType
+	}
+
+	return result
+}
+
+// extractRollegruppeTypes extracts rollegruppetyper from rollegrupper
+func extractRollegruppeTypes(val interface{}) []string {
+	var result []string
+
+	if val == nil {
+		return result
+	}
+
+	// val should be []interface{} (array of rollegrupper)
+	grupper, ok := val.([]interface{})
+	if !ok {
+		return result
+	}
+
+	for _, gruppe := range grupper {
+		gruppeMap, ok := gruppe.(map[string]interface{})
+		if !ok {
+			continue
+		}
+
+		// Get rolle type (Styre, Daglig ledelse, etc)
+		if typeObj, ok := gruppeMap["type"].(map[string]interface{}); ok {
+			if beskrivelse, ok := typeObj["beskrivelse"].(string); ok {
+				result = append(result, beskrivelse)
+			}
+		}
 	}
 
 	return result

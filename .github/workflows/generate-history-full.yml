@@ -1,0 +1,198 @@
+name: Generate All Entity History Pages (Full Rebuild)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: history-generation-full
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      shards: ${{ steps.generate-shards.outputs.shards }}
+    steps:
+      - name: Generate shard list
+        id: generate-shards
+        run: |
+          # Organization numbers start with 8 or 9, so we only need shards 800-999
+          shards=$(seq 800 999 | jq -R . | jq -s -c .)
+          echo "shards=$shards" >> $GITHUB_OUTPUT
+
+      - name: Create or reset temp branch
+        run: |
+          git clone --depth 1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git repo
+          cd repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create orphan branch for temp storage
+          git checkout --orphan gh-pages-temp
+          git rm -rf . || true
+          echo "# Temporary branch for full rebuild" > README.md
+          git add README.md
+          git commit -m "Initialize temp branch"
+          git push -f origin gh-pages-temp
+
+  generate-shard:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      max-parallel: 200
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJson(needs.prepare.outputs.shards) }}
+
+    steps:
+      - name: Free disk space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: true
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+
+      - name: Checkout brreg-delta (master)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: brreg-delta
+
+      - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
+        run: |
+          git clone --filter=blob:none --no-checkout --depth 1 --sparse \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
+          cd brreg-data
+          git sparse-checkout init --cone
+          git sparse-checkout set data/${{ matrix.shard }}
+          git checkout data
+          # Need full history for git log
+          git fetch --unshallow
+
+      - name: Checkout gh-pages-temp branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages-temp
+          path: gh-pages-temp
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Install Hugo
+        run: |
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.140.0/hugo_extended_0.140.0_linux-amd64.deb
+          sudo dpkg -i hugo_*.deb
+
+      - name: Build gen-history tool
+        run: |
+          cd brreg-delta/ssr/gen-history
+          go build -o ../../../gen-history
+
+      - name: Generate shard ${{ matrix.shard }}
+        run: |
+          cd brreg-data
+          echo "Processing shard ${{ matrix.shard }}"
+          ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
+
+      - name: Commit and push shard
+        run: |
+          cd gh-pages-temp
+
+          # Copy generated HTML files for this shard
+          if [ -d ../output/${{ matrix.shard }} ]; then
+            cp -r ../output/${{ matrix.shard }} .
+
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            git add ${{ matrix.shard }}
+
+            if ! git diff --staged --quiet; then
+              git commit -m "Add shard ${{ matrix.shard }}"
+
+              # Push with rebase to handle concurrent updates
+              max_retries=10
+              retry=0
+              while [ $retry -lt $max_retries ]; do
+                if git pull --rebase origin gh-pages-temp && git push origin gh-pages-temp; then
+                  echo "Successfully pushed shard ${{ matrix.shard }}"
+                  break
+                fi
+                retry=$((retry + 1))
+                echo "Push failed, retry $retry/$max_retries"
+                sleep $((RANDOM % 10 + 5))
+              done
+
+              if [ $retry -eq $max_retries ]; then
+                echo "Failed to push after $max_retries retries"
+                exit 1
+              fi
+            else
+              echo "No changes for shard ${{ matrix.shard }}"
+            fi
+          else
+            echo "No output generated for shard ${{ matrix.shard }}"
+          fi
+
+  finalize:
+    needs: generate-shard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout brreg-delta (master)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: brreg-delta
+
+      - name: Checkout gh-pages-temp
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages-temp
+          path: gh-pages-temp
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Install Hugo
+        run: |
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.140.0/hugo_extended_0.140.0_linux-amd64.deb
+          sudo dpkg -i hugo_*.deb
+
+      - name: Build navigation site
+        run: |
+          cd brreg-delta/ssr/navigation-site
+          hugo --minify --destination ../../../gh-pages-temp/
+
+      - name: Merge to gh-pages
+        run: |
+          # Copy all generated content to gh-pages
+          rsync -av --delete gh-pages-temp/ gh-pages/ --exclude .git --exclude README.md
+
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if ! git diff --staged --quiet; then
+            git commit -m "Full rebuild of all entity histories $(date +%Y-%m-%d)"
+            git push
+            echo "Full rebuild completed and pushed"
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Cleanup temp branch
+        run: |
+          cd gh-pages
+          git push origin --delete gh-pages-temp || echo "Temp branch already deleted"

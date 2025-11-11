@@ -13,11 +13,12 @@ func main() {
 	var (
 		command      string
 		orgnum       string
+		shard        string
 		incremental  bool
 		all          bool
 		output       string
 		workers      int
-		templateDir  string
+		templatesDir string
 	)
 
 	// Define subcommands
@@ -27,13 +28,19 @@ func main() {
 	generateCmd.BoolVar(&all, "all", false, "Generate all entities (full rebuild)")
 	generateCmd.StringVar(&output, "output", "./output", "Output directory for generated HTML files")
 	generateCmd.IntVar(&workers, "workers", 10, "Number of parallel workers")
-	generateCmd.StringVar(&templateDir, "template", "../entity-template", "Hugo template directory")
+	generateCmd.StringVar(&templatesDir, "templates", "..", "Templates directory (expects entity-template and navigation-site subdirs)")
 
 	allCmd := flag.NewFlagSet("all", flag.ExitOnError)
 	allCmd.BoolVar(&incremental, "incremental", false, "Generate only changed entities")
 	allCmd.StringVar(&output, "output", "./output", "Output directory")
 	allCmd.IntVar(&workers, "workers", 10, "Number of parallel workers")
-	allCmd.StringVar(&templateDir, "template", "../entity-template", "Hugo template directory")
+	allCmd.StringVar(&templatesDir, "templates", "..", "Templates directory (expects entity-template and navigation-site subdirs)")
+
+	shardCmd := flag.NewFlagSet("shard", flag.ExitOnError)
+	shardCmd.StringVar(&shard, "shard", "", "Shard directory to process (e.g., 810)")
+	shardCmd.StringVar(&output, "output", "./output", "Output directory")
+	shardCmd.IntVar(&workers, "workers", 10, "Number of parallel workers")
+	shardCmd.StringVar(&templatesDir, "templates", "..", "Templates directory (expects entity-template and navigation-site subdirs)")
 
 	if len(os.Args) < 2 {
 		printUsage()
@@ -45,14 +52,23 @@ func main() {
 	switch command {
 	case "generate":
 		generateCmd.Parse(os.Args[2:])
-		if err := runGenerate(orgnum, incremental, all, output, workers, templateDir); err != nil {
+		if err := runGenerate(orgnum, incremental, all, output, workers, templatesDir); err != nil {
 			log.Fatalf("Generate failed: %v", err)
 		}
 
 	case "all":
 		allCmd.Parse(os.Args[2:])
-		if err := runGenerate("", incremental, !incremental, output, workers, templateDir); err != nil {
+		if err := runGenerate("", incremental, !incremental, output, workers, templatesDir); err != nil {
 			log.Fatalf("Generate failed: %v", err)
+		}
+
+	case "shard":
+		shardCmd.Parse(os.Args[2:])
+		if shard == "" {
+			log.Fatal("--shard is required")
+		}
+		if err := runShard(shard, output, workers, templatesDir); err != nil {
+			log.Fatalf("Shard generation failed: %v", err)
 		}
 
 	default:
@@ -65,6 +81,7 @@ func printUsage() {
 	fmt.Println("Usage:")
 	fmt.Println("  gen-history generate [options]  - Generate entity history pages")
 	fmt.Println("  gen-history all [options]       - Generate all entity pages")
+	fmt.Println("  gen-history shard [options]     - Generate single shard")
 	fmt.Println()
 	fmt.Println("Generate options:")
 	fmt.Println("  --orgnum <num>       Generate specific organization number")
@@ -72,31 +89,51 @@ func printUsage() {
 	fmt.Println("  --all                Generate all entities (full rebuild)")
 	fmt.Println("  --output <dir>       Output directory (default: ./output)")
 	fmt.Println("  --workers <n>        Number of parallel workers (default: 10)")
-	fmt.Println("  --template <dir>     Hugo template directory (default: ../entity-template)")
+	fmt.Println("  --templates <dir>    Templates directory with entity-template and navigation-site subdirs (default: ..)")
+	fmt.Println()
+	fmt.Println("Shard options:")
+	fmt.Println("  --shard <num>        Shard directory to process (e.g., 810)")
+	fmt.Println("  --output <dir>       Output directory (default: ./output)")
+	fmt.Println("  --workers <n>        Number of parallel workers (default: 10)")
+	fmt.Println("  --templates <dir>    Templates directory (default: ..)")
 }
 
-func runGenerate(orgnum string, incremental, all bool, output string, workers int, templateDir string) error {
+func runGenerate(orgnum string, incremental, all bool, output string, workers int, templatesDir string) error {
 	log.Println("Starting entity history generation...")
 
 	// Ensure data directory exists (we're running from brreg-data directory)
 	dataDir := "."
 
+	// Derive template paths
+	entityTemplateDir := filepath.Join(templatesDir, "entity-template")
+	navSiteDir := filepath.Join(templatesDir, "navigation-site")
+
+	var err error
+
 	// Single entity
 	if orgnum != "" {
-		return generateSingleEntity(dataDir, orgnum, templateDir, output)
+		err = generateSingleEntity(dataDir, orgnum, entityTemplateDir, output)
+	} else if incremental {
+		// Incremental (changed entities)
+		err = generateIncremental(dataDir, entityTemplateDir, output, workers)
+	} else if all {
+		// All entities
+		err = generateAll(dataDir, entityTemplateDir, output, workers)
+	} else {
+		return fmt.Errorf("must specify --orgnum, --incremental, or --all")
 	}
 
-	// Incremental (changed entities)
-	if incremental {
-		return generateIncremental(dataDir, templateDir, output, workers)
+	if err != nil {
+		return err
 	}
 
-	// All entities
-	if all {
-		return generateAll(dataDir, templateDir, output, workers)
+	// Build navigation site and copy index.html to output last (to overwrite entity-generated index)
+	log.Println("\n=== Building navigation site ===")
+	if err := BuildNavigationSite(navSiteDir, output); err != nil {
+		return fmt.Errorf("failed to build navigation site: %w", err)
 	}
 
-	return fmt.Errorf("must specify --orgnum, --incremental, or --all")
+	return nil
 }
 
 func generateSingleEntity(dataDir, orgnum, templateDir, output string) error {
@@ -156,7 +193,7 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 	if err != nil {
 		return fmt.Errorf("failed to create content dir: %w", err)
 	}
-	defer os.RemoveAll(contentDir)
+	// Note: contentDir will be moved (not copied) to output, so no cleanup needed
 
 	// For incremental mode with small number of entities, use per-entity git log
 	log.Printf("Generating markdown for %d entities...", len(orgnums))
@@ -179,14 +216,14 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 		return fmt.Errorf("markdown generation failed: %w", err)
 	}
 
-	log.Println("\n=== Running Hugo ===")
+	log.Println("\n=== Preparing Hugo site ===")
 
-	// Run Hugo once to build all pages
+	// Prepare Hugo site structure (template + content)
 	return BuildAllWithHugo(templateDir, contentDir, output)
 }
 
 func generateAll(dataDir, templateDir, output string, workers int) error {
-	log.Printf("Generating histories for ALL entities with %d workers", workers)
+	log.Printf("Generating histories for ALL entities", workers)
 	log.Println("WARNING: This will take a very long time (hours to days)")
 
 	// Get all top-level shard directories (000-999)
@@ -197,15 +234,8 @@ func generateAll(dataDir, templateDir, output string, workers int) error {
 
 	log.Printf("Found %d shard directories to process", len(shardDirs))
 
-	// Create temporary content directory
-	contentDir, err := os.MkdirTemp("", "hugo-content-*")
-	if err != nil {
-		return fmt.Errorf("failed to create content dir: %w", err)
-	}
-	defer os.RemoveAll(contentDir)
-
-	// Process each shard directory
-	return processAllShardDirs(dataDir, shardDirs, contentDir, workers, templateDir, output)
+	// Process each shard directory (each shard manages its own temp dirs)
+	return processAllShardDirs(dataDir, shardDirs, "", workers, templateDir, output)
 }
 
 // getShardDirectories returns all top-level shard directories in data/
@@ -231,54 +261,61 @@ func getShardDirectories(dataDir string) ([]string, error) {
 func processAllShardDirs(dataDir string, shardDirs []string, contentDir string, workers int, templateDir, output string) error {
 	total := len(shardDirs)
 
-	log.Printf("Processing %d shards with up to %d parallel shard workers", total, workers)
+	log.Printf("Processing %d shards sequentially (markdown -> Hugo -> output per shard)", total)
 
-	// Process shards in parallel up to workers limit with progress tracking
-	err := ProcessInParallelWithProgress(shardDirs, workers, total, func(shard string) error {
+	// Process shards sequentially (one at a time) to keep memory usage constant
+	for i, shard := range shardDirs {
 		shardPath := filepath.Join("data", shard)
 
-		log.Printf("Shard %s: Starting", shard)
+		log.Printf("Shard %s (%d/%d): Starting", shard, i+1, total)
 
 		// Build git history cache for this shard directory
 		cache, err := BuildGitHistoryCacheByShard(dataDir, shardPath)
 		if err != nil {
-			return fmt.Errorf("failed to build git history cache: %w", err)
+			return fmt.Errorf("shard %s: failed to build git history cache: %w", shard, err)
 		}
 
 		// Get all entities in this shard from the cache
 		shardEntities := cache.GetAllEntities()
 
-		log.Printf("Shard %s: Processing %d entities", shard, len(shardEntities))
+		log.Printf("Shard %s: Generating markdown for %d entities", shard, len(shardEntities))
 
-		// Generate markdown for entities in this shard sequentially (to avoid spawning workers*workers goroutines)
+		// Create temporary content directory for this shard
+		shardContentDir, err := os.MkdirTemp("", fmt.Sprintf("hugo-content-shard-%s-*", shard))
+		if err != nil {
+			return fmt.Errorf("shard %s: failed to create content dir: %w", shard, err)
+		}
+
+		// Generate markdown for entities in this shard
 		for _, orgnum := range shardEntities {
 			changes, err := cache.GetEntityHistory(orgnum)
 			if err != nil {
-				return err
+				return fmt.Errorf("shard %s: entity %s: %w", shard, orgnum, err)
 			}
 
 			markdown, err := GenerateTimelineMarkdown(orgnum, changes)
 			if err != nil {
-				return err
+				return fmt.Errorf("shard %s: entity %s: %w", shard, orgnum, err)
 			}
 
-			if err := WriteEntityMarkdown(orgnum, markdown, contentDir); err != nil {
-				return err
+			if err := WriteEntityMarkdown(orgnum, markdown, shardContentDir); err != nil {
+				return fmt.Errorf("shard %s: entity %s: %w", shard, orgnum, err)
 			}
 		}
 
-		log.Printf("Shard %s: Complete (%d entities)", shard, len(shardEntities))
-		return nil
-	})
+		log.Printf("Shard %s: Running Hugo and moving to output", shard)
 
-	if err != nil {
-		return fmt.Errorf("shard processing failed: %w", err)
+		// Build this shard with Hugo and move HTML to output
+		if err := BuildShardWithHugo(templateDir, shardContentDir, output); err != nil {
+			return fmt.Errorf("shard %s: hugo build failed: %w", shard, err)
+		}
+
+		log.Printf("Shard %s: Complete (%d entities) - %.1f%% total progress", shard, len(shardEntities), float64(i+1)/float64(total)*100)
 	}
 
-	log.Println("\n=== All shards complete, running Hugo ===")
+	log.Println("\n=== All shards complete ===")
 
-	// Run Hugo once to build all pages
-	return BuildAllWithHugo(templateDir, contentDir, output)
+	return nil
 }
 
 // Old batch-based function - keeping for reference but unused
@@ -335,4 +372,61 @@ func generateInBatches(dataDir string, orgnums []string, contentDir string, work
 
 	// Run Hugo once to build all pages
 	return BuildAllWithHugo(templateDir, contentDir, output)
+}
+
+func runShard(shard, output string, workers int, templatesDir string) error {
+	log.Printf("Generating history for shard: %s", shard)
+
+	dataDir := "."
+	entityTemplateDir := filepath.Join(templatesDir, "entity-template")
+	shardPath := filepath.Join("data", shard)
+
+	// Build git history cache for this shard directory
+	cache, err := BuildGitHistoryCacheByShard(dataDir, shardPath)
+	if err != nil {
+		return fmt.Errorf("failed to build git history cache: %w", err)
+	}
+
+	// Get all entities in this shard
+	shardEntities := cache.GetAllEntities()
+	log.Printf("Found %d entities in shard %s", len(shardEntities), shard)
+
+	if len(shardEntities) == 0 {
+		log.Printf("No entities in shard %s, skipping", shard)
+		return nil
+	}
+
+	// Create temporary content directory
+	contentDir, err := os.MkdirTemp("", fmt.Sprintf("hugo-content-shard-%s-*", shard))
+	if err != nil {
+		return fmt.Errorf("failed to create content dir: %w", err)
+	}
+
+	// Generate markdown for entities in this shard
+	log.Printf("Generating markdown for %d entities...", len(shardEntities))
+	for _, orgnum := range shardEntities {
+		changes, err := cache.GetEntityHistory(orgnum)
+		if err != nil {
+			return fmt.Errorf("entity %s: %w", orgnum, err)
+		}
+
+		markdown, err := GenerateTimelineMarkdown(orgnum, changes)
+		if err != nil {
+			return fmt.Errorf("entity %s: %w", orgnum, err)
+		}
+
+		if err := WriteEntityMarkdown(orgnum, markdown, contentDir); err != nil {
+			return fmt.Errorf("entity %s: %w", orgnum, err)
+		}
+	}
+
+	log.Println("Running Hugo to generate HTML...")
+
+	// Build this shard with Hugo and move HTML to output
+	if err := BuildShardWithHugo(entityTemplateDir, contentDir, output); err != nil {
+		return fmt.Errorf("hugo build failed: %w", err)
+	}
+
+	log.Printf("Shard %s complete (%d entities)", shard, len(shardEntities))
+	return nil
 }
