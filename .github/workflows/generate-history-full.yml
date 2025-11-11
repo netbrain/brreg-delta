@@ -40,7 +40,7 @@ jobs:
 
       - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
         run: |
-          git clone --filter=blob:none --no-checkout --branch data --sparse \
+          git clone --no-checkout --branch data --sparse \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
           cd brreg-data
           git sparse-checkout init --cone
