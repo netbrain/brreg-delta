@@ -34,7 +34,7 @@ func GenerateTimelineMarkdown(orgnum string, changes []EntityChange) (string, er
 
 	// Frontmatter
 	sb.WriteString("---\n")
-	sb.WriteString(fmt.Sprintf("title: \"%s\"\n", navn))
+	sb.WriteString(fmt.Sprintf("title: \"%s\"\n", escapeYAMLString(navn)))
 	sb.WriteString(fmt.Sprintf("organisasjonsnummer: \"%s\"\n", orgnum))
 	sb.WriteString(fmt.Sprintf("lastModified: \"%s\"\n", changes[0].Date.Format("2006-01-02")))
 	sb.WriteString("---\n\n")
@@ -233,4 +233,13 @@ func isComplexValue(val interface{}) bool {
 	default:
 		return false
 	}
+}
+
+// escapeYAMLString escapes special characters in YAML strings
+func escapeYAMLString(s string) string {
+	// Replace double quotes with escaped quotes
+	s = strings.ReplaceAll(s, "\"", "\\\"")
+	// Replace backslashes
+	s = strings.ReplaceAll(s, "\\", "\\\\")
+	return s
 }
