@@ -134,6 +134,11 @@ jobs:
           # Stage all merged content
           git add .
 
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
       - name: Install Hugo
         run: |
           for i in 1 2 3; do
