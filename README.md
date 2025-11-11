@@ -1,5 +1,6 @@
 # Brreg Delta Tracker
 [![Sync Brreg Data](https://github.com/netbrain/brreg-delta/actions/workflows/sync.yml/badge.svg)](https://github.com/netbrain/brreg-delta/actions/workflows/sync.yml)
+[![pages-build-deployment](https://github.com/netbrain/brreg-delta/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/netbrain/brreg-delta/actions/workflows/pages/pages-build-deployment)
 
 Historical tracking system for Norwegian company data from [Brønnøysundregistrene](https://data.brreg.no).
 
