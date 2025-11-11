@@ -46,7 +46,7 @@
                 for (let i = 0; i < orgnum.length; i += 3) {
                     parts.push(orgnum.substring(i, i + 3));
                 }
-                window.location.href = '/' + parts.join('/') + '.html';
+                window.location.href = '{{ .Site.BaseURL }}' + parts.join('/') + '.html';
             }
         });
     </script>
