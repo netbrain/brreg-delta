@@ -158,15 +158,23 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           for shard in {800..999}; do
-            echo "Merging shard $shard..."
-            if git fetch origin gh-pages-shard-$shard:gh-pages-shard-$shard 2>/dev/null; then
-              git merge --allow-unrelated-histories --no-edit gh-pages-shard-$shard || echo "Merge conflict or failed for shard $shard"
+            echo "Processing shard $shard..."
+            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
+              # Copy shard directory from the fetched branch
+              git checkout FETCH_HEAD -- $shard 2>/dev/null && echo "Added shard $shard" || echo "Shard $shard has no content"
             else
               echo "Shard $shard branch does not exist, skipping"
             fi
           done
 
-          git push origin gh-pages
+          # Commit all changes at once
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "Merge all shards into gh-pages $(date +%Y-%m-%d)"
+            git push origin gh-pages
+          else
+            echo "No changes to commit"
+          fi
 
       - name: Cleanup shard branches
         run: |
