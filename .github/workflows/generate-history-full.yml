@@ -159,7 +159,7 @@ jobs:
 
           for shard in 831; do
             echo "Merging shard $shard..."
-            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
+            if git fetch origin gh-pages-shard-$shard:gh-pages-shard-$shard 2>/dev/null; then
               git merge --allow-unrelated-histories --no-edit gh-pages-shard-$shard || echo "Merge conflict or failed for shard $shard"
             else
               echo "Shard $shard branch does not exist, skipping"
