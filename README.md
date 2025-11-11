@@ -12,6 +12,8 @@ Brreg.no only provides snapshot data. This project tracks changes over time by:
 - Using rolling updates to track only what changed
 - Running efficient incremental sync via GitHub Actions
 
+### Available at  https://netbrain.github.io/brreg-delta/
+
 ## Architecture
 
 ### Data Collection
