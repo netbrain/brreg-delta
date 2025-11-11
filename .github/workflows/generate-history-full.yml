@@ -39,6 +39,7 @@ jobs:
           path: brreg-delta
 
       - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
+        id: checkout
         run: |
           git clone --no-checkout --branch data --sparse \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
@@ -47,7 +48,16 @@ jobs:
           git sparse-checkout set data/${{ matrix.shard }}
           git checkout
 
+          # Check if shard directory exists
+          if [ ! -d "data/${{ matrix.shard }}" ]; then
+            echo "Shard ${{ matrix.shard }} directory does not exist, skipping"
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          echo "skip=false" >> $GITHUB_OUTPUT
+
       - name: Create shard branch
+        if: steps.checkout.outputs.skip != 'true'
         run: |
           mkdir gh-pages-temp
           cd gh-pages-temp
@@ -57,28 +67,33 @@ jobs:
           git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Setup Go
+        if: steps.checkout.outputs.skip != 'true'
         uses: actions/setup-go@v5
         with:
           go-version: '1.23'
 
       - name: Install Hugo
+        if: steps.checkout.outputs.skip != 'true'
         run: |
           for i in 1 2 3; do
             go install github.com/gohugoio/hugo@latest && break || sleep 10
           done
 
       - name: Build gen-history tool
+        if: steps.checkout.outputs.skip != 'true'
         run: |
           cd brreg-delta/ssr/gen-history
           go build -o ../../../gen-history
 
       - name: Generate shard ${{ matrix.shard }}
+        if: steps.checkout.outputs.skip != 'true'
         run: |
           cd brreg-data
           echo "Processing shard ${{ matrix.shard }}"
           ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
 
       - name: Commit and push shard to dedicated branch
+        if: steps.checkout.outputs.skip != 'true'
         run: |
           cd gh-pages-temp
 
