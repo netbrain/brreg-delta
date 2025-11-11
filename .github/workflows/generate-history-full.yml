@@ -125,30 +125,6 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Merge all shard branches
-        run: |
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages-combined
-          cd gh-pages-combined
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Create orphan branch for combined output
-          git checkout --orphan gh-pages-combined
-          git rm -rf . || true
-
-          # Merge all shard branches sequentially
-          for shard in 831; do
-            echo "Merging shard $shard..."
-            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
-              git checkout gh-pages-shard-$shard -- $shard 2>/dev/null || echo "Shard $shard has no content"
-            else
-              echo "Shard $shard branch does not exist, skipping"
-            fi
-          done
-
-          # Stage all merged content
-          git add .
-
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
@@ -160,26 +136,42 @@ jobs:
             go install github.com/gohugoio/hugo@latest && break || sleep 10
           done
 
-      - name: Build navigation site
+      - name: Build navigation site and create gh-pages
         run: |
           cd brreg-delta/ssr/navigation-site
-          hugo --minify --destination ../../../gh-pages-combined/
+          hugo --minify --destination ../../../gh-pages-output
 
-      - name: Push combined branch to gh-pages
-        run: |
-          cd gh-pages-combined
-
+          cd ../../../gh-pages-output
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Full rebuild of all entity histories $(date +%Y-%m-%d)" || echo "No changes"
-          # Force push combined branch to gh-pages
-          git push -f origin gh-pages-combined:gh-pages
-          echo "Full rebuild completed and pushed to gh-pages"
+          git commit -m "Initialize with navigation site $(date +%Y-%m-%d)"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push -f origin HEAD:gh-pages
+
+      - name: Merge shard branches into gh-pages
+        run: |
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git -b gh-pages gh-pages-work
+          cd gh-pages-work
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          for shard in 831; do
+            echo "Merging shard $shard..."
+            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
+              git merge --allow-unrelated-histories --no-edit gh-pages-shard-$shard || echo "Merge conflict or failed for shard $shard"
+            else
+              echo "Shard $shard branch does not exist, skipping"
+            fi
+          done
+
+          git push origin gh-pages
 
       - name: Cleanup shard branches
         run: |
-          cd gh-pages-combined
+          cd gh-pages-work
           for shard in 831; do
             git push origin --delete gh-pages-shard-$shard 2>/dev/null || true
           done
-          git push origin --delete gh-pages-combined 2>/dev/null || true
           echo "Cleanup completed"
