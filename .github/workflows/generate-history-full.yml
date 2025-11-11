@@ -49,16 +49,16 @@ jobs:
         shard: ${{ fromJson(needs.prepare.outputs.shards) }}
 
     steps:
-      - name: Free disk space
-        uses: jlumbroso/free-disk-space@main
-        with:
-          tool-cache: true
-          android: true
-          dotnet: true
-          haskell: true
-          large-packages: true
-          docker-images: true
-          swap-storage: true
+      # - name: Free disk space
+      #   uses: jlumbroso/free-disk-space@main
+      #   with:
+      #     tool-cache: true
+      #     android: true
+      #     dotnet: true
+      #     haskell: true
+      #     large-packages: true
+      #     docker-images: true
+      #     swap-storage: true
 
       - name: Checkout brreg-delta (master)
         uses: actions/checkout@v4
@@ -158,12 +158,6 @@ jobs:
           ref: gh-pages-temp
           path: gh-pages-temp
 
-      - name: Checkout gh-pages
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-
       - name: Install Hugo
         run: |
           wget -q https://github.com/gohugoio/hugo/releases/download/v0.140.0/hugo_extended_0.140.0_linux-amd64.deb
@@ -174,26 +168,17 @@ jobs:
           cd brreg-delta/ssr/navigation-site
           hugo --minify --destination ../../../gh-pages-temp/
 
-      - name: Merge to gh-pages
+      - name: Push temp branch to gh-pages
         run: |
-          # Copy all generated content to gh-pages
-          rsync -av --delete gh-pages-temp/ gh-pages/ --exclude .git --exclude README.md
-
-          cd gh-pages
+          cd gh-pages-temp
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add .
-
-          if ! git diff --staged --quiet; then
-            git commit -m "Full rebuild of all entity histories $(date +%Y-%m-%d)"
-            git push
-            echo "Full rebuild completed and pushed"
-          else
-            echo "No changes to commit"
-          fi
+          # Force push temp branch to gh-pages
+          git push -f origin gh-pages-temp:gh-pages
+          echo "Full rebuild completed and pushed to gh-pages"
 
       - name: Cleanup temp branch
         run: |
-          cd gh-pages
+          cd gh-pages-temp
           git push origin --delete gh-pages-temp || echo "Temp branch already deleted"
