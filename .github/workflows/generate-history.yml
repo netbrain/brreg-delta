@@ -13,6 +13,9 @@ concurrency:
   group: history-generation
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest

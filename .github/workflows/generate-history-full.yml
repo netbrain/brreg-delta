@@ -7,6 +7,9 @@ concurrency:
   group: history-generation-full
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
