@@ -2,7 +2,7 @@ name: Sync Brreg Data
 
 on:
   schedule:
-    - cron: '30 5 * * *'  # Run daily at 5:30 AM UTC (after Brreg releases at 5:00 AM)
+    - cron: '30 */6 * * *'  # Run every 6 hours at :30 past the hour
   workflow_dispatch:
     inputs:
       rate-limit:
@@ -24,6 +24,11 @@ on:
         description: 'Maximum consecutive failures before exit'
         required: false
         default: '50'
+        type: string
+      max-duration:
+        description: 'Maximum sync duration in minutes (0 = unlimited)'
+        required: false
+        default: '240'
         type: string
 
 concurrency:
@@ -83,14 +88,18 @@ jobs:
             FLAGS="$FLAGS -rate-burst ${{ inputs.rate-burst }}"
             FLAGS="$FLAGS -workers ${{ inputs.workers }}"
             FLAGS="$FLAGS -max-failures ${{ inputs.max-failures }}"
+            FLAGS="$FLAGS -max-duration ${{ inputs.max-duration }}"
 
             echo "Running with custom configuration:"
             echo "  Rate limit: ${{ inputs.rate-limit }} req/s"
             echo "  Rate burst: ${{ inputs.rate-burst }}"
             echo "  Workers: ${{ inputs.workers }}"
             echo "  Max failures: ${{ inputs.max-failures }}"
+            echo "  Max duration: ${{ inputs.max-duration }} minutes"
           else
-            echo "Running with default configuration"
+            # Scheduled run - use defaults with 4-hour limit
+            FLAGS="$FLAGS -max-duration 240"
+            echo "Running with default configuration (4-hour limit)"
           fi
 
           go run . $FLAGS

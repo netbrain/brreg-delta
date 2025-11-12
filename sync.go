@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -323,9 +324,34 @@ func runIncrementalSync(config *SyncConfig) error {
 	log.Printf("Last underenheter oppdateringsid: %d", state.LastUnderenheterOppdateringsid)
 
 	// Update sync started timestamp BEFORE fetching
-	state.SyncStartedAt = time.Now()
+	syncStartTime := time.Now()
+	state.SyncStartedAt = syncStartTime
 	if err := SaveState(dataDir, state); err != nil {
 		return fmt.Errorf("failed to update sync start time: %w", err)
+	}
+
+	// Setup context with timeout if configured
+	ctx := context.Background()
+	var cancel context.CancelFunc
+	if config.MaxDurationMinutes > 0 {
+		timeout := time.Duration(config.MaxDurationMinutes) * time.Minute
+		ctx, cancel = context.WithTimeout(ctx, timeout)
+		defer cancel()
+		log.Printf("Sync will timeout after %d minutes", config.MaxDurationMinutes)
+	}
+
+	// Helper function to check if we should continue
+	shouldContinue := func() bool {
+		if config.MaxDurationMinutes > 0 {
+			select {
+			case <-ctx.Done():
+				log.Printf("Max duration reached (%d minutes), stopping sync", config.MaxDurationMinutes)
+				return false
+			default:
+				return true
+			}
+		}
+		return true
 	}
 
 	// Track progress
@@ -371,7 +397,7 @@ func runIncrementalSync(config *SyncConfig) error {
 	log.Println("Fetching enheter updates...")
 	maxEnheterOppdateringsid := state.LastEnheterOppdateringsid
 
-	for {
+	for shouldContinue() {
 		updates, err := client.FetchEnheterUpdates(maxEnheterOppdateringsid, 1000)
 		if err != nil {
 			close(jobs)
@@ -412,7 +438,7 @@ func runIncrementalSync(config *SyncConfig) error {
 	log.Println("Fetching underenheter updates...")
 	maxUnderenheterOppdateringsid := state.LastUnderenheterOppdateringsid
 
-	for {
+	for shouldContinue() {
 		updates, err := client.FetchUnderenheterUpdates(maxUnderenheterOppdateringsid, 1000)
 		if err != nil {
 			close(jobs)

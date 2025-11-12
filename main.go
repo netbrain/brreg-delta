@@ -12,6 +12,7 @@ type SyncConfig struct {
 	RateBurst          int
 	NumWorkers         int
 	MaxFailures        int
+	MaxDurationMinutes int
 }
 
 func main() {
@@ -21,15 +22,17 @@ func main() {
 	rateBurst := flag.Int("rate-burst", 20, "Maximum burst size for rate limiter (default: 20)")
 	numWorkers := flag.Int("workers", 10, "Number of concurrent workers (default: 10)")
 	maxFailures := flag.Int("max-failures", 50, "Maximum consecutive failures before exit (default: 50)")
+	maxDuration := flag.Int("max-duration", 0, "Maximum sync duration in minutes, 0 = unlimited (default: 0)")
 
 	flag.Parse()
 
 	config := &SyncConfig{
-		DataDir:     *dataDir,
-		RateLimit:   *rateLimit,
-		RateBurst:   *rateBurst,
-		NumWorkers:  *numWorkers,
-		MaxFailures: *maxFailures,
+		DataDir:            *dataDir,
+		RateLimit:          *rateLimit,
+		RateBurst:          *rateBurst,
+		NumWorkers:         *numWorkers,
+		MaxFailures:        *maxFailures,
+		MaxDurationMinutes: *maxDuration,
 	}
 
 	log.Printf("Brreg Delta Sync - Configuration:")
@@ -37,6 +40,11 @@ func main() {
 	log.Printf("  Rate limit: %.1f req/s (burst: %d)", config.RateLimit, config.RateBurst)
 	log.Printf("  Workers: %d", config.NumWorkers)
 	log.Printf("  Max consecutive failures: %d", config.MaxFailures)
+	if config.MaxDurationMinutes > 0 {
+		log.Printf("  Max duration: %d minutes", config.MaxDurationMinutes)
+	} else {
+		log.Printf("  Max duration: unlimited")
+	}
 
 	if err := RunSync(config); err != nil {
 		log.Fatalf("Sync failed: %v", err)
