@@ -28,12 +28,16 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Checkout data branch
+      - name: Checkout data branch with sparse checkout
         uses: actions/checkout@v4
         with:
           ref: data
           path: brreg-data
           fetch-depth: 0  # Full history needed for git log
+          sparse-checkout: |
+            .last-history-commit
+            README.md
+          sparse-checkout-cone-mode: false
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
@@ -80,7 +84,6 @@ jobs:
       - name: Commit and push to gh-pages
         run: |
           cd gh-pages
-          touch .nojekyll
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
