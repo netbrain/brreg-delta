@@ -6,9 +6,27 @@
     <title>{{ .Title }}</title>
     <meta name="description" content="Se historiske endringer for norske enheter registrert i Brønnøysundregistrene">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <style>
+        .htmx-indicator {
+            display: none;
+        }
+        .htmx-request .htmx-indicator {
+            display: inline;
+        }
+        #entity-content {
+            min-height: 200px;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
+        <nav>
+            <ul>
+                <li><strong>Brreg Historie</strong></li>
+            </ul>
+        </nav>
+
         {{ .Content }}
 
         <section>
@@ -26,6 +44,17 @@
                 <button type="submit">Vis historikk</button>
             </form>
         </section>
+
+        <div id="entity-content"
+             hx-swap="none"
+             hx-on::after-on-load="this.innerHTML = event.detail.xhr.responseText"
+             hx-indicator="#loading">
+            <p><em>Søk etter et organisasjonsnummer for å se historikk</em></p>
+        </div>
+
+        <div id="loading" class="htmx-indicator">
+            <p aria-busy="true">Laster...</p>
+        </div>
 
         <footer>
             <small>
@@ -46,7 +75,9 @@
                 for (let i = 0; i < orgnum.length; i += 3) {
                     parts.push(orgnum.substring(i, i + 3));
                 }
-                window.location.href = '{{ .Site.BaseURL }}' + parts.join('/') + '/';
+                // Load from GitHub raw URL
+                const url = `https://raw.githubusercontent.com/netbrain/brreg-delta/refs/heads/gh-pages/${parts.join('/')}/index.html`;
+                htmx.ajax('GET', url, '#entity-content');
             }
         });
     </script>
