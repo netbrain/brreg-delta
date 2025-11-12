@@ -58,9 +58,9 @@
                 for (let i = 0; i < orgnum.length; i += 3) {
                     parts.push(orgnum.substring(i, i + 3));
                 }
-                // Load from GitHub API (better CORS support)
+                // Load directly from GitHub raw URL
                 const path = `${parts.join('/')}/index.html`;
-                const url = `https://api.github.com/repos/netbrain/brreg-delta/contents/${path}?ref=gh-pages`;
+                const url = `https://raw.githubusercontent.com/netbrain/brreg-delta/gh-pages/${path}`;
                 const contentEl = document.getElementById('entity-content');
                 const loadingEl = document.getElementById('loading');
 
@@ -68,22 +68,24 @@
                 contentEl.innerHTML = '';
                 loadingEl.style.display = 'block';
 
-                // Fetch via GitHub API and decode base64 content
+                // Fetch the HTML content directly
                 fetch(url)
-                    .then(response => response.json())
-                    .then(data => {
-                        // Decode base64 to UTF-8 properly
-                        const binaryString = atob(data.content);
-                        const bytes = new Uint8Array(binaryString.length);
-                        for (let i = 0; i < binaryString.length; i++) {
-                            bytes[i] = binaryString.charCodeAt(i);
+                    .then(response => {
+                        if (!response.ok) {
+                            contentEl.innerHTML = '<p>Enheten finnes ikke, ugyldig organisasjonsnummer, eller manglende datasett.</p>';
+                            loadingEl.style.display = 'none';
+                            return null;
                         }
-                        const content = new TextDecoder('utf-8').decode(bytes);
-                        contentEl.innerHTML = content;
-                        loadingEl.style.display = 'none';
+                        return response.text();
+                    })
+                    .then(content => {
+                        if (content) {
+                            contentEl.innerHTML = content;
+                            loadingEl.style.display = 'none';
+                        }
                     })
                     .catch(error => {
-                        contentEl.innerHTML = '<p>Fant ikke enheten. Sjekk at organisasjonsnummeret er riktig.</p>';
+                        contentEl.innerHTML = '<p>Enheten finnes ikke, ugyldig organisasjonsnummer, eller manglende datasett.</p>';
                         loadingEl.style.display = 'none';
                         console.error('Error:', error);
                     });
