@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920445616"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/924295937"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skurvebakkane 16"
@@ -12,9 +19,8 @@
     "poststed": "ÅLGÅRD"
   },
   "epostadresse": "post@skurvetunet.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.skurvetunet.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Catering for arrangementer",
     "kode": "56.210"
@@ -22,14 +28,16 @@
   "navn": "SKURVETUNET AS",
   "oppstartsdato": "2019-12-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "924295937",
   "overordnetEnhet": "920445616",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2019-12-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

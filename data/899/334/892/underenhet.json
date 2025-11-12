@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999328482"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/899334892"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solavågseidet 76"
@@ -10,8 +18,7 @@
     "postnummer": "6037",
     "poststed": "EIDSNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,9 +26,13 @@
   "navn": "JOHAN R. SUNDE EIENDOM AS",
   "oppstartsdato": "2012-12-17",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "899334892",
   "overordnetEnhet": "999328482",
@@ -36,8 +47,6 @@
     "postnummer": "6037",
     "poststed": "EIDSNES"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-10-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-10-10",
   "registreringsdatoEnhetsregisteret": "2013-01-07",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

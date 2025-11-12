@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/924790547"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/824849412"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Inkognitogata 33A"
@@ -10,8 +18,7 @@
     "postnummer": "0256",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,9 +26,13 @@
   "navn": "ORBIT TECHNOLOGY AS",
   "oppstartsdato": "2020-01-07",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "824849412",
   "overordnetEnhet": "924790547",
@@ -36,8 +47,6 @@
     "postnummer": "0323",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-10-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-10-10",
   "registreringsdatoEnhetsregisteret": "2020-03-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

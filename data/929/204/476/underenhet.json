@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929036026"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929204476"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Per Kjetil Fiskebekk",
@@ -11,8 +19,7 @@
     "postnummer": "4362",
     "poststed": "VIGRESTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
     "kode": "41.000"
@@ -20,14 +27,16 @@
   "navn": "FISKEBEKK AS",
   "oppstartsdato": "2022-03-22",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "929204476",
   "overordnetEnhet": "929036026",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2022-05-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936137881"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936164889"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Lilleengveien 8"
@@ -10,8 +18,7 @@
     "postnummer": "1523",
     "poststed": "MOSS"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre helsetjenester ellers",
     "kode": "86.993"
@@ -19,9 +26,13 @@
   "navn": "KLINIKK FOR TINNITUS OG HYPERAKUSIS AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936164889",
   "overordnetEnhet": "936137881",
@@ -36,6 +47,8 @@
     "postnummer": "1152",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-09-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

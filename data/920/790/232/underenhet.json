@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987573619"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/920790232"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kongens gate 22"
@@ -10,8 +18,7 @@
     "postnummer": "7715",
     "poststed": "STEINKJER"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
     "kode": "64.323"
@@ -19,9 +26,13 @@
   "navn": "ICHIBAN AS",
   "oppstartsdato": "2017-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "920790232",
   "overordnetEnhet": "987573619",
@@ -36,6 +47,8 @@
     "postnummer": "7707",
     "poststed": "STEINKJER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2018-04-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

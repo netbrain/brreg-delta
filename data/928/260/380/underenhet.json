@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928232778"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928260380"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Fetvei 12D"
@@ -10,8 +18,7 @@
     "postnummer": "1900",
     "poststed": "FETSUND"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -19,9 +26,13 @@
   "navn": "FETSUND SUSHI OG WOK AS",
   "oppstartsdato": "2021-12-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928260380",
   "overordnetEnhet": "928232778",
@@ -36,8 +47,6 @@
     "postnummer": "1476",
     "poststed": "RASTA"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2021-12-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

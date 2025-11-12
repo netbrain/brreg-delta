@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932009757"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932353857"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "3200 Gracie Kiltz Lane, Ste 200,"
@@ -7,8 +15,7 @@
     "landkode": "US",
     "poststed": "AUSTIN TX 78758"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -16,9 +23,13 @@
   "navn": "COGNITE LLC",
   "oppstartsdato": "2023-10-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "932353857",
   "overordnetEnhet": "932009757",
@@ -33,8 +44,6 @@
     "postnummer": "1366",
     "poststed": "LYSAKER"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-02-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-02-10",
   "registreringsdatoEnhetsregisteret": "2023-10-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

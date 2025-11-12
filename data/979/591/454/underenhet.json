@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/874778842"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/979591454"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Karl Fossums vei 30"
@@ -11,8 +18,7 @@
     "postnummer": "0985",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Forebyggende helsearbeid",
     "kode": "86.992"
@@ -20,14 +26,16 @@
   "navn": "OSLO KOMMUNE BYDEL 11 STOVNER PSYKISK HELSE",
   "oppstartsdato": "1998-01-20",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "979591454",
   "overordnetEnhet": "874778842",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-03-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-03-10",
   "registreringsdatoEnhetsregisteret": "1998-07-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

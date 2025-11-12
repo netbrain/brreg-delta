@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935831210"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935861802"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hetlandsgata 9"
@@ -10,8 +18,7 @@
     "postnummer": "4344",
     "poststed": "BRYNE"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,9 +26,13 @@
   "navn": "ENTRYNOTE AS",
   "oppstartsdato": "2025-06-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935861802",
   "overordnetEnhet": "935831210",
@@ -37,6 +48,8 @@
     "postnummer": "4349",
     "poststed": "BRYNE"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-07-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

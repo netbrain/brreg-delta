@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997073118"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916075944"
+    }
+  },
+  "antallAnsatte": 13,
   "beliggenhetsadresse": {
     "adresse": [
       "Flyplassveien 216"
@@ -10,8 +19,7 @@
     "postnummer": "4560",
     "poststed": "VANSE"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Asylmottakstjenester",
     "kode": "87.992"
@@ -19,9 +27,13 @@
   "navn": "MD SOLUTIONS AS LISTA",
   "oppstartsdato": "2015-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "916075944",
   "overordnetEnhet": "997073118",
@@ -36,6 +48,8 @@
     "postnummer": "4733",
     "poststed": "EVJE"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2015-10-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

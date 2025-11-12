@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999215211"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928141470"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Larkollveien 775"
@@ -10,8 +18,7 @@
     "postnummer": "1560",
     "poststed": "LARKOLLEN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av hoteller",
     "kode": "55.100"
@@ -19,9 +26,13 @@
   "navn": "VILLA STØTVIG",
   "oppstartsdato": "2022-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928141470",
   "overordnetEnhet": "999215211",
@@ -37,6 +48,8 @@
     "postnummer": "1560",
     "poststed": "LARKOLLEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2021-11-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

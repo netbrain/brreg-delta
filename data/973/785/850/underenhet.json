@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971134011"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/973785850"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Ringeriksvei 34"
@@ -11,22 +18,23 @@
     "postnummer": "1357",
     "poststed": "BEKKESTUA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
   },
   "navn": "LIFETEC AS AVD BEKKESTUA",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "973785850",
   "overordnetEnhet": "971134011",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2022-06-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2022-06-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

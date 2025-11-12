@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/976294645"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/976964926"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skippergata 4"
@@ -13,9 +20,8 @@
   },
   "datoEierskifte": "1998-12-31",
   "epostadresse": "kristiansand@noricom.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.noricom.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Oversettelses- og tolkevirksomhet",
     "kode": "74.300"
@@ -23,14 +29,16 @@
   "navn": "NORICOM SPRÅKTJENESTER AS",
   "oppstartsdato": "1983-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "976964926",
   "overordnetEnhet": "976294645",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1996-12-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

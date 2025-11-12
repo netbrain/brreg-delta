@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930006726"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930148989"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sponhoggveien 31"
@@ -10,12 +18,11 @@
     "postnummer": "0284",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Tannlegetjenester",
     "kode": "86.230"
@@ -23,12 +30,18 @@
   "navn": "TANNLEGE B. HANSEN AS",
   "oppstartsdato": "2022-08-22",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930148989",
   "overordnetEnhet": "930006726",
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2022-11-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

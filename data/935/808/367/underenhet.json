@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/939522719"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935808367"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vestveien 51"
@@ -10,8 +18,7 @@
     "postnummer": "1452",
     "poststed": "NESODDTANGEN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med klær",
     "kode": "47.710"
@@ -19,9 +26,13 @@
   "navn": "CUBUS TANGEN SENTER AVD 84D",
   "oppstartsdato": "2025-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935808367",
   "overordnetEnhet": "939522719",
@@ -36,6 +47,8 @@
     "postnummer": "1377",
     "poststed": "BILLINGSTAD"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-07-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

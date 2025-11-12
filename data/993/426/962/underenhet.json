@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934672232"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/993426962"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bergensveien 2E"
@@ -12,8 +19,7 @@
     "poststed": "OSLO"
   },
   "datoEierskifte": "2025-10-16",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Undervisning ved godkjente trafikkskoler",
     "kode": "85.531"
@@ -21,14 +27,16 @@
   "navn": "METRO TRAFIKKSKOLE GRORUDDALEN AS",
   "oppstartsdato": "2008-11-08",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "993426962",
   "overordnetEnhet": "934672232",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2008-12-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

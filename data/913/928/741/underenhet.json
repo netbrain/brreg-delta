@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987208147"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/913928741"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Morten Wang",
@@ -12,9 +20,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "drs@seltarisk.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.deltarisk.no",
-  "links": [],
   "mobil": "48249090",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -23,14 +30,16 @@
   "navn": "DELTA RISK AS",
   "oppstartsdato": "2014-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "913928741",
   "overordnetEnhet": "987208147",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-03-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-03-10",
   "registreringsdatoEnhetsregisteret": "2014-07-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/976726413"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/976730313"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [],
     "kommune": "GULEN",
@@ -8,8 +16,7 @@
     "postnummer": "5970",
     "poststed": "BYRKNESØY"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av kulturhistoriske museer",
     "kode": "91.212"
@@ -17,9 +24,13 @@
   "navn": "STIFTINGA GULEN FISKARBONDEMUSEUM",
   "oppstartsdato": "1995-05-27",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "976730313",
   "overordnetEnhet": "976726413",
@@ -35,8 +46,6 @@
     "postnummer": "5977",
     "poststed": "ÅNNELAND"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2022-12-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2022-12-10",
   "registreringsdatoEnhetsregisteret": "1996-09-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

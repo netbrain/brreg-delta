@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987919795"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/887948372"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hedrumveien 2964"
@@ -11,8 +18,7 @@
     "postnummer": "3282",
     "poststed": "KVELDE"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "95281991",
   "naeringskode1": {
     "beskrivelse": "Dyrking av grønnsaker, meloner, rot- og knollvekster",
@@ -21,14 +27,16 @@
   "navn": "LÅGEN AGRO AS",
   "oppstartsdato": "2005-02-17",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "887948372",
   "overordnetEnhet": "987919795",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-12-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-12-10",
   "registreringsdatoEnhetsregisteret": "2005-03-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

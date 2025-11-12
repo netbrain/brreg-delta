@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919431911"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/919515546"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Austigard 33"
@@ -10,8 +18,7 @@
     "postnummer": "4270",
     "poststed": "ÅKREHAMN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
     "kode": "03.110"
@@ -19,9 +26,13 @@
   "navn": "PARTREDERIET GRINDHAUG DA",
   "oppstartsdato": "2017-08-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "919515546",
   "overordnetEnhet": "919431911",
@@ -36,6 +47,8 @@
     "postnummer": "4291",
     "poststed": "KOPERVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2017-09-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

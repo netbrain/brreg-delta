@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 24,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/969850923"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/978485006"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Valldalsvegen 387"
@@ -11,8 +18,7 @@
     "postnummer": "6210",
     "poststed": "VALLDAL"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dyrking av druer",
     "kode": "01.210"
@@ -20,14 +26,16 @@
   "navn": "URI RAYMOND",
   "oppstartsdato": "1990-03-07",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "978485006",
   "overordnetEnhet": "969850923",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1997-07-09",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

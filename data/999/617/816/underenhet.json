@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999546269"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/999617816"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Karoline Kristiansens vei 7"
@@ -11,9 +18,8 @@
     "postnummer": "0661",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "nornir.io",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
@@ -21,14 +27,16 @@
   "navn": "NORNIR AS",
   "oppstartsdato": "2012-11-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "999617816",
   "overordnetEnhet": "999546269",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2013-01-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

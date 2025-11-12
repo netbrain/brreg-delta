@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915804683"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/915840663"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Stenersgata 2A"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "firmapost@olavthon.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.thon.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -22,9 +28,13 @@
   "navn": "SARTOR STORSENTER AS",
   "oppstartsdato": "2015-08-06",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "915840663",
   "overordnetEnhet": "915804683",
@@ -39,8 +49,6 @@
     "postnummer": "0105",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2015-08-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

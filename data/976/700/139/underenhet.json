@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935471427"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/976700139"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Melhusvegen 481"
@@ -12,8 +19,7 @@
     "poststed": "MELHUS"
   },
   "datoEierskifte": "2025-11-03",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med drivstoff til motorvogner",
     "kode": "47.300"
@@ -21,14 +27,16 @@
   "navn": "MELHUS VEISERVICE",
   "oppstartsdato": "1996-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "976700139",
   "overordnetEnhet": "935471427",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1996-08-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936310605"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936331513"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Storgata 6"
@@ -10,8 +18,7 @@
     "postnummer": "1890",
     "poststed": "RAKKESTAD"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bøker",
     "kode": "47.610"
@@ -19,9 +26,13 @@
   "navn": "AMUNDSEN BØKER AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936331513",
   "overordnetEnhet": "936310605",
@@ -37,6 +48,8 @@
     "postnummer": "3414",
     "poststed": "LIERSTRANDA"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-10-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

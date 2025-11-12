@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 16,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991255338"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/991283889"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Midtveien 1"
@@ -11,8 +18,7 @@
     "postnummer": "1526",
     "poststed": "MOSS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "45011454",
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
@@ -21,14 +27,16 @@
   "navn": "EL PARTNER AS",
   "oppstartsdato": "2007-05-21",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "991283889",
   "overordnetEnhet": "991255338",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2007-05-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

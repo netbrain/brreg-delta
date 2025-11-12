@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/939522719"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/973678426"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Arnulf Øverlands gate 2"
@@ -12,17 +19,20 @@
     "poststed": "KRISTIANSUND N"
   },
   "datoEierskifte": "2018-06-01",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med klær",
     "kode": "47.710"
   },
   "navn": "CUBUS KRISTIANSUND AVD 86B",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "973678426",
   "overordnetEnhet": "939522719",
@@ -37,8 +47,6 @@
     "postnummer": "1377",
     "poststed": "BILLINGSTAD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

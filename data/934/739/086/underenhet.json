@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998934133"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934739086"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Dronningen 1"
@@ -10,8 +18,7 @@
     "postnummer": "0287",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
     "kode": "64.323"
@@ -19,9 +26,13 @@
   "navn": "PKJ INVEST AS",
   "oppstartsdato": "2023-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934739086",
   "overordnetEnhet": "998934133",
@@ -36,6 +47,8 @@
     "postnummer": "0211",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2024-12-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

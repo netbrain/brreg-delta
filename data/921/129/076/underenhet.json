@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 17,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921092768"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/921129076"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hausmanns gate 28"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "post@vegasnackbar.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.vegasnackbar.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -22,14 +28,16 @@
   "navn": "VEGA SNACKBAR AS",
   "oppstartsdato": "2018-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "921129076",
   "overordnetEnhet": "921092768",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2018-07-07",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

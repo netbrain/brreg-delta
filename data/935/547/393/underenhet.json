@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935493749"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935547393"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kvalamarka 1"
@@ -10,8 +18,7 @@
     "postnummer": "5514",
     "poststed": "HAUGESUND"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
     "kode": "95.310"
@@ -19,9 +26,13 @@
   "navn": "BOVIK AUTOSERVICE AS",
   "oppstartsdato": "2025-08-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935547393",
   "overordnetEnhet": "935493749",
@@ -36,6 +47,8 @@
     "postnummer": "5542",
     "poststed": "KARMSUND"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-05-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929551494"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929585089"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Dalsvegen 2"
@@ -12,9 +19,8 @@
     "poststed": "KLEPPE"
   },
   "epostadresse": "jlptjenester@gmail.com",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "jlptjenester.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
     "kode": "81.100"
@@ -22,14 +28,16 @@
   "navn": "JLP TJENESTER AS",
   "oppstartsdato": "2022-08-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "929585089",
   "overordnetEnhet": "929551494",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2022-08-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

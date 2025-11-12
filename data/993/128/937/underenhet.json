@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982124387"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/993128937"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Yngvar Titterud",
@@ -11,8 +19,7 @@
     "postnummer": "1712",
     "poststed": "GRÅLUM"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
     "kode": "68.120"
@@ -20,9 +27,13 @@
   "navn": "ORIGO HOLDING AS",
   "oppstartsdato": "2008-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "993128937",
   "overordnetEnhet": "982124387",
@@ -38,6 +49,8 @@
     "postnummer": "1721",
     "poststed": "SARPSBORG"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2008-09-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

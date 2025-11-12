@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/956204860"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931602292"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bjørkestien 1"
@@ -11,8 +18,7 @@
     "postnummer": "2450",
     "poststed": "RENA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -20,14 +26,16 @@
   "navn": "STUDENTSAMSKIPNADEN I INNLANDET AVD KILDEN KAFFEBAR RENA",
   "oppstartsdato": "2023-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931602292",
   "overordnetEnhet": "956204860",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-11-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-11-10",
   "registreringsdatoEnhetsregisteret": "2023-06-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

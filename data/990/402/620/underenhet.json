@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 13,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929884256"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/990402620"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Modalsvegen 25"
@@ -11,8 +18,7 @@
     "postnummer": "2265",
     "poststed": "NAMNÅ"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Etterbehandling av treprodukter",
     "kode": "16.270"
@@ -20,9 +26,13 @@
   "navn": "SANDERMOEN AS AVD NAMNÅ",
   "oppstartsdato": "2004-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "990402620",
   "overordnetEnhet": "929884256",
@@ -37,8 +47,6 @@
     "postnummer": "2260",
     "poststed": "KIRKENÆR"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2006-10-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

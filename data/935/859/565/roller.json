@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935859565/roller"
     }
   },
-  "organisasjonsnummer": "935859565",
   "rollegrupper": [
     {
       "roller": [
@@ -66,16 +65,51 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2025-07-24",
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987593636"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "REVISORKOLLEGIET AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "987593636"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

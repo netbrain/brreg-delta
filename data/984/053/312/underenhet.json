@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/884030862"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/984053312"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Torshovgata 8"
@@ -12,8 +19,7 @@
     "poststed": "OSLO"
   },
   "epostadresse": "torshov@aktiveiendom.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Eiendomsmegling og andre formidlingstjenester for eiendom",
     "kode": "68.310"
@@ -21,9 +27,13 @@
   "navn": "GREFSEN OG TORSHOV EIENDOMSMEGLING AS",
   "oppstartsdato": "2002-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "984053312",
   "overordnetEnhet": "884030862",
@@ -38,8 +48,6 @@
     "postnummer": "0405",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2001-12-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

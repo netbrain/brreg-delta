@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 13,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/861627292"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972275573"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Carl 15 gate 15"
@@ -11,8 +18,7 @@
     "postnummer": "3150",
     "poststed": "TOLVSRØD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -20,9 +26,13 @@
   "navn": "REDNINGEN AS",
   "oppstartsdato": "1991-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972275573",
   "overordnetEnhet": "861627292",
@@ -37,8 +47,6 @@
     "postnummer": "3166",
     "poststed": "TOLVSRØD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

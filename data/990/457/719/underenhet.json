@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 50,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990405476"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/990457719"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Timberveien 85"
@@ -11,8 +18,7 @@
     "postnummer": "9911",
     "poststed": "JARFJORD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Slakting av fisk, skalldyr og bløtdyr",
     "kode": "10.202"
@@ -20,14 +26,16 @@
   "navn": "KIRKENES PROCESSING AS",
   "oppstartsdato": "2006-10-27",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "990457719",
   "overordnetEnhet": "990405476",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2006-10-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

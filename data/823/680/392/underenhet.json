@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923529411"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/823680392"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solåsen 54"
@@ -10,8 +18,7 @@
     "postnummer": "1671",
     "poststed": "KRÅKERØY"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Spesialiserte legetjenester, unntatt psykiatriske legetjenester",
     "kode": "86.221"
@@ -19,14 +26,16 @@
   "navn": "RUSTEN CONSULTING",
   "oppstartsdato": "2019-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "823680392",
   "overordnetEnhet": "923529411",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-01-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-01-10",
   "registreringsdatoEnhetsregisteret": "2019-10-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

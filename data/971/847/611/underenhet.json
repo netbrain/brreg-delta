@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/950600713"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/971847611"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Setskogveien 78"
@@ -11,8 +18,7 @@
     "postnummer": "1940",
     "poststed": "BJØRKELANGEN"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "VVS-arbeid",
     "kode": "43.220"
@@ -20,14 +26,16 @@
   "navn": "AARSTAD \u0026 SØNNER AS",
   "oppstartsdato": "1971-12-29",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "971847611",
   "overordnetEnhet": "950600713",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

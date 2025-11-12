@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 70,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996286592"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/999232787"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tollbugata 7"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "datoEierskifte": "2017-01-01",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.people4you.no",
-  "links": [],
   "mobil": "913 97 404",
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
@@ -23,9 +29,13 @@
   "navn": "GRATA AS AVD OSLO",
   "oppstartsdato": "2012-11-26",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "999232787",
   "overordnetEnhet": "996286592",
@@ -41,8 +51,6 @@
     "postnummer": "0667",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-10-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-10-10",
   "registreringsdatoEnhetsregisteret": "2012-12-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

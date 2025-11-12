@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990619271"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926323806"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Torggata 7"
@@ -10,8 +18,7 @@
     "postnummer": "3724",
     "poststed": "SKIEN"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "995 45 499",
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
@@ -20,9 +27,13 @@
   "navn": "ADVOKAT STEIN BIRGER JOHNSEN AS",
   "oppstartsdato": "2020-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926323806",
   "overordnetEnhet": "990619271",
@@ -37,8 +48,6 @@
     "postnummer": "3701",
     "poststed": "SKIEN"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-02-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-02-10",
   "registreringsdatoEnhetsregisteret": "2021-01-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

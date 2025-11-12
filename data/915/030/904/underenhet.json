@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915027342"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/915030904"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Storgaten 32"
@@ -11,12 +18,11 @@
     "postnummer": "3126",
     "poststed": "TØNSBERG"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "mobil": "926 13 377",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -25,14 +31,16 @@
   "navn": "OTTERLEI EIENDOM AS",
   "oppstartsdato": "2015-02-11",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "915030904",
   "overordnetEnhet": "915027342",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-04-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-04-10",
   "registreringsdatoEnhetsregisteret": "2015-02-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

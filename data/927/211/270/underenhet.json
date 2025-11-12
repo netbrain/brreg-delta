@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 27,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927120747"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/927211270"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Morten Sollie-Hansen",
@@ -12,8 +19,7 @@
     "postnummer": "2821",
     "poststed": "GJØVIK"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av idrettsanlegg",
     "kode": "93.110"
@@ -21,14 +27,16 @@
   "navn": "TOTENS TØFFESTE FORENING",
   "oppstartsdato": "2021-06-07",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "927211270",
   "overordnetEnhet": "927120747",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2021-06-07",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

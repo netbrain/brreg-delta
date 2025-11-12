@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 9,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/984112696"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/978469582"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Moldasida 26"
@@ -12,8 +19,7 @@
     "poststed": "LÆRDAL"
   },
   "datoEierskifte": "2002-02-16",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Kombinert husdyrhold og planteproduksjon",
     "kode": "01.500"
@@ -21,14 +27,16 @@
   "navn": "JOHANNES HUNDERI",
   "oppstartsdato": "1970-07-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "978469582",
   "overordnetEnhet": "984112696",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1997-07-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

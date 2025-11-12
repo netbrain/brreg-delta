@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999579922"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/830080872"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sigrid Undsets veg 18A"
@@ -10,8 +18,7 @@
     "postnummer": "7023",
     "poststed": "TRONDHEIM"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,14 +26,16 @@
   "navn": "SOFTWARE CRAFTSMAN TOR HOVLAND AS",
   "oppstartsdato": "2022-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "830080872",
   "overordnetEnhet": "999579922",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2022-11-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2022-11-10",
   "registreringsdatoEnhetsregisteret": "2022-10-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

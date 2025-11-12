@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923884408"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/923975926"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Angelltrøvegen 248"
@@ -10,8 +18,7 @@
     "postnummer": "7048",
     "poststed": "TRONDHEIM"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Rengjøring av bygninger",
     "kode": "81.210"
@@ -19,9 +26,13 @@
   "navn": "JANICKE TONYS RENHOLD AS",
   "oppstartsdato": "2019-11-25",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "923975926",
   "overordnetEnhet": "923884408",
@@ -37,8 +48,6 @@
     "postnummer": "7048",
     "poststed": "TRONDHEIM"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2020-04-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2020-04-10",
   "registreringsdatoEnhetsregisteret": "2019-11-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

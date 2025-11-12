@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931988166"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932010534"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skogsvågvegen 122"
@@ -11,8 +18,7 @@
     "postnummer": "5382",
     "poststed": "SKOGSVÅG"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med drivstoff til motorvogner",
     "kode": "47.300"
@@ -20,9 +26,13 @@
   "navn": "STØEN SERVICE OG FRITID AS",
   "oppstartsdato": "2023-05-26",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "932010534",
   "overordnetEnhet": "931988166",
@@ -38,8 +48,6 @@
     "postnummer": "3810",
     "poststed": "GVARV"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2023-09-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

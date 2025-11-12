@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/976711556"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935896525"
+    }
+  },
+  "antallAnsatte": 7,
   "beliggenhetsadresse": {
     "adresse": [
       "Tore Hals Mejdells vei 5"
@@ -10,8 +19,7 @@
     "postnummer": "0751",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med husholdningsredskaper og bestikk, servise, glassvarer, porselen og keramikk",
     "kode": "47.553"
@@ -19,9 +27,13 @@
   "navn": "KITCH'N RØA",
   "oppstartsdato": "2025-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935896525",
   "overordnetEnhet": "976711556",
@@ -36,6 +48,8 @@
     "postnummer": "4306",
     "poststed": "SANDNES"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-07-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/912715310"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926642391"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Virketvej 40"
@@ -7,8 +15,7 @@
     "landkode": "DK",
     "poststed": "DK-4863 Eskilstrup"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Snekkerarbeid",
     "kode": "43.320"
@@ -16,9 +23,13 @@
   "navn": "C. SEMBACH MONTAGE APS",
   "oppstartsdato": "2021-02-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "926642391",
   "overordnetEnhet": "912715310",
@@ -31,8 +42,6 @@
     "landkode": "DK",
     "poststed": "DK-6320 EGERNSUND"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2021-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

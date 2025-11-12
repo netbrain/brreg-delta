@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 13,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/913130839"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/913183215"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rådhusveien 20"
@@ -12,8 +19,7 @@
     "poststed": "TANA"
   },
   "epostadresse": "tapiokajander@gmail.com",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "932 00 182",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -22,14 +28,16 @@
   "navn": "ELVEKANTEN SPISERI AS",
   "oppstartsdato": "2014-02-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "913183215",
   "overordnetEnhet": "913130839",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2014-02-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

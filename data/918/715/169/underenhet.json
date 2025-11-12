@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 23,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/818529082"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918715169"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solgaard skog 60"
@@ -11,8 +18,7 @@
     "postnummer": "1599",
     "poststed": "MOSS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Engroshandel med bredt utvalg av nærings- og nytelsesmidler",
     "kode": "46.390"
@@ -20,14 +26,16 @@
   "navn": "PLATEFUL AS",
   "oppstartsdato": "2017-03-08",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918715169",
   "overordnetEnhet": "818529082",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2017-03-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

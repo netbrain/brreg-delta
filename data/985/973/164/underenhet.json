@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 9,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996936708"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/985973164"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Fyresdalsvegen 183"
@@ -13,9 +20,8 @@
   },
   "datoEierskifte": "2011-05-21",
   "epostadresse": "post@aktivlek.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.aktivlek.no",
-  "links": [],
   "mobil": "90778158",
   "naeringskode1": {
     "beskrivelse": "Produksjon av andre trevarer og varer av kork, strå og flettematerialer",
@@ -24,9 +30,13 @@
   "navn": "AKTIV LEK AS",
   "oppstartsdato": "2002-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "985973164",
   "overordnetEnhet": "996936708",
@@ -41,8 +51,6 @@
     "postnummer": "3057",
     "poststed": "SOLBERGELVA"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2003-08-26",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932432129"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932463490"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Øisteins gate 10"
@@ -10,8 +18,7 @@
     "postnummer": "1511",
     "poststed": "MOSS"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Reklamebyråvirksomhet",
     "kode": "73.110"
@@ -19,9 +26,13 @@
   "navn": "EKOFIB LOTTERIER AS",
   "oppstartsdato": "2023-11-09",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "932463490",
   "overordnetEnhet": "932432129",
@@ -36,6 +47,8 @@
     "postnummer": "1510",
     "poststed": "MOSS"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2023-11-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

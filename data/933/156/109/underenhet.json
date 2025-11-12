@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 13,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/833141392"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933156109"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Litjgårdsveien 58"
@@ -11,8 +18,7 @@
     "postnummer": "7300",
     "poststed": "ORKANGER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -20,14 +26,16 @@
   "navn": "CURATOR AS",
   "oppstartsdato": "2024-02-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933156109",
   "overordnetEnhet": "833141392",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2024-03-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

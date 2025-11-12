@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 9,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991695141"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/991701311"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Balsfjordveien 911"
@@ -12,8 +19,7 @@
     "poststed": "MEISTERVIK"
   },
   "epostadresse": "sarah.schott@hotmail.com",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "46803236",
   "naeringskode1": {
     "beskrivelse": "Veterinærtjenester",
@@ -26,14 +32,16 @@
   "navn": "HØIER GÅRD",
   "oppstartsdato": "2007-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "991701311",
   "overordnetEnhet": "991695141",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2007-09-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

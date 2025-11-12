@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/892568332"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/999356818"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Teknologiveien 11"
@@ -10,8 +18,7 @@
     "postnummer": "8517",
     "poststed": "NARVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
     "kode": "81.100"
@@ -19,9 +26,13 @@
   "navn": "FINNSNES SENTER AS",
   "oppstartsdato": "2011-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "999356818",
   "overordnetEnhet": "892568332",
@@ -36,6 +47,8 @@
     "postnummer": "8510",
     "poststed": "NARVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2013-01-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

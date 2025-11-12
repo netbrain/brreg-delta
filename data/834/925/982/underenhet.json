@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934909399"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/834925982"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "v/House of Business Solli",
@@ -12,8 +19,7 @@
     "postnummer": "0255",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
@@ -21,14 +27,16 @@
   "navn": "TT NDT AS",
   "oppstartsdato": "2024-12-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "834925982",
   "overordnetEnhet": "934909399",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2025-01-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

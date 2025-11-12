@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919816627"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/919901616"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Mathilde Abelson Sahlen",
@@ -11,8 +19,7 @@
     "postnummer": "0477",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Grafisk design og visuell kommunikasjonsdesign",
     "kode": "74.120"
@@ -20,14 +27,16 @@
   "navn": "BRANSJEN AS",
   "oppstartsdato": "2017-10-09",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "919901616",
   "overordnetEnhet": "919816627",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2019-07-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2019-07-10",
   "registreringsdatoEnhetsregisteret": "2017-11-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

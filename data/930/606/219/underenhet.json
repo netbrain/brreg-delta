@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930606154"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930606219"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Beddingen 2"
@@ -10,8 +18,7 @@
     "postnummer": "0250",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Allmennlegetjenester",
     "kode": "86.210"
@@ -19,14 +26,16 @@
   "navn": "SURGICARE AS",
   "oppstartsdato": "2023-01-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930606219",
   "overordnetEnhet": "930606154",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-03-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-03-10",
   "registreringsdatoEnhetsregisteret": "2023-01-07",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

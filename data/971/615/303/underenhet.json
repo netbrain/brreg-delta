@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920316271"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/971615303"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "O.P.Pettersens gate 2"
@@ -11,8 +18,7 @@
     "postnummer": "1607",
     "poststed": "FREDRIKSTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Frisering og barbering",
     "kode": "96.210"
@@ -20,14 +26,16 @@
   "navn": "FRISØRMESTER VIDAR JACOBSEN AS",
   "oppstartsdato": "1978-10-13",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "971615303",
   "overordnetEnhet": "920316271",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-07-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-07-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

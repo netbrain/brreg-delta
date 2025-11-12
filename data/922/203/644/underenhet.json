@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921284500"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/922203644"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Varudgutua 10"
@@ -11,8 +18,7 @@
     "postnummer": "2072",
     "poststed": "DAL"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dyrking av ettårige vekster ellers",
     "kode": "01.190"
@@ -20,14 +26,16 @@
   "navn": "HJERA GÅRD AS",
   "oppstartsdato": "2018-08-08",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "922203644",
   "overordnetEnhet": "921284500",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-02-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-02-10",
   "registreringsdatoEnhetsregisteret": "2019-02-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918287833"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/818365802"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bruseveien 14A"
@@ -10,8 +18,7 @@
     "postnummer": "1911",
     "poststed": "FLATEBY"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bygging av andre anlegg ikke nevnt annet sted",
     "kode": "42.990"
@@ -19,14 +26,16 @@
   "navn": "BYGGIA AS",
   "oppstartsdato": "2016-12-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "818365802",
   "overordnetEnhet": "918287833",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2017-01-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

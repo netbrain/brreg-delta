@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/966549017"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/976622944"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Utsynet 46"
@@ -10,8 +18,7 @@
     "postnummer": "1512",
     "poststed": "MOSS"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,9 +26,13 @@
   "navn": "CENTRUM EIENDOM AS",
   "oppstartsdato": "1993-04-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "976622944",
   "overordnetEnhet": "966549017",
@@ -36,6 +47,8 @@
     "postnummer": "1502",
     "poststed": "MOSS"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "1996-08-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

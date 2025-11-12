@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/820243552"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936482058"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vekstveien 23"
@@ -10,8 +18,7 @@
     "postnummer": "3474",
     "poststed": "ÅROS"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
@@ -19,9 +26,13 @@
   "navn": "BASALT COMPANY AS",
   "oppstartsdato": "2025-10-29",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936482058",
   "overordnetEnhet": "820243552",
@@ -36,6 +47,8 @@
     "postnummer": "1371",
     "poststed": "ASKER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-10-30",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916510748"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982463947"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Bjarte Midtbø"
@@ -12,8 +19,7 @@
     "poststed": "KORSSUND"
   },
   "datoEierskifte": "2016-01-05",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bearbeiding og konservering av kjøtt unntatt fjørfekjøtt",
     "kode": "10.110"
@@ -21,14 +27,16 @@
   "navn": "KYSTVILT AS",
   "oppstartsdato": "2000-09-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982463947",
   "overordnetEnhet": "916510748",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2000-10-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

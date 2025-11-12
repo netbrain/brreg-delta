@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 9,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988251739"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932334348"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Ringeriksvei 21C"
@@ -11,8 +18,7 @@
     "postnummer": "1356",
     "poststed": "BEKKESTUA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Kontortjenester",
     "kode": "82.100"
@@ -20,9 +26,13 @@
   "navn": "HOUSE OF HYGGE AS AVD BEKKESTUA",
   "oppstartsdato": "2023-10-25",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "932334348",
   "overordnetEnhet": "988251739",
@@ -37,8 +47,6 @@
     "postnummer": "1356",
     "poststed": "BEKKESTUA"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2023-10-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

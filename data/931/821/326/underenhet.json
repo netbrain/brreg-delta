@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/831686022"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931821326"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sønsterudveien 26"
@@ -10,8 +18,7 @@
     "postnummer": "1412",
     "poststed": "SOFIEMYR"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Treningssentervirksomhet",
     "kode": "93.130"
@@ -19,9 +26,13 @@
   "navn": "LIFT N RUN FITNESS AS",
   "oppstartsdato": "2023-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931821326",
   "overordnetEnhet": "831686022",
@@ -37,6 +48,8 @@
     "postnummer": "1410",
     "poststed": "KOLBOTN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2023-08-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

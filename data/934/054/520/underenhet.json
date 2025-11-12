@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934012712"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934054520"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tråvik 46"
@@ -10,8 +18,7 @@
     "postnummer": "5384",
     "poststed": "TORANGSVÅG"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Industri-, produkt- og motedesignvirksomhet",
     "kode": "74.110"
@@ -19,9 +26,13 @@
   "navn": "ORIANA AS",
   "oppstartsdato": "2024-07-26",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934054520",
   "overordnetEnhet": "934012712",
@@ -36,6 +47,8 @@
     "postnummer": "5392",
     "poststed": "STOREBØ"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2024-09-09",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921668295"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/921700458"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Stabburveien 1A"
@@ -11,8 +18,7 @@
     "postnummer": "1617",
     "poststed": "FREDRIKSTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Reklamebyråvirksomhet",
     "kode": "73.110"
@@ -20,14 +26,16 @@
   "navn": "UT AV BOKSEN AS",
   "oppstartsdato": "2018-10-26",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "921700458",
   "overordnetEnhet": "921668295",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2018-11-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990223424"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/923815937"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Kongsvinger og Omegns BBL",
@@ -11,17 +19,20 @@
     "postnummer": "2212",
     "poststed": "KONGSVINGER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i borettslag og boligsameier",
     "kode": "97.001"
   },
   "navn": "MAGASINBEKKEN BORETTSLAG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "923815937",
   "overordnetEnhet": "990223424",
@@ -37,8 +48,6 @@
     "postnummer": "2201",
     "poststed": "KONGSVINGER"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2019-11-18",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

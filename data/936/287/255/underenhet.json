@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936264182"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936287255"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kokstadvegen 41"
@@ -10,8 +18,7 @@
     "postnummer": "5257",
     "poststed": "KOKSTAD"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Engroshandel med fisk, skalldyr og bløtdyr",
     "kode": "46.322"
@@ -19,9 +26,13 @@
   "navn": "SF7 OVERSEAS AS",
   "oppstartsdato": "2025-09-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936287255",
   "overordnetEnhet": "936264182",
@@ -37,6 +48,8 @@
     "postnummer": "1384",
     "poststed": "ASKER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-10-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

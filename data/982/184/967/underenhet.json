@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988230359"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982184967"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Grønland 14"
@@ -13,9 +20,8 @@
   },
   "datoEierskifte": "2005-05-12",
   "epostadresse": "mail@rockin.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.rockin.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -23,14 +29,16 @@
   "navn": "NOOR INVEST AS",
   "oppstartsdato": "2000-08-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982184967",
   "overordnetEnhet": "988230359",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2000-07-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

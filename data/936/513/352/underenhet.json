@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929751361"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936513352"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Smidjebergvegen 2"
@@ -10,12 +18,11 @@
     "postnummer": "4265",
     "poststed": "HÅVIK"
   },
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med deler og utstyr til motorvogner",
     "kode": "47.820"
@@ -23,9 +30,13 @@
   "navn": "HOWA AS",
   "oppstartsdato": "2025-10-20",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936513352",
   "overordnetEnhet": "929751361",
@@ -41,6 +52,8 @@
     "postnummer": "4050",
     "poststed": "SOLA"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-11-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

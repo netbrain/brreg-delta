@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916626312"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916663773"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ole Deviks vei 16B"
@@ -10,8 +18,7 @@
     "postnummer": "0666",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "976 60 290",
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
@@ -20,9 +27,13 @@
   "navn": "BOOKKEEPERS AS",
   "oppstartsdato": "2016-01-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "916663773",
   "overordnetEnhet": "916626312",
@@ -37,8 +48,6 @@
     "postnummer": "0140",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2016-02-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

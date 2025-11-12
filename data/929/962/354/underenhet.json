@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929800400"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929962354"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rörvik Västergård Struten 13"
@@ -8,8 +16,7 @@
     "poststed": "456 92 HUNNEBOSTRAND"
   },
   "epostadresse": "tomas.hurtig@telia.com",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -17,9 +24,13 @@
   "navn": "T HURTIG EKONOMIKONSULT, THEKAB, AB NUF",
   "oppstartsdato": "2022-09-29",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "929962354",
   "overordnetEnhet": "929800400",
@@ -34,8 +45,6 @@
     "postnummer": "0260",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-04-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-04-10",
   "registreringsdatoEnhetsregisteret": "2022-09-29",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

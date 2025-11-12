@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 24,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/837889812"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/873145692"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sam Eydes gate 89"
@@ -13,8 +20,7 @@
   },
   "datoEierskifte": "2025-11-03",
   "epostadresse": "post@tinnbank.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Banker og kredittforetak",
     "kode": "64.190"
@@ -22,9 +28,13 @@
   "navn": "SKUE SPAREBANK AVD RJUKAN",
   "oppstartsdato": "1965-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "873145692",
   "overordnetEnhet": "837889812",
@@ -39,8 +49,6 @@
     "postnummer": "3661",
     "poststed": "RJUKAN"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

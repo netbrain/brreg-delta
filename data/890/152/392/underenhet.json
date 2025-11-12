@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987627166"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/890152392"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Middelthuns gate 27"
@@ -11,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "info@fjernvarme.no",
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjemmeside": "www.fjernvarme.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
     "kode": "94.992"
@@ -21,9 +28,13 @@
   "navn": "NORSK FJENVARMEFORENING",
   "oppstartsdato": "2005-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "890152392",
   "overordnetEnhet": "987627166",
@@ -38,6 +49,8 @@
     "postnummer": "0307",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2006-08-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

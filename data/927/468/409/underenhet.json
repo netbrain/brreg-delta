@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927458187"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/927468409"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Fløterveien 5"
@@ -12,8 +19,7 @@
     "poststed": "GRÅLUM"
   },
   "epostadresse": "matsthomasrud@gmail.com",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "978 89 841",
   "naeringskode1": {
     "beskrivelse": "Produksjon av andre bygningsartikler",
@@ -22,14 +28,16 @@
   "navn": "THOMASRUD SNEKKERI",
   "oppstartsdato": "2021-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "927468409",
   "overordnetEnhet": "927458187",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-03-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-03-10",
   "registreringsdatoEnhetsregisteret": "2021-07-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982547822"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934579984"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Myrdalsvegen 2"
@@ -11,8 +19,7 @@
     "poststed": "NYBORG"
   },
   "epostadresse": "regnskap@boots.no",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med apotekvarer",
     "kode": "47.730"
@@ -20,9 +27,13 @@
   "navn": "BOOTS APOTEK HORISONT",
   "oppstartsdato": "2025-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934579984",
   "overordnetEnhet": "982547822",
@@ -37,6 +48,8 @@
     "postnummer": "0404",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2024-12-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

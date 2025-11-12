@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 30,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986706089"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916554931"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Fistervegen 153"
@@ -11,8 +18,7 @@
     "postnummer": "4139",
     "poststed": "FISTER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "98627879",
   "naeringskode1": {
     "beskrivelse": "Bearbeiding og konservering av frukt og grønnsaker ellers",
@@ -21,14 +27,16 @@
   "navn": "SINDRE ANDRÈ SANDVIK",
   "oppstartsdato": "2016-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "916554931",
   "overordnetEnhet": "986706089",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2016-01-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989169017"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916423683"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Beverskaret 32"
@@ -10,12 +18,11 @@
     "postnummer": "5532",
     "poststed": "HAUGESUND"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -23,14 +30,16 @@
   "navn": "SYNERGIA ADVISORS HOLDING AS",
   "oppstartsdato": "2014-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "916423683",
   "overordnetEnhet": "989169017",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2015-12-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

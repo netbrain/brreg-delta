@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920572308/roller"
     }
   },
-  "organisasjonsnummer": "920572308",
   "rollegrupper": [
     {
       "roller": [
@@ -108,9 +107,30 @@
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1975-08-02",
+            "navn": {
+              "etternavn": "Overå",
+              "fornavn": "Monica"
+            }
+          },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2024-10-19",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -122,16 +142,51 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2018-03-09",
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935650798"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "BHL AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "935650798"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

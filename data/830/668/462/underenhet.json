@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/945801026"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/830668462"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Industriveien 49"
@@ -11,8 +18,7 @@
     "postnummer": "7080",
     "poststed": "HEIMDAL"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen spesialisert bygge- og anleggsvirksomhet ikke nevnt annet sted",
     "kode": "43.990"
@@ -20,14 +26,16 @@
   "navn": "ROSINGS INDUSTRIER AS AVD MIDT-NORGE",
   "oppstartsdato": "2009-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "830668462",
   "overordnetEnhet": "945801026",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2023-01-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929371097"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929388399"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bryggen 3"
@@ -10,8 +18,7 @@
     "postnummer": "5003",
     "poststed": "BERGEN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "All annen faglig, vitenskapelig og teknisk virksomhet ikke nevnt annet sted",
     "kode": "74.990"
@@ -19,9 +26,13 @@
   "navn": "AP SPORTS MANAGEMENT AS",
   "oppstartsdato": "2022-05-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "929388399",
   "overordnetEnhet": "929371097",
@@ -36,6 +47,8 @@
     "postnummer": "5202",
     "poststed": "OS"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2022-06-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

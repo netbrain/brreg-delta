@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/818597002"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/818647042"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solhellinga 11"
@@ -11,8 +18,7 @@
     "postnummer": "3303",
     "poststed": "HOKKSUND"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
     "kode": "43.120"
@@ -20,14 +26,16 @@
   "navn": "UNIGRAV AS",
   "oppstartsdato": "2017-02-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "818647042",
   "overordnetEnhet": "818597002",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-03-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-03-10",
   "registreringsdatoEnhetsregisteret": "2017-03-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

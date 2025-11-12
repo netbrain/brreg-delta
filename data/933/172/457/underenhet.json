@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933171876"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933172457"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Holteveien 2"
@@ -10,8 +18,7 @@
     "postnummer": "1410",
     "poststed": "KOLBOTN"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
     "kode": "94.992"
@@ -19,9 +26,13 @@
   "navn": "UNIK",
   "oppstartsdato": "2024-03-14",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "933172457",
   "overordnetEnhet": "933171876",
@@ -36,8 +47,6 @@
     "postnummer": "1418",
     "poststed": "KOLBOTN"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2024-03-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

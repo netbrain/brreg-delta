@@ -1,6 +1,13 @@
 {
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/913299485"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/913504984"
+    }
+  },
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -8,9 +15,13 @@
   "navn": "SONAT AB",
   "oppstartsdato": "2014-04-14",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "913504984",
   "overordnetEnhet": "913299485",
@@ -22,8 +33,6 @@
     "landkode": "SE",
     "poststed": "SE-111 20 STOCKHOLM"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2014-04-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

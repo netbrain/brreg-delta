@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983974716"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934673603"
+    }
+  },
+  "antallAnsatte": 6,
   "beliggenhetsadresse": {
     "adresse": [
       "Gerd-Ragna Bloch Thorsens gate 8"
@@ -11,8 +20,7 @@
     "poststed": "STAVANGER"
   },
   "epostadresse": "post@sav.no",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Engroshandel med apotekvarer og medisinske varer",
     "kode": "46.460"
@@ -24,9 +32,13 @@
   "navn": "SJUKEHUSAPOTEKET VÅLAND",
   "oppstartsdato": "2025-01-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934673603",
   "overordnetEnhet": "983974716",
@@ -41,6 +53,8 @@
     "postnummer": "5021",
     "poststed": "BERGEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2024-12-18",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

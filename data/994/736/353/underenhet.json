@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994702254"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/994736353"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Nevernesveien 18"
@@ -11,8 +18,7 @@
     "postnummer": "8630",
     "poststed": "STORFORSHEIA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "90762007",
   "naeringskode1": {
     "beskrivelse": "Tjenester tilknyttet skogbruk",
@@ -21,14 +27,16 @@
   "navn": "POLARCIRKELEN SKOG \u0026 BIOENERGI AS",
   "oppstartsdato": "2009-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "994736353",
   "overordnetEnhet": "994702254",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-12-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-12-10",
   "registreringsdatoEnhetsregisteret": "2009-11-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

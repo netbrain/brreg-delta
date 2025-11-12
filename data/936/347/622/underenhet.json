@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936312810"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936347622"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Kirkevei 110"
@@ -10,8 +18,7 @@
     "postnummer": "1617",
     "poststed": "FREDRIKSTAD"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "mobil": "976 22 109",
   "naeringskode1": {
     "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
@@ -20,9 +27,13 @@
   "navn": "INKLUDERING OG MESTRING AS",
   "oppstartsdato": "2025-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936347622",
   "overordnetEnhet": "936312810",
@@ -37,6 +48,8 @@
     "postnummer": "1871",
     "poststed": "ØRJE"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-10-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

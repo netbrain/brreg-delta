@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/828766392"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/828795902"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kroksalleen 32"
@@ -10,8 +18,7 @@
     "postnummer": "3050",
     "poststed": "MJØNDALEN"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,9 +26,13 @@
   "navn": "STUPE AS",
   "oppstartsdato": "2022-01-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "828795902",
   "overordnetEnhet": "828766392",
@@ -36,8 +47,6 @@
     "postnummer": "0258",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2022-03-15",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2022-03-10",
   "registreringsdatoEnhetsregisteret": "2022-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

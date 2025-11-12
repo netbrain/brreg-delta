@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990891737"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/923295577"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o OBOS Stor-Bergen",
@@ -12,17 +20,20 @@
     "poststed": "BERGEN"
   },
   "epostadresse": "obos@obos.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i borettslag og boligsameier",
     "kode": "97.001"
   },
   "navn": "BORETTSLAGET DOMKIRKEPLASSEN",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "923295577",
   "overordnetEnhet": "990891737",
@@ -38,8 +49,6 @@
     "postnummer": "0129",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2022-04-16",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2022-04-10",
   "registreringsdatoEnhetsregisteret": "2019-09-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/816676622"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916748124"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Strandgatan 22"
@@ -8,9 +15,8 @@
     "landkode": "SE",
     "poststed": "SE-93131 SKELLEFTEÅ"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "masterdrilling.se",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
     "kode": "43.120"
@@ -18,14 +24,16 @@
   "navn": "MASTER DRILLING EUROPE AB NUF",
   "oppstartsdato": "2016-02-11",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "916748124",
   "overordnetEnhet": "816676622",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2016-02-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

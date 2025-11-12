@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 15,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929877950"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/876741482"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Oksenøyveien 8"
@@ -11,8 +18,7 @@
     "postnummer": "1366",
     "poststed": "LYSAKER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet utvinning av råolje og naturgass",
     "kode": "09.109"
@@ -20,9 +26,13 @@
   "navn": "AKER SOLUTIONS AS AVD FORNEBUPORTEN",
   "oppstartsdato": "1978-09-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "876741482",
   "overordnetEnhet": "929877950",
@@ -37,8 +47,6 @@
     "postnummer": "1325",
     "poststed": "LYSAKER"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1996-09-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

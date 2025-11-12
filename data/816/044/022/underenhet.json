@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/979399278"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/816044022"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Venslivegen 13"
@@ -11,9 +19,8 @@
     "poststed": "LØTEN"
   },
   "epostadresse": "post@lotenfk.no",
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjemmeside": "www.lotenfk.no",
-  "links": [],
   "mobil": "40029345",
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i idrettslag og -klubber",
@@ -21,9 +28,13 @@
   },
   "navn": "LØTEN FOTBALLKLUBB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "816044022",
   "overordnetEnhet": "979399278",
@@ -38,6 +49,8 @@
     "postnummer": "2340",
     "poststed": "LØTEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2015-10-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

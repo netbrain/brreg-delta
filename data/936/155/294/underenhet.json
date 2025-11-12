@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936116876"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936155294"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Olaf Helsets vei 5"
@@ -10,8 +18,7 @@
     "postnummer": "0694",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
     "kode": "85.510"
@@ -19,9 +26,13 @@
   "navn": "TRACE CONCEPTS AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936155294",
   "overordnetEnhet": "936116876",
@@ -36,6 +47,8 @@
     "postnummer": "0775",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-09-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

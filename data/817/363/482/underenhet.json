@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 17,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915939376"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/817363482"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bolkesjø",
@@ -12,8 +19,7 @@
     "postnummer": "3680",
     "poststed": "NOTODDEN"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Omsorgstjenester i botilbud for personer med psykiske helseproblemer og/eller rusmiddelproblemer",
     "kode": "87.201"
@@ -21,14 +27,16 @@
   "navn": "MESTRINGSHUSENE BOLKESJØ AS AVD NOTODDEN",
   "oppstartsdato": "2016-06-21",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "817363482",
   "overordnetEnhet": "915939376",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-10-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-10-10",
   "registreringsdatoEnhetsregisteret": "2016-06-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

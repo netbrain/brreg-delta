@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997223039"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/911853787"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vågsgata 33"
@@ -11,8 +18,7 @@
     "postnummer": "4306",
     "poststed": "SANDNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bredt vareutvalg ellers",
     "kode": "47.120"
@@ -20,14 +26,16 @@
   "navn": "FLYING TIGER COPENHAGEN VÅGEN",
   "oppstartsdato": "2013-01-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "911853787",
   "overordnetEnhet": "997223039",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2013-04-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

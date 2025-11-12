@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920742130"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982813182"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rødtangveien 18A"
@@ -13,9 +20,8 @@
   },
   "datoEierskifte": "2021-06-01",
   "epostadresse": "ingen@hotmail.com",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "Ingen.no",
-  "links": [],
   "mobil": "900 11 999",
   "naeringskode1": {
     "beskrivelse": "Drift av hoteller",
@@ -24,14 +30,16 @@
   "navn": "BRYGGEKJØKKENET HOLMSBU",
   "oppstartsdato": "2000-12-27",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982813182",
   "overordnetEnhet": "920742130",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2001-01-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

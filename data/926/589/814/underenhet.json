@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926589784"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926589814"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Dr. Dedichens vei 48"
@@ -10,8 +18,7 @@
     "postnummer": "0675",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Passasjertransport på forespørsel utført av fører med kjøretøy",
     "kode": "49.330"
@@ -19,14 +26,16 @@
   "navn": "BABAR TAXI",
   "oppstartsdato": "2021-02-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926589814",
   "overordnetEnhet": "926589784",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2021-02-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

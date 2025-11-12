@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928303152"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928326012"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "C/O Erik Rosendahl",
@@ -12,8 +19,7 @@
     "postnummer": "5217",
     "poststed": "HAGAVIK"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med tekstiler og utstyrsvarer",
     "kode": "47.510"
@@ -21,14 +27,16 @@
   "navn": "FALK LINK AS",
   "oppstartsdato": "2021-09-22",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928326012",
   "overordnetEnhet": "928303152",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2021-12-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

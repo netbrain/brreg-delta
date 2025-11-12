@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989188291"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/999475167"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Brennerigata 6"
@@ -10,8 +18,7 @@
     "postnummer": "3617",
     "poststed": "KONGSBERG"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,14 +26,16 @@
   "navn": "HVAMMEN EIENDOM AS",
   "oppstartsdato": "2011-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "999475167",
   "overordnetEnhet": "989188291",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-01-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-01-10",
   "registreringsdatoEnhetsregisteret": "2013-01-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

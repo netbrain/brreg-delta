@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934836219"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935145295"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Holtermanns veg 7"
@@ -10,8 +18,7 @@
     "postnummer": "7030",
     "poststed": "TRONDHEIM"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,9 +26,13 @@
   "navn": "GEMINI INFRASTRUCTURE AS",
   "oppstartsdato": "2025-01-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935145295",
   "overordnetEnhet": "934836219",
@@ -36,6 +47,8 @@
     "postnummer": "7432",
     "poststed": "TRONDHEIM"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-03-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

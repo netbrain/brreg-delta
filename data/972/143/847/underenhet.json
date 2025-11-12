@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 15,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/947329618"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972143847"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kvernelandsveien 56D"
@@ -11,8 +18,7 @@
     "postnummer": "4323",
     "poststed": "SANDNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Snekkerarbeid",
     "kode": "43.320"
@@ -20,14 +26,16 @@
   "navn": "VIA MONTASJE AS",
   "oppstartsdato": "1988-04-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972143847",
   "overordnetEnhet": "947329618",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-10-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-10-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

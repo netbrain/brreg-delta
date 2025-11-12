@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989222465"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931599658"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Prestvikveien 34"
@@ -10,12 +18,11 @@
     "postnummer": "4631",
     "poststed": "KRISTIANSAND S"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -23,14 +30,16 @@
   "navn": "SUNHILL AS",
   "oppstartsdato": "2023-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931599658",
   "overordnetEnhet": "989222465",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-08-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-08-10",
   "registreringsdatoEnhetsregisteret": "2023-06-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

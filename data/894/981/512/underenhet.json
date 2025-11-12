@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/965920358"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/894981512"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Flyplassvegen 555"
@@ -10,12 +18,11 @@
     "postnummer": "5258",
     "poststed": "BLOMSTERDALEN"
   },
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Lufttransport med passasjerer",
     "kode": "51.100"
@@ -23,9 +30,13 @@
   "navn": "NORWEGIAN AIR SHUTTLE ASA AVD BERGEN LUFTHAVN",
   "oppstartsdato": "2008-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "894981512",
   "overordnetEnhet": "965920358",
@@ -40,6 +51,8 @@
     "postnummer": "1330",
     "poststed": "FORNEBU"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2010-01-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

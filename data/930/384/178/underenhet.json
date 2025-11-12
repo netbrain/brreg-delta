@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930384038"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930384178"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skrenten 2"
@@ -10,8 +18,7 @@
     "postnummer": "8909",
     "poststed": "BRØNNØYSUND"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,14 +26,16 @@
   "navn": "SARHUSET AS",
   "oppstartsdato": "2022-12-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930384178",
   "overordnetEnhet": "930384038",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-12-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-12-10",
   "registreringsdatoEnhetsregisteret": "2022-12-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929405102"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/829427982"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bråstadvika 39"
@@ -10,8 +18,7 @@
     "postnummer": "2825",
     "poststed": "GJØVIK"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
     "kode": "41.000"
@@ -19,9 +26,13 @@
   "navn": "D \u0026 D PROSJEKT AS",
   "oppstartsdato": "2022-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "829427982",
   "overordnetEnhet": "929405102",
@@ -36,8 +47,6 @@
     "postnummer": "2806",
     "poststed": "GJØVIK"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2022-06-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

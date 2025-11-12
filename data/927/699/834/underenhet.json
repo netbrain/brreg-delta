@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 14,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927106507"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/927699834"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Njordveien 26"
@@ -12,8 +19,7 @@
     "poststed": "ØKSFJORD"
   },
   "epostadresse": "rune.waaler@miljorederiet.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Miljøutbedring, opprydding og lignende aktivitet",
     "kode": "39.000"
@@ -21,14 +27,16 @@
   "navn": "MILJØREDERIET AS",
   "oppstartsdato": "2021-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "927699834",
   "overordnetEnhet": "927106507",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2021-09-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

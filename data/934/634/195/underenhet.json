@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925880426"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934634195"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rådhusgata 15"
@@ -10,8 +18,7 @@
     "postnummer": "3211",
     "poststed": "SANDEFJORD"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
     "kode": "69.100"
@@ -19,9 +26,13 @@
   "navn": "ELDEN ADVOKATFIRMA SANDEFJORD",
   "oppstartsdato": "2021-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934634195",
   "overordnetEnhet": "925880426",
@@ -36,6 +47,8 @@
     "postnummer": "3211",
     "poststed": "SANDEFJORD"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2024-12-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

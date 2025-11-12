@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935066980"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935100496"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vestre Strandgate 12"
@@ -10,8 +18,7 @@
     "postnummer": "4610",
     "poststed": "KRISTIANSAND S"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Sportsaktiviteter ikke nevnt annet sted",
     "kode": "93.190"
@@ -19,9 +26,13 @@
   "navn": "EVENTIFIX AS",
   "oppstartsdato": "2025-02-06",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935100496",
   "overordnetEnhet": "935066980",
@@ -36,6 +47,8 @@
     "postnummer": "4625",
     "poststed": "FLEKKERØY"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-02-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

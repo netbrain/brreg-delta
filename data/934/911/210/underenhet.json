@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/830090002"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934911210"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sverdrups gate 27"
@@ -11,12 +19,11 @@
     "poststed": "STAVANGER"
   },
   "datoEierskifte": "2025-09-01",
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
@@ -24,9 +31,13 @@
   "navn": "ENTRO GROUP AS AVD STAVANGER",
   "oppstartsdato": "2025-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934911210",
   "overordnetEnhet": "830090002",
@@ -41,6 +52,8 @@
     "postnummer": "7434",
     "poststed": "TRONDHEIM"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-01-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

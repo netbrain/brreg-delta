@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923357505"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/823401582"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Brattørgata 1"
@@ -11,8 +18,7 @@
     "postnummer": "7010",
     "poststed": "TRONDHEIM"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i dagspa, badstue og dampbad",
     "kode": "96.230"
@@ -20,14 +26,16 @@
   "navn": "ORIENT TRONDHEIM AS",
   "oppstartsdato": "2019-08-21",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "823401582",
   "overordnetEnhet": "923357505",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2019-12-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

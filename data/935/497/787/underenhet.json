@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935471532"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935497787"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "v/Exomed AS",
@@ -13,8 +21,7 @@
     "poststed": "SANDNES"
   },
   "epostadresse": "kontakt@exomed.no",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Allmennlegetjenester",
     "kode": "86.210"
@@ -22,9 +29,13 @@
   "navn": "EXOMED AS",
   "oppstartsdato": "2025-04-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935497787",
   "overordnetEnhet": "935471532",
@@ -39,6 +50,8 @@
     "postnummer": "4001",
     "poststed": "STAVANGER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-05-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 30,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/823251602"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/971799943"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bergomsvegen 32"
@@ -12,8 +19,7 @@
     "poststed": "LOM"
   },
   "epostadresse": "resepsjon@fossheimhotel.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av hoteller",
     "kode": "55.100"
@@ -21,14 +27,16 @@
   "navn": "FOSSHEIM TURISTHOTELL AS",
   "oppstartsdato": "1965-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "971799943",
   "overordnetEnhet": "823251602",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

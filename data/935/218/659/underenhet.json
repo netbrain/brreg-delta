@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935188725"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935218659"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Narvikgården AS",
@@ -11,8 +19,7 @@
     "postnummer": "8514",
     "poststed": "NARVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter utført av utflukts- og eventarrangører",
     "kode": "79.121"
@@ -20,9 +27,13 @@
   "navn": "EN HELT RÅ BY AS",
   "oppstartsdato": "2025-02-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935218659",
   "overordnetEnhet": "935188725",
@@ -38,6 +49,8 @@
     "postnummer": "8507",
     "poststed": "NARVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-03-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

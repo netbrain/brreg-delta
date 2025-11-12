@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935873177"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935885787"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Uranienborgveien 6"
@@ -10,8 +18,7 @@
     "postnummer": "0258",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
     "kode": "00.000"
@@ -19,9 +26,13 @@
   "navn": "REITAN KAPITAL AS",
   "oppstartsdato": "2025-07-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935885787",
   "overordnetEnhet": "935873177",
@@ -36,6 +47,8 @@
     "postnummer": "7440",
     "poststed": "TRONDHEIM"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-07-26",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

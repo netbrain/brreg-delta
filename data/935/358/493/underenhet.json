@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935282292"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935358493"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Svetsarvägen 15"
@@ -7,8 +15,7 @@
     "landkode": "SE",
     "poststed": "SE-171 41 SOLNA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Produksjon av andre bygningsartikler",
     "kode": "16.230"
@@ -16,9 +23,13 @@
   "navn": "WOODCONSTRUCTION SWEDEN AB",
   "oppstartsdato": "2025-04-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "935358493",
   "overordnetEnhet": "935282292",
@@ -34,8 +45,6 @@
     "postnummer": "0121",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2025-04-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

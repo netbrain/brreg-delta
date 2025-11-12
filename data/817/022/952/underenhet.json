@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/894605782"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/817022952"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vågsholmen"
@@ -10,8 +18,7 @@
     "postnummer": "6090",
     "poststed": "FOSNAVÅG"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,9 +26,13 @@
   "navn": "SKOTHOLMEN AS",
   "oppstartsdato": "2015-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "817022952",
   "overordnetEnhet": "894605782",
@@ -36,8 +47,6 @@
     "postnummer": "6099",
     "poststed": "FOSNAVÅG"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-03-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-03-10",
   "registreringsdatoEnhetsregisteret": "2016-04-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

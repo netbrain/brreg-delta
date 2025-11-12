@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936093329"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936095712"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ekebergveien 241A"
@@ -10,8 +18,7 @@
     "postnummer": "1166",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
     "kode": "85.510"
@@ -19,9 +26,13 @@
   "navn": "KRATHE AS",
   "oppstartsdato": "2025-08-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936095712",
   "overordnetEnhet": "936093329",
@@ -36,6 +47,8 @@
     "postnummer": "1412",
     "poststed": "SOFIEMYR"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-09-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

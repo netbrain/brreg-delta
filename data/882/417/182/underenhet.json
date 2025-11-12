@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982100844"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/882417182"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solvangveien 12"
@@ -10,8 +18,7 @@
     "postnummer": "3158",
     "poststed": "ANDEBU"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Frisering og barbering",
     "kode": "96.210"
@@ -19,9 +26,13 @@
   "navn": "KLIPPEKROKEN Inger Lill Haukjem",
   "oppstartsdato": "2000-08-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "882417182",
   "overordnetEnhet": "982100844",
@@ -34,8 +45,6 @@
     "postnummer": "3158",
     "poststed": "ANDEBU"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2021-09-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2021-09-10",
   "registreringsdatoEnhetsregisteret": "2000-09-26",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

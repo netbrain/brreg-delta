@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988017078"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932191989"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Thomas Hakavik",
@@ -11,12 +19,11 @@
     "postnummer": "0252",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Engroshandel med informasjons- og kommunikasjonsteknologiutstyr",
     "kode": "46.500"
@@ -24,9 +31,13 @@
   "navn": "POWER INVEST AS",
   "oppstartsdato": "2023-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "932191989",
   "overordnetEnhet": "988017078",
@@ -41,8 +52,6 @@
     "postnummer": "3003",
     "poststed": "DRAMMEN"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-10-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-10-10",
   "registreringsdatoEnhetsregisteret": "2023-10-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

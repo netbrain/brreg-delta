@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917874646"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926366181"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Fålesloråsen 71"
@@ -10,12 +18,11 @@
     "postnummer": "1407",
     "poststed": "VINTERBRO"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
     "kode": "81.100"
@@ -23,14 +30,16 @@
   "navn": "ITERATIV EIENDOM AS",
   "oppstartsdato": "2021-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926366181",
   "overordnetEnhet": "917874646",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2021-01-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

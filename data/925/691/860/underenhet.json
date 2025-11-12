@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 8,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/840207412"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/925691860"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tore Hals Mejdells vei 8"
@@ -11,8 +18,7 @@
     "postnummer": "0751",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med husholdningsredskaper og bestikk, servise, glassvarer, porselen og keramikk",
     "kode": "47.553"
@@ -20,9 +26,13 @@
   "navn": "AS CHRISTIANIA GLASMAGASIN AVD RØA",
   "oppstartsdato": "2020-11-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "925691860",
   "overordnetEnhet": "840207412",
@@ -37,8 +47,6 @@
     "postnummer": "1396",
     "poststed": "BILLINGSTAD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2020-09-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

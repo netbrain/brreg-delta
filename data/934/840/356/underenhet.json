@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 86,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/834823322"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934840356"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o EFREMTID AS",
@@ -12,8 +19,7 @@
     "postnummer": "4323",
     "poststed": "SANDNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
     "kode": "78.200"
@@ -21,14 +27,16 @@
   "navn": "NORDTECH NORGE AS",
   "oppstartsdato": "2025-01-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934840356",
   "overordnetEnhet": "834823322",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2025-01-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

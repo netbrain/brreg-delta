@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/835690202"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935725291"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ensjøveien 14"
@@ -10,8 +18,7 @@
     "postnummer": "0655",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Produksjon og utgivelse av musikk- og lydopptak",
     "kode": "59.200"
@@ -19,9 +26,13 @@
   "navn": "TH LYD AS",
   "oppstartsdato": "2025-06-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935725291",
   "overordnetEnhet": "835690202",
@@ -36,6 +47,8 @@
     "postnummer": "1086",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-06-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

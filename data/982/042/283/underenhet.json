@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/881642662"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982042283"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o konrad ovedal",
@@ -11,8 +19,7 @@
     "postnummer": "4440",
     "poststed": "TONSTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -20,9 +27,13 @@
   "navn": "PER OVEDAL EIENDOM AS",
   "oppstartsdato": "2000-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982042283",
   "overordnetEnhet": "881642662",
@@ -37,8 +48,6 @@
     "postnummer": "4440",
     "poststed": "TONSTAD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2021-02-15",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2021-02-10",
   "registreringsdatoEnhetsregisteret": "2000-05-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

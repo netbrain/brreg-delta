@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917219990"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918563792"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hensmoveien 27"
@@ -12,8 +19,7 @@
     "poststed": "HØNEFOSS"
   },
   "datoEierskifte": "2022-05-02",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Engroshandel med maskiner og utstyr til jordbruk og skogbruk",
     "kode": "46.610"
@@ -21,14 +27,16 @@
   "navn": "NORWEGIAN AGRO HØNEFOSS",
   "oppstartsdato": "2017-01-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918563792",
   "overordnetEnhet": "917219990",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "2017-02-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

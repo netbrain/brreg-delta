@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 84,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/831247592"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/985388326"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Storgata 10A"
@@ -13,8 +20,7 @@
   },
   "datoEierskifte": "2025-10-01",
   "epostadresse": "info@forex.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet finansieringsvirksomhet og kollektive investeringsfond",
     "kode": "66.190"
@@ -22,14 +28,16 @@
   "navn": "FOREX NORGE AS",
   "oppstartsdato": "2002-12-05",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "985388326",
   "overordnetEnhet": "831247592",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2003-02-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

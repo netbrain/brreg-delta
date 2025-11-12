@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/946136662"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918564152"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Solbråtanveien 4"
@@ -10,8 +18,7 @@
     "postnummer": "1410",
     "poststed": "KOLBOTN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "mobil": "47472288",
   "naeringskode1": {
     "beskrivelse": "Vaskeri- og renserivirksomhet",
@@ -20,9 +27,13 @@
   "navn": "SKI RENSERI AS AVD KOLBOTN",
   "oppstartsdato": "2015-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918564152",
   "overordnetEnhet": "946136662",
@@ -37,6 +48,8 @@
     "postnummer": "1401",
     "poststed": "SKI"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2017-02-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919534877"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/919714875"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hvervenmoveien 49"
@@ -10,8 +18,7 @@
     "postnummer": "3511",
     "poststed": "HØNEFOSS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen undervisning ellers",
     "kode": "85.597"
@@ -19,9 +26,13 @@
   "navn": "HR COMPANIES AS",
   "oppstartsdato": "2017-09-22",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "919714875",
   "overordnetEnhet": "919534877",
@@ -33,8 +44,6 @@
     "landkode": "DK",
     "poststed": "DK-1358 København K"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2017-10-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

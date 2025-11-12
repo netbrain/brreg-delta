@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936235328"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936272304"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gålåvegen 1343"
@@ -10,8 +18,7 @@
     "postnummer": "2646",
     "poststed": "GÅLÅ"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
     "kode": "81.100"
@@ -19,9 +26,13 @@
   "navn": "24/7 GÅLÅ AS",
   "oppstartsdato": "2025-08-24",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936272304",
   "overordnetEnhet": "936235328",
@@ -36,6 +47,8 @@
     "postnummer": "2646",
     "poststed": "GÅLÅ"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-09-29",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

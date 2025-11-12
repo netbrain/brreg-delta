@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 20,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921896328"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/822072852"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Karenslyst allé 8"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "vibeke.ly@axactor.com",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.axactor.com",
-  "links": [],
   "mobil": "91179195",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -23,14 +29,16 @@
   "navn": "AXACTOR ASA",
   "oppstartsdato": "2018-12-21",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "822072852",
   "overordnetEnhet": "921896328",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2019-01-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

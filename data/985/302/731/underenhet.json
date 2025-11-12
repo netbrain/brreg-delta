@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 9,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920401996"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/985302731"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Losvegen 4"
@@ -12,8 +19,7 @@
     "poststed": "VALDERØYA"
   },
   "datoEierskifte": "2018-01-29",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie og leasing av lastebiler",
     "kode": "77.120"
@@ -21,14 +27,16 @@
   "navn": "TON BILUTLEIE AS",
   "oppstartsdato": "2003-01-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "985302731",
   "overordnetEnhet": "920401996",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2003-01-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

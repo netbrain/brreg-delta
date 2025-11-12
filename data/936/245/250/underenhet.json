@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987553014"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936245250"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Høgskolevei 18"
@@ -10,8 +18,7 @@
     "postnummer": "4640",
     "poststed": "SØGNE"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bredt vareutvalg ellers",
     "kode": "47.120"
@@ -19,9 +26,13 @@
   "navn": "EUROPRIS SØGNE 640",
   "oppstartsdato": "2025-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936245250",
   "overordnetEnhet": "987553014",
@@ -36,6 +47,8 @@
     "postnummer": "1602",
     "poststed": "FREDRIKSTAD"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-09-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

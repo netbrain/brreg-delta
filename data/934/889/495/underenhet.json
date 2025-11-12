@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934783786"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934889495"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Smålonane 4"
@@ -10,8 +18,7 @@
     "postnummer": "5353",
     "poststed": "STRAUME"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av fornøyelses- og temaparker",
     "kode": "93.210"
@@ -19,9 +26,13 @@
   "navn": "JKY AS",
   "oppstartsdato": "2024-12-17",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934889495",
   "overordnetEnhet": "934783786",
@@ -36,6 +47,8 @@
     "postnummer": "5174",
     "poststed": "MATHOPEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2025-01-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"
