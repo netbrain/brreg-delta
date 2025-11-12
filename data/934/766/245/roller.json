@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934766245/roller"
     }
   },
-  "organisasjonsnummer": "934766245",
   "rollegrupper": [
     {
       "roller": [
@@ -125,37 +124,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1991-08-29",
-            "navn": {
-              "etternavn": "Amundsen",
-              "fornavn": "Andreas",
-              "mellomnavn": "Aakervik"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916788517"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "CENTER REVISJON AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "916788517"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/PROK"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
               }
             },
-            "beskrivelse": "Prokura",
-            "kode": "PROK"
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
           }
         }
       ],
-      "sistEndret": "2025-09-11",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

@@ -7,18 +7,17 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983857647/roller"
     }
   },
-  "organisasjonsnummer": "983857647",
   "rollegrupper": [
     {
       "roller": [
         {
           "fratraadt": false,
           "person": {
-            "erDoed": true,
-            "fodselsdato": "1940-04-08",
+            "erDoed": false,
+            "fodselsdato": "1993-07-24",
             "navn": {
-              "etternavn": "Nilsen",
-              "fornavn": "Kolbjørn"
+              "etternavn": "Lysaker",
+              "fornavn": "Hans Christian"
             }
           },
           "rekkefolge": 0,
@@ -33,7 +32,7 @@
           }
         }
       ],
-      "sistEndret": "2001-11-01",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -70,47 +69,26 @@
         {
           "fratraadt": false,
           "person": {
-            "erDoed": true,
-            "fodselsdato": "1940-04-08",
+            "erDoed": false,
+            "fodselsdato": "1993-07-24",
             "navn": {
-              "etternavn": "Nilsen",
-              "fornavn": "Kolbjørn"
+              "etternavn": "Lysaker",
+              "fornavn": "Hans Christian"
             }
           },
           "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
               }
             },
-            "beskrivelse": "Nestleder",
-            "kode": "NEST"
-          }
-        },
-        {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1966-05-07",
-            "navn": {
-              "etternavn": "Hjortland",
-              "fornavn": "May Britt"
-            }
-          },
-          "rekkefolge": 2,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
-              }
-            },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
           }
         }
       ],
-      "sistEndret": "2018-03-08",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -119,6 +97,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985142793"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "TEAMØKONOMI DA"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/DA"
+                }
+              },
+              "beskrivelse": "Ansvarlig selskap, delt ansvar",
+              "kode": "DA"
+            },
+            "organisasjonsnummer": "985142793"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-12",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
