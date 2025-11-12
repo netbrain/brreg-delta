@@ -61,8 +61,6 @@ jobs:
         run: |
           cd brreg-delta/ssr/gen-history
           go build -o ../../../gen-history
-          cd ../../..
-          ./gen-history  # Show usage
 
       - name: Generate entity pages and navigation site
         run: |
