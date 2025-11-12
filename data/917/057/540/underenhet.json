@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987037709"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/917057540"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Jernbanegata 50"
@@ -10,17 +18,20 @@
     "postnummer": "8250",
     "poststed": "ROGNAN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i borettslag og boligsameier",
     "kode": "97.001"
   },
   "navn": "HEIMLY BORETTSLAG ROGNAN",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "917057540",
   "overordnetEnhet": "987037709",
@@ -36,6 +47,8 @@
     "postnummer": "8250",
     "poststed": "ROGNAN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2016-04-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

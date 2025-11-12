@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 36,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935130778"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/997362144"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Løxaveien 11"
@@ -11,8 +18,8 @@
     "postnummer": "1351",
     "poststed": "RUD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "datoEierskifte": "2025-08-08",
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen spesialisert bygge- og anleggsvirksomhet ikke nevnt annet sted",
     "kode": "43.990"
@@ -20,14 +27,16 @@
   "navn": "ARNESEN FRØHAUG BETONGENTREPRENØR AS",
   "oppstartsdato": "2011-09-13",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "997362144",
-  "overordnetEnhet": "997319907",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
+  "overordnetEnhet": "935130778",
   "registreringsdatoEnhetsregisteret": "2011-09-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

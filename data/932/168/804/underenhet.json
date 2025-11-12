@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/832149012"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/932168804"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Alvøveien 160"
@@ -10,8 +18,7 @@
     "postnummer": "5179",
     "poststed": "GODVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre støttetjenester for transport",
     "kode": "52.260"
@@ -19,9 +26,13 @@
   "navn": "JOBBKRETSER HANDLING SERVICE AS AVD BERGEN",
   "oppstartsdato": "2023-09-05",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "932168804",
   "overordnetEnhet": "832149012",
@@ -36,6 +47,8 @@
     "postnummer": "5179",
     "poststed": "GODVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-11-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-11-10",
   "registreringsdatoEnhetsregisteret": "2023-10-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

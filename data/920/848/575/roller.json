@@ -7,8 +7,42 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920848575/roller"
     }
   },
-  "organisasjonsnummer": "920848575",
   "rollegrupper": [
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1985-03-12",
+            "navn": {
+              "etternavn": "Frøiland",
+              "fornavn": "Mats"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+              }
+            },
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-12",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+          }
+        },
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
+      }
+    },
     {
       "roller": [
         {
@@ -31,9 +65,40 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1993-10-26",
+            "navn": {
+              "etternavn": "Syvertsen",
+              "fornavn": "Malin",
+              "mellomnavn": "Rønvåg"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
         }
       ],
-      "sistEndret": "2018-05-14",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
