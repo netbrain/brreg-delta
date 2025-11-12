@@ -115,16 +115,16 @@ jobs:
             while IFS= read -r orgnum; do
               # Convert orgnum to path (triple-digit sharding)
               path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/\1\/\2\/\3/')
-              if [ -d "$path" ]; then
-                count=$((count + 1))
-                echo "[$count/$entity_count] Deleting: $path (orgnum: $orgnum)"
-                # Use git rm with --sparse to remove files without expanding sparse checkout
-                cd ..
-                git rm -r --sparse "data/$path" 2>/dev/null || echo "  Warning: Failed to delete $path"
-                cd data
+              count=$((count + 1))
+              echo "[$count/$entity_count] Deleting: data/$path (orgnum: $orgnum)"
+              # Use git rm with --sparse to remove files without expanding sparse checkout
+              cd ..
+              if git rm -r --sparse "data/$path" 2>/dev/null; then
+                echo "  Successfully deleted $path"
               else
-                echo "Skipping non-existent path: $path (orgnum: $orgnum)"
+                echo "  Path does not exist in repository: $path"
               fi
+              cd data
             done < .deleted-entities
             # Clear the deleted entities file after processing
             > .deleted-entities
