@@ -48,10 +48,7 @@
     </main>
 
     <script>
-        document.getElementById('orgnum-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const orgnum = document.getElementById('orgnum').value.trim();
-
+        function loadEntity(orgnum) {
             if (orgnum.length === 9 && /^\d+$/.test(orgnum)) {
                 // Convert orgnum to path: 810034882 -> 810/034/882
                 const parts = [];
@@ -89,6 +86,27 @@
                         loadingEl.style.display = 'none';
                         console.error('Error:', error);
                     });
+
+                // Update URL with query parameter
+                const newUrl = new URL(window.location);
+                newUrl.searchParams.set('q', orgnum);
+                window.history.pushState({}, '', newUrl);
+            }
+        }
+
+        document.getElementById('orgnum-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const orgnum = document.getElementById('orgnum').value.trim();
+            loadEntity(orgnum);
+        });
+
+        // Load from URL parameter on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const orgnum = urlParams.get('q');
+            if (orgnum) {
+                document.getElementById('orgnum').value = orgnum;
+                loadEntity(orgnum);
             }
         });
     </script>
