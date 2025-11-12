@@ -227,14 +227,20 @@ func copyFile(src, dst string) error {
 
 // BuildNavigationSite builds the navigation-site and copies index.html to output
 func BuildNavigationSite(navSiteDir, outputDir string) error {
+	// Create absolute path for public directory in a temp location
+	tmpPublicDir, err := os.MkdirTemp("", "nav-site-public-*")
+	if err != nil {
+		return fmt.Errorf("failed to create temp public dir: %w", err)
+	}
+	defer os.RemoveAll(tmpPublicDir)
+
 	// Run Hugo in the navigation site directory
-	publicDir := filepath.Join(navSiteDir, "public")
-	if err := runHugo(navSiteDir, publicDir); err != nil {
+	if err := runHugo(navSiteDir, tmpPublicDir); err != nil {
 		return fmt.Errorf("failed to build navigation site: %w", err)
 	}
 
 	// Copy index.html to output directory
-	indexSrc := filepath.Join(publicDir, "index.html")
+	indexSrc := filepath.Join(tmpPublicDir, "index.html")
 	indexDst := filepath.Join(outputDir, "index.html")
 	if err := copyFile(indexSrc, indexDst); err != nil {
 		return fmt.Errorf("failed to copy index.html: %w", err)
