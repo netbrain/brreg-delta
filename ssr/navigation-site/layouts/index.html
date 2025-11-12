@@ -6,14 +6,7 @@
     <title>{{ .Title }}</title>
     <meta name="description" content="Se historiske endringer for norske enheter registrert i Brønnøysundregistrene">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <style>
-        .htmx-indicator {
-            display: none;
-        }
-        .htmx-request .htmx-indicator {
-            display: inline;
-        }
         #entity-content {
             min-height: 200px;
         }
@@ -45,14 +38,11 @@
             </form>
         </section>
 
-        <div id="entity-content"
-             hx-swap="none"
-             hx-on::after-on-load="this.innerHTML = event.detail.xhr.responseText"
-             hx-indicator="#loading">
+        <div id="entity-content">
             <p><em>Søk etter et organisasjonsnummer for å se historikk</em></p>
         </div>
 
-        <div id="loading" class="htmx-indicator">
+        <div id="loading" style="display: none;">
             <p aria-busy="true">Laster...</p>
         </div>
 
@@ -75,9 +65,29 @@
                 for (let i = 0; i < orgnum.length; i += 3) {
                     parts.push(orgnum.substring(i, i + 3));
                 }
-                // Load from GitHub raw URL
-                const url = `https://raw.githubusercontent.com/netbrain/brreg-delta/refs/heads/gh-pages/${parts.join('/')}/index.html`;
-                htmx.ajax('GET', url, '#entity-content');
+                // Load from GitHub API (better CORS support)
+                const path = `${parts.join('/')}/index.html`;
+                const url = `https://api.github.com/repos/netbrain/brreg-delta/contents/${path}?ref=gh-pages`;
+                const contentEl = document.getElementById('entity-content');
+                const loadingEl = document.getElementById('loading');
+
+                // Show loading indicator
+                contentEl.innerHTML = '';
+                loadingEl.style.display = 'block';
+
+                // Fetch via GitHub API and decode base64 content
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        const content = atob(data.content);
+                        contentEl.innerHTML = content;
+                        loadingEl.style.display = 'none';
+                    })
+                    .catch(error => {
+                        contentEl.innerHTML = '<p>Fant ikke enheten. Sjekk at organisasjonsnummeret er riktig.</p>';
+                        loadingEl.style.display = 'none';
+                        console.error('Error:', error);
+                    });
             }
         });
     </script>
