@@ -111,24 +111,29 @@ jobs:
             entity_count=$(wc -l < .deleted-entities)
             echo "Processing $entity_count deleted entities..."
 
-            count=0
+            # Convert all orgnums to paths
+            paths=()
             while IFS= read -r orgnum; do
               # Convert orgnum to path (triple-digit sharding)
-              path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/\1\/\2\/\3/')
-              count=$((count + 1))
-              echo "[$count/$entity_count] Deleting: data/$path (orgnum: $orgnum)"
-              # Use git rm with --sparse to remove files without expanding sparse checkout
+              path=$(echo "$orgnum" | sed 's/\(...\)\(...\)\(...\)/data\/\1\/\2\/\3/')
+              paths+=("$path")
+            done < .deleted-entities
+
+            if [ ${#paths[@]} -gt 0 ]; then
+              echo "Batch deleting ${#paths[@]} entity directories..."
               cd ..
-              if git rm -r --sparse "data/$path" 2>/dev/null; then
-                echo "  Successfully deleted $path"
+              # Use git rm with --sparse to remove all files in one command
+              if git rm -r --sparse "${paths[@]}" 2>/dev/null; then
+                echo "Successfully deleted ${#paths[@]} directories"
               else
-                echo "  Path does not exist in repository: $path"
+                echo "Warning: Some paths may not exist in repository"
               fi
               cd data
-            done < .deleted-entities
+            fi
+
             # Clear the deleted entities file after processing
             > .deleted-entities
-            echo "Deleted entities processed: $count directories removed"
+            echo "Deleted entities processed: ${#paths[@]} directories"
           else
             echo "No deleted entities to process"
           fi
