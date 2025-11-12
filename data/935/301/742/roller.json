@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935301742/roller"
     }
   },
-  "organisasjonsnummer": "935301742",
   "rollegrupper": [
     {
       "roller": [
@@ -89,36 +88,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1983-12-13",
-            "navn": {
-              "etternavn": "Schmidt",
-              "fornavn": "Nils Christoffer"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/937442661"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "OSLO REVISJON AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "937442661"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIFE"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
               }
             },
-            "beskrivelse": "Signatur i fellesskap",
-            "kode": "SIFE"
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
           }
         }
       ],
-      "sistEndret": "2025-09-26",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

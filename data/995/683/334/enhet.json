@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995683334"
+    }
+  },
   "aktivitet": [
     "Entreprenørvirksomhet på følgende",
     "områder: Produksjon og salg av grus og stein (hovedvirksomhet).",
@@ -23,8 +28,8 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
-  "konkurs": false,
-  "links": [],
+  "konkurs": true,
+  "konkursdato": "2025-11-10",
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -32,9 +37,13 @@
   },
   "navn": "FRENT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995683334",
   "paategninger": [],
@@ -53,11 +62,9 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2010-07-20",
   "registreringsdatoForetaksregisteret": "2010-07-20",
-  "registreringsdatoMerverdiavgiftsregisteret": "2010-07-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2010-09-04",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

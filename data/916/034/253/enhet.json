@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916034253"
+    }
+  },
   "aktivitet": [
     "Utvikler softwar for Retail POS produkter med internasjonal",
     "salg."
@@ -22,8 +27,8 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
-  "konkurs": false,
-  "links": [],
+  "konkurs": true,
+  "konkursdato": "2025-11-10",
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
@@ -31,9 +36,13 @@
   },
   "navn": "BAIKINGU AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916034253",
   "paategninger": [],
@@ -51,11 +60,9 @@
   },
   "registreringsdatoEnhetsregisteret": "2015-10-06",
   "registreringsdatoForetaksregisteret": "2015-10-06",
-  "registreringsdatoMerverdiavgiftsregisteret": "2017-03-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2017-04-01",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

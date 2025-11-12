@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/836347862/roller"
     }
   },
-  "organisasjonsnummer": "836347862",
   "rollegrupper": [
     {
       "roller": [
@@ -30,10 +29,40 @@
             },
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1996-03-31",
+            "navn": {
+              "etternavn": "Selby",
+              "fornavn": "Emilie"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
           }
         }
       ],
-      "sistEndret": "2025-10-11",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
@@ -42,19 +71,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-10-11",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936240275/roller"
     }
   },
-  "organisasjonsnummer": "936240275",
   "rollegrupper": [
     {
       "roller": [
@@ -15,11 +14,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1988-08-18",
+            "fodselsdato": "1988-06-23",
             "navn": {
-              "etternavn": "Djuve",
-              "fornavn": "Kristian",
-              "mellomnavn": "Brekke"
+              "etternavn": "Berntsen",
+              "fornavn": "Marius"
             }
           },
           "rekkefolge": 0,
@@ -34,7 +32,7 @@
           }
         }
       ],
-      "sistEndret": "2025-09-24",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
@@ -46,16 +44,51 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2025-09-24",
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935174627"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "KPMG AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "935174627"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     }
   ]

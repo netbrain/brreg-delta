@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992597046"
+    }
+  },
   "aktivitet": [
     "Varehandel med hovedvekt på nærings - og nytelsesmidler."
   ],
@@ -23,8 +28,8 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
-  "konkurs": false,
-  "links": [],
+  "konkurs": true,
+  "konkursdato": "2025-11-10",
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
@@ -32,9 +37,13 @@
   },
   "navn": "PADMAX AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "992597046",
   "paategninger": [],
@@ -42,11 +51,9 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-06-10",
   "registreringsdatoEnhetsregisteret": "2008-04-26",
   "registreringsdatoForetaksregisteret": "2008-04-26",
-  "registreringsdatoMerverdiavgiftsregisteret": "2008-05-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2008-09-08",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

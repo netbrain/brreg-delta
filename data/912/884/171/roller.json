@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/912884171/roller"
     }
   },
-  "organisasjonsnummer": "912884171",
   "rollegrupper": [
     {
       "roller": [
@@ -86,10 +85,19 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
           }
         }
       ],
-      "sistEndret": "2025-11-08",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -98,19 +106,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2013-12-16",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

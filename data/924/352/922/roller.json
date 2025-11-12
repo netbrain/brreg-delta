@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/924352922/roller"
     }
   },
-  "organisasjonsnummer": "924352922",
   "rollegrupper": [
     {
       "roller": [
@@ -33,13 +32,14 @@
           }
         },
         {
-          "fratraadt": true,
+          "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1987-11-04",
+            "fodselsdato": "1992-02-26",
             "navn": {
-              "etternavn": "Winther",
-              "fornavn": "Alexander"
+              "etternavn": "Wiig",
+              "fornavn": "Daniel",
+              "mellomnavn": "Bye"
             }
           },
           "rekkefolge": 1,
@@ -53,12 +53,17 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
         }
       ],
-      "sistEndret": "2020-05-11",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -67,19 +72,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2020-01-06",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {
