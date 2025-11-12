@@ -142,6 +142,7 @@ jobs:
           hugo --minify --destination ../../../gh-pages-output
 
           cd ../../../gh-pages-output
+          touch .nojekyll
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -82,6 +82,7 @@ jobs:
       - name: Commit and push to gh-pages
         run: |
           cd gh-pages
+          touch .nojekyll
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
