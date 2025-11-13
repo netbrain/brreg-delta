@@ -234,9 +234,9 @@ jobs:
 
             echo "Download complete for shard $shard"
 
-            # Move shard files to gh-pages
+            # Sync shard files to gh-pages (overwriting existing files)
             if [ -d "$temp_dir/$shard" ]; then
-              mv "$temp_dir/$shard" gh-pages/
+              rsync -a "$temp_dir/$shard/" "gh-pages/$shard/"
               echo "Merged shard $shard"
             else
               echo "Warning: Shard directory $shard not found in artifact"
