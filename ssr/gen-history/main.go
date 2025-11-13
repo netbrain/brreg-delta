@@ -175,13 +175,16 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 		log.Printf("No state file found, using default: %s", lastCommit)
 	}
 
-	// Get changed entities
-	orgnums, err := GetChangedEntities(dataDir, lastCommit)
+	// Get changed entities with their file paths
+	result, err := GetChangedEntitiesWithPaths(dataDir, lastCommit)
 	if err != nil {
 		return fmt.Errorf("failed to get changed entities: %w", err)
 	}
 
-	log.Printf("Found %d changed entities since %s", len(orgnums), lastCommit)
+	orgnums := result.Orgnums
+	filePaths := result.FilePaths
+
+	log.Printf("Found %d changed entities (%d files) since %s", len(orgnums), len(filePaths), lastCommit)
 
 	if len(orgnums) == 0 {
 		log.Println("No entities changed")
@@ -195,9 +198,9 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 	}
 	// Note: contentDir will be moved (not copied) to output, so no cleanup needed
 
-	// Build git history cache for all changed entities (much faster than per-entity git log)
-	log.Printf("Building git history cache for %d entities...", len(orgnums))
-	cache, err := BuildGitHistoryCache(dataDir, orgnums)
+	// Build git history cache using specific file paths (much faster than scanning entire repo)
+	log.Printf("Building git history cache for %d entities using %d specific file paths...", len(orgnums), len(filePaths))
+	cache, err := BuildGitHistoryCacheWithPaths(dataDir, orgnums, filePaths)
 	if err != nil {
 		return fmt.Errorf("failed to build git history cache: %w", err)
 	}

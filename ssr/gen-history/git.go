@@ -260,8 +260,23 @@ func GetCommitDiff(dataDir, commitHash, filePath string) (string, error) {
 	return string(output), nil
 }
 
-// GetChangedEntities returns orgnums that have changed since a specific commit
+// ChangedEntitiesResult contains both orgnums and their file paths
+type ChangedEntitiesResult struct {
+	Orgnums   []string
+	FilePaths []string
+}
+
+// GetChangedEntities returns orgnums and file paths that have changed since a specific commit
 func GetChangedEntities(dataDir, sinceCommit string) ([]string, error) {
+	result, err := GetChangedEntitiesWithPaths(dataDir, sinceCommit)
+	if err != nil {
+		return nil, err
+	}
+	return result.Orgnums, nil
+}
+
+// GetChangedEntitiesWithPaths returns orgnums and their associated file paths that have changed
+func GetChangedEntitiesWithPaths(dataDir, sinceCommit string) (*ChangedEntitiesResult, error) {
 	// Get all files changed since the commit
 	cmd := exec.Command("git", "diff", "--name-only", sinceCommit, "HEAD")
 	cmd.Dir = dataDir
@@ -272,11 +287,15 @@ func GetChangedEntities(dataDir, sinceCommit string) ([]string, error) {
 	}
 
 	if len(output) == 0 {
-		return []string{}, nil
+		return &ChangedEntitiesResult{
+			Orgnums:   []string{},
+			FilePaths: []string{},
+		}, nil
 	}
 
 	// Extract orgnums from file paths
 	orgnumSet := make(map[string]bool)
+	var filePaths []string
 	lines := strings.Split(strings.TrimSpace(string(output)), "\n")
 
 	for _, line := range lines {
@@ -284,6 +303,9 @@ func GetChangedEntities(dataDir, sinceCommit string) ([]string, error) {
 		if !strings.HasPrefix(line, "data/") {
 			continue
 		}
+
+		// Keep the full path for git log
+		filePaths = append(filePaths, line)
 
 		// Remove data/ prefix
 		path := strings.TrimPrefix(line, "data/")
@@ -308,7 +330,10 @@ func GetChangedEntities(dataDir, sinceCommit string) ([]string, error) {
 		orgnums = append(orgnums, orgnum)
 	}
 
-	return orgnums, nil
+	return &ChangedEntitiesResult{
+		Orgnums:   orgnums,
+		FilePaths: filePaths,
+	}, nil
 }
 
 // GetAllEntities returns all orgnums in the data directory
@@ -396,31 +421,54 @@ type GitHistoryCache struct {
 
 // BuildGitHistoryCache builds a cache of git history for specific entities
 func BuildGitHistoryCache(dataDir string, orgnums []string) (*GitHistoryCache, error) {
+	return BuildGitHistoryCacheWithPaths(dataDir, orgnums, nil)
+}
+
+// BuildGitHistoryCacheWithPaths builds a cache of git history for specific entities
+// If filePaths is provided, only fetch history for those specific files (much faster for incremental)
+func BuildGitHistoryCacheWithPaths(dataDir string, orgnums []string, filePaths []string) (*GitHistoryCache, error) {
 	log.Printf("Building git history cache for %d entities...", len(orgnums))
 
-	// Build patterns for entities to limit git log output
-	// Example: data/810/034/882/*.json
-	patterns := make([]string, 0, len(orgnums))
-	for _, orgnum := range orgnums {
-		pattern := filepath.Join("data", orgnumToPath(orgnum), "*.json")
-		patterns = append(patterns, pattern)
-	}
-
-	// If too many patterns, just use data/ and filter
 	var cmd *exec.Cmd
-	if len(patterns) > 1000 {
-		log.Printf("Too many entities (%d), using full git log with filtering...", len(orgnums))
+	var stdin *strings.Reader
+
+	// If specific file paths provided, use --stdin for unlimited file list
+	if len(filePaths) > 0 {
+		log.Printf("Using %d specific file paths with git log --stdin", len(filePaths))
 		cmd = exec.Command("git", "log",
 			"--name-only",
 			"--pretty=format:%H|%at|%s",
-			"--", "data/")
+			"--stdin")
+		// Create stdin input: one file path per line
+		stdin = strings.NewReader(strings.Join(filePaths, "\n") + "\n")
 	} else {
-		// Use specific patterns for smaller batches
-		args := []string{"log", "--name-only", "--pretty=format:%H|%at|%s", "--"}
-		args = append(args, patterns...)
-		cmd = exec.Command("git", args...)
+		// Build patterns for entities to limit git log output
+		// Example: data/810/034/882/*.json
+		patterns := make([]string, 0, len(orgnums))
+		for _, orgnum := range orgnums {
+			pattern := filepath.Join("data", orgnumToPath(orgnum), "*.json")
+			patterns = append(patterns, pattern)
+		}
+
+		// If too many patterns, just use data/ and filter
+		if len(patterns) > 1000 {
+			log.Printf("Too many entities (%d), using full git log with filtering...", len(orgnums))
+			cmd = exec.Command("git", "log",
+				"--name-only",
+				"--pretty=format:%H|%at|%s",
+				"--", "data/")
+		} else {
+			// Use specific patterns for smaller batches
+			args := []string{"log", "--name-only", "--pretty=format:%H|%at|%s", "--"}
+			args = append(args, patterns...)
+			cmd = exec.Command("git", args...)
+		}
 	}
+
 	cmd.Dir = dataDir
+	if stdin != nil {
+		cmd.Stdin = stdin
+	}
 
 	log.Println("Running git log...")
 	output, err := cmd.CombinedOutput()
