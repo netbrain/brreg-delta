@@ -168,13 +168,14 @@ jobs:
             local shard=$1
             local run_id=$2
             local repo=$3
+            local temp_dir=$(mktemp -d)
 
             echo "Downloading shard $shard..."
 
             # Download this shard's artifact with retries
             download_success=false
             for i in 1 2 3; do
-              if gh run download "$run_id" -n "shard-$shard" -D /tmp -R "$repo"; then
+              if gh run download "$run_id" -n "shard-$shard" -D "$temp_dir" -R "$repo"; then
                 download_success=true
                 break
               else
@@ -185,18 +186,22 @@ jobs:
 
             if [ "$download_success" = false ]; then
               echo "Shard $shard not found or failed after 3 attempts, skipping"
+              rm -rf "$temp_dir"
               return
             fi
 
             echo "Download complete for shard $shard"
 
             # Move shard files to gh-pages
-            if [ -d "/tmp/$shard" ]; then
-              mv "/tmp/$shard" gh-pages/
+            if [ -d "$temp_dir/$shard" ]; then
+              mv "$temp_dir/$shard" gh-pages/
               echo "Merged shard $shard"
             else
               echo "Warning: Shard directory $shard not found in artifact"
             fi
+
+            # Cleanup
+            rm -rf "$temp_dir"
           }
 
           export -f process_shard
