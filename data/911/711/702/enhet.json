@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911711702"
+    }
+  },
   "aktivitet": [
     "Forlagsvirksomhet, utgivelse av bøker."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 360000,
+    "belop": 360000,
+    "fulltInnbetalt": true,
+    "innbetalt": 360000,
+    "innfortDato": "2016-06-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utgivelsesvirksomhet ellers, unntatt utgivelse av programvare",
@@ -30,9 +43,13 @@
   },
   "navn": "KALERI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911711702",
   "paategninger": [],

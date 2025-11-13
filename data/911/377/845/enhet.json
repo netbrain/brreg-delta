@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911377845"
+    }
+  },
   "aktivitet": [
     "Salg og installasjon av elektriske materiell og",
     "anlegg vedrørende lavspenningsnettet, deltakelse i",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 120000,
+    "fulltInnbetalt": true,
+    "innbetalt": 120000,
+    "innfortDato": "1999-08-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
@@ -31,9 +44,13 @@
   },
   "navn": "ELEKTRO-NYTT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911377845",
   "paategninger": [],

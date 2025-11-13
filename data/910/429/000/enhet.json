@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/910429000"
+    }
+  },
   "aktivitet": [
     "Handel og agenturvirksomhet samt alt som står i",
     "forbindelse med denne virksomhet. Selskapet kan",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1300000,
+    "innfortDato": "2021-01-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med innsatsvarer ellers",
@@ -37,9 +50,13 @@
   },
   "navn": "ANTALIS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "910429000",
   "paategninger": [],

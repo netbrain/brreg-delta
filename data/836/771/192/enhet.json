@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/836771192"
+    }
+  },
   "aktivitet": [
     "Forsikring innen all skadeforsikring begrenset til virksomhet der",
     "Equinor konsernet har eierinteresser samt virksomhet som naturlig",
@@ -26,8 +31,16 @@
     "beskrivelse": "Skadeforsikringsselskaper",
     "kode": "5700"
   },
+  "kapital": {
+    "antallAksjer": 125000,
+    "belop": 1337500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1337500000,
+    "innfortDato": "2023-12-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Skadeforsikring",
@@ -35,9 +48,13 @@
   },
   "navn": "EQUINOR INSURANCE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "836771192",
   "paategninger": [],

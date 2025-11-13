@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/836436822/roller"
     }
   },
-  "organisasjonsnummer": "836436822",
   "rollegrupper": [
     {
       "roller": [
@@ -80,16 +79,52 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2025-10-23",
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990945748"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "SPAREBANK 1 SØR-NORGE",
+              "FORRETNINGSPARTNER AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "990945748"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
           }
         },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

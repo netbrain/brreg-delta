@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/889234512"
+    }
+  },
   "aktivitet": [
     "Produksjon og salg av elektrisk kraft, samt annen virksomhet som",
     "naturlig faller inn under dette."
@@ -20,8 +25,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 43333,
+    "belop": 4333300,
+    "fulltInnbetalt": true,
+    "innbetalt": 4333300,
+    "innfortDato": "2017-03-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -29,9 +42,13 @@
   },
   "navn": "VENGÅKRAFT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "889234512",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/890050212"
+    }
+  },
   "aktivitet": [
     "Å tilby alle som har pensjonsrettigheter i Norge en portalløsning for",
     "sammenstilling av pensjonsrettigheter fra ulike pensjonsinstitusjoner."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 20000,
+    "belop": 10000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 10000000,
+    "innfortDato": "2017-08-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90913004",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "NORSK PENSJON AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "890050212",
   "paategninger": [],

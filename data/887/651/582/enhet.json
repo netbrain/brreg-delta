@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/887651582"
+    }
+  },
   "aktivitet": [
     "Drive virksomhet i forbindelse med utvidelse, utvikling og drift av",
     "sykehotellet til Rikshospitalet og annen virksomhet i tilknytning til",
@@ -22,8 +27,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 10100,
+    "belop": 10100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 10100000,
+    "innfortDato": "2009-03-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "SYKEHOTELL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "887651582",
   "paategninger": [],

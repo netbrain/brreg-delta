@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/890117112"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er selv, gjennom hel- eller deleide selskaper",
     "eller ved samarbeid med andre virksomheter å eie og forestå",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 95463,
+    "belop": 190926,
+    "fulltInnbetalt": true,
+    "innbetalt": 190926,
+    "innfortDato": "2011-12-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
@@ -35,9 +48,13 @@
   },
   "navn": "MIKAREMA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "890117112",
   "paategninger": [],

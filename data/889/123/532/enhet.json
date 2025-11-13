@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/889123532"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i andre selskaper samt forvalte eierinteressene av disse.",
     "Selskapet skal også kunne forestå administrative tjenester for andre",
@@ -23,8 +28,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 140000,
+    "belop": 240800,
+    "fulltInnbetalt": true,
+    "innbetalt": 240800,
+    "innfortDato": "2022-12-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -32,9 +45,13 @@
   },
   "navn": "WICHMANN INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "889123532",
   "paategninger": [],

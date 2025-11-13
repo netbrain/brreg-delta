@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/889035552"
+    }
+  },
   "aktivitet": [
     "Drive med handel og investering i aksjer og andre typer verdipapirer.",
     "Selskapet skal videre drive virksomhet med kjøp, salg og utleie av",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200000,
+    "belop": 2000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2000000,
+    "innfortDato": "2006-02-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bygging av andre anlegg ikke nevnt annet sted",
@@ -38,9 +51,13 @@
   },
   "navn": "H. BIRKELAND HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "889035552",
   "paategninger": [],

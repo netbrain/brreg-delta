@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/836340442"
+    }
+  },
   "aktivitet": [
     "Forvaltning av fast eiendom på oppdrag. Utleie av egen eller leid fast",
     "eiendom. Kjøp og salg av egen fast eiendom."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 240000,
+    "fulltInnbetalt": true,
+    "innbetalt": 240000,
+    "innfortDato": "2025-10-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsforvaltning på oppdrag",
@@ -32,9 +45,13 @@
   },
   "navn": "AGW FORVALTNING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "836340442",
   "paategninger": [],

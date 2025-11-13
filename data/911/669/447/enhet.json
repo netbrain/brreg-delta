@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911669447"
+    }
+  },
   "aktivitet": [
     "Drift av hagesenter."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50000,
+    "belop": 2500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2500000,
+    "innfortDato": "2018-12-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "915 51 865",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "KARMØY HAGESENTER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911669447",
   "paategninger": [],

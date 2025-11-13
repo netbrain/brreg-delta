@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/835302202"
+    }
+  },
   "aktivitet": [
     "Inkassovirksomhet, kredittopplysningsvirksomhet",
     "og alt hva derved står i forbindelse, samt",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 4800,
+    "belop": 60000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000000,
+    "innfortDato": "2000-12-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Inkasso- og kredittopplysningsvirksomhet",
@@ -33,9 +46,13 @@
   },
   "navn": "INTRUM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "835302202",
   "paategninger": [],

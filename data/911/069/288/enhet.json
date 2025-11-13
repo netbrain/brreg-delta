@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911069288"
+    }
+  },
   "aktivitet": [
     "Drift av eiendommen Odinsgate 25."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 25,
+    "belop": 105000,
+    "fulltInnbetalt": true,
+    "innbetalt": 105000,
+    "innfortDato": "2010-01-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "45421213",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "AS ODINSGATE 25",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911069288",
   "paategninger": [],

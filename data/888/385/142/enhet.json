@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/888385142"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Incorporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "INC"
+  },
   "forretningsadresse": {
     "adresse": [
       "2551 Riva Road"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "ARINC INCORPORATED",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "888385142",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "stiftelsesdato": "1929-12-02",
   "telefon": "+41023664000",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "P.O. Box 898"
+    ],
+    "land": "USA",
+    "poststed": "Dover Delaware 19903"
+  },
+  "utenlandskRegisterNavn": "Secretary of State for the State of Delaware"
 }

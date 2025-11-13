@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/897761742"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, ved investering i alle typer finansielle",
     "instrumenter, herunder aksjer, og deltar i andre virksomheter som",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 6000,
+    "belop": 5400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 5400000,
+    "innfortDato": "2011-12-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bearbeiding og konservering av kjøtt unntatt fjørfekjøtt",
@@ -34,9 +47,13 @@
   },
   "navn": "FATLAND AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "897761742",
   "paategninger": [],

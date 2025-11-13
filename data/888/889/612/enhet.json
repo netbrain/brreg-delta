@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/888889612"
+    }
+  },
   "aktivitet": [
     "Tilby profesjonelle organisasjoner og bedrifter forretningsutvikling,",
     "gjennom et effektivt system for lønnsomhetsmaksimering. Dette gjøres",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 130000,
+    "belop": 130000,
+    "fulltInnbetalt": true,
+    "innbetalt": 130000,
+    "innfortDato": "2005-11-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "932 08 768",
   "naeringskode1": {
@@ -38,9 +51,13 @@
   },
   "navn": "STRATCOG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "888889612",
   "paategninger": [],

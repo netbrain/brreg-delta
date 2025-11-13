@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911808188"
+    }
+  },
   "aktivitet": [
     "Investering og kapitalplassering, herunder blant annet i aksjer,",
     "selskapsandeler, fast eiendom og andre eiendeler, samt annen",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 579,
+    "belop": 579000,
+    "fulltInnbetalt": true,
+    "innbetalt": 579000,
+    "innfortDato": "2013-04-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -32,9 +45,13 @@
   },
   "navn": "NORHOLMEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911808188",
   "paategninger": [],

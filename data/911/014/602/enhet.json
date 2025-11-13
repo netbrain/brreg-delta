@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911014602"
+    }
+  },
   "aktivitet": [
     "Selskapets primærvirksomhet er investeringer i aksjer, noterte og",
     "unoterte, fondsandeler, fast eiendom og annet som naturlig knyttes til",
@@ -21,8 +26,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 125,
+    "belop": 1500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1500000,
+    "innfortDato": "2015-10-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "922 22 080",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "CENTRUM EF AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911014602",
   "paategninger": [],

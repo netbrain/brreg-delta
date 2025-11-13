@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/876933772"
+    }
+  },
   "aktivitet": [
     "Forlagsvirksomhet og hva hermed står i forbindelse, herunder å eie",
     "fast eiendom og andeler eller aksjer i andre selskaper."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 8000,
+    "belop": 800000,
+    "fulltInnbetalt": true,
+    "innbetalt": 800000,
+    "innfortDato": "2024-12-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "924 02 818",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "NORSK FAKTA FORLAG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "876933772",
   "paategninger": [],

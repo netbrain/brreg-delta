@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/883916042"
+    }
+  },
   "aktivitet": [
     "Skadeforsikring og gjenforsikring innen all skadeforsikring untatt",
     "kreditforsikring og kausjonsforsikring. Virksomheten skal begrenses",
@@ -25,8 +30,16 @@
     "beskrivelse": "Skadeforsikringsselskaper",
     "kode": "5700"
   },
+  "kapital": {
+    "antallAksjer": 50000,
+    "belop": 50000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000000,
+    "innfortDato": "2001-12-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Skadeforsikring",
@@ -34,9 +47,13 @@
   },
   "navn": "FINSE FORSIKRING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "883916042",
   "paategninger": [],

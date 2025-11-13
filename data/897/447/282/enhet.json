@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/897447282"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap hvor hovedvirksomheten som skal utføres er handel",
     "av aksjer og andre selskapsandeler, samt skal selskapet utføre",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 105000,
+    "fulltInnbetalt": true,
+    "innbetalt": 105000,
+    "innfortDato": "2011-10-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
@@ -34,9 +47,13 @@
   },
   "navn": "RAVNANGER AUTOSENTER HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "897447282",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/884423082"
+    }
+  },
   "aktivitet": [
     "Drift av skip, shipmanagement, plasssering av selskapets midlet i",
     "aksjer, deltakelse i andre selskaper, samt hva hermed står i",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 12364,
+    "belop": 309100,
+    "fulltInnbetalt": true,
+    "innbetalt": 309100,
+    "innfortDato": "2023-01-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet sjøtransport",
@@ -33,9 +46,13 @@
   },
   "navn": "TRANSPETROL TM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "884423082",
   "paategninger": [],

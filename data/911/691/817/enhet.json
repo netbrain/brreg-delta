@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911691817"
+    }
+  },
   "aktivitet": [
     "Drift av samfunnshus, idrettshall, svømme- og badeanlegg, hytteutleie",
     "m.m."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1234,
+    "belop": 123400,
+    "fulltInnbetalt": true,
+    "innbetalt": 123400,
+    "innfortDato": "2013-03-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av idrettsanlegg",
@@ -30,9 +43,13 @@
   },
   "navn": "JOREKSTAD AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "911691817",
   "paategninger": [],

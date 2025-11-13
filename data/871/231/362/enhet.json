@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/871231362"
+    }
+  },
   "aktivitet": [
     "Regnskaps- og rådgivningskontor. Rådgivningen vil",
     "være innenfor områdene økonomi, bedriftsetablering",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 501,
+    "belop": 501000,
+    "fulltInnbetalt": true,
+    "innbetalt": 501000,
+    "innfortDato": "1999-04-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Regnskapsføring og bokføring",
@@ -37,9 +50,13 @@
   },
   "navn": "ØKONOMIHUSET FAUSKE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "871231362",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/888889132"
+    }
+  },
   "aktivitet": [
     "Utleie av bygge- og anleggsmaskiner.",
     "investering, utbygging og salg av eiendommer.",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 870000,
+    "fulltInnbetalt": true,
+    "innbetalt": 870000,
+    "innfortDato": "2005-11-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie og leasing av bygge- og anleggsmaskiner og -utstyr",
@@ -34,9 +47,13 @@
   },
   "navn": "HETU HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "888889132",
   "paategninger": [],

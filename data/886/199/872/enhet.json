@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/886199872"
+    }
+  },
   "aktivitet": [
     "Å forvalte selskapets kapital gjennom kjøp, salg og utleie. Investere",
     "i andre selskaper. Transportvirksomhet gjennom selskapets aksjonærer."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 120,
+    "belop": 100200,
+    "fulltInnbetalt": true,
+    "innbetalt": 100200,
+    "innfortDato": "2003-11-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "92210600",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "AGENDA TRANSPORT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "886199872",
   "paategninger": [],

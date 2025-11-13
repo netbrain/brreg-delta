@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/887652392"
+    }
+  },
   "aktivitet": [
     "Drive med eiendom, herunder utleie. Selskapet har i tillegg en",
     "administrativ funksjon når det gjelder regnskap, lønn mv. for andre",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 12000000,
+    "belop": 12000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 12000000,
+    "innfortDato": "2017-03-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "940 08 291",
   "naeringskode1": {
@@ -39,9 +52,13 @@
   },
   "navn": "HENRIKSEN-EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "887652392",
   "paategninger": [],

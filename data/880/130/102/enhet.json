@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/880130102"
+    }
+  },
   "aktivitet": [
     "Administrasjon, konsulentvirksomhet, investeringer, garantistillelser",
     "og deltagelse i andre selskaper."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 4000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 4000000,
+    "innfortDato": "2024-11-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med jernvarer, byggevarer, fargevarer og glass",
@@ -33,9 +46,13 @@
   },
   "navn": "CANICA INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "880130102",
   "paategninger": [],

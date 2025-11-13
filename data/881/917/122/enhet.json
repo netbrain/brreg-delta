@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/881917122"
+    }
+  },
   "aktivitet": [
     "Tilby forretningsinformasjon og kredittopplysninger, herunder drive",
     "elektronisk informasjonsbehandling og alt hva herved står i",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 1000600,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000600,
+    "innfortDato": "2025-04-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Inkasso- og kredittopplysningsvirksomhet",
@@ -34,9 +47,13 @@
   },
   "navn": "EXPERIAN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "881917122",
   "paategninger": [],

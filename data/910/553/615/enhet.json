@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/910553615"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og drift- herunder utleie- av fast",
     "eiendom, investeringsvirksomhet i skipsfart og",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 120158,
+    "belop": 4379619,
+    "fulltInnbetalt": true,
+    "innbetalt": 4379619,
+    "innfortDato": "2012-04-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -39,9 +52,13 @@
   },
   "navn": "NØSTET SJØFRONT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "910553615",
   "paategninger": [],

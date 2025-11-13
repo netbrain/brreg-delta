@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/888957782"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i andre selskaper, foreta investeringer, herunder også i",
     "eiendom og å drive utleie av eiendom, finansielle plasseringer, og alt",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 450000,
+    "fulltInnbetalt": true,
+    "innbetalt": 450000,
+    "innfortDato": "2006-01-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med klær og skotøy",
@@ -35,9 +48,13 @@
   },
   "navn": "TORBJØRN BEKKEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "888957782",
   "paategninger": [],

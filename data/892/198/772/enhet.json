@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/892198772"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Säget Strasse 5"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "INTERBAUHAUS LEASING AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "892198772",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1997-08-25",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Hodlerstrasse 7"
+    ],
+    "land": "Sveits",
+    "poststed": "CH-3011 Bern"
+  },
+  "utenlandskRegisterNavn": "Handelsregisteramt Bern-Mittelland"
 }

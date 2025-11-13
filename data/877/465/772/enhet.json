@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/877465772"
+    }
+  },
   "aktivitet": [
     "Drive og leie ut lokaler til galleri og andre utstillingsformål, samt",
     "utleie av lokaler til lokale selskaper og næringsdrivende.",
@@ -27,8 +32,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 1025,
+    "belop": 1025000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1025000,
+    "innfortDato": "2000-01-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -36,9 +49,13 @@
   },
   "navn": "ZAHLFJØSEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "877465772",
   "paategninger": [],

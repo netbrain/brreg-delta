@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/889008482"
+    }
+  },
   "aktivitet": [
     "Handel med eiendom og eiendomsutvikling, aksjer, fond og andre",
     "verdipapirer herunder valuta, samt delta eller eie i andre selskaper",
@@ -27,8 +32,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 14,
+    "belop": 112000,
+    "fulltInnbetalt": true,
+    "innbetalt": 112000,
+    "innfortDato": "2006-01-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -36,9 +49,13 @@
   },
   "navn": "MANANA HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "889008482",
   "paategninger": [],

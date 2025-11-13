@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/876839342"
+    }
+  },
   "aktivitet": [
     "Service, handel, produksjon og tjenesteytende virksomhet innen",
     "telecom, samt hva derved står i forbindelse, herunder deltakelse i",
@@ -26,8 +31,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2003-04-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kabelbasert, satellittbasert og trådløs telekommunikasjon",
@@ -35,9 +48,13 @@
   },
   "navn": "TALKMORE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "876839342",
   "paategninger": [],

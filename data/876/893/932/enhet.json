@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/876893932"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, prosjektering, design, montering og handel med",
     "elektriske komponenter, konsulenttjenester, handel og annen økonomisk",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 900,
+    "belop": 450000,
+    "fulltInnbetalt": true,
+    "innbetalt": 450000,
+    "innfortDato": "2010-09-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med fisk, skalldyr og bløtdyr",
@@ -32,9 +45,13 @@
   },
   "navn": "DET SKANDINAVISKE INVESTERINGSSELSKAP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "876893932",
   "paategninger": [],

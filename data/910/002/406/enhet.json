@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/910002406"
+    }
+  },
   "aktivitet": [
     "Import, eksport, mekanisk verksted, industri og",
     "handel, samt ved kapitalinnskudd å gjøre seg",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 7000,
+    "belop": 1001000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1001000,
+    "innfortDato": "2006-09-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av metallkonstruksjoner og deler",
@@ -33,9 +46,13 @@
   },
   "navn": "BRØDRENE AABERG MEK VERKSTED AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "910002406",
   "paategninger": [],

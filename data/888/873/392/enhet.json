@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/888873392"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte eiendom, herunder aksjer og andre verdipapirer, samt",
     "finansieringsvirksomhet og annen økonomisk drift."
@@ -27,8 +32,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 6003,
+    "belop": 1200600,
+    "fulltInnbetalt": true,
+    "innbetalt": 1200600,
+    "innfortDato": "2017-08-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av møbler",
@@ -36,9 +49,13 @@
   },
   "navn": "FOSS INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "888873392",
   "paategninger": [],
