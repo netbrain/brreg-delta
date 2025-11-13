@@ -7,41 +7,89 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/912571041/roller"
     }
   },
-  "organisasjonsnummer": "912571041",
   "rollegrupper": [
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/975801179"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "BD VAT AND TAX SERVICES AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "975801179"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REPR"
+              }
+            },
+            "beskrivelse": "Norsk repr. for utenl. enhet",
+            "kode": "REPR"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-11",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REPR"
+          }
+        },
+        "beskrivelse": "Norsk repr. for utenl. enhet",
+        "kode": "REPR"
+      }
+    },
     {
       "roller": [
         {
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1963-06-18",
+            "fodselsdato": "1957-06-16",
             "navn": {
-              "etternavn": "Kristjansson",
-              "fornavn": "Magnus"
+              "etternavn": "Holstad",
+              "fornavn": "Antonio Carl Francisco",
+              "mellomnavn": "Secanell"
             }
           },
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
               }
             },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
           }
         }
       ],
-      "sistEndret": "2024-06-25",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
           }
         },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
       }
     },
     {

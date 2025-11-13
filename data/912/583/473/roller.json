@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/912583473/roller"
     }
   },
-  "organisasjonsnummer": "912583473",
   "rollegrupper": [
     {
       "roller": [
@@ -25,23 +24,23 @@
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
               }
             },
-            "beskrivelse": "Kontaktperson",
-            "kode": "KONT"
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
           }
         }
       ],
-      "sistEndret": "2013-10-15",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
           }
         },
-        "beskrivelse": "Kontaktperson",
-        "kode": "KONT"
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
       }
     },
     {
@@ -66,9 +65,30 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1976-10-08",
+            "navn": {
+              "etternavn": "Krogstad",
+              "fornavn": "Morten"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2013-10-15",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
@@ -77,32 +97,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2013-10-15",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2013-10-15",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

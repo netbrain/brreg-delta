@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911898152"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Dickistrasse 4"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "KLARER FREIZEITANLAGEN AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "911898152",
   "paategninger": [],
@@ -33,5 +46,15 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1990-08-06",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Verwaltungsgebäude Mühlental",
+      "Mühlenstrasse 105"
+    ],
+    "land": "Sveits",
+    "poststed": "8201 Schaffhausen"
+  },
+  "utenlandskRegisterNavn": "Handelsregisteramt des Kantons Schaffhausen"
 }

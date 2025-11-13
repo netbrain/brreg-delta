@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/912101134"
+    }
+  },
   "aktivitet": [
     "Omsetning av strøm og energi. Selskapet kan også bedrive kjøp og salg",
     "av aksjer og verdipapirer og på andre måter gjøre seg interessert i",
@@ -23,8 +28,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 230000,
+    "fulltInnbetalt": true,
+    "innbetalt": 230000,
+    "innfortDato": "2018-11-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Handel med elektrisitet",
@@ -32,9 +45,13 @@
   },
   "navn": "VIKEN ENERGI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "912101134",
   "paategninger": [],

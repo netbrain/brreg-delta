@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/913341856"
+    }
+  },
   "aktivitet": [
     "Sjåfør og transportvirksomhet, og alt som hører til under dette, samt",
     "deltagelse i andre virksomheter."
@@ -20,9 +25,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1600000,
+    "belop": 1600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1600000,
+    "innfortDato": "2019-07-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2024-02-05",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Passasjertransport utenom rutetabell",
@@ -30,9 +43,13 @@
   },
   "navn": "PRIVATE DRIVER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "913341856",
   "paategninger": [],

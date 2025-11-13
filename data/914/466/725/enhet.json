@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914466725"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Private company limited by shares",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "LTD"
+  },
   "forretningsadresse": {
     "adresse": [
       "9 Changi business Part Sentral 1"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "IBM SINGAPORE PTE LTD",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "914466725",
   "paategninger": [],
@@ -33,5 +46,15 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1975-09-04",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Singapore",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "10 Anson road",
+      "#05-01/15 International Plaza"
+    ],
+    "land": "Singapore",
+    "poststed": "Singapore 079903"
+  },
+  "utenlandskRegisterNavn": "Registry of Companies and Businesses"
 }

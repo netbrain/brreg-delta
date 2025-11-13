@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/913313410"
+    }
+  },
   "aktivitet": [
     "Handel med eiendom , bil , tilhenger og båt, samt utleie av slike .",
     "Investering i næringsvirksomhet, herunder aksjer og andeler, samt",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2000,
+    "belop": 540000,
+    "fulltInnbetalt": true,
+    "innbetalt": 540000,
+    "innfortDato": "2020-12-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "mobil": "910 00 101",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "VANI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "913313410",
   "paategninger": [],
