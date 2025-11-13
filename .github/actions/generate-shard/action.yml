@@ -15,12 +15,6 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Checkout brreg-delta (master)
-      uses: actions/checkout@v4
-      with:
-        ref: master
-        path: brreg-delta
-
     - name: Restore cached git repository
       uses: actions/cache/restore@v4
       with:
@@ -62,21 +56,21 @@ runs:
       uses: actions/cache@v4
       with:
         path: gen-history
-        key: gen-history-${{ runner.os }}-${{ hashFiles('brreg-delta/ssr/gen-history/**/*.go') }}
+        key: gen-history-${{ runner.os }}-${{ hashFiles('ssr/gen-history/**/*.go') }}
 
     - name: Build gen-history tool
       if: steps.cache-gen-history.outputs.cache-hit != 'true'
       shell: bash
       run: |
-        cd brreg-delta/ssr/gen-history
-        go build -o ../../../gen-history
+        cd ssr/gen-history
+        go build -o ../../gen-history
 
     - name: Generate shard ${{ inputs.shard }}
       shell: bash
       run: |
         cd brreg-data
         echo "Processing shard ${{ inputs.shard }}"
-        ../gen-history shard --shard ${{ inputs.shard }} --output ../output --templates ../brreg-delta/ssr
+        ../gen-history shard --shard ${{ inputs.shard }} --output ../output --templates ../ssr
 
     - name: Upload shard artifacts
       uses: actions/upload-artifact@v4
