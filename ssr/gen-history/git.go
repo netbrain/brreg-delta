@@ -202,10 +202,12 @@ func getBatchFilesAtCommit(dataDir, commitHash string, filePaths []string) (map[
 					parts := strings.Fields(headerLine)
 					if len(parts) >= 3 && parts[1] == "blob" {
 						fmt.Sscanf(parts[2], "%d", &expectedSize)
-						currentPath = filePaths[pathIndex]
+						if pathIndex < len(filePaths) {
+							currentPath = filePaths[pathIndex]
+							currentData = make([]byte, 0, expectedSize)
+							expectingData = true
+						}
 						pathIndex++
-						currentData = make([]byte, 0, expectedSize)
-						expectingData = true
 					} else {
 						// Missing file, skip
 						pathIndex++
