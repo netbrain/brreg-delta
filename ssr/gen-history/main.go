@@ -195,11 +195,17 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 	}
 	// Note: contentDir will be moved (not copied) to output, so no cleanup needed
 
-	// For incremental mode with small number of entities, use per-entity git log
+	// Build git history cache for all changed entities (much faster than per-entity git log)
+	log.Printf("Building git history cache for %d entities...", len(orgnums))
+	cache, err := BuildGitHistoryCache(dataDir, orgnums)
+	if err != nil {
+		return fmt.Errorf("failed to build git history cache: %w", err)
+	}
+
 	log.Printf("Generating markdown for %d entities...", len(orgnums))
 	err = ProcessInParallel(orgnums, workers, func(orgnum string) error {
-		// Get full history for this entity
-		changes, err := GetEntityHistory(dataDir, orgnum)
+		// Get history from cache
+		changes, err := cache.GetEntityHistory(orgnum)
 		if err != nil {
 			return err
 		}

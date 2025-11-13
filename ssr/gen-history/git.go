@@ -124,6 +124,128 @@ func getFileAtCommit(dataDir, commitHash, filePath string) (json.RawMessage, err
 	return json.RawMessage(output), nil
 }
 
+// getBatchFilesAtCommit retrieves multiple file contents at a specific commit in one git command
+func getBatchFilesAtCommit(dataDir, commitHash string, filePaths []string) (map[string]json.RawMessage, error) {
+	if len(filePaths) == 0 {
+		return make(map[string]json.RawMessage), nil
+	}
+
+	results := make(map[string]json.RawMessage)
+
+	// Use git cat-file --batch for efficient bulk retrieval
+	args := []string{"cat-file", "--batch"}
+	cmd := exec.Command("git", args...)
+	cmd.Dir = dataDir
+
+	// Create input: one line per file in format "commit:path"
+	var input strings.Builder
+	for _, filePath := range filePaths {
+		input.WriteString(fmt.Sprintf("%s:%s\n", commitHash, filePath))
+	}
+
+	stdin, err := cmd.StdinPipe()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create stdin pipe: %w", err)
+	}
+
+	output, err := cmd.StdoutPipe()
+	if err != nil {
+		return nil, fmt.Errorf("failed to create stdout pipe: %w", err)
+	}
+
+	if err := cmd.Start(); err != nil {
+		return nil, fmt.Errorf("failed to start git cat-file: %w", err)
+	}
+
+	// Write file paths to stdin
+	go func() {
+		stdin.Write([]byte(input.String()))
+		stdin.Close()
+	}()
+
+	// Parse output: format is "hash type size\ndata\n" per object
+	scanner := strings.Builder{}
+	buf := make([]byte, 64*1024) // 64KB buffer
+	currentPath := ""
+	currentData := []byte{}
+	pathIndex := 0
+	expectingData := false
+	var expectedSize int
+
+	for {
+		n, err := output.Read(buf)
+		if n > 0 {
+			data := buf[:n]
+
+			for len(data) > 0 {
+				if !expectingData {
+					// Reading header line
+					newlineIdx := -1
+					for i := 0; i < len(data); i++ {
+						if data[i] == '\n' {
+							newlineIdx = i
+							break
+						}
+					}
+
+					if newlineIdx == -1 {
+						scanner.Write(data)
+						break
+					}
+
+					scanner.Write(data[:newlineIdx])
+					headerLine := scanner.String()
+					scanner.Reset()
+					data = data[newlineIdx+1:]
+
+					// Parse header: "hash type size" or "hash missing"
+					parts := strings.Fields(headerLine)
+					if len(parts) >= 3 && parts[1] == "blob" {
+						fmt.Sscanf(parts[2], "%d", &expectedSize)
+						currentPath = filePaths[pathIndex]
+						pathIndex++
+						currentData = make([]byte, 0, expectedSize)
+						expectingData = true
+					} else {
+						// Missing file, skip
+						pathIndex++
+					}
+				} else {
+					// Reading file data
+					remaining := expectedSize - len(currentData)
+					if remaining > len(data) {
+						currentData = append(currentData, data...)
+						break
+					}
+
+					currentData = append(currentData, data[:remaining]...)
+					data = data[remaining:]
+
+					// Skip trailing newline
+					if len(data) > 0 && data[0] == '\n' {
+						data = data[1:]
+					}
+
+					// Store result
+					results[currentPath] = json.RawMessage(currentData)
+					expectingData = false
+				}
+			}
+		}
+
+		if err != nil {
+			break
+		}
+	}
+
+	if err := cmd.Wait(); err != nil {
+		// Try fallback to individual fetches
+		return nil, fmt.Errorf("git cat-file failed: %w", err)
+	}
+
+	return results, nil
+}
+
 // GetCommitDiff retrieves the git diff for a specific commit and file
 func GetCommitDiff(dataDir, commitHash, filePath string) (string, error) {
 	// Get diff for this commit compared to its parent (no context lines - only show changes)
@@ -367,20 +489,52 @@ func BuildGitHistoryCache(dataDir string, orgnums []string) (*GitHistoryCache, e
 func (c *GitHistoryCache) addCommitFilesFiltered(dataDir, commitHash string, timestamp int64, message string, files []string, orgnumSet map[string]bool) {
 	date := time.Unix(timestamp, 0)
 
+	// Filter files for our entities first
+	var relevantFiles []string
 	for _, filePath := range files {
 		orgnum := pathToOrgnum(filePath)
 		if orgnum == "" {
 			continue
 		}
-
 		// Skip if not in our entity set
 		if !orgnumSet[orgnum] {
 			continue
 		}
+		relevantFiles = append(relevantFiles, filePath)
+	}
 
-		// Get file content at this commit
-		data, err := getFileAtCommit(dataDir, commitHash, filePath)
-		if err != nil {
+	if len(relevantFiles) == 0 {
+		return
+	}
+
+	// Batch fetch all file contents from this commit (much faster than individual calls)
+	fileContents, err := getBatchFilesAtCommit(dataDir, commitHash, relevantFiles)
+	if err != nil {
+		// Fall back to individual fetches on error
+		for _, filePath := range relevantFiles {
+			orgnum := pathToOrgnum(filePath)
+			data, err := getFileAtCommit(dataDir, commitHash, filePath)
+			if err != nil {
+				continue
+			}
+
+			change := EntityChange{
+				CommitHash: commitHash,
+				Date:       date,
+				Message:    message,
+				FilePath:   filePath,
+				Data:       data,
+			}
+			c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
+		}
+		return
+	}
+
+	// Add changes from batch results
+	for _, filePath := range relevantFiles {
+		orgnum := pathToOrgnum(filePath)
+		data, ok := fileContents[filePath]
+		if !ok {
 			continue
 		}
 
@@ -391,7 +545,6 @@ func (c *GitHistoryCache) addCommitFilesFiltered(dataDir, commitHash string, tim
 			FilePath:   filePath,
 			Data:       data,
 		}
-
 		c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
 	}
 }
@@ -484,15 +637,46 @@ func BuildGitHistoryCacheByShard(dataDir, shardPath string) (*GitHistoryCache, e
 func (c *GitHistoryCache) addCommitFilesAll(dataDir, commitHash string, timestamp int64, message string, files []string) {
 	date := time.Unix(timestamp, 0)
 
+	if len(files) == 0 {
+		return
+	}
+
+	// Batch fetch all file contents from this commit
+	fileContents, err := getBatchFilesAtCommit(dataDir, commitHash, files)
+	if err != nil {
+		// Fall back to individual fetches on error
+		for _, filePath := range files {
+			orgnum := pathToOrgnum(filePath)
+			if orgnum == "" {
+				continue
+			}
+
+			data, err := getFileAtCommit(dataDir, commitHash, filePath)
+			if err != nil {
+				continue
+			}
+
+			change := EntityChange{
+				CommitHash: commitHash,
+				Date:       date,
+				Message:    message,
+				FilePath:   filePath,
+				Data:       data,
+			}
+			c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
+		}
+		return
+	}
+
+	// Add changes from batch results
 	for _, filePath := range files {
 		orgnum := pathToOrgnum(filePath)
 		if orgnum == "" {
 			continue
 		}
 
-		// Get file content at this commit
-		data, err := getFileAtCommit(dataDir, commitHash, filePath)
-		if err != nil {
+		data, ok := fileContents[filePath]
+		if !ok {
 			continue
 		}
 
@@ -503,7 +687,6 @@ func (c *GitHistoryCache) addCommitFilesAll(dataDir, commitHash string, timestam
 			FilePath:   filePath,
 			Data:       data,
 		}
-
 		c.entityChanges[orgnum] = append(c.entityChanges[orgnum], change)
 	}
 }
