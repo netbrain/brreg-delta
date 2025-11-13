@@ -439,8 +439,8 @@ func BuildGitHistoryCacheWithPaths(dataDir string, orgnums []string, filePaths [
 			"--name-only",
 			"--pretty=format:%H|%at|%s",
 			"--stdin")
-		// Create stdin input: one file path per line
-		stdin = strings.NewReader(strings.Join(filePaths, "\n") + "\n")
+		// Create stdin input: -- separator followed by file paths (one per line)
+		stdin = strings.NewReader("--\n" + strings.Join(filePaths, "\n") + "\n")
 	} else {
 		// Build patterns for entities to limit git log output
 		// Example: data/810/034/882/*.json
