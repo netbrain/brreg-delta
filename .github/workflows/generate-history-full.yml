@@ -38,8 +38,18 @@ jobs:
           ref: master
           path: brreg-delta
 
+      - name: Cache data branch for shard ${{ matrix.shard }}
+        id: cache-data
+        uses: actions/cache@v4
+        with:
+          path: brreg-data
+          key: data-shard-${{ matrix.shard }}-${{ github.run_id }}
+          restore-keys: |
+            data-shard-${{ matrix.shard }}-
+
       - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
         id: checkout
+        if: steps.cache-data.outputs.cache-hit != 'true'
         run: |
           git clone --no-checkout --branch data --sparse \
             https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
@@ -47,6 +57,21 @@ jobs:
           git sparse-checkout init --cone
           git sparse-checkout set data/${{ matrix.shard }}
           git checkout
+
+          # Check if shard directory exists
+          if [ ! -d "data/${{ matrix.shard }}" ]; then
+            echo "Shard ${{ matrix.shard }} directory does not exist, skipping"
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: Update cached checkout
+        if: steps.cache-data.outputs.cache-hit == 'true'
+        run: |
+          cd brreg-data
+          git fetch origin data
+          git reset --hard origin/data
 
           # Check if shard directory exists
           if [ ! -d "data/${{ matrix.shard }}" ]; then
@@ -118,36 +143,34 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
-
-      - name: Merge shards into gh-pages
+      - name: Download and merge shard artifacts
         run: |
           cd gh-pages
 
-          # Copy all shard directories
-          for shard_dir in ../artifacts/shard-*/; do
-            if [ -d "$shard_dir" ]; then
-              cp -r "$shard_dir"* . || true
+          # Download and process one shard at a time (800-999)
+          for shard in {800..999}; do
+            echo "Downloading shard $shard..."
+
+            # Download this shard's artifact
+            gh run download ${{ github.run_id }} -n "shard-$shard" -D ../temp-artifact || {
+              echo "Shard $shard not found or failed, skipping"
+              continue
+            }
+
+            # Copy shard files to gh-pages
+            if [ -d "../temp-artifact/$shard" ]; then
+              cp -r "../temp-artifact/$shard" .
+              echo "Merged shard $shard"
             fi
+
+            # Cleanup to save disk space
+            rm -rf ../temp-artifact
+
           done
 
-          echo "Merged all shard artifacts"
-
-      - name: Build navigation site
-        run: |
-          cd brreg-delta/ssr
-          go install github.com/gohugoio/hugo@latest
-          cd navigation-site
-          hugo --minify --destination ../../../gh-pages-nav
-
-      - name: Copy navigation site to gh-pages
-        run: |
-          cp -r gh-pages-nav/* gh-pages/
-          touch gh-pages/.nojekyll
-          echo "Navigation site copied"
+          echo "All shards merged"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push to gh-pages
         run: |

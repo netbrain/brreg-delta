@@ -15,30 +15,49 @@ permissions:
   contents: write
 
 jobs:
-  find-changed-shards:
+  prepare-cache:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    outputs:
+      cache-key: ${{ steps.cache-key.outputs.key }}
+
+    steps:
+      - name: Generate cache key
+        id: cache-key
+        run: echo "key=data-git-${{ github.run_id }}-${{ github.run_attempt }}" >> $GITHUB_OUTPUT
+
+      - name: Clone data branch (sparse, no checkout)
+        run: |
+          git clone --sparse --no-checkout --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
+
+      - name: Cache git repository
+        uses: actions/cache/save@v4
+        with:
+          path: brreg-data/.git
+          key: ${{ steps.cache-key.outputs.key }}
+
+  find-changed-shards:
+    needs: prepare-cache
+    runs-on: ubuntu-latest
     outputs:
       shards: ${{ steps.find-shards.outputs.shards }}
       has_changes: ${{ steps.find-shards.outputs.has_changes }}
 
     steps:
-      - name: Checkout brreg-delta (master)
-        uses: actions/checkout@v4
+      - name: Restore cached git repository
+        uses: actions/cache/restore@v4
         with:
-          ref: master
-          path: brreg-delta
+          path: brreg-data/.git
+          key: ${{ needs.prepare-cache.outputs.cache-key }}
+          fail-on-cache-miss: true
 
-      - name: Checkout data branch
-        uses: actions/checkout@v4
-        with:
-          ref: data
-          path: brreg-data
-          fetch-depth: 0
-          sparse-checkout: |
-            .last-history-commit
-            README.md
-          sparse-checkout-cone-mode: false
+      - name: Sparse checkout for state file
+        run: |
+          cd brreg-data
+          git sparse-checkout init --cone
+          git sparse-checkout set .last-history-commit
+          git checkout data
 
       - name: Find changed shards
         id: find-shards
@@ -72,7 +91,7 @@ jobs:
           echo "Found shards: $SHARDS"
 
   generate-shard:
-    needs: find-changed-shards
+    needs: [prepare-cache, find-changed-shards]
     if: needs.find-changed-shards.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -89,12 +108,16 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
+      - name: Restore cached git repository
+        uses: actions/cache/restore@v4
+        with:
+          path: brreg-data/.git
+          key: ${{ needs.prepare-cache.outputs.cache-key }}
+          fail-on-cache-miss: true
+
+      - name: Sparse checkout shard ${{ matrix.shard }}
         run: |
-          git clone --no-checkout --branch data --sparse \
-            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
           cd brreg-data
-          git sparse-checkout init --cone
           git sparse-checkout set data/${{ matrix.shard }}
           git checkout
 
@@ -128,7 +151,7 @@ jobs:
           retention-days: 1
 
   finalize:
-    needs: [find-changed-shards, generate-shard]
+    needs: [prepare-cache, find-changed-shards, generate-shard]
     if: needs.find-changed-shards.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
 
@@ -139,15 +162,18 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Checkout data branch
-        uses: actions/checkout@v4
+      - name: Restore cached git repository
+        uses: actions/cache/restore@v4
         with:
-          ref: data
-          path: brreg-data
-          sparse-checkout: |
-            .last-history-commit
-            README.md
-          sparse-checkout-cone-mode: false
+          path: brreg-data/.git
+          key: ${{ needs.prepare-cache.outputs.cache-key }}
+          fail-on-cache-miss: true
+
+      - name: Sparse checkout state file
+        run: |
+          cd brreg-data
+          git sparse-checkout set .last-history-commit
+          git checkout
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
@@ -155,35 +181,38 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: artifacts
-
-      - name: Merge shards into gh-pages
+      - name: Download and merge shard artifacts
         run: |
+          # Get list of shards from the job output
+          SHARDS='${{ needs.find-changed-shards.outputs.shards }}'
+          echo "Processing shards: $SHARDS"
+
           cd gh-pages
 
-          # Copy all shard directories
-          for shard_dir in ../artifacts/shard-*/; do
-            if [ -d "$shard_dir" ]; then
-              cp -r "$shard_dir"* . || true
+          # Download and process one shard at a time
+          for shard in $(echo $SHARDS | jq -r '.[]'); do
+            echo "Downloading shard $shard..."
+
+            # Download this shard's artifact
+            gh run download ${{ github.run_id }} -n "shard-$shard" -D ../temp-artifact || {
+              echo "Warning: Failed to download shard $shard, skipping"
+              continue
+            }
+
+            # Copy shard files to gh-pages
+            if [ -d "../temp-artifact/$shard" ]; then
+              cp -r "../temp-artifact/$shard" .
+              echo "Merged shard $shard"
             fi
+
+            # Cleanup to save disk space
+            rm -rf ../temp-artifact
+
           done
 
-          echo "Merged all shard artifacts"
-
-      - name: Build navigation site
-        run: |
-          cd brreg-delta/ssr
-          go install github.com/gohugoio/hugo@latest
-          cd navigation-site
-          hugo --minify --destination ../../../gh-pages-nav
-
-      - name: Copy navigation site to gh-pages
-        run: |
-          cp -r gh-pages-nav/* gh-pages/
-          echo "Navigation site copied"
+          echo "All shards merged"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save last processed commit to data branch
         run: |
