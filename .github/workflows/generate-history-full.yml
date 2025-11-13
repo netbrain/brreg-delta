@@ -70,7 +70,7 @@ jobs:
         if: steps.checkout.outputs.skip != 'true'
         uses: actions/setup-go@v5
         with:
-          go-version: '1.23'
+          go-version: '1.24'
 
       - name: Install Hugo
         if: steps.checkout.outputs.skip != 'true'
@@ -128,7 +128,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.23'
+          go-version: '1.24'
 
       - name: Install Hugo
         run: |
