@@ -56,16 +56,6 @@ jobs:
           fi
           echo "skip=false" >> $GITHUB_OUTPUT
 
-      - name: Create shard branch
-        if: steps.checkout.outputs.skip != 'true'
-        run: |
-          mkdir gh-pages-temp
-          cd gh-pages-temp
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
       - name: Setup Go
         if: steps.checkout.outputs.skip != 'true'
         uses: actions/setup-go@v5
@@ -92,28 +82,14 @@ jobs:
           echo "Processing shard ${{ matrix.shard }}"
           ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
 
-      - name: Commit and push shard to dedicated branch
+      - name: Upload shard artifacts
         if: steps.checkout.outputs.skip != 'true'
-        run: |
-          cd gh-pages-temp
-
-          # Copy generated HTML files for this shard
-          if [ -d ../output/${{ matrix.shard }} ]; then
-            cp -r ../output/${{ matrix.shard }} .
-
-            git add ${{ matrix.shard }}
-
-            if ! git diff --cached --quiet; then
-              git commit -m "Add shard ${{ matrix.shard }}"
-              # Push to dedicated branch for this shard
-              git push -f origin HEAD:gh-pages-shard-${{ matrix.shard }}
-              echo "Successfully pushed shard ${{ matrix.shard }} to gh-pages-shard-${{ matrix.shard }}"
-            else
-              echo "No changes for shard ${{ matrix.shard }}"
-            fi
-          else
-            echo "No output generated for shard ${{ matrix.shard }}"
-          fi
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: output/${{ matrix.shard }}
+          retention-days: 1
+          if-no-files-found: ignore
 
   finalize:
     needs: generate-shard
@@ -136,51 +112,55 @@ jobs:
             go install github.com/gohugoio/hugo@latest && break || sleep 10
           done
 
-      - name: Build navigation site and create gh-pages
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Merge shards into gh-pages
         run: |
-          cd brreg-delta/ssr/navigation-site
-          hugo --minify --destination ../../../gh-pages-output
+          cd gh-pages
 
-          cd ../../../gh-pages-output
-          touch .nojekyll
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Initialize with navigation site $(date +%Y-%m-%d)"
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git push -f origin HEAD:gh-pages
-
-      - name: Merge shard branches into gh-pages
-        run: |
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git -b gh-pages gh-pages-work
-          cd gh-pages-work
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          for shard in {800..999}; do
-            echo "Processing shard $shard..."
-            if git fetch origin gh-pages-shard-$shard 2>/dev/null; then
-              # Copy shard directory from the fetched branch
-              git checkout FETCH_HEAD -- $shard 2>/dev/null && echo "Added shard $shard" || echo "Shard $shard has no content"
-            else
-              echo "Shard $shard branch does not exist, skipping"
+          # Copy all shard directories
+          for shard_dir in ../artifacts/shard-*/; do
+            if [ -d "$shard_dir" ]; then
+              cp -r "$shard_dir"* . || true
             fi
           done
 
-          # Commit all changes at once
-          git add .
-          if ! git diff --cached --quiet; then
-            git commit -m "Merge all shards into gh-pages $(date +%Y-%m-%d)"
-            git push origin gh-pages
-          else
-            echo "No changes to commit"
-          fi
+          echo "Merged all shard artifacts"
 
-      - name: Cleanup shard branches
+      - name: Build navigation site
         run: |
-          cd gh-pages-work
-          for shard in {800..999}; do
-            git push origin --delete gh-pages-shard-$shard 2>/dev/null || true
-          done
-          echo "Cleanup completed"
+          cd brreg-delta/ssr
+          go install github.com/gohugoio/hugo@latest
+          cd navigation-site
+          hugo --minify --destination ../../../gh-pages-nav
+
+      - name: Copy navigation site to gh-pages
+        run: |
+          cp -r gh-pages-nav/* gh-pages/
+          touch gh-pages/.nojekyll
+          echo "Navigation site copied"
+
+      - name: Commit and push to gh-pages
+        run: |
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Full rebuild $(date +%Y-%m-%d)"
+            git push
+            echo "Changes pushed successfully"
+          fi
