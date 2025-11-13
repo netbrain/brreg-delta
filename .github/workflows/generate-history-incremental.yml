@@ -205,16 +205,16 @@ jobs:
           SHARDS='${{ needs.find-changed-shards.outputs.shards }}'
           echo "Processing shards: $SHARDS"
 
-          cd gh-pages
+          # Function to download and merge a single shard
+          process_shard() {
+            local shard=$1
 
-          # Download and process one shard at a time
-          for shard in $(echo $SHARDS | jq -r '.[]'); do
             echo "Downloading shard $shard..."
 
             # Download this shard's artifact with retries
             download_success=false
             for i in 1 2 3; do
-              if gh run download ${{ github.run_id }} -n "shard-$shard" -D ../temp-artifact; then
+              if gh run download ${{ github.run_id }} -n "shard-$shard" -D /tmp; then
                 download_success=true
                 break
               else
@@ -225,23 +225,25 @@ jobs:
 
             if [ "$download_success" = false ]; then
               echo "Warning: Failed to download shard $shard after 3 attempts, skipping"
-              continue
+              return
             fi
 
             echo "Download complete for shard $shard"
 
-            # Copy shard files to gh-pages
-            if [ -d "../temp-artifact/$shard" ]; then
-              cp -r "../temp-artifact/$shard" .
+            # Move shard files to gh-pages
+            if [ -d "/tmp/$shard" ]; then
+              mv "/tmp/$shard" gh-pages/
               echo "Merged shard $shard"
             else
               echo "Warning: Shard directory $shard not found in artifact"
             fi
+          }
 
-            # Cleanup to save disk space
-            rm -rf ../temp-artifact
+          export -f process_shard
+          export GH_TOKEN
 
-          done
+          # Process shards in parallel with 4 workers
+          echo $SHARDS | jq -r '.[]' | xargs -n 1 -P 4 -I {} bash -c 'process_shard {}'
 
           echo "All shards merged"
         env:
@@ -253,9 +255,13 @@ jobs:
           git rev-parse HEAD > .last-history-commit
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Configure remote with token for authentication
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
           git add .last-history-commit
           git commit -m "Update last history commit marker" || echo "No changes to commit marker"
-          git push
+          git push origin data
 
       - name: Commit and push to gh-pages
         run: |
