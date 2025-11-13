@@ -208,13 +208,15 @@ jobs:
           # Function to download and merge a single shard
           process_shard() {
             local shard=$1
+            local run_id=$2
+            local repo=$3
 
             echo "Downloading shard $shard..."
 
             # Download this shard's artifact with retries
             download_success=false
             for i in 1 2 3; do
-              if gh run download ${{ github.run_id }} -n "shard-$shard" -D /tmp; then
+              if gh run download "$run_id" -n "shard-$shard" -D /tmp -R "$repo"; then
                 download_success=true
                 break
               else
@@ -241,9 +243,11 @@ jobs:
 
           export -f process_shard
           export GH_TOKEN
+          export RUN_ID="${{ github.run_id }}"
+          export REPO="${{ github.repository }}"
 
           # Process shards in parallel with 4 workers
-          echo $SHARDS | jq -r '.[]' | xargs -n 1 -P 4 -I {} bash -c 'process_shard {}'
+          echo $SHARDS | jq -r '.[]' | xargs -n 1 -P 4 -I {} bash -c 'process_shard {} "$RUN_ID" "$REPO"'
 
           echo "All shards merged"
         env:
