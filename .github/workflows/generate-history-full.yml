@@ -169,16 +169,31 @@ jobs:
           for shard in {800..999}; do
             echo "Downloading shard $shard..."
 
-            # Download this shard's artifact
-            gh run download ${{ github.run_id }} -n "shard-$shard" -D ../temp-artifact || {
-              echo "Shard $shard not found or failed, skipping"
+            # Download this shard's artifact with retries
+            download_success=false
+            for i in 1 2 3; do
+              if gh run download ${{ github.run_id }} -n "shard-$shard" -D ../temp-artifact; then
+                download_success=true
+                break
+              else
+                echo "Attempt $i failed for shard $shard"
+                sleep 10
+              fi
+            done
+
+            if [ "$download_success" = false ]; then
+              echo "Shard $shard not found or failed after 3 attempts, skipping"
               continue
-            }
+            fi
+
+            echo "Download complete for shard $shard"
 
             # Copy shard files to gh-pages
             if [ -d "../temp-artifact/$shard" ]; then
               cp -r "../temp-artifact/$shard" .
               echo "Merged shard $shard"
+            else
+              echo "Warning: Shard directory $shard not found in artifact"
             fi
 
             # Cleanup to save disk space
