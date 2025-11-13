@@ -11,7 +11,29 @@ permissions:
   contents: write
 
 jobs:
+  prepare-cache:
+    runs-on: ubuntu-latest
+    outputs:
+      cache-key: ${{ steps.cache-key.outputs.key }}
+
+    steps:
+      - name: Generate cache key
+        id: cache-key
+        run: echo "key=data-git-${{ github.run_id }}-${{ github.run_attempt }}" >> $GITHUB_OUTPUT
+
+      - name: Clone data branch (sparse, no checkout)
+        run: |
+          git clone --sparse --no-checkout --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
+
+      - name: Cache git repository
+        uses: actions/cache/save@v4
+        with:
+          path: brreg-data/.git
+          key: ${{ steps.cache-key.outputs.key }}
+
   generate-shard:
+    needs: prepare-cache
     runs-on: ubuntu-latest
     timeout-minutes: 60
     strategy:
@@ -21,118 +43,15 @@ jobs:
         shard: [800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999]
 
     steps:
-      # - name: Free disk space
-      #   uses: jlumbroso/free-disk-space@main
-      #   with:
-      #     tool-cache: true
-      #     android: true
-      #     dotnet: true
-      #     haskell: true
-      #     large-packages: true
-      #     docker-images: true
-      #     swap-storage: true
-
-      - name: Checkout brreg-delta (master)
+      - name: Checkout for composite action
         uses: actions/checkout@v4
-        with:
-          ref: master
-          path: brreg-delta
-
-      - name: Cache data branch for shard ${{ matrix.shard }}
-        id: cache-data
-        uses: actions/cache@v4
-        with:
-          path: brreg-data
-          key: data-shard-${{ matrix.shard }}-${{ github.run_id }}
-          restore-keys: |
-            data-shard-${{ matrix.shard }}-
-
-      - name: Sparse checkout data branch (shard ${{ matrix.shard }} only)
-        id: checkout
-        if: steps.cache-data.outputs.cache-hit != 'true'
-        run: |
-          git clone --no-checkout --branch data --sparse \
-            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
-          cd brreg-data
-          git sparse-checkout init --cone
-          git sparse-checkout set data/${{ matrix.shard }}
-          git checkout
-
-          # Check if shard directory exists
-          if [ ! -d "data/${{ matrix.shard }}" ]; then
-            echo "Shard ${{ matrix.shard }} directory does not exist, skipping"
-            echo "skip=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          echo "skip=false" >> $GITHUB_OUTPUT
-
-      - name: Update cached checkout
-        if: steps.cache-data.outputs.cache-hit == 'true'
-        run: |
-          cd brreg-data
-          git fetch origin data
-          git reset --hard origin/data
-
-          # Check if shard directory exists
-          if [ ! -d "data/${{ matrix.shard }}" ]; then
-            echo "Shard ${{ matrix.shard }} directory does not exist, skipping"
-            echo "skip=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          echo "skip=false" >> $GITHUB_OUTPUT
-
-      - name: Setup Go
-        if: steps.checkout.outputs.skip != 'true'
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.24'
-
-      - name: Cache Hugo
-        if: steps.checkout.outputs.skip != 'true'
-        id: cache-hugo
-        uses: actions/cache@v4
-        with:
-          path: ~/go/bin/hugo
-          key: hugo-${{ runner.os }}-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            hugo-${{ runner.os }}-
-
-      - name: Install Hugo
-        if: steps.checkout.outputs.skip != 'true' && steps.cache-hugo.outputs.cache-hit != 'true'
-        run: |
-          for i in 1 2 3; do
-            go install github.com/gohugoio/hugo@latest && break || sleep 10
-          done
-
-      - name: Cache gen-history binary
-        if: steps.checkout.outputs.skip != 'true'
-        id: cache-gen-history
-        uses: actions/cache@v4
-        with:
-          path: gen-history
-          key: gen-history-${{ runner.os }}-${{ hashFiles('brreg-delta/ssr/gen-history/**/*.go') }}
-
-      - name: Build gen-history tool
-        if: steps.checkout.outputs.skip != 'true' && steps.cache-gen-history.outputs.cache-hit != 'true'
-        run: |
-          cd brreg-delta/ssr/gen-history
-          go build -o ../../../gen-history
 
       - name: Generate shard ${{ matrix.shard }}
-        if: steps.checkout.outputs.skip != 'true'
-        run: |
-          cd brreg-data
-          echo "Processing shard ${{ matrix.shard }}"
-          ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
-
-      - name: Upload shard artifacts
-        if: steps.checkout.outputs.skip != 'true'
-        uses: actions/upload-artifact@v4
+        uses: ./.github/actions/generate-shard
         with:
-          name: shard-${{ matrix.shard }}
-          path: output/${{ matrix.shard }}
-          retention-days: 1
-          if-no-files-found: ignore
+          shard: ${{ matrix.shard }}
+          cache-key: ${{ needs.prepare-cache.outputs.cache-key }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
   finalize:
     needs: generate-shard

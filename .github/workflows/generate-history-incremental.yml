@@ -102,71 +102,15 @@ jobs:
         shard: ${{ fromJson(needs.find-changed-shards.outputs.shards) }}
 
     steps:
-      - name: Checkout brreg-delta (master)
+      - name: Checkout for composite action
         uses: actions/checkout@v4
-        with:
-          ref: master
-          path: brreg-delta
-
-      - name: Restore cached git repository
-        uses: actions/cache/restore@v4
-        with:
-          path: brreg-data/.git
-          key: ${{ needs.prepare-cache.outputs.cache-key }}
-          fail-on-cache-miss: true
-
-      - name: Sparse checkout shard ${{ matrix.shard }}
-        run: |
-          cd brreg-data
-          git sparse-checkout set data/${{ matrix.shard }}
-          git checkout
-
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.24'
-
-      - name: Cache Hugo
-        id: cache-hugo
-        uses: actions/cache@v4
-        with:
-          path: ~/go/bin/hugo
-          key: hugo-${{ runner.os }}-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            hugo-${{ runner.os }}-
-
-      - name: Install Hugo
-        if: steps.cache-hugo.outputs.cache-hit != 'true'
-        run: |
-          for i in 1 2 3; do
-            go install github.com/gohugoio/hugo@latest && break || sleep 10
-          done
-
-      - name: Cache gen-history binary
-        id: cache-gen-history
-        uses: actions/cache@v4
-        with:
-          path: gen-history
-          key: gen-history-${{ runner.os }}-${{ hashFiles('brreg-delta/ssr/gen-history/**/*.go') }}
-
-      - name: Build gen-history tool
-        if: steps.cache-gen-history.outputs.cache-hit != 'true'
-        run: |
-          cd brreg-delta/ssr/gen-history
-          go build -o ../../../gen-history
 
       - name: Generate shard ${{ matrix.shard }}
-        run: |
-          cd brreg-data
-          echo "Processing shard ${{ matrix.shard }}"
-          ../gen-history shard --shard ${{ matrix.shard }} --output ../output --templates ../brreg-delta/ssr
-
-      - name: Upload shard artifacts
-        uses: actions/upload-artifact@v4
+        uses: ./.github/actions/generate-shard
         with:
-          name: shard-${{ matrix.shard }}
-          path: output/${{ matrix.shard }}
-          retention-days: 1
+          shard: ${{ matrix.shard }}
+          cache-key: ${{ needs.prepare-cache.outputs.cache-key }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
   finalize:
     needs: [prepare-cache, find-changed-shards, generate-shard]

@@ -1,0 +1,87 @@
+name: 'Generate Shard'
+description: 'Generate entity history pages for a single shard'
+
+inputs:
+  shard:
+    description: 'Shard number to process'
+    required: true
+  cache-key:
+    description: 'Cache key for git repository'
+    required: true
+  github-token:
+    description: 'GitHub token for authentication'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout brreg-delta (master)
+      uses: actions/checkout@v4
+      with:
+        ref: master
+        path: brreg-delta
+
+    - name: Restore cached git repository
+      uses: actions/cache/restore@v4
+      with:
+        path: brreg-data/.git
+        key: ${{ inputs.cache-key }}
+        fail-on-cache-miss: true
+
+    - name: Sparse checkout shard ${{ inputs.shard }}
+      shell: bash
+      run: |
+        cd brreg-data
+        git sparse-checkout set data/${{ inputs.shard }}
+        git checkout
+
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.24'
+
+    - name: Cache Hugo
+      id: cache-hugo
+      uses: actions/cache@v4
+      with:
+        path: ~/go/bin/hugo
+        key: hugo-${{ runner.os }}-${{ hashFiles('**/go.mod') }}
+        restore-keys: |
+          hugo-${{ runner.os }}-
+
+    - name: Install Hugo
+      if: steps.cache-hugo.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        for i in 1 2 3; do
+          go install github.com/gohugoio/hugo@latest && break || sleep 10
+        done
+
+    - name: Cache gen-history binary
+      id: cache-gen-history
+      uses: actions/cache@v4
+      with:
+        path: gen-history
+        key: gen-history-${{ runner.os }}-${{ hashFiles('brreg-delta/ssr/gen-history/**/*.go') }}
+
+    - name: Build gen-history tool
+      if: steps.cache-gen-history.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        cd brreg-delta/ssr/gen-history
+        go build -o ../../../gen-history
+
+    - name: Generate shard ${{ inputs.shard }}
+      shell: bash
+      run: |
+        cd brreg-data
+        echo "Processing shard ${{ inputs.shard }}"
+        ../gen-history shard --shard ${{ inputs.shard }} --output ../output --templates ../brreg-delta/ssr
+
+    - name: Upload shard artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: shard-${{ inputs.shard }}
+        path: output/${{ inputs.shard }}
+        retention-days: 1
+        if-no-files-found: ignore
