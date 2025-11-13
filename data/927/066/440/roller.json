@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927066440/roller"
     }
   },
-  "organisasjonsnummer": "927066440",
   "rollegrupper": [
     {
       "roller": [
@@ -134,10 +133,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1981-01-14",
+            "fodselsdato": "1976-04-01",
             "navn": {
-              "etternavn": "Le Gouez",
-              "fornavn": "Pauline Marie"
+              "etternavn": "Vetaas",
+              "fornavn": "Ann-Cathrin",
+              "mellomnavn": "Knutzen"
             }
           },
           "rekkefolge": 4,
@@ -149,30 +149,13 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1976-04-01",
-            "navn": {
-              "etternavn": "Vetaas",
-              "fornavn": "Ann-Cathrin",
-              "mellomnavn": "Knutzen"
-            }
-          },
-          "rekkefolge": 5,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -187,7 +170,7 @@
               "fornavn": "Johan Erik Christer"
             }
           },
-          "rekkefolge": 6,
+          "rekkefolge": 5,
           "type": {
             "_links": {
               "self": {
@@ -198,6 +181,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -206,21 +194,21 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1981-02-21",
+            "fodselsdato": "1981-01-14",
             "navn": {
-              "etternavn": "Thabouti",
-              "fornavn": "Mourad"
+              "etternavn": "Le Gouez",
+              "fornavn": "Pauline Marie"
             }
           },
-          "rekkefolge": 7,
+          "rekkefolge": 6,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
               }
             },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
           }
         },
         {
@@ -234,7 +222,7 @@
               "mellomnavn": "Paulsen"
             }
           },
-          "rekkefolge": 8,
+          "rekkefolge": 7,
           "type": {
             "_links": {
               "self": {
@@ -245,31 +233,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
-            "beskrivelse": "Representant for de ansatte",
-            "kode": "AREP"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1964-08-14",
-            "navn": {
-              "etternavn": "Rugseth",
-              "fornavn": "Kjell Tore"
-            }
-          },
-          "rekkefolge": 9,
-          "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
               }
             },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
-          },
-          "valgtAv": {
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -284,7 +252,7 @@
               "fornavn": "Jean-Baptiste Pierre"
             }
           },
-          "rekkefolge": 10,
+          "rekkefolge": 8,
           "type": {
             "_links": {
               "self": {
@@ -294,9 +262,60 @@
             "beskrivelse": "Varamedlem",
             "kode": "VARA"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1981-02-21",
+            "navn": {
+              "etternavn": "Thabouti",
+              "fornavn": "Mourad"
+            }
+          },
+          "rekkefolge": 9,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1975-07-11",
+            "navn": {
+              "etternavn": "Nicolaysen",
+              "fornavn": "Penny Marie"
+            }
+          },
+          "rekkefolge": 10,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
+          }
         }
       ],
-      "sistEndret": "2025-02-04",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {

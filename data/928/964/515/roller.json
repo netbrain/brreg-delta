@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928964515/roller"
     }
   },
-  "organisasjonsnummer": "928964515",
   "rollegrupper": [
     {
       "roller": [
@@ -93,11 +92,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1981-10-15",
+            "fodselsdato": "1982-06-01",
             "navn": {
-              "etternavn": "Gabestad",
-              "fornavn": "Thomas",
-              "mellomnavn": "Eik"
+              "etternavn": "Alvsvåg",
+              "fornavn": "Hege",
+              "mellomnavn": "Sønstabø"
             }
           },
           "rekkefolge": 2,
@@ -109,30 +108,13 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1982-06-01",
-            "navn": {
-              "etternavn": "Alvsvåg",
-              "fornavn": "Hege",
-              "mellomnavn": "Sønstabø"
-            }
-          },
-          "rekkefolge": 3,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -147,7 +129,7 @@
               "fornavn": "Ronny"
             }
           },
-          "rekkefolge": 4,
+          "rekkefolge": 3,
           "type": {
             "_links": {
               "self": {
@@ -158,6 +140,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -172,6 +159,37 @@
               "fornavn": "Marit"
             }
           },
+          "rekkefolge": 4,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1982-08-20",
+            "navn": {
+              "etternavn": "Kulien",
+              "fornavn": "Anders",
+              "mellomnavn": "Ryen"
+            }
+          },
           "rekkefolge": 5,
           "type": {
             "_links": {
@@ -183,6 +201,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -251,6 +274,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -276,12 +304,17 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
         }
       ],
-      "sistEndret": "2025-05-27",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
@@ -290,19 +323,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-01-07",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {
