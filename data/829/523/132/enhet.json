@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/829523132"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, herunder eie, forvalte, kjøpe og selge aksjer",
     "og andre verdipapirer, fast eiendom og alt som naturlig hører inn",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 204675,
+    "fulltInnbetalt": true,
+    "innbetalt": 204675,
+    "innfortDato": "2022-12-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -34,9 +47,13 @@
   },
   "navn": "JV HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "829523132",
   "paategninger": [],

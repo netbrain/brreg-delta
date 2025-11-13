@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/820827732"
+    }
+  },
   "aktivitet": [
     "Investeringer, herunder i datterselskaper. Selskapet kan også drive",
     "annen aktivitet som naturlig står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 66250,
+    "belop": 132500,
+    "fulltInnbetalt": true,
+    "innbetalt": 132500,
+    "innfortDato": "2019-11-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Forebyggende helsearbeid",
@@ -33,9 +46,13 @@
   },
   "navn": "EVJEKLINIKKEN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "820827732",
   "paategninger": [],

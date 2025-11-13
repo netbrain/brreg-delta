@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/820940512"
+    }
+  },
   "aktivitet": [
     "Eie aksjer, selskapsandeler, verdipapirer, fast eiendom og annen",
     "virksomhet som har tilknytning til dette, samt støtte allmennyttige",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1,
+    "belop": 93616217.44,
+    "fulltInnbetalt": true,
+    "innbetalt": 93616217.44,
+    "innfortDato": "2018-06-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsforvaltning på oppdrag",
@@ -35,9 +48,13 @@
   },
   "navn": "TOMTE HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "820940512",
   "paategninger": [],

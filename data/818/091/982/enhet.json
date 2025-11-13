@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/818091982"
+    }
+  },
   "aktivitet": [
     "Holdingselskap og den operative virksomheten vil hovedsakelig skje i",
     "datterselskaper. Virksomheten i datterselskaper vil blant annet",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 18200,
+    "belop": 91000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 91000000,
+    "innfortDato": "2017-12-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -37,9 +50,13 @@
   },
   "navn": "MELESIO HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "818091982",
   "paategninger": [],

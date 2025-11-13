@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/825553002"
+    }
+  },
   "aktivitet": [
     "Å eie, direkte eller indirekte, andeler i andre selskaper."
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 1950000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1950000,
+    "innfortDato": "2025-07-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -31,9 +44,13 @@
   },
   "navn": "STATKRAFT VENTURES AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "825553002",
   "paategninger": [],

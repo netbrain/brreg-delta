@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/812026992"
+    }
+  },
   "aktivitet": [
     "Konsulent, bemanning og vikartjenester innen olje, gass, industri og",
     "vindmøller, mekanisk og sakkyndig virksomhet. Engineering, reparasjon,",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 666,
+    "belop": 66600,
+    "fulltInnbetalt": true,
+    "innbetalt": 66600,
+    "innfortDato": "2014-12-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
@@ -37,9 +50,13 @@
   },
   "navn": "KAM LIFTING CONSULT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "812026992",
   "paategninger": [],

@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/819449392/roller"
     }
   },
-  "organisasjonsnummer": "819449392",
   "rollegrupper": [
     {
       "roller": [
@@ -90,6 +89,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -119,11 +123,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1977-10-25",
+            "fodselsdato": "1965-07-08",
             "navn": {
-              "etternavn": "Evensen",
-              "fornavn": "Mette",
-              "mellomnavn": "Bruun"
+              "etternavn": "Hansen",
+              "fornavn": "Lars Petter"
             }
           },
           "rekkefolge": 3,
@@ -137,31 +140,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
-            "beskrivelse": "Representant for de ansatte",
-            "kode": "AREP"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1965-07-08",
-            "navn": {
-              "etternavn": "Hansen",
-              "fornavn": "Lars Petter"
-            }
-          },
-          "rekkefolge": 4,
-          "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
               }
             },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
-          },
-          "valgtAv": {
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -177,6 +160,36 @@
               "mellomnavn": "Aasen"
             }
           },
+          "rekkefolge": 4,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1986-01-01",
+            "navn": {
+              "etternavn": "Ekeberg",
+              "fornavn": "Haakon"
+            }
+          },
           "rekkefolge": 5,
           "type": {
             "_links": {
@@ -188,12 +201,78 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1990-12-03",
+            "navn": {
+              "etternavn": "Riise",
+              "fornavn": "Maren",
+              "mellomnavn": "Furuborg"
+            }
+          },
+          "rekkefolge": 6,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1970-10-03",
+            "navn": {
+              "etternavn": "Langåker",
+              "fornavn": "Thor Geir"
+            }
+          },
+          "rekkefolge": 7,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/OBS"
+              }
+            },
+            "beskrivelse": "Observatør",
+            "kode": "OBS"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
         }
       ],
-      "sistEndret": "2025-09-19",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -202,19 +281,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2017-08-23",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {
