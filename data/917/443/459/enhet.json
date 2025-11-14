@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917443459"
+    }
+  },
   "aktivitet": [
     "Havbruksnæringen. Salg og kjøp av aksjer samt eierskap i andre",
     "selskaper under samme kategori."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2016-07-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Tjenester tilknyttet fiske, fangst og akvakultur",
@@ -30,9 +43,13 @@
   },
   "navn": "HAVFRO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917443459",
   "paategninger": [],

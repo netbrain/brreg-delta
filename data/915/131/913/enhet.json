@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915131913"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av bedrifter, investeringer i aksjer, markedsførings- og",
     "salgstjenester for bedriftene som denne bedriften kjøper, og annet som",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2015-03-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "413 47 892",
   "naeringskode1": {
@@ -40,9 +53,13 @@
   },
   "navn": "TRYGG KAPITAL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915131913",
   "paategninger": [],

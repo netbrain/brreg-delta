@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916815999"
+    }
+  },
   "aktivitet": [
     "Kaffebar."
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 80000,
+    "fulltInnbetalt": true,
+    "innbetalt": 80000,
+    "innfortDato": "2021-02-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av barer",
@@ -29,9 +42,13 @@
   },
   "navn": "BARISTA-DAMENE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916815999",
   "paategninger": [],

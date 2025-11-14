@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917461031"
+    }
+  },
   "aktivitet": [
     "Investere i fast eiendom eller selskaper som eier fast eiendom, og alt",
     "som dermed står i forbindelse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 280000,
+    "fulltInnbetalt": true,
+    "innbetalt": 280000,
+    "innfortDato": "2017-07-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "VOGTS GATE 58 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917461031",
   "paategninger": [],

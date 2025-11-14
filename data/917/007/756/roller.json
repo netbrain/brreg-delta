@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917007756/roller"
     }
   },
-  "organisasjonsnummer": "917007756",
   "rollegrupper": [
     {
       "roller": [
@@ -69,6 +68,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -94,6 +98,11 @@
             "kode": "NEST"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -120,6 +129,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -145,6 +159,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -159,63 +178,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1974-12-22",
-            "navn": {
-              "etternavn": "Husum",
-              "fornavn": "Geir",
-              "mellomnavn": "Falck"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1975-04-01",
-            "navn": {
-              "etternavn": "Alme",
-              "fornavn": "Helge"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2021-01-22",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

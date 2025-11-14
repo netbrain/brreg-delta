@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916122373"
+    }
+  },
   "aktivitet": [
     "Investering i finansielle instrumenter, deltagelse og investering i",
     "andre selskaper, samt hva som naturlig står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2015-10-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av måle-, kontroll- og navigasjonsinstrumenter",
@@ -33,9 +46,13 @@
   },
   "navn": "SERAFIN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916122373",
   "paategninger": [],

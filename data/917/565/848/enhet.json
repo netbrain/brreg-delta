@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917565848"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og annen forvaltning av fast eiendom, samt handel og",
     "tjenesteytende virksomhet, og hva hermed står i forbindelse, herunder",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 5000,
+    "belop": 6000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 6000000,
+    "innfortDato": "2018-12-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -33,9 +46,13 @@
   },
   "navn": "TYSVÆR NÆRINGSBYGG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917565848",
   "paategninger": [],

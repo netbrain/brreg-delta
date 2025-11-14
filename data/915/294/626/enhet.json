@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915294626"
+    }
+  },
   "aktivitet": [
     "Verktøy, verkstedsutstyr, motorkjøretøy mv."
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 50000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000,
+    "innfortDato": "2015-04-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Formidlingstjenester tilknyttet detaljhandel med spesialisert vareutvalg",
@@ -29,9 +42,13 @@
   },
   "navn": "SUPERTUNE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915294626",
   "paategninger": [],

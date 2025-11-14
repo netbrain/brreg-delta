@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916870191"
+    }
+  },
   "aktivitet": [
     "Rådgivning innenfor strategi, finans og fast eiendom, samt investering",
     "i selskaper, aksjer og utleie av næringseiendom, samt virksomhet som",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2016-03-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -31,9 +44,13 @@
   },
   "navn": "H. BRENDEN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916870191",
   "paategninger": [],

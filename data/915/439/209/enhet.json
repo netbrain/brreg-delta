@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915439209"
+    }
+  },
   "aktivitet": [
     "Økonomisk rådgivning."
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50,
+    "belop": 50000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000,
+    "innfortDato": "2015-05-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "900 62 073",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "BØRSTAD RÅDGIVNING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915439209",
   "paategninger": [],

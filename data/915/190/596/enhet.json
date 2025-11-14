@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915190596"
+    }
+  },
   "aktivitet": [
     "Produsere brød og ferske konditorvarer. Forretningsvirksomhet, eie og",
     "handle med verdipapirer og aksjer samt å utøve tilknyttet virksomhet,",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000,
+    "innfortDato": "2015-03-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av brød og ferske konditorvarer",
@@ -32,9 +45,13 @@
   },
   "navn": "BACO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915190596",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916762054"
+    }
+  },
   "aktivitet": [
     "Ølbryggeri, butikkhandel med mat og drikkevarer, drift av pub/",
     "restaurant, events og arrangementer, samt andre produkter/tjenester",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2016-02-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av øl",
@@ -31,9 +44,13 @@
   },
   "navn": "BRYGGERIHUSET AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916762054",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914983568"
+    }
+  },
   "aktivitet": [
     "Eie fast eiendom eller aksjer i selskaper",
     "som eier fast eiendom, utvikle, omsette, leie ut og for øvrig",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 365038109,
+    "belop": 3650381.09,
+    "fulltInnbetalt": true,
+    "innbetalt": 3650381.09,
+    "innfortDato": "2015-02-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -35,9 +48,13 @@
   },
   "navn": "BOGSTADVEIEN 9B AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "914983568",
   "paategninger": [],

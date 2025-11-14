@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915185290"
+    }
+  },
   "aktivitet": [
     "Eiendomsutvikling med oppføring, kjøp, salg og utleie av",
     "forretningseiendommer."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 4000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 4000000,
+    "innfortDato": "2015-12-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -32,9 +45,13 @@
   },
   "navn": "LP-INVEST ROA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915185290",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915201385"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet: Tilføre kapital og kompetanse til utvikling",
     "av virksomheter innen olje og gass industri, herunder oilservice og",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 5000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 5000000,
+    "innfortDato": "2015-04-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvinning av råolje",
@@ -30,9 +43,13 @@
   },
   "navn": "M VEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915201385",
   "paategninger": [],

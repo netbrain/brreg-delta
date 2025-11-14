@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916103743"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg, utvikling og utleie av fast eiendom, samt aktiviteter som",
     "naturlig faller inn under dette."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 500000,
+    "innfortDato": "2015-10-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "977 87 428",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "WIMP EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916103743",
   "paategninger": [],

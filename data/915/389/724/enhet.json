@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915389724"
+    }
+  },
   "aktivitet": [
     "Databehandling, konsulentvirksomhet, økonomisk rådgivning samt utleie",
     "av kontorbygning, leiligheter og hus."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 500000,
+    "innfortDato": "2021-03-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Datainfrastruktur, -behandling, -lagring og tilknyttede tjenester",
@@ -30,9 +43,13 @@
   },
   "navn": "MIDT-TROMS DATA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915389724",
   "paategninger": [],

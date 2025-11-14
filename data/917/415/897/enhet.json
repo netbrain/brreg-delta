@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917415897"
+    }
+  },
   "aktivitet": [
     "Å eie, kjøpe, selge, drive og forvalte fast eiendom og annen",
     "virksomhet som har sammenheng med dette. Selskapet kan også eie aksjer",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 6661986,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2019-02-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -35,9 +48,13 @@
   },
   "navn": "SØRENGA 1 NÆRING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917415897",
   "paategninger": [],

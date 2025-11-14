@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914900646"
+    }
+  },
   "aktivitet": [
     "Å eie fast eiendom, drive eiendomsutvikling og drift av fast eiendom",
     "samt all annen virksomhet som står i forbindelse med dette, herunder",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2015-02-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -34,9 +47,13 @@
   },
   "navn": "LØKENSKOGEN UTVIKLING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "914900646",
   "paategninger": [],

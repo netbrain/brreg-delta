@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916513410"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg, utvikling og utleie av fast eiendom, medvirke i andre",
     "selskaper innen samme virksomhet, samt alt som hører naturlig til",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2016-01-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -30,9 +43,13 @@
   },
   "navn": "EVLO INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916513410",
   "paategninger": [],

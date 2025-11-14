@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915553540/roller"
     }
   },
-  "organisasjonsnummer": "915553540",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -103,76 +107,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1969-08-25",
-            "navn": {
-              "etternavn": "Holmvik",
-              "fornavn": "Rut-Hilde",
-              "mellomnavn": "Finnerud"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1971-09-01",
-            "navn": {
-              "etternavn": "Holmvik",
-              "fornavn": "Tim Alexander"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2015-06-22",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2015-06-22",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916227272"
+    }
+  },
   "aktivitet": [
     "Selv, gjennom hel- eller deleide selskaper",
     "eller ved samarbeid med andre virksomheter, å drive handel med norske",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000,
+    "innfortDato": "2018-01-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "VVS-arbeid",
@@ -34,9 +47,13 @@
   },
   "navn": "STARBREATHER PRODUCTION AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916227272",
   "paategninger": [],

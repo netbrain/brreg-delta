@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917313474"
+    }
+  },
   "aktivitet": [
     "Investerings- og eierselskap, som gjennom aksje-",
     "innskudd og på annen måte deltar i alle former for",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 5000000,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "1999-01-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -33,9 +46,13 @@
   },
   "navn": "Borgia AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917313474",
   "paategninger": [],

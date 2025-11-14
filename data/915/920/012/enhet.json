@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915920012"
+    }
+  },
   "aktivitet": [
     "Taktekking, snekring og oppsetting av nybygg/restaurering, samt hva",
     "som dermed hører til, herunder deltakelse i andre selskap med lignende",
@@ -21,9 +26,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2020-11-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2023-09-27",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Takarbeid",
@@ -35,9 +48,13 @@
   },
   "navn": "MEMBRANTAK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915920012",
   "paategninger": [],

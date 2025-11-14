@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917203326"
+    }
+  },
   "aktivitet": [
     "Investering i aksjer, eiendom, samt økonomisk",
     "tjenesteyting og hva herved står i forbindelse, enten direkte eller",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1500,
+    "belop": 150000,
+    "fulltInnbetalt": true,
+    "innbetalt": 150000,
+    "innfortDato": "2016-05-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -32,9 +45,13 @@
   },
   "navn": "NOR INDUSTRI GRUPPEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917203326",
   "paategninger": [],

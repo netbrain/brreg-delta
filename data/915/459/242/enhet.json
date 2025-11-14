@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915459242"
+    }
+  },
   "aktivitet": [
     "Drive agentur eller annen handelsvirksomhet."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2000-04-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med jernvarer, rørleggerartikler og oppvarmingsutstyr",
@@ -30,9 +43,13 @@
   },
   "navn": "ROLFSEN \u0026 JUELL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915459242",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917427925"
+    }
+  },
   "aktivitet": [
     "Eiendomsmegling med tilhørende aktiviteter. Investering i andre",
     "virksomheter gjennom kjøp/salg av aksjer eller selskapsandeler."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500000,
+    "belop": 500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 500000,
+    "innfortDato": "2016-07-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsmegling og andre formidlingstjenester for eiendom",
@@ -30,9 +43,13 @@
   },
   "navn": "BVB EIENDOMSMEGLING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917427925",
   "paategninger": [],

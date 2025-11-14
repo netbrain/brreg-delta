@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917332053"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg, drift og utvikling av fast eiendom, samt investering i",
     "aksjer knyttet opp mot tilsvarende virksomhet."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1400000,
+    "belop": 42000,
+    "fulltInnbetalt": true,
+    "innbetalt": 42000,
+    "innfortDato": "2021-01-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -31,9 +44,13 @@
   },
   "navn": "INVESTOR EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917332053",
   "paategninger": [],

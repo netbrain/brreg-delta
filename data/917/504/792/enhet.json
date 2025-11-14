@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917504792"
+    }
+  },
   "aktivitet": [
     "Finansielle investeringer, deltagelse i andre selskaper, kjøp/salg av",
     "eiendom og utleie av eiendom. Samt annen virksomhet som naturlig",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 75000,
+    "fulltInnbetalt": true,
+    "innbetalt": 75000,
+    "innfortDato": "2016-08-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "BORGEN HOLDING 1 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917504792",
   "paategninger": [],

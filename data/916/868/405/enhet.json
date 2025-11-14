@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916868405"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, herunder investering i aksjer,",
     "selskapsandeler, verdipapirer og annen virksomhet i tilknytning til",
@@ -22,8 +27,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 1500,
+    "belop": 1500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1500000,
+    "innfortDato": "2016-03-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -31,9 +44,13 @@
   },
   "navn": "LANGTANGEN INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916868405",
   "paategninger": [],

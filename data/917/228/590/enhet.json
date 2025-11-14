@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917228590"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og forvaltning av fast eiendom, kjøp og salg av aksjer og",
     "annet som naturlig hører inn under dette."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 37125,
+    "fulltInnbetalt": true,
+    "innbetalt": 37125,
+    "innfortDato": "2016-05-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "OTG HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917228590",
   "paategninger": [],

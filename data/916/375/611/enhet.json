@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916375611"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet i verdipapir og eiendom."
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 333,
+    "belop": 333000,
+    "fulltInnbetalt": true,
+    "innbetalt": 333000,
+    "innfortDato": "2016-09-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "FRIMANN NILSEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916375611",
   "paategninger": [],

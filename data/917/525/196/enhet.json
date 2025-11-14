@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917525196"
+    }
+  },
   "aktivitet": [
     "Konsulentvirksomhet, herunder kokkefag og restaurantdrift."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000,
+    "innfortDato": "2016-09-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre personlige tjenester ikke nevnt annet sted",
@@ -30,9 +43,13 @@
   },
   "navn": "EHB HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917525196",
   "paategninger": [],

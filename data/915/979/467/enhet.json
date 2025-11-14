@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915979467"
+    }
+  },
   "aktivitet": [
     "Investering i aksjer og andre formuesobjekter, samt annen virksomhet",
     "som står i forbindelse med dette."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 8125,
+    "belop": 812500,
+    "fulltInnbetalt": true,
+    "innbetalt": 812500,
+    "innfortDato": "2015-09-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "GAIA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915979467",
   "paategninger": [],

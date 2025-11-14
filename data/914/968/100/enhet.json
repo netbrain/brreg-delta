@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914968100"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap. Forvalte kapital ved å investere i aksjer, andre",
     "selskap, eiendom og lignende"
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 4500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 4500000,
+    "innfortDato": "2019-12-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "BUAAS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "914968100",
   "paategninger": [],

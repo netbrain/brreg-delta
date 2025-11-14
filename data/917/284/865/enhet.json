@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917284865"
+    }
+  },
   "aktivitet": [
     "Å eie og drive fast eiendom, direkte eller gjennom deltakelse og",
     "eierskap i andre selskaper, og utøvelse av relaterte aktiviteter."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 130000,
+    "belop": 260000,
+    "fulltInnbetalt": true,
+    "innbetalt": 260000,
+    "innfortDato": "2024-01-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -33,9 +46,13 @@
   },
   "navn": "CSC D44 HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917284865",
   "paategninger": [],

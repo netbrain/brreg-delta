@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916866240"
+    }
+  },
   "aktivitet": [
     "Investere i eiendom og andre selskaper samt hva hermed står i",
     "forbindelse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2004-01-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "472 93 766",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "JOHAN TVEIT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916866240",
   "paategninger": [],

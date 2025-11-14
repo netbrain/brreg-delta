@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917542848/roller"
     }
   },
-  "organisasjonsnummer": "917542848",
   "rollegrupper": [
     {
       "roller": [
@@ -68,6 +67,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -94,6 +98,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -108,63 +117,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1964-06-16",
-            "navn": {
-              "etternavn": "Reggestad",
-              "fornavn": "Torgunn",
-              "mellomnavn": "Aas"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1970-04-11",
-            "navn": {
-              "etternavn": "Evensen",
-              "fornavn": "Steinar Roy"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2025-03-31",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

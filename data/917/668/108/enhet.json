@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917668108"
+    }
+  },
   "aktivitet": [
     "Eiendomsforvaltning og salg, og alt som hermed står i forbindelse,",
     "derunder deltagelse i andre selskaper."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1500,
+    "belop": 150000,
+    "fulltInnbetalt": true,
+    "innbetalt": 150000,
+    "innfortDato": "2016-12-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsforvaltning på oppdrag",
@@ -32,9 +45,13 @@
   },
   "navn": "TRÅKKA EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917668108",
   "paategninger": [],

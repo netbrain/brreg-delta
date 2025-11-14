@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915606334"
+    }
+  },
   "aktivitet": [
     "Regnskap og rådgivning spesielt rettet mot fiskerinæringen."
   ],
@@ -19,8 +24,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200000,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2015-07-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Regnskapsføring og bokføring",
@@ -28,9 +41,13 @@
   },
   "navn": "KOMPASSO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915606334",
   "paategninger": [],

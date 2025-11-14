@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915140785"
+    }
+  },
   "aktivitet": [
     "Tjenesteytende virksomhet. Konsulentoppdrag, rådgivning, regnskap,",
     "kjøps- og salgsoppdrag, vaktmestertjenester og annet som hører",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 250,
+    "belop": 75000,
+    "fulltInnbetalt": true,
+    "innbetalt": 75000,
+    "innfortDato": "2015-05-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "913 48 031",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "SECURUS CONSULTING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915140785",
   "paategninger": [],

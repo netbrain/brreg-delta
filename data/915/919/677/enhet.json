@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915919677"
+    }
+  },
   "aktivitet": [
     "Utleie av fast eiendom."
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 5000,
+    "belop": 2950000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2950000,
+    "innfortDato": "2000-02-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "900 44 915",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "ODIN EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915919677",
   "paategninger": [],

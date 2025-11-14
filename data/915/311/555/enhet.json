@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915311555"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er utvikling, utbygging og drift av småskala",
     "vannkraftverk, herunder salg av vannkraft og alt som hermed står i",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 31200,
+    "belop": 3120000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3120000,
+    "innfortDato": "2021-12-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -32,9 +45,13 @@
   },
   "navn": "SAGELVA KRAFTVERK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915311555",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916666721"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, herunder eie av aksjer og andeler i andre",
     "selskap, samt alt som naturlig står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 73,
+    "belop": 146000,
+    "fulltInnbetalt": true,
+    "innbetalt": 146000,
+    "innfortDato": "2021-11-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -33,9 +46,13 @@
   },
   "navn": "SOKA INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916666721",
   "paategninger": [],

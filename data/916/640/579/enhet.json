@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916640579"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av verdipapirer, eiendommer så vel i inn- som utland og",
     "deltagelse i andre selskaper med liknende virksomhet og alt hva herved",
@@ -24,8 +29,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2016-01-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -33,9 +46,13 @@
   },
   "navn": "REGIUS HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916640579",
   "paategninger": [],

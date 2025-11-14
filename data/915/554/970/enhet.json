@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915554970"
+    }
+  },
   "aktivitet": [
     "Entreprenørvirksomhet, eiendomsutvikling, prosjektering,",
     "prosjektadministrasjon, byggeledelse, oppføring av næringsbygg og",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 15000,
+    "belop": 150000,
+    "fulltInnbetalt": true,
+    "innbetalt": 150000,
+    "innfortDato": "2015-06-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
@@ -33,9 +46,13 @@
   },
   "navn": "VIKEN BYGG/ENTREPRENØR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915554970",
   "paategninger": [],

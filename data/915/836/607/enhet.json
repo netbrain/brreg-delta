@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915836607"
+    }
+  },
   "aktivitet": [
     "Investeringer i aksjer og andre verdipapirer, og dertil tilhørende",
     "virksomhet. Selskapet kan ha eiendeler i andre virksomheter."
@@ -20,8 +25,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 3300000,
+    "belop": 300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000,
+    "innfortDato": "2019-05-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -29,9 +42,13 @@
   },
   "navn": "KOSMOS INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915836607",
   "paategninger": [],

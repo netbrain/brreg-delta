@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915964036"
+    }
+  },
   "aktivitet": [
     "Utleie, kjøp og salg av fast eiendom, maskiner, kjøretøy og utstyr",
     "samt det som naturlig hører sammen med slik virksomhet."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 700000,
+    "fulltInnbetalt": true,
+    "innbetalt": 700000,
+    "innfortDato": "2020-02-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -32,9 +45,13 @@
   },
   "navn": "AS -UTLEIE",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915964036",
   "paategninger": [],

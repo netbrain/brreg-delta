@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915312136"
+    }
+  },
   "aktivitet": [
     "Investeringer i selskaper som driver med salg av møbelinnredninger mv."
   ],
@@ -27,8 +32,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 150000,
+    "belop": 15000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 15000000,
+    "innfortDato": "2019-01-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med husholdnings-, kontor- og butikkmøbler, gulvtepper og belysningsutstyr",
@@ -36,9 +49,13 @@
   },
   "navn": "SENAB EIKELAND GRUPPEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915312136",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915786448"
+    }
+  },
   "aktivitet": [
     "Å eie og forvalte underliggende driftsselskaper, kjøp og salg av",
     "aksjer samt hva som naturlig hører inn under dette."
@@ -21,8 +26,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2015-08-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -30,9 +43,13 @@
   },
   "navn": "RK HOLDING I AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915786448",
   "paategninger": [],

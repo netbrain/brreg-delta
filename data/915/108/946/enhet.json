@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915108946"
+    }
+  },
   "aktivitet": [
     "Frakting av fisk, samt annen virksomhet som naturlig faller inn under",
     "og supplerer dette, herunder å eie aksjer og andeler i selskaper med",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2015-07-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Innenriks sjøfart med gods",
@@ -30,9 +43,13 @@
   },
   "navn": "AQUASHIP SALMON STAR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915108946",
   "paategninger": [],

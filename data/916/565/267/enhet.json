@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916565267"
+    }
+  },
   "aktivitet": [
     "Erverve faste eiendom, oppføre og selge boliger og næringseiendom og",
     "hva hermed står i forbindelse."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 31000,
+    "fulltInnbetalt": true,
+    "innbetalt": 31000,
+    "innfortDato": "2018-02-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -29,9 +42,13 @@
   },
   "navn": "PETER MØLLERS VEI 8-14 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916565267",
   "paategninger": [],

@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915104363/roller"
     }
   },
-  "organisasjonsnummer": "915104363",
   "rollegrupper": [
     {
       "roller": [
@@ -88,6 +87,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -102,62 +106,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1957-12-28",
-            "navn": {
-              "etternavn": "Bjørnstad",
-              "fornavn": "Brede"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1956-01-13",
-            "navn": {
-              "etternavn": "Bjørnstad",
-              "fornavn": "Unni"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2025-09-12",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

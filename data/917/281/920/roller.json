@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917281920/roller"
     }
   },
-  "organisasjonsnummer": "917281920",
   "rollegrupper": [
     {
       "roller": [
@@ -49,11 +48,12 @@
         {
           "fratraadt": false,
           "person": {
-            "erDoed": true,
-            "fodselsdato": "1958-10-06",
+            "erDoed": false,
+            "fodselsdato": "1957-01-26",
             "navn": {
               "etternavn": "Tangen",
-              "fornavn": "Erik"
+              "fornavn": "Karin Margareta",
+              "mellomnavn": "Wranne"
             }
           },
           "rekkefolge": 0,
@@ -66,31 +66,9 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1957-01-26",
-            "navn": {
-              "etternavn": "Tangen",
-              "fornavn": "Karin Margareta",
-              "mellomnavn": "Wranne"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
-              }
-            },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
-          }
         }
       ],
-      "sistEndret": "2016-06-16",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -99,19 +77,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2016-06-16",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

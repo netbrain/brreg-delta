@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916959478"
+    }
+  },
   "aktivitet": [
     "Eiendomsmegling. Deltaker i andre virksomheter gjennom kjøp og salg av",
     "aksjer eller selskapsandeler."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300000,
+    "belop": 300000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000,
+    "innfortDato": "2016-04-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsmegling og andre formidlingstjenester for eiendom",
@@ -30,9 +43,13 @@
   },
   "navn": "BAKKE SØRVIK \u0026 PARTNERS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916959478",
   "paategninger": [],

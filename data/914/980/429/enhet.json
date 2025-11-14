@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914980429"
+    }
+  },
   "aktivitet": [
     "Drift, utleie og utvikling av fast eiendom, eie aksjer i andre",
     "selskap, investere i aksjer og andre verdipapirer, kjøp, salg og",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 80000,
+    "fulltInnbetalt": true,
+    "innbetalt": 80000,
+    "innfortDato": "2024-01-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -39,9 +52,13 @@
   },
   "navn": "MOGEN EIENDOM MILAND AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "914980429",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915811809"
+    }
+  },
   "aktivitet": [
     "Formuesforvaltning, herunder investering i aksjer og andre",
     "formuesobjekter, samt annen virksomhet som står i forbindelse med",
@@ -27,8 +32,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 201000,
+    "fulltInnbetalt": true,
+    "innbetalt": 201000,
+    "innfortDato": "2016-04-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
@@ -36,9 +49,13 @@
   },
   "navn": "SOLBERG KONSERN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915811809",
   "paategninger": [],

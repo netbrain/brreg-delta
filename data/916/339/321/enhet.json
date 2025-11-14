@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916339321"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av fast eiendom, og hva som står i forbindelse, herunder",
     "eie selskaper som har slikt formål."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 6648,
+    "belop": 3324000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3324000,
+    "innfortDato": "2015-12-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -34,9 +47,13 @@
   },
   "navn": "PEDER SLETNERS VEI 4 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916339321",
   "paategninger": [],

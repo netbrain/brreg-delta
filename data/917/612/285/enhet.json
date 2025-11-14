@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917612285"
+    }
+  },
   "aktivitet": [
     "Fiske av rensefisk og stamfisk for salg til oppdrettsnæring og andre",
     "produkter/tjenester som naturlig hører sammen med dette."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 400,
+    "belop": 40000,
+    "fulltInnbetalt": true,
+    "innbetalt": 40000,
+    "innfortDato": "2021-01-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
@@ -31,9 +44,13 @@
   },
   "navn": "RENSEFISK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917612285",
   "paategninger": [],

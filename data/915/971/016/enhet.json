@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915971016"
+    }
+  },
   "aktivitet": [
     "Å forvalte selskapets eiendeler, kjøp/salg av aksjer og",
     "investeringsvirksomhet samt hva som naturlig hører inn under dette."
@@ -23,8 +28,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2018-11-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "913 41 642",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "ALVEBERG HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915971016",
   "paategninger": [],

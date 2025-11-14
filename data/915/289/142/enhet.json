@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915289142"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet knyttet til aksjer i andre selskaper."
   ],
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 60000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000,
+    "innfortDato": "2023-11-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "915 88 340",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "FREDERIKSEN E. HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915289142",
   "paategninger": [],

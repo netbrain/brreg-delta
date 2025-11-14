@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916156839"
+    }
+  },
   "aktivitet": [
     "Selskapets formål er eie og forvalte aksjer, deltakelse i andre",
     "selskaper samt det som naturlig står i forbindelse med dette."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 250000,
+    "fulltInnbetalt": true,
+    "innbetalt": 250000,
+    "innfortDato": "2018-11-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "VVS-arbeid",
@@ -35,9 +48,13 @@
   },
   "navn": "MELANDS HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916156839",
   "paategninger": [],

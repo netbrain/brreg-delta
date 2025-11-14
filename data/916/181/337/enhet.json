@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916181337"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av soveromsprodukter og på sikt andre produktgrupper.",
     "Investeringer i verdipapir, eiendom og andre selskaper. Yte diverse",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 80000,
+    "fulltInnbetalt": true,
+    "innbetalt": 80000,
+    "innfortDato": "2015-11-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med innredningsartikler ikke nevnt annet sted",
@@ -32,9 +45,13 @@
   },
   "navn": "SOV GODT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916181337",
   "paategninger": [],

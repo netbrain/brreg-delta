@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916701985/roller"
     }
   },
-  "organisasjonsnummer": "916701985",
   "rollegrupper": [
     {
       "roller": [
@@ -88,6 +87,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -102,41 +106,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1961-03-07",
-            "navn": {
-              "etternavn": "Bodin",
-              "fornavn": "Geir"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
-              }
-            },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
-          }
-        }
-      ],
-      "sistEndret": "2022-03-24",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

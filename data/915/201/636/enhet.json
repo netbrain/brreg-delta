@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915201636"
+    }
+  },
   "aktivitet": [
     "Forretninger med fast eiendom og aksjer i andre selskaper, samt andre",
     "kapitalinvesteringer."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2015-04-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Patentmeglervirksomhet og markedsføringstjenester",
@@ -34,9 +47,13 @@
   },
   "navn": "MEULENBORG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915201636",
   "paategninger": [],

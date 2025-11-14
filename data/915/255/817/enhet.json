@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915255817"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet (formål) er investering i verdipapirer,",
     "obligasjoner og annet som naturlig faller sammen med dette, herunder å",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 50000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000,
+    "innfortDato": "2015-04-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "909 28 394",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "HAFN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915255817",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915480489"
+    }
+  },
   "aktivitet": [
     "Eiendomsselskap."
   ],
@@ -19,8 +24,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 400000,
+    "innfortDato": "2019-01-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -28,9 +41,13 @@
   },
   "navn": "ALBIR EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915480489",
   "paategninger": [],

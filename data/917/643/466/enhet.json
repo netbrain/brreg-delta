@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917643466"
+    }
+  },
   "aktivitet": [
     "Investere i fast eiendom, herunder utleie, kjøp og salg av fast",
     "eiendom. All drift og vedlikehold i dne forbindelse."
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 40000,
+    "fulltInnbetalt": true,
+    "innbetalt": 40000,
+    "innfortDato": "2016-08-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -37,9 +50,13 @@
   },
   "navn": "OSOL EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917643466",
   "paategninger": [],

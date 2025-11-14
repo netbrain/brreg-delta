@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916378580"
+    }
+  },
   "aktivitet": [
     "Import og salg av profil- og gaveartikler ovenfor private,",
     "idrettsklubber og foreninger, private- og offentlig bedrifter og",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 90000,
+    "fulltInnbetalt": true,
+    "innbetalt": 90000,
+    "innfortDato": "2019-05-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "930 66 155",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "ACTIVE PROFILE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916378580",
   "paategninger": [],

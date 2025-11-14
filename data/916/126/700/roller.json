@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916126700/roller"
     }
   },
-  "organisasjonsnummer": "916126700",
   "rollegrupper": [
     {
       "roller": [
@@ -104,58 +103,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1988-02-23",
-            "navn": {
-              "etternavn": "Øvrebø",
-              "fornavn": "Torstein",
-              "mellomnavn": "Bloch"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985182736"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "STAVANGER REVISJON AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "985182736"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
               }
             },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1957-06-05",
-            "navn": {
-              "etternavn": "Øvrebø",
-              "fornavn": "Kurt Terje"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
           }
         }
       ],
-      "sistEndret": "2025-07-31",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     }
   ]

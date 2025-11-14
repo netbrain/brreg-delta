@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916378300"
+    }
+  },
   "aktivitet": [
     "Selskapets formål skal være å drive med investering i eiendom, aksjer,",
     "andeler og deltagelse i andre selskaper som har betydning for egen",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 103000,
+    "fulltInnbetalt": true,
+    "innbetalt": 103000,
+    "innfortDato": "2015-12-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -35,9 +48,13 @@
   },
   "navn": "INDUSTRIVEIEN 57 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916378300",
   "paategninger": [],

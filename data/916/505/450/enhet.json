@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916505450"
+    }
+  },
   "aktivitet": [
     "Investeringer i aksjer og andre finansielle aktiva samt tilhørende",
     "virksomhet."
@@ -22,8 +27,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2016-01-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -31,9 +44,13 @@
   },
   "navn": "HAMMAR1 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916505450",
   "paategninger": [],

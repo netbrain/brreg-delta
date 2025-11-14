@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916002807"
+    }
+  },
   "aktivitet": [
     "Drive utleievirksomhet, investere i fast eiendom samt å drive",
     "alminnelig forretningsvirksomhet, herunder å investere i andre",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 600000,
+    "innfortDato": "2015-12-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -34,9 +47,13 @@
   },
   "navn": "BJØRNSGARD EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916002807",
   "paategninger": [],

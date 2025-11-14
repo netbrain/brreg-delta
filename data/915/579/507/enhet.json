@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915579507"
+    }
+  },
   "aktivitet": [
     "Transport av gods på vei, hva hermed står i forbindelse."
   ],
@@ -19,9 +24,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2019-01-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2024-05-16",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Godstransport på vei",
@@ -29,9 +42,13 @@
   },
   "navn": "HOP TRANSPORT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915579507",
   "paategninger": [],

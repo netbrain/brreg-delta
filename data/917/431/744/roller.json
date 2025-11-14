@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917431744/roller"
     }
   },
-  "organisasjonsnummer": "917431744",
   "rollegrupper": [
     {
       "roller": [
@@ -68,6 +67,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -104,55 +108,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-09-01",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1967-06-15",
-            "navn": {
-              "etternavn": "Drotninghaug",
-              "fornavn": "Rune",
-              "mellomnavn": "Kristensen"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/PROK"
-              }
-            },
-            "beskrivelse": "Prokura",
-            "kode": "PROK"
-          }
-        }
-      ],
-      "sistEndret": "2006-04-25",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915633242"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og utleie av maskiner og utsyr."
   ],
@@ -19,8 +24,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 456000,
+    "fulltInnbetalt": true,
+    "innbetalt": 456000,
+    "innfortDato": "2016-09-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie og leasing av andre maskiner og annet utstyr og materiell ikke nevnt annet sted",
@@ -28,9 +41,13 @@
   },
   "navn": "EOSH UTLEIE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915633242",
   "paategninger": [],

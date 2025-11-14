@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915454968/roller"
     }
   },
-  "organisasjonsnummer": "915454968",
   "rollegrupper": [
     {
       "roller": [
@@ -68,6 +67,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -94,6 +98,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -108,67 +117,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2015-05-29",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987260335"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "VIEW GROUP AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "987260335"
-          },
-          "fratraadt": false,
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
-              }
-            },
-            "beskrivelse": "Regnskapsfører",
-            "kode": "REGN"
-          }
-        }
-      ],
-      "sistEndret": "2018-10-31",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
-          }
-        },
-        "beskrivelse": "Regnskapsfører",
-        "kode": "REGN"
       }
     }
   ]

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916623666"
+    }
+  },
   "aktivitet": [
     "Skifte og reparasjon av bildeler/verksteddrift. Samt annen virksomhet",
     "som naturlig faller inn under denne type virksomhet."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2016-01-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
@@ -29,9 +42,13 @@
   },
   "navn": "HEATCO AUTO-TRONIC AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916623666",
   "paategninger": [],

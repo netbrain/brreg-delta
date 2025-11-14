@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916887213"
+    }
+  },
   "aktivitet": [
     "Eiendom og derved beslektet virksomhet. Innenfor formålet er også",
     "erverv, forvaltning, drift, utleie, utvikling, belåning og salg",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 60000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000,
+    "innfortDato": "2021-11-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -34,9 +47,13 @@
   },
   "navn": "ERVIKVEIEN EIENDOM INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916887213",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915289533"
+    }
+  },
   "aktivitet": [
     "Eie og investere i eiendom, aksjer, verdipapirer, samt hva hermed står",
     "i forbindelse, herunder delta i andre selskap med liknende virksomhet"
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 222342.56,
+    "fulltInnbetalt": true,
+    "innbetalt": 222342.56,
+    "innfortDato": "2020-12-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "GUNN'S HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915289533",
   "paategninger": [],

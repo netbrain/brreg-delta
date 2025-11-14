@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916690517"
+    }
+  },
   "aktivitet": [
     "Drift av restaurant og kafe."
   ],
@@ -19,8 +24,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 1500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1500000,
+    "innfortDato": "2024-04-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -28,19 +41,21 @@
   },
   "navn": "ELESTA RESTAURANT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916690517",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2016-02-05",
   "registreringsdatoForetaksregisteret": "2016-02-05",
-  "registreringsdatoMerverdiavgiftsregisteret": "2016-05-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2016-06-16",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

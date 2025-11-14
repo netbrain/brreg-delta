@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915662641"
+    }
+  },
   "aktivitet": [
     "Utøvelse av kurs- og opplæringsvirksomhet, herunder",
     "konsulenttjenester, forlagsvirksomhet og handel i forbindelse med",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000000,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2015-08-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet undervisning ikke nevnt annet sted",
@@ -32,9 +45,13 @@
   },
   "navn": "NOROFF HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915662641",
   "paategninger": [],

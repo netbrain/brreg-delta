@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915050360"
+    }
+  },
   "aktivitet": [
     "Eie, direkte eller indirekte, andeler i selskaper som helt eller",
     "delvis er tilknyttet statkraftkonsernet og som driver virksomhet i",
@@ -25,8 +30,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 120,
+    "belop": 3432000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3432000,
+    "innfortDato": "2024-03-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -34,9 +47,13 @@
   },
   "navn": "STATKRAFT US HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915050360",
   "paategninger": [],

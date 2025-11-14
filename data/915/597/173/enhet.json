@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915597173"
+    }
+  },
   "aktivitet": [
     "Eie, investere i aksjer, verdipapirer og eiendom. Utvikle eiendom samt",
     "deltakelse i enhver art i andre virksomheter og hva dermed står i",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 350,
+    "belop": 140000,
+    "fulltInnbetalt": true,
+    "innbetalt": 140000,
+    "innfortDato": "2019-12-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -30,9 +43,13 @@
   },
   "navn": "TOTAR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915597173",
   "paategninger": [],

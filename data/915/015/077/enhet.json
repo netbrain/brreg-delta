@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915015077"
+    }
+  },
   "aktivitet": [
     "Eie, drive og forvalte eiendommen Storgaten 10 A i Oslo kommune, samt",
     "tilhørende virksomhet."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 45000,
+    "fulltInnbetalt": true,
+    "innbetalt": 45000,
+    "innfortDato": "2015-05-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsforvaltning på oppdrag",
@@ -32,9 +45,13 @@
   },
   "navn": "STORGATA 10 A OSLO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915015077",
   "paategninger": [],

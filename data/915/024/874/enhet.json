@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915024874"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak.",
     "Mor i konsern."
   ],
   "erIKonsern": true,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Gamla Brogatan 26"
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "STRETCH AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "915024874",
   "paategninger": [],
@@ -46,5 +59,14 @@
   "stiftelsesdato": "2001-11-29",
   "telefon": "+468240080",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

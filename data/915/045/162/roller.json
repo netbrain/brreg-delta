@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915045162/roller"
     }
   },
-  "organisasjonsnummer": "915045162",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -92,6 +96,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -111,118 +120,6 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1985-07-23",
-            "navn": {
-              "etternavn": "Løkke",
-              "fornavn": "Sunniva Hermine"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-10-19",
-            "navn": {
-              "etternavn": "Løkke",
-              "fornavn": "Lars Andreas"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2019-04-25",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1985-07-23",
-            "navn": {
-              "etternavn": "Løkke",
-              "fornavn": "Sunniva Hermine"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-10-19",
-            "navn": {
-              "etternavn": "Løkke",
-              "fornavn": "Lars Andreas"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        }
-      ],
-      "sistEndret": "2019-04-25",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
-      }
-    },
-    {
-      "roller": [
-        {
           "enhet": {
             "_links": {
               "self": {
@@ -231,7 +128,7 @@
             },
             "erSlettet": false,
             "navn": [
-              "FYRI FORVALTNING AS"
+              "STENDER REGNSKAP AS"
             ],
             "organisasjonsform": {
               "_links": {

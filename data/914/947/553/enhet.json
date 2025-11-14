@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914947553"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte aksjer, obligasjoner, andre verdipapirer og",
     "egenkapitalinstrumenter, samt annen virksomhet som faller naturlig",
@@ -23,8 +28,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 33,
+    "belop": 33000,
+    "fulltInnbetalt": true,
+    "innbetalt": 33000,
+    "innfortDato": "2015-02-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -32,9 +45,13 @@
   },
   "navn": "TSP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "914947553",
   "paategninger": [],

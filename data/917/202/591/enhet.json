@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917202591"
+    }
+  },
   "aktivitet": [
     "Eie og drive fartøyer i innenriks og utenriks sjøfarts samt kjøp og",
     "avhending av eiendom og utstyr som naturlig faller i forbindelse med",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1500,
+    "belop": 1500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1500000,
+    "innfortDato": "2016-05-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utenriks sjøfart med gods",
@@ -31,9 +44,13 @@
   },
   "navn": "FFS PONTON AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917202591",
   "paategninger": [],

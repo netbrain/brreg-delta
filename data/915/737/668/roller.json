@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915737668/roller"
     }
   },
-  "organisasjonsnummer": "915737668",
   "rollegrupper": [
     {
       "roller": [
@@ -88,6 +87,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -135,6 +139,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -149,96 +158,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2012-03-07",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1974-01-18",
-            "navn": {
-              "etternavn": "Bigseth",
-              "fornavn": "Jon"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POFE"
-              }
-            },
-            "beskrivelse": "Prokura i fellesskap",
-            "kode": "POFE"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1968-05-26",
-            "navn": {
-              "etternavn": "Tonning",
-              "fornavn": "Bård Kristian"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POFE"
-              }
-            },
-            "beskrivelse": "Prokura i fellesskap",
-            "kode": "POFE"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1974-01-16",
-            "navn": {
-              "etternavn": "Østad",
-              "fornavn": "Sigbjørn"
-            }
-          },
-          "rekkefolge": 2,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POFE"
-              }
-            },
-            "beskrivelse": "Prokura i fellesskap",
-            "kode": "POFE"
-          }
-        }
-      ],
-      "sistEndret": "2023-10-30",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

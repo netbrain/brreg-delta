@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916645058"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i andre selskaper samt virksomhet som naturlig faller inn",
     "under dette som investering i fast eiendom og annen virksomhet."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 50000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000,
+    "innfortDato": "2016-02-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -31,9 +44,13 @@
   },
   "navn": "DASOL INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916645058",
   "paategninger": [],

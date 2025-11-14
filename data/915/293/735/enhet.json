@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915293735"
+    }
+  },
   "aktivitet": [
     "Kjøp, sal og utleige av eigedom og anna verksemd tilhøyrande dette."
   ],
@@ -24,8 +29,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 120000,
+    "fulltInnbetalt": true,
+    "innbetalt": 120000,
+    "innfortDato": "2024-07-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -33,9 +46,13 @@
   },
   "navn": "LUSTER EIGEDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915293735",
   "paategninger": [],

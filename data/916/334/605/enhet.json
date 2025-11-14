@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916334605"
+    }
+  },
   "aktivitet": [
     "Eie og delta i virksomhet som driver handel, verksteddrift, bilutleie,",
     "assuransevirksomhet, erverv og forvaltning av aksjer, samt virksomhet",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2015-12-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
@@ -34,9 +47,13 @@
   },
   "navn": "DAHLES AUTO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "916334605",
   "paategninger": [],

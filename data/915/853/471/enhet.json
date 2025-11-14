@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915853471"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av usolgte boliger som NBBL Fulltegningsforsikring AS har",
     "forsikret og annet som står i forbindelse med denne virksomheten."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2500,
+    "belop": 25000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 25000000,
+    "innfortDato": "2015-09-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "FF BOLIGSALG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "915853471",
   "paategninger": [],
