@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933140679"
+    }
+  },
   "aktivitet": [
     "Vaktmester tjenester."
   ],
@@ -21,8 +26,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
-  "konkurs": false,
-  "links": [],
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2024-03-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
+  "konkurs": true,
+  "konkursdato": "2025-11-13",
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -30,9 +44,13 @@
   },
   "navn": "P.M.A. SNEKKERSERVICE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "933140679",
   "paategninger": [],

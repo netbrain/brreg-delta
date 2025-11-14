@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933019462"
+    }
+  },
   "aktivitet": [
     "Management tjenester, investeringsvirksomhet, investering i aksjer,",
     "obligasjoner, selskapsandeler, verdipapirer mv."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 240000,
+    "belop": 24000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 24000000,
+    "innfortDato": "2024-09-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Geologiske undersøkelser",
@@ -33,9 +46,13 @@
   },
   "navn": "SANCO GROUP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "933019462",
   "paategninger": [],

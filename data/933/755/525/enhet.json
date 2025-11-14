@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933755525"
+    }
+  },
   "aktivitet": [
     "Rådgivning og konsulenttjenester knyttet til verdsettelse av",
     "skip/flåter og skipsrelaterte eiendeler i det maritime markedet."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2024-07-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
@@ -29,9 +42,13 @@
   },
   "navn": "FEARNLEY OFFSHORE SUPPLY VALUATIONS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "933755525",
   "paategninger": [],
@@ -48,9 +65,11 @@
   },
   "registreringsdatoEnhetsregisteret": "2024-07-08",
   "registreringsdatoForetaksregisteret": "2024-07-08",
+  "registreringsdatoMerverdiavgiftsregisteret": "2025-09-30",
+  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-11-13",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": false,
+  "registrertIMvaregisteret": true,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

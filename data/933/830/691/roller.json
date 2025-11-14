@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933830691/roller"
     }
   },
-  "organisasjonsnummer": "933830691",
   "rollegrupper": [
     {
       "roller": [
@@ -69,6 +68,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -86,20 +90,41 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2024-08-21",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934531191"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "FRAM ØKONOMI VEST AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "934531191"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
         {
           "enhet": {
             "_links": {
@@ -123,7 +148,7 @@
             "organisasjonsnummer": "987260335"
           },
           "fratraadt": false,
-          "rekkefolge": 0,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -135,7 +160,7 @@
           }
         }
       ],
-      "sistEndret": "2025-01-19",
+      "sistEndret": "2025-11-13",
       "type": {
         "_links": {
           "self": {

@@ -1,12 +1,15 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933076873"
+    }
+  },
   "aktivitet": [
     "Budbil transport og kjøp og salg av brukte handelsvarer på nett."
   ],
   "erIKonsern": false,
   "forretningsadresse": {
-    "adresse": [
-      "Tuterudveien 41"
-    ],
+    "adresse": [],
     "kommune": "LILLESTRØM",
     "kommunenummer": "3205",
     "land": "Norge",
@@ -21,8 +24,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2024-02-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre post- og budtjenester",
@@ -30,12 +41,34 @@
   },
   "navn": "KONNECT SERVICE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "933076873",
-  "paategninger": [],
+  "paategninger": [
+    {
+      "infotype": "FADR",
+      "innfoertDato": "2025-11-14",
+      "tekst": "Foretaksregisteret har grunn til å anta at forretningsadressen er feil. Foretaket har fått pålegg om å melde endring."
+    }
+  ],
+  "postadresse": {
+    "adresse": [
+      "c/o Abdelaziz Bahi Jerrady",
+      "Tangerudbakken 1B"
+    ],
+    "kommune": "OSLO",
+    "kommunenummer": "0301",
+    "land": "Norge",
+    "landkode": "NO",
+    "postnummer": "0982",
+    "poststed": "OSLO"
+  },
   "registreringsdatoEnhetsregisteret": "2024-02-26",
   "registreringsdatoForetaksregisteret": "2024-02-26",
   "registrertIForetaksregisteret": true,

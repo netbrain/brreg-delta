@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934117662/roller"
     }
   },
-  "organisasjonsnummer": "934117662",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -118,9 +122,43 @@
             "beskrivelse": "Regnskapsfører",
             "kode": "REGN"
           }
+        },
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/970035036"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "SLIDRE REGNSKAP SA"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/SA"
+                }
+              },
+              "beskrivelse": "Samvirkeforetak",
+              "kode": "SA"
+            },
+            "organisasjonsnummer": "970035036"
+          },
+          "fratraadt": false,
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
         }
       ],
-      "sistEndret": "2024-09-18",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {

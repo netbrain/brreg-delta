@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933389170"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "emma.svahn@rantalainen.fi",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Enkeltmannsforetak",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ENK"
+  },
   "forretningsadresse": {
     "adresse": [
       "Norrgårdsvägen 50"
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "FIRMA RICK BRUGGELING",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "933389170",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2023-11-28",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Finland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Arkadiankatu 6 A"
+    ],
+    "land": "Finland",
+    "poststed": "00100 Helsinki"
+  },
+  "utenlandskRegisterNavn": "Patentti - Ja Rekisterihallitus Kaupparekisterijärjestelmä"
 }

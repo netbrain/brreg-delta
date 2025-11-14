@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933725863"
+    }
+  },
   "aktivitet": [
     "Drift av restaurant/kafe."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 120,
+    "belop": 120000,
+    "fulltInnbetalt": true,
+    "innbetalt": 120000,
+    "innfortDato": "2024-07-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -30,9 +43,13 @@
   },
   "navn": "CAFÉ LATTE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "933725863",
   "paategninger": [],
@@ -40,11 +57,9 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-10-10",
   "registreringsdatoEnhetsregisteret": "2024-07-02",
   "registreringsdatoForetaksregisteret": "2024-07-02",
-  "registreringsdatoMerverdiavgiftsregisteret": "2024-09-09",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-09-09",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934109147"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Incorporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "INC"
+  },
   "forretningsadresse": {
     "adresse": [
       "100 Lombard Street"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "MAINFACTOR INC",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "934109147",
   "paategninger": [],
@@ -33,5 +46,12 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2020-03-03",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [],
+    "land": "USA",
+    "poststed": "Philadelphia PA 19255"
+  },
+  "utenlandskRegisterNavn": "Department of the Treasury Internal Revenue Service"
 }

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934845862"
+    }
+  },
   "aktivitet": [
     "Kjøper aksjer i selskaper med mål om å selge dem senere med",
     "fortjeneste."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2025-01-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -31,17 +44,23 @@
   },
   "navn": "XIRO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "934845862",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2025-01-14",
   "registreringsdatoForetaksregisteret": "2025-01-14",
+  "registreringsdatoMerverdiavgiftsregisteret": "2025-11-13",
+  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-11-13",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": false,
+  "registrertIMvaregisteret": true,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
