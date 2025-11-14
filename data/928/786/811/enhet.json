@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928786811"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og utvikling av databaseløsninger, opplæring og",
     "kursvirksomhet, samt det som naturlig hører inn under dette, samt",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 57000,
+    "fulltInnbetalt": true,
+    "innbetalt": 57000,
+    "innfortDato": "2023-04-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Datainfrastruktur, -behandling, -lagring og tilknyttede tjenester",
@@ -31,9 +44,13 @@
   },
   "navn": "PROTERIA GROUP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "928786811",
   "paategninger": [],

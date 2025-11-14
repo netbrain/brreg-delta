@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930690724"
+    }
+  },
   "aktivitet": [
     "Holdingselskap som skal eie aksjer, herunder å delta i andre selskap",
     "med lignende virksomhet, og kjøp og salg av aksjer eller på annen måte",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 45000,
+    "belop": 45000,
+    "fulltInnbetalt": true,
+    "innbetalt": 45000,
+    "innfortDato": "2023-01-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -32,9 +45,13 @@
   },
   "navn": "FINGER HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930690724",
   "paategninger": [],

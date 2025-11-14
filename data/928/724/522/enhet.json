@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928724522"
+    }
+  },
   "aktivitet": [
     "Hugge ned sitkagran skog for salg av plank, hovedsaklig er det kun",
     "skog på Gjerøy i Rødøy kommune som skal tas av."
@@ -13,7 +18,7 @@
     "land": "Norge",
     "landkode": "NO",
     "postnummer": "8195",
-    "poststed": "GJERØY"
+    "poststed": "GJERDØYA"
   },
   "fravalgRevisjonBeslutningsDato": "2022-01-26",
   "fravalgRevisjonDato": "2022-02-11",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2022-02-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Avvirkning",
@@ -31,9 +44,13 @@
   },
   "navn": "BRØDRENE AAKRE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "928724522",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930152188"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet og å delta i selskaper med samme formål, samt",
     "annen relatert virksomhet."
@@ -20,8 +25,16 @@
     "beskrivelse": "Alternative investeringsfond (AIF) unntatt verdipapirfond",
     "kode": "4500"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 33000,
+    "fulltInnbetalt": true,
+    "innbetalt": 33000,
+    "innfortDato": "2023-09-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Alternative investeringsfond (aif) som ikke er verdipapirfond",
@@ -29,9 +42,13 @@
   },
   "navn": "NORVESTOR IX INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930152188",
   "paategninger": [],

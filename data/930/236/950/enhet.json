@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930236950"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er selv, eller gjennom hel- eller deleide",
     "selskaper, eller ved å samarbeide med andre selskaper, å forestå",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3500,
+    "belop": 49000,
+    "fulltInnbetalt": true,
+    "innbetalt": 49000,
+    "innfortDato": "2022-11-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -34,9 +47,13 @@
   },
   "navn": "KJETIL ANDERSEN INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930236950",
   "paategninger": [],

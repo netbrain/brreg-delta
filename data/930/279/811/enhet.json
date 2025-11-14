@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930279811"
+    }
+  },
   "aktivitet": [
     "Eiendomsaktivitet, samt kjøp og salg av aksjer, verdipapirer mv. og",
     "alt som står i forbindelse hermed, samt engasjere seg i foretak med",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 434,
+    "belop": 1085000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1085000,
+    "innfortDato": "2025-02-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -39,9 +52,13 @@
   },
   "navn": "BERGSHAV EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930279811",
   "paategninger": [],

@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930231584/roller"
     }
   },
-  "organisasjonsnummer": "930231584",
   "rollegrupper": [
     {
       "roller": [
@@ -220,19 +219,6 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2022-11-15",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
       "roller": [
         {
           "enhet": {
@@ -278,6 +264,54 @@
         },
         "beskrivelse": "Revisor",
         "kode": "REVI"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/952527827"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "NEDRE BUSKERUD BOLIGBYGGELAG"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BBL"
+                }
+              },
+              "beskrivelse": "Boligbyggelag",
+              "kode": "BBL"
+            },
+            "organisasjonsnummer": "952527827"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-11",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

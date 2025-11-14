@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932010542"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "epostadresse": "hello@jobolito.se",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Eriksgatan 22"
@@ -15,13 +25,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "jobolito.se",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "JOBOLITO AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "932010542",
   "paategninger": [],
@@ -36,5 +49,14 @@
   "stiftelsesdato": "2006-05-21",
   "telefon": "+46708837292",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

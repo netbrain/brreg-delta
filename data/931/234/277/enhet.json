@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931234277"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Société anonyme",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "SA"
+  },
   "forretningsadresse": {
     "adresse": [
       "Rue de Rive 10"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "WELLBRED TRADING SA",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "931234277",
   "paategninger": [],
@@ -33,5 +46,12 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2018-09-21",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [],
+    "land": "Sveits",
+    "poststed": "Genève"
+  },
+  "utenlandskRegisterNavn": "Registre du Commerce de Genève"
 }

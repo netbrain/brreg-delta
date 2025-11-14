@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931317660/roller"
     }
   },
-  "organisasjonsnummer": "931317660",
   "rollegrupper": [
     {
       "roller": [
@@ -115,13 +114,34 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1950-07-24",
+            "fodselsdato": "1982-06-30",
             "navn": {
-              "etternavn": "Schage",
-              "fornavn": "Knut"
+              "etternavn": "Schage-Neteland",
+              "fornavn": "Ewa"
             }
           },
           "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1968-03-02",
+            "navn": {
+              "etternavn": "Meyer",
+              "fornavn": "Anne Lise"
+            }
+          },
+          "rekkefolge": 4,
           "type": {
             "_links": {
               "self": {
@@ -142,19 +162,40 @@
               "fornavn": "Bjørn Richard"
             }
           },
-          "rekkefolge": 4,
+          "rekkefolge": 5,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/OBS"
               }
             },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
+            "beskrivelse": "Observatør",
+            "kode": "OBS"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1950-07-24",
+            "navn": {
+              "etternavn": "Schage",
+              "fornavn": "Knut"
+            }
+          },
+          "rekkefolge": 6,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/OBS"
+              }
+            },
+            "beskrivelse": "Observatør",
+            "kode": "OBS"
           }
         }
       ],
-      "sistEndret": "2025-08-25",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -163,19 +204,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2023-05-02",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930789712"
+    }
+  },
   "aktivitet": [
     "Å yte rådgivningstjenester til selskap med formål om å skape vekst og",
     "verdiutvikling i selskapene, herunder å investere i aksjer,",
@@ -24,8 +29,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 260000,
+    "belop": 260000,
+    "fulltInnbetalt": true,
+    "innbetalt": 260000,
+    "innfortDato": "2023-07-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Fondsforvaltningsvirksomhet",
@@ -33,9 +46,13 @@
   },
   "navn": "CORE EQTY AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930789712",
   "paategninger": [],

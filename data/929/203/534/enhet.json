@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929203534"
+    }
+  },
   "aktivitet": [
     "Selskapet skal selge reparasjonstjenester på nett. Lokale reparatører",
     "vil benyttes til å utføre reparasjonene. Selskapet vil i første omgang",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 315000,
+    "belop": 31500,
+    "fulltInnbetalt": true,
+    "innbetalt": 31500,
+    "innfortDato": "2024-08-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
@@ -33,9 +46,13 @@
   },
   "navn": "REPARASJON AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "929203534",
   "paategninger": [],

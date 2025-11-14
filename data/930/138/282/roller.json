@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930138282/roller"
     }
   },
-  "organisasjonsnummer": "930138282",
   "rollegrupper": [
     {
       "roller": [
@@ -36,10 +35,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1967-04-05",
+            "fodselsdato": "1982-01-05",
             "navn": {
-              "etternavn": "Bjørnestad",
-              "fornavn": "Kjell Arve"
+              "etternavn": "Førde",
+              "fornavn": "Lena",
+              "mellomnavn": "Nordvoll"
             }
           },
           "rekkefolge": 1,
@@ -57,13 +57,34 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1964-01-20",
+            "fodselsdato": "1970-09-09",
             "navn": {
-              "etternavn": "Nybø",
-              "fornavn": "Asgeir Severin"
+              "etternavn": "Schönfelder",
+              "fornavn": "Michael Peter"
             }
           },
           "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1967-04-05",
+            "navn": {
+              "etternavn": "Bjørnestad",
+              "fornavn": "Kjell Arve"
+            }
+          },
+          "rekkefolge": 3,
           "type": {
             "_links": {
               "self": {
@@ -85,27 +106,6 @@
               "mellomnavn": "Heltne"
             }
           },
-          "rekkefolge": 3,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1973-03-23",
-            "navn": {
-              "etternavn": "Goksøyr",
-              "fornavn": "Sølvi Kristin"
-            }
-          },
           "rekkefolge": 4,
           "type": {
             "_links": {
@@ -118,7 +118,7 @@
           }
         }
       ],
-      "sistEndret": "2025-09-21",
+      "sistEndret": "2025-11-13",
       "type": {
         "_links": {
           "self": {
@@ -127,19 +127,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2023-02-27",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

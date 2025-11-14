@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930876097"
+    }
+  },
   "aktivitet": [
     "Erverve tomten, matrikkel nr. 123, dagbokført",
     "som dokument 715o den 18/8-1954, innført i",
@@ -22,8 +27,16 @@
     "beskrivelse": "Borettslag o.l.",
     "kode": "8300"
   },
+  "kapital": {
+    "antallAksjer": 42,
+    "belop": 100800,
+    "fulltInnbetalt": true,
+    "innbetalt": 100800,
+    "innfortDato": "2004-02-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i borettslag og boligsameier",
@@ -31,9 +44,13 @@
   },
   "navn": "AS BYGDØ ALLE 123",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "930876097",
   "paategninger": [],

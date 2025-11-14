@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928778703"
+    }
+  },
   "aktivitet": [
     "Kjøp/salg av høy/kraftfór, kjøp/salg av utstyr tilhørende dyr/hest,",
     "kjøp/salg/utleie av hest, ridekurs."
@@ -13,7 +18,7 @@
     "land": "Norge",
     "landkode": "NO",
     "postnummer": "8409",
-    "poststed": "GULLESFJORD"
+    "poststed": "GULLESFJORDEN"
   },
   "fravalgRevisjonBeslutningsDato": "2021-12-09",
   "fravalgRevisjonDato": "2022-03-07",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2022-03-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med kjæledyr og varer til kjæledyr",
@@ -31,9 +44,13 @@
   },
   "navn": "GULDHAUGEN HEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "928778703",
   "paategninger": [],

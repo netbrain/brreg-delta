@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929424999"
+    }
+  },
   "aktivitet": [
     "Investering i aksjer, eiendom eller annen investeringsvirksomhet."
   ],
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 2530000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2530000,
+    "innfortDato": "2024-04-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Agenturhandel med maskiner, produksjonsutstyr, båter og luftfartøy",
@@ -34,9 +47,13 @@
   },
   "navn": "REGEN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "929424999",
   "paategninger": [],

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929649028"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Schützenstrasse 18"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "SCHIESSER GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "929649028",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2012-12-14",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Holzmarkt 2"
+    ],
+    "land": "Tyskland",
+    "poststed": "79098 Freiburg i Br."
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Freiburg"
 }
