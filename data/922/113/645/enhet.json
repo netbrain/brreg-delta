@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922113645"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "epostadresse": "marko@bluebite.de",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Daimlerstrasse 29"
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "BLUEBITE GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "922113645",
   "paategninger": [],
@@ -34,5 +47,15 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2018-03-21",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Schloss, Westflügel",
+      "Bismarckstr. 14"
+    ],
+    "land": "Tyskland",
+    "poststed": "68159 Mannheim"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Mannheim"
 }

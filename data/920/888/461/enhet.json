@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920888461"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er skipsfart, herunder rederivirksomhet, fiske,",
     "fangst, spedisjon, handel, agentur, industriell virksomhet, herunder",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1777159,
+    "fulltInnbetalt": true,
+    "innbetalt": 1777159,
+    "innfortDato": "2019-06-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
@@ -38,9 +51,13 @@
   },
   "navn": "RØDHOLMEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "920888461",
   "paategninger": [],

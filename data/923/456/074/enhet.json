@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923456074"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "fletcher@capitalprawn.com",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Incorporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "INC"
+  },
   "forretningsadresse": {
     "adresse": [
       "8300 160th Ave Ne Ste 105"
@@ -15,14 +25,17 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.capitalprawn.com",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "15033831275",
   "navn": "CAPITAL PRAWN INC",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "923456074",
   "paategninger": [],
@@ -34,5 +47,6 @@
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA"
 }

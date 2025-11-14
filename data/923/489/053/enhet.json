@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923489053"
+    }
+  },
   "aktivitet": [
     "Selge og leie ut mobile hjem i Norge, samt det som naturlig tilhører",
     "den type virksomhet. Utvikle en prototype på et eget TEK 17 mobilt",
@@ -25,9 +30,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2019-10-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2025-09-08",
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "910 00 333",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "MOBILE HJEM NORGE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "923489053",
   "paategninger": [],

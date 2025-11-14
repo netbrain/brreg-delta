@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/924778547"
+    }
+  },
   "aktivitet": [
     "Vaskeri og rengjøring"
   ],
@@ -14,7 +19,7 @@
     "land": "Norge",
     "landkode": "NO",
     "postnummer": "8412",
-    "poststed": "VESTBYGD"
+    "poststed": "VESTBYGDA"
   },
   "fravalgRevisjonBeslutningsDato": "2020-03-01",
   "fravalgRevisjonDato": "2020-03-17",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2020-03-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "769 35 388",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "VESTBYGD VASK OG RENS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "924778547",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922393265"
+    }
+  },
   "aktivitet": [
     "Investere i og eie aksjer, finansielle instrumenter, og andeler og",
     "rettigheter i andre selskaper, yte hovedkontortjenester samt annen",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 370,
+    "belop": 555000,
+    "fulltInnbetalt": true,
+    "innbetalt": 555000,
+    "innfortDato": "2023-02-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Datainfrastruktur, -behandling, -lagring og tilknyttede tjenester",
@@ -38,9 +51,13 @@
   },
   "navn": "INFRASTRUCTURE NORDICS 4 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "922393265",
   "paategninger": [],

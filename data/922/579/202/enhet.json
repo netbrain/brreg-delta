@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922579202"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Société par actions simplifice",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "SAS"
+  },
   "forretningsadresse": {
     "adresse": [
       "TSA-261 rue de la Republique"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "GEN.ORPH ASA",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "922579202",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2016-02-12",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Frankrike",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "2 rue du Dahomey"
+    ],
+    "land": "Frankrike",
+    "poststed": "60200 Compiègne"
+  },
+  "utenlandskRegisterNavn": "Greffe du tribunal de commerce de Compiegne"
 }

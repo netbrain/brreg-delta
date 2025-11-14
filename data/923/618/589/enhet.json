@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923618589"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av eiendom og aksjer, samt annen virksomhet som naturlig",
     "kan knyttes til dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 550,
+    "belop": 85000,
+    "fulltInnbetalt": true,
+    "innbetalt": 85000,
+    "innfortDato": "2020-02-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Veterinærtjenester",
@@ -33,9 +46,13 @@
   },
   "navn": "AS-MA HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "923618589",
   "paategninger": [],

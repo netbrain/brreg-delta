@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922821984"
+    }
+  },
   "aktivitet": [
     "Å eie aksjer i Kvikne Fjellhotell AS som eiendomsselskap.",
     "Eiendomsselskapet drifter eiendommen med tomt og bygningsmasse og vil",
@@ -31,8 +36,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2200,
+    "belop": 220000,
+    "fulltInnbetalt": true,
+    "innbetalt": 220000,
+    "innfortDato": "2019-07-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
@@ -40,9 +53,13 @@
   },
   "navn": "FOSSUM-HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "922821984",
   "paategninger": [],

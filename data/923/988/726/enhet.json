@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923988726"
+    }
+  },
   "aktivitet": [
     "Bedriftsrådgivning, regnskapsførervirksomhet, undervisning, annen",
     "konsulentvirksomhet, kjøp, salg, utvikling og drift av eiendommer, ved",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 275,
+    "belop": 990000,
+    "fulltInnbetalt": true,
+    "innbetalt": 990000,
+    "innfortDato": "2006-04-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Regnskapsføring og bokføring",
@@ -33,9 +46,13 @@
   },
   "navn": "WEGENER SØREIDE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "923988726",
   "paategninger": [],

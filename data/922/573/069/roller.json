@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922573069/roller"
     }
   },
-  "organisasjonsnummer": "922573069",
   "rollegrupper": [
     {
       "roller": [
@@ -25,11 +24,68 @@
           "type": {
             "_links": {
               "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-12",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1988-04-06",
+            "navn": {
+              "etternavn": "Gundersen",
+              "fornavn": "Daniel",
+              "mellomnavn": "Kroken"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
                 "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
               }
             },
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1965-11-18",
+            "navn": {
+              "etternavn": "Bekkelund",
+              "fornavn": "Tore"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
           }
         },
         {
@@ -42,49 +98,7 @@
               "fornavn": "Hans Jørgen"
             }
           },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1968-04-22",
-            "navn": {
-              "etternavn": "Svendsrud",
-              "fornavn": "Thor-Arne"
-            }
-          },
           "rekkefolge": 2,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1977-03-21",
-            "navn": {
-              "etternavn": "Dammen",
-              "fornavn": "Glenn Ivar"
-            }
-          },
-          "rekkefolge": 3,
           "type": {
             "_links": {
               "self": {
@@ -105,6 +119,27 @@
               "fornavn": "Dag Tommy"
             }
           },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1972-01-30",
+            "navn": {
+              "etternavn": "Johnsrud",
+              "fornavn": "Kai Lennart"
+            }
+          },
           "rekkefolge": 4,
           "type": {
             "_links": {
@@ -117,7 +152,7 @@
           }
         }
       ],
-      "sistEndret": "2019-05-03",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
