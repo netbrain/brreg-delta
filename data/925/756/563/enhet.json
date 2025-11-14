@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925756563"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i kraft-, bredbånd-, og eiendomsrelatert virksomhet.",
     "Selskapet kan utføre oppdrag for andre der selskapet har kompetanse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 35,
+    "belop": 1400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1400000,
+    "innfortDato": "2020-12-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -31,9 +44,13 @@
   },
   "navn": "HÅLOGALAND KRAFT HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "925756563",
   "paategninger": [],

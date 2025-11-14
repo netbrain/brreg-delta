@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925199621"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "martina.emrich@thomann.de",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Hans-Thomann-Strasse 1"
@@ -15,13 +25,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.thomann.de",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "THOMANN GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "925199621",
   "paategninger": [],
@@ -35,5 +48,14 @@
   "respons_klasse": "Enhet",
   "telefon": "+499546922311",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Synagogenplatz 1"
+    ],
+    "land": "Tyskland",
+    "poststed": "96047 Bamberg"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Bamberg"
 }

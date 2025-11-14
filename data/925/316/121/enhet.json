@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925316121"
+    }
+  },
   "aktivitet": [
     "Kjøp, sal og forvaltning av aksjar og verdipapir og dessutan utøve dei",
     "funksjonane som normalt ligg under rolla som holdingsselskap."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 1902400,
+    "fulltInnbetalt": true,
+    "innbetalt": 1902400,
+    "innfortDato": "2020-11-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Produksjon av næringsmidler ikke nevnt annet sted",
@@ -34,9 +47,13 @@
   },
   "navn": "HOGO HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "925316121",
   "paategninger": [],

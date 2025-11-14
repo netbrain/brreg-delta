@@ -7,12 +7,11 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926902938/roller"
     }
   },
-  "organisasjonsnummer": "926902938",
   "rollegrupper": [
     {
       "roller": [
         {
-          "fratraadt": false,
+          "fratraadt": true,
           "person": {
             "erDoed": false,
             "fodselsdato": "2003-10-04",
@@ -32,12 +31,17 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
         }
       ],
-      "sistEndret": "2024-12-17",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {

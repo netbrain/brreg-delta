@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927098849"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "sandra.graef@vpv.de",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Allment aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Mittlerer Pfad 19"
@@ -15,13 +25,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.vpv.de",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "VPV LEBENSVERSICHERUNGS-AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "927098849",
   "paategninger": [],
@@ -35,5 +48,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1992-05-27",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Hauffstrasse 5"
+    ],
+    "land": "Tyskland",
+    "poststed": "70190 Stuttgart"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Stuttgart"
 }

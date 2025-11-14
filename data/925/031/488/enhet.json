@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925031488"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, herunder kjøp og salg av aksjer, investering i",
     "fast eiendom, samt andre selskaper og prosjekter med lignende",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 31000,
+    "fulltInnbetalt": true,
+    "innbetalt": 31000,
+    "innfortDato": "2025-05-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "957 47 815",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "CRISTIN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "925031488",
   "paategninger": [],

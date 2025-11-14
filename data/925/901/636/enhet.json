@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925901636"
+    }
+  },
   "aktivitet": [
     "Investeringer som har til formål å tilføre kapital, kompetanse,",
     "forretningsstrategi og tjenester. Engasjementene skal ha et langsiktig",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 64000,
+    "belop": 64000,
+    "fulltInnbetalt": true,
+    "innbetalt": 64000,
+    "innfortDato": "2021-02-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre post- og budtjenester",
@@ -34,9 +47,13 @@
   },
   "navn": "SMB BEDRIFT 1 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "925901636",
   "paategninger": [],
