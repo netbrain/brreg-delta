@@ -18,8 +18,8 @@ type SyncConfig struct {
 func main() {
 	// Configuration flags
 	dataDir := flag.String("data", "data", "Data directory")
-	rateLimit := flag.Float64("rate-limit", 10.0, "API requests per second (default: 10)")
-	rateBurst := flag.Int("rate-burst", 20, "Maximum burst size for rate limiter (default: 20)")
+	rateLimit := flag.Float64("rate-limit", 20.0, "API requests per second (default: 20)")
+	rateBurst := flag.Int("rate-burst", 40, "Maximum burst size for rate limiter (default: 40)")
 	numWorkers := flag.Int("workers", 10, "Number of concurrent workers (default: 10)")
 	maxFailures := flag.Int("max-failures", 50, "Maximum consecutive failures before exit (default: 50)")
 	maxDuration := flag.Int("max-duration", 0, "Maximum sync duration in minutes, 0 = unlimited (default: 0)")

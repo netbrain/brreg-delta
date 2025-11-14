@@ -8,12 +8,12 @@ on:
       rate-limit:
         description: 'API requests per second'
         required: false
-        default: '10.0'
+        default: '20.0'
         type: string
       rate-burst:
         description: 'Maximum burst size for rate limiter'
         required: false
-        default: '20'
+        default: '40'
         type: string
       workers:
         description: 'Number of concurrent workers'
@@ -98,8 +98,8 @@ jobs:
             echo "  Max duration: ${{ inputs.max-duration }} minutes"
           else
             # Scheduled run - use defaults with 3-hour limit
-            FLAGS="$FLAGS -max-duration 180"
-            echo "Running with default configuration (3-hour limit)"
+            FLAGS="$FLAGS -rate-limit 20.0 -rate-burst 40 -max-duration 180"
+            echo "Running with default configuration (20 req/s, burst 40, 3-hour limit)"
           fi
 
           go run . $FLAGS

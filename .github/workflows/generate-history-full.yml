@@ -93,6 +93,17 @@ jobs:
             go install github.com/gohugoio/hugo@latest && break || sleep 10
           done
 
+      - name: Free disk space
+        uses: jlumbroso/free-diskspace@v1.3.1
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
