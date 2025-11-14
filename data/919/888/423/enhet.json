@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919888423"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap med kjøp og salg av eiendommer og verdipapirer,",
     "oppussing, utleie etc og tilhørende virksomhet og alt som herved måtte",
@@ -22,8 +27,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2017-11-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -31,19 +44,21 @@
   },
   "navn": "TØRHANSEN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "919888423",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2017-11-10",
   "registreringsdatoForetaksregisteret": "2017-11-10",
-  "registreringsdatoMerverdiavgiftsregisteret": "2020-11-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2020-12-01",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

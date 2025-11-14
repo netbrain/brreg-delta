@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917972443"
+    }
+  },
   "aktivitet": [
     "Foreta investeringer med varierende investeringshorisont i en",
     "bokhandelkjende, bokhandlervirksomhet. Selskapet skal også inneha en",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000000,
+    "belop": 10000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 10000000,
+    "innfortDato": "2025-06-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -32,9 +45,13 @@
   },
   "navn": "FHSD CONNECT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917972443",
   "paategninger": [],

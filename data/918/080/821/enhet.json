@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918080821"
+    }
+  },
   "aktivitet": [
     "Vannkraftproduksjon (småkraftverk)."
   ],
@@ -15,16 +20,21 @@
     "poststed": "OSLO"
   },
   "fravalgRevisjonDato": "2017-10-12",
-  "frivilligMvaRegistrertBeskrivelser": [
-    "Utleier av bygg eller anlegg"
-  ],
   "harRegistrertAntallAnsatte": false,
   "institusjonellSektorkode": {
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 60000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000,
+    "innfortDato": "2022-03-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -32,9 +42,13 @@
   },
   "navn": "KVERNHUSELVI KRAFT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "918080821",
   "paategninger": [],
@@ -52,12 +66,9 @@
   },
   "registreringsdatoEnhetsregisteret": "2016-11-21",
   "registreringsdatoForetaksregisteret": "2016-11-21",
-  "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2017-01-18",
-  "registreringsdatoMerverdiavgiftsregisteret": "2017-01-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2017-01-18",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

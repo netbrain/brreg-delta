@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918164820"
+    }
+  },
   "aktivitet": [
     "Delproduksjon, verksted og hva som herved står i",
     "forbindelse, herrunder å delta i andre selskaper",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 12000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 12000000,
+    "innfortDato": "2021-01-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av metallkonstruksjoner og deler",
@@ -33,9 +46,13 @@
   },
   "navn": "AS DELPRODUKT",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "918164820",
   "paategninger": [],

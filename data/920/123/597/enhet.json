@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920123597"
+    }
+  },
   "aktivitet": [
     "Investering i eiendom, aksjer og andre eierandeler"
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Alternative investeringsfond (AIF) unntatt verdipapirfond",
     "kode": "4500"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2018-06-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Alternative investeringsfond (aif) som ikke er verdipapirfond",
@@ -31,9 +44,13 @@
   },
   "navn": "PP11 INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "920123597",
   "paategninger": [],

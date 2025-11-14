@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919809973/roller"
     }
   },
-  "organisasjonsnummer": "919809973",
   "rollegrupper": [
     {
       "roller": [
@@ -31,27 +30,15 @@
             },
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1988-10-01",
-            "navn": {
-              "etternavn": "Røkeness",
-              "fornavn": "Henriette"
-            }
           },
-          "rekkefolge": 1,
-          "type": {
+          "valgtAv": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
               }
             },
-            "beskrivelse": "Nestleder",
-            "kode": "NEST"
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
           }
         },
         {
@@ -65,6 +52,36 @@
               "mellomnavn": "Tiller"
             }
           },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1980-07-02",
+            "navn": {
+              "etternavn": "Bø",
+              "fornavn": "Harald"
+            }
+          },
           "rekkefolge": 2,
           "type": {
             "_links": {
@@ -74,16 +91,25 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
           }
         },
         {
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1971-01-07",
+            "fodselsdato": "1980-06-23",
             "navn": {
-              "etternavn": "Gamlem",
-              "fornavn": "Annine"
+              "etternavn": "Nilsen",
+              "fornavn": "Julie Montana"
             }
           },
           "rekkefolge": 3,
@@ -95,10 +121,19 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
+            "beskrivelse": "Representant for de ansatte",
+            "kode": "AREP"
           }
         }
       ],
-      "sistEndret": "2025-02-20",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {

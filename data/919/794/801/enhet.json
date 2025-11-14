@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919794801"
+    }
+  },
   "aktivitet": [
     "Salg av spesialrekvisita, import av diverse varer, salg av",
     "håndtverkstjenster, og andre produkter/tjenester som naturlig hører",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 1230000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1230000,
+    "innfortDato": "2018-11-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Formidlingstjenester tilknyttet detaljhandel med bredt vareutvalg",
@@ -34,9 +47,13 @@
   },
   "navn": "SPESREK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "919794801",
   "paategninger": [],

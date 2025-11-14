@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918854126"
+    }
+  },
   "aktivitet": [
     "Investering og kapitalplassering, herunder blant annet å eie og",
     "forvalte aksjer, selskapsandeler, verdipapirer og andre finansielle",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 85,
+    "belop": 85000,
+    "fulltInnbetalt": true,
+    "innbetalt": 85000,
+    "innfortDato": "2017-04-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -37,9 +50,13 @@
   },
   "navn": "MRB INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "918854126",
   "paategninger": [],

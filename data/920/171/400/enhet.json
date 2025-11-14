@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/920171400"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte datterselskapene i konsernet, som blant annet renser",
     "vann og selger produkter og tjenester til beste for miljøet, samfunnet",
@@ -26,8 +31,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 210000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 210000000,
+    "innfortDato": "2022-02-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Oppsamling og behandling av avløpsvann",
@@ -35,9 +48,13 @@
   },
   "navn": "VEAS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "920171400",
   "paategninger": [],

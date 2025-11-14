@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917966788"
+    }
+  },
   "aktivitet": [
     "I første omgang bygge opp et forretningsbygg som skal inneholde kontor",
     "og lager. Dette bygget skal leies ut. Videre skal de eie",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 5000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 5000000,
+    "innfortDato": "2017-12-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "mobil": "975 26 454",
   "naeringskode1": {
@@ -39,9 +52,13 @@
   },
   "navn": "ØSTERBRIS EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "917966788",
   "paategninger": [],
