@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983575048"
+    }
+  },
   "aktivitet": [
     "Bryggerivirksomhet, drive fabrikasjon, handel, finansiering, eie og",
     "drive fast eiendom, import og eksport."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 4200,
+    "belop": 4200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 4200000,
+    "innfortDato": "2001-08-22",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av øl",
@@ -31,9 +44,13 @@
   },
   "navn": "GRANS BRYGGERI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "983575048",
   "paategninger": [],

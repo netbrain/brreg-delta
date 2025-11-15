@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983799647"
+    }
+  },
   "aktivitet": [
     "Hovedforetak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Allment aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Friesenweg 22"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "BERENDSOHN AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "983799647",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "stiftelsesdato": "1967-01-26",
   "telefon": "49 408 190 90",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Sievekingplatz 1"
+    ],
+    "land": "Tyskland",
+    "poststed": "20355 Hamburg"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Hamburg"
 }

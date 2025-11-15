@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/975658104/roller"
     }
   },
-  "organisasjonsnummer": "975658104",
   "rollegrupper": [
     {
       "roller": [
@@ -37,10 +36,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1983-02-23",
+            "fodselsdato": "1996-07-22",
             "navn": {
-              "etternavn": "Eira",
-              "fornavn": "Per Johannes"
+              "etternavn": "Lango",
+              "fornavn": "Nils Olav",
+              "mellomnavn": "Andersen"
             }
           },
           "rekkefolge": 1,
@@ -58,34 +58,13 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1965-09-03",
-            "navn": {
-              "etternavn": "Eira",
-              "fornavn": "Marit Kristine"
-            }
-          },
-          "rekkefolge": 2,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
-              }
-            },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
             "fodselsdato": "1982-10-26",
             "navn": {
               "etternavn": "Eklund",
               "fornavn": "Dan Jonas"
             }
           },
-          "rekkefolge": 3,
+          "rekkefolge": 2,
           "type": {
             "_links": {
               "self": {
@@ -106,6 +85,27 @@
               "fornavn": "Linda Gunhild"
             }
           },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1983-08-27",
+            "navn": {
+              "etternavn": "Sara",
+              "fornavn": "Karen Maret"
+            }
+          },
           "rekkefolge": 4,
           "type": {
             "_links": {
@@ -118,7 +118,7 @@
           }
         }
       ],
-      "sistEndret": "2023-05-12",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -127,6 +127,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917992002"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "TONI ECONOMI AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "917992002"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-10",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

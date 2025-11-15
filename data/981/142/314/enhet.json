@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/981142314"
+    }
+  },
   "aktivitet": [
     "Kjøp, drift, utleie av fast eiendom samt deltagelse i selskap og",
     "virksomheter i tilknytning til denne aktiviteten."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 450,
+    "belop": 450000,
+    "fulltInnbetalt": true,
+    "innbetalt": 450000,
+    "innfortDato": "1999-10-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "40005010",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "LENSMANN HAVIGS GATE EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "981142314",
   "paategninger": [],

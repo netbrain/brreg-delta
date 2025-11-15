@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974363941"
+    }
+  },
   "aktivitet": [
     "Drift av skip, kjøp og salg, innleiing av skip,",
     "samt annen virksomhet som naturlig faller inn",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 5000,
+    "belop": 5000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 5000000,
+    "innfortDato": "2008-03-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utenriks sjøfart med gods",
@@ -31,9 +44,13 @@
   },
   "navn": "FLEKKEFJORD SHIPPING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "974363941",
   "paategninger": [],

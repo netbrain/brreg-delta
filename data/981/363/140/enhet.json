@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/981363140"
+    }
+  },
   "aktivitet": [
     "Å eie aksjer i selskaper som driver petroleumsvirksomhet eller",
     "tilknyttet virksomhet, og å kunne foreta direkte investeringer i",
@@ -24,8 +29,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 500000,
+    "belop": 5000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 5000000,
+    "innfortDato": "2015-12-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvinning av råolje",
@@ -33,9 +46,13 @@
   },
   "navn": "STATHOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "981363140",
   "paategninger": [],

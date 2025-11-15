@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983230342"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [],
     "land": "Sveits",
@@ -11,13 +21,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "CRÉATION BAUMANN AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "983230342",
   "paategninger": [],
@@ -31,5 +44,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1967-04-04",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Gerechtigkeitsgasse 36"
+    ],
+    "land": "Sveits",
+    "poststed": "CH - 3000 Bern 8"
+  },
+  "utenlandskRegisterNavn": "Handelsregisteramt des Kantons Bern"
 }

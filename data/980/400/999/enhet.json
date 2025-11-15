@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980400999"
+    }
+  },
   "aktivitet": [
     "Handels, agentur og servicevirksomhet vedrørende maskiner, samt annen",
     "virksomhet som står i forbindelse med dette."
@@ -27,8 +32,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 3000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3000000,
+    "innfortDato": "1999-01-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "+4593638988",
   "naeringskode1": {
@@ -37,9 +50,13 @@
   },
   "navn": "JOHS MØLLER MASKIN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "980400999",
   "paategninger": [],

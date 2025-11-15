@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980865045"
+    }
+  },
   "aktivitet": [
     "Administrasjon og ledelse, i tillegg utføres salgstjenester."
   ],
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 3000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3000000,
+    "innfortDato": "2007-11-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av rør, rørdeler og andre hule konstruksjoner av stål",
@@ -34,9 +47,13 @@
   },
   "navn": "TORGY MEK. INDUSTRI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "980865045",
   "paategninger": [],

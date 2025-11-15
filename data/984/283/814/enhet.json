@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/984283814"
+    }
+  },
   "aktivitet": [
     "Bygg- og anleggsvirksomhet og hva som står i den forbindelse."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50,
+    "belop": 550000,
+    "fulltInnbetalt": true,
+    "innbetalt": 550000,
+    "innfortDato": "2021-12-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "+4748264448",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "MASKINENTREPRENØR KNUT ROLANDSEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "984283814",
   "paategninger": [],

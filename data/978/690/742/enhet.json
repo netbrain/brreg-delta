@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/978690742"
+    }
+  },
   "aktivitet": [
     "Investering i verdipapirer mv., virksomheter knyttet til foranstående,",
     "samt drive andre økonomiske virksomheter."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 126000,
+    "fulltInnbetalt": true,
+    "innbetalt": 126000,
+    "innfortDato": "2000-02-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Formidlingstjenester tilknyttet overnattingsvirksomhet",
@@ -29,9 +42,13 @@
   },
   "navn": "VETEGRUPPEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "978690742",
   "paategninger": [],

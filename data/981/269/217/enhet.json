@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/981269217"
+    }
+  },
   "aktivitet": [
     "Eie - helt eller delvis - eller delta i energiproduksjon,",
     "teknologibedrifter, eie relatert og komplementær teknologi og utstyr -",
@@ -30,8 +35,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 1000000,
+    "belop": 1010000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1010000000,
+    "innfortDato": "2025-08-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
@@ -39,9 +52,13 @@
   },
   "navn": "EQUINOR NEW ENERGY AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "981269217",
   "paategninger": [],

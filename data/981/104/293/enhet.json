@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/981104293"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er selv, gjennom hel- eller deleide selskaper",
     "eller ved samarbeide med andre virksomeht på forestå energiproduksjon",
@@ -25,8 +30,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 452064,
+    "belop": 203428800,
+    "fulltInnbetalt": true,
+    "innbetalt": 203428800,
+    "innfortDato": "2014-03-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -34,9 +47,13 @@
   },
   "navn": "VARDAR VANNKRAFT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "981104293",
   "paategninger": [],

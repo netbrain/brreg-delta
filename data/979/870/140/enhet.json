@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/979870140"
+    }
+  },
   "aktivitet": [
     "Skadeforsikringsvirksomhet i alle skadebransjer inkl. gruppeliv, både",
     "på direkte- og indirekte basis, for Statnett, samt virksomhet som",
@@ -25,8 +30,16 @@
     "beskrivelse": "Skadeforsikringsselskaper",
     "kode": "5700"
   },
+  "kapital": {
+    "antallAksjer": 30200,
+    "belop": 30200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30200000,
+    "innfortDato": "1998-07-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Skadeforsikring",
@@ -34,9 +47,13 @@
   },
   "navn": "STATNETT FORSIKRING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "979870140",
   "paategninger": [],

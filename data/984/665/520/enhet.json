@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/984665520"
+    }
+  },
   "aktivitet": [
     "Erverv, planlegging, utvikling, bygging, besittelse og omsetting av",
     "eiendommer og tomter og alt som står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 800,
+    "belop": 800000,
+    "fulltInnbetalt": true,
+    "innbetalt": 800000,
+    "innfortDato": "2002-08-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -33,9 +46,13 @@
   },
   "navn": "BJØRNDALSBAKKEN UTBYGGINGSSELSKAP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "984665520",
   "paategninger": [],

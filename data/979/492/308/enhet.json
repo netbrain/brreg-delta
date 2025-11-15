@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/979492308"
+    }
+  },
   "aktivitet": [
     "Forvalte hoteleiendom herunder utleie og finansiell aktivitet samt",
     "deltagelse i annen virksomhet og alt hva hermed står i forbindelse."
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 25000,
+    "belop": 25125000,
+    "fulltInnbetalt": true,
+    "innbetalt": 25125000,
+    "innfortDato": "2009-12-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -37,9 +50,13 @@
   },
   "navn": "HOST HOTELLEIENDOM NORGE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "979492308",
   "paategninger": [],

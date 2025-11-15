@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980349357/roller"
     }
   },
-  "organisasjonsnummer": "980349357",
   "rollegrupper": [
     {
       "roller": [
@@ -68,6 +67,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -93,6 +97,41 @@
             "kode": "NEST"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1971-05-01",
+            "navn": {
+              "etternavn": "Landsverk",
+              "fornavn": "Jorunn"
+            }
+          },
+          "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -108,7 +147,7 @@
               "mellomnavn": "Taraldrud"
             }
           },
-          "rekkefolge": 2,
+          "rekkefolge": 3,
           "type": {
             "_links": {
               "self": {
@@ -119,12 +158,17 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
         }
       ],
-      "sistEndret": "2025-02-08",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -137,6 +181,40 @@
     },
     {
       "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/834836912"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "PWC ASSURANCE AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "834836912"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        },
         {
           "enhet": {
             "_links": {
@@ -160,7 +238,7 @@
             "organisasjonsnummer": "987009713"
           },
           "fratraadt": false,
-          "rekkefolge": 0,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -172,7 +250,7 @@
           }
         }
       ],
-      "sistEndret": "2008-06-23",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {

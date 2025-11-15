@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980037436"
+    }
+  },
   "aktivitet": [
     "Konsulentvirksomhet, kjøp/salg av aksjer/verdipapirer,",
     "kjøp/salg/utleie av eiendom og deltagelse i selskaper- og det som",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50200,
+    "belop": 150600,
+    "fulltInnbetalt": true,
+    "innbetalt": 150600,
+    "innfortDato": "2020-12-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "91534950",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "JOKA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "980037436",
   "paategninger": [],

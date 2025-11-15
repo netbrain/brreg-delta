@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/981477758"
+    }
+  },
   "aktivitet": [
     "Trykkerivirksomhet, pakking, adressering og distribusjon, samt",
     "virksomhet som står i forbindelse med slik virksomhet."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2900,
+    "belop": 2900000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2900000,
+    "innfortDato": "2000-01-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Trykking ellers",
@@ -33,9 +46,13 @@
   },
   "navn": "ÅLGÅRD OFFSET AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "981477758",
   "paategninger": [],

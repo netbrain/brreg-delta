@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982575699/roller"
     }
   },
-  "organisasjonsnummer": "982575699",
   "rollegrupper": [
     {
       "roller": [
@@ -47,7 +46,7 @@
     {
       "roller": [
         {
-          "fratraadt": false,
+          "fratraadt": true,
           "person": {
             "erDoed": false,
             "fodselsdato": "1982-08-22",
@@ -152,12 +151,17 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
         }
       ],
-      "sistEndret": "2025-06-03",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -166,32 +170,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2014-06-24",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2000-11-06",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

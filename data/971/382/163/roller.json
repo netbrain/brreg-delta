@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/971382163/roller"
     }
   },
-  "organisasjonsnummer": "971382163",
   "rollegrupper": [
     {
       "roller": [
@@ -130,6 +129,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -176,6 +180,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -193,20 +202,41 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2013-11-14",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935704804"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "REAL REGNSKAP AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "935704804"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
         {
           "enhet": {
             "_links": {
@@ -230,7 +260,7 @@
             "organisasjonsnummer": "984706731"
           },
           "fratraadt": false,
-          "rekkefolge": 0,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -242,7 +272,7 @@
           }
         }
       ],
-      "sistEndret": "2019-01-04",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {

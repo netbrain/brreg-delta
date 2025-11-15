@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983743978"
+    }
+  },
   "aktivitet": [
     "Forvalte eiendommer og selskaper, selge og kjøpe eiendommer og",
     "selskaper, utleie av eiendommer, samt hva hermed står i forbindelse.",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 20052000,
+    "fulltInnbetalt": true,
+    "innbetalt": 20052000,
+    "innfortDato": "2020-03-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "415 11 511",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "STAVANGER EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "983743978",
   "paategninger": [],

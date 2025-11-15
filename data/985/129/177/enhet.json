@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985129177"
+    }
+  },
   "aktivitet": [
     "Drift av vindkraftverk med salg av tilknyttet kraftproduksjon og annen",
     "virksomhet i naturlig tilknytning til dette."
@@ -23,8 +28,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 95000,
+    "belop": 95000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 95000000,
+    "innfortDato": "2004-02-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vindkraft",
@@ -32,9 +45,13 @@
   },
   "navn": "HITRA VIND AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "985129177",
   "paategninger": [],

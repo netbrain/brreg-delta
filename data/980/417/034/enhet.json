@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980417034"
+    }
+  },
   "aktivitet": [
     "Salg av varer og tjenester til industrien, eie, utleie, drift og",
     "omsetning av fast eiendom, omsetning av aksjer og eie aksjer i andre",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1250,
+    "belop": 125000,
+    "fulltInnbetalt": true,
+    "innbetalt": 125000,
+    "innfortDato": "2008-12-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av maskiner og utstyr til generell bruk ikke nevnt annet sted",
@@ -31,17 +44,23 @@
   },
   "navn": "FRØYSLAND HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "980417034",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "1999-01-27",
   "registreringsdatoForetaksregisteret": "1999-01-27",
+  "registreringsdatoMerverdiavgiftsregisteret": "2025-10-31",
+  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-11-13",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": false,
+  "registrertIMvaregisteret": true,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
