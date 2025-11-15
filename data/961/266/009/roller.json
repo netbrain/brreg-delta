@@ -7,43 +7,7 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/961266009/roller"
     }
   },
-  "organisasjonsnummer": "961266009",
   "rollegrupper": [
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1968-01-31",
-            "navn": {
-              "etternavn": "Kjøglum",
-              "fornavn": "Tore"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
-              }
-            },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
-          }
-        }
-      ],
-      "sistEndret": "2015-04-23",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
-          }
-        },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
-      }
-    },
     {
       "roller": [
         {
@@ -67,6 +31,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -81,19 +50,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2001-03-26",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

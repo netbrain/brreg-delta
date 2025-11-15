@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936203396"
+    }
+  },
   "aktivitet": [
     "Drift av gatekjøkken."
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2025-09-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -31,17 +44,23 @@
   },
   "navn": "STEAM \u0026 STIR SANDVIKA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "936203396",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2025-09-19",
   "registreringsdatoForetaksregisteret": "2025-09-19",
+  "registreringsdatoMerverdiavgiftsregisteret": "2025-11-13",
+  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-11-13",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": false,
+  "registrertIMvaregisteret": true,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

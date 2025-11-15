@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935338891/roller"
     }
   },
-  "organisasjonsnummer": "935338891",
   "rollegrupper": [
     {
       "roller": [
@@ -15,10 +14,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1989-08-11",
+            "fodselsdato": "1977-12-12",
             "navn": {
-              "etternavn": "Zahl",
-              "fornavn": "Håvard"
+              "etternavn": "Fasting",
+              "fornavn": "Markus",
+              "mellomnavn": "Torvik"
             }
           },
           "rekkefolge": 0,
@@ -33,7 +33,7 @@
           }
         }
       ],
-      "sistEndret": "2025-04-14",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -71,10 +71,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1978-05-10",
+            "fodselsdato": "1977-12-12",
             "navn": {
-              "etternavn": "Eigner",
-              "fornavn": "Alec"
+              "etternavn": "Fasting",
+              "fornavn": "Markus",
+              "mellomnavn": "Torvik"
             }
           },
           "rekkefolge": 1,
@@ -89,14 +90,13 @@
           }
         },
         {
-          "fratraadt": true,
+          "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1977-12-12",
+            "fodselsdato": "1978-05-10",
             "navn": {
-              "etternavn": "Fasting",
-              "fornavn": "Markus",
-              "mellomnavn": "Torvik"
+              "etternavn": "Eigner",
+              "fornavn": "Alec"
             }
           },
           "rekkefolge": 2,
@@ -109,9 +109,30 @@
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1989-08-11",
+            "navn": {
+              "etternavn": "Zahl",
+              "fornavn": "Håvard"
+            }
+          },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-04-14",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {
@@ -120,42 +141,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1977-12-12",
-            "navn": {
-              "etternavn": "Fasting",
-              "fornavn": "Markus",
-              "mellomnavn": "Torvik"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
-              }
-            },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
-          }
-        }
-      ],
-      "sistEndret": "2025-04-14",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

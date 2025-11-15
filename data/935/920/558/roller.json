@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935920558/roller"
     }
   },
-  "organisasjonsnummer": "935920558",
   "rollegrupper": [
     {
       "roller": [
@@ -192,37 +191,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1991-07-21",
-            "navn": {
-              "etternavn": "Isaksen",
-              "fornavn": "Thomas",
-              "mellomnavn": "Smoor"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915156975"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "VALUE GROUP AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "915156975"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
               }
             },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         }
       ],
-      "sistEndret": "2025-08-05",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

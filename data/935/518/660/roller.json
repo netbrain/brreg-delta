@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935518660/roller"
     }
   },
-  "organisasjonsnummer": "935518660",
   "rollegrupper": [
     {
       "roller": [
@@ -47,36 +46,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1990-03-04",
-            "navn": {
-              "etternavn": "Riks",
-              "fornavn": "Vladislavs"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927774496"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "RESULTAT REGNSKAP AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "927774496"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
               }
             },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         }
       ],
-      "sistEndret": "2025-06-18",
+      "sistEndret": "2025-11-13",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     },
     {

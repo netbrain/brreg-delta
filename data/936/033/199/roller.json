@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936033199/roller"
     }
   },
-  "organisasjonsnummer": "936033199",
   "rollegrupper": [
     {
       "roller": [
@@ -15,10 +14,46 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1973-08-15",
+            "fodselsdato": "1992-04-15",
             "navn": {
-              "etternavn": "Myklebust",
-              "fornavn": "Anders"
+              "etternavn": "Hansen",
+              "fornavn": "Fredrik",
+              "mellomnavn": "Kloster"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+              }
+            },
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-14",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+          }
+        },
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1992-04-09",
+            "navn": {
+              "etternavn": "Sundström",
+              "fornavn": "David Alexander"
             }
           },
           "rekkefolge": 0,
@@ -31,9 +66,52 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1972-01-23",
+            "navn": {
+              "etternavn": "Milehem",
+              "fornavn": "Mille Björne"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1992-04-15",
+            "navn": {
+              "etternavn": "Hansen",
+              "fornavn": "Fredrik",
+              "mellomnavn": "Kloster"
+            }
+          },
+          "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-08-26",
+      "sistEndret": "2025-11-14",
       "type": {
         "_links": {
           "self": {
@@ -42,19 +120,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-08-26",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

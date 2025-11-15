@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/964500002"
+    }
+  },
   "aktivitet": [
     "Arkitekttjenester, samt alt hva dermed står i",
     "forbindelse, herunder gjennom aksjetegning eller",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 95000,
+    "fulltInnbetalt": true,
+    "innbetalt": 95000,
+    "innfortDato": "2012-12-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Arkitektvirksomhet",
@@ -32,9 +45,13 @@
   },
   "navn": "JOB ARKITEKTER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "964500002",
   "paategninger": [],

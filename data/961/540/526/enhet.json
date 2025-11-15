@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/961540526"
+    }
+  },
   "aktivitet": [
     "Handels- og servicevirksomhet, utlånsvirksomhet og hva herved står i",
     "forbindelse, herunder ved aksjetegning eller på annen måte gjøre seg",
@@ -23,9 +28,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 87,
+    "belop": 991800,
+    "fulltInnbetalt": true,
+    "innbetalt": 991800,
+    "innfortDato": "2007-12-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2020-06-29",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -33,9 +46,13 @@
   },
   "navn": "TBG RIT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "961540526",
   "paategninger": [],

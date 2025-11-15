@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/963109288"
+    }
+  },
   "aktivitet": [
     "Skipsfart og hva dermed står i forbindelse, samt",
     "gjennom tegning av aksjer eller andeler, ytelse av",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 2100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2100000,
+    "innfortDato": "2019-08-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie og leasing av sjøtransportmateriell",
@@ -34,9 +47,13 @@
   },
   "navn": "KCC SHIPOWNING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "963109288",
   "paategninger": [],

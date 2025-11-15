@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/942052111"
+    }
+  },
   "aktivitet": [
     "Handelsvirksomhet og hva derved står i forbindelse",
     "samt selge service og konsulenttjenester."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2000,
+    "belop": 750000,
+    "fulltInnbetalt": true,
+    "innbetalt": 750000,
+    "innfortDato": "2008-04-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90671087",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "VELA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "942052111",
   "paategninger": [],

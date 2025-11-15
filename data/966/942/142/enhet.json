@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/966942142"
+    }
+  },
   "aktivitet": [
     "Entreprenørvirksomhet samt det som hermed står i",
     "forbindelse og annen næringsvirksomhet."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 75000,
+    "fulltInnbetalt": true,
+    "innbetalt": 75000,
+    "innfortDato": "2015-09-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Annen spesialisert bygge- og anleggsvirksomhet ikke nevnt annet sted",
@@ -30,9 +43,13 @@
   },
   "navn": "KVAM ENTREPRENØR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "966942142",
   "paategninger": [],

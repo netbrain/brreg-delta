@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/943646554"
+    }
+  },
   "aktivitet": [
     "Finansiell virksomhet og annen forretningsvirk-",
     "somhet som dermed står i forbindelse, herunder",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2000,
+    "belop": 43500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 43500000,
+    "innfortDato": "2010-05-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med motorvogner",
@@ -35,9 +48,13 @@
   },
   "navn": "MOTOR GRUPPEN DETALJ AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "943646554",
   "paategninger": [],

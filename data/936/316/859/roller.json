@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936316859/roller"
     }
   },
-  "organisasjonsnummer": "936316859",
   "rollegrupper": [
     {
       "roller": [
@@ -80,33 +79,41 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2025-10-06",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-10-06",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
-      }
-    },
-    {
       "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918097902"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "SKYA REGNSKAP AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "918097902"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        },
         {
           "enhet": {
             "_links": {
@@ -130,7 +137,7 @@
             "organisasjonsnummer": "918315217"
           },
           "fratraadt": false,
-          "rekkefolge": 0,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -142,7 +149,7 @@
           }
         }
       ],
-      "sistEndret": "2025-10-06",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {

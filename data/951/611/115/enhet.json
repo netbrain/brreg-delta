@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/951611115"
+    }
+  },
   "aktivitet": [
     "Agenturvirksomhet, detaljhandel, tjenesteyting og konsulentvirksomhet.",
     "Investeringer i andre selskaper."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 350,
+    "belop": 350000,
+    "fulltInnbetalt": true,
+    "innbetalt": 350000,
+    "innfortDato": "2001-01-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "95 11 11 40",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "FLYTKODEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "951611115",
   "paategninger": [],

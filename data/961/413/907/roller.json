@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/961413907/roller"
     }
   },
-  "organisasjonsnummer": "961413907",
   "rollegrupper": [
     {
       "roller": [
@@ -15,11 +14,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1970-03-20",
+            "fodselsdato": "1981-03-11",
             "navn": {
-              "etternavn": "Bøe",
-              "fornavn": "Elin Janne",
-              "mellomnavn": "Vike"
+              "etternavn": "Sandstad",
+              "fornavn": "Kathrine",
+              "mellomnavn": "Tviberg"
             }
           },
           "rekkefolge": 0,
@@ -32,9 +31,31 @@
             "beskrivelse": "Daglig leder",
             "kode": "DAGL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1970-03-20",
+            "navn": {
+              "etternavn": "Bøe",
+              "fornavn": "Elin Janne",
+              "mellomnavn": "Vike"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+              }
+            },
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
+          }
         }
       ],
-      "sistEndret": "2025-10-07",
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
@@ -90,6 +111,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -180,6 +206,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -237,19 +268,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "1999-11-30",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

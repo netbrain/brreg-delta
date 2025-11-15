@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936243924"
+    }
+  },
   "aktivitet": [
     "Netthandel med kjøkkeninnredninger og garderobeinnredninger."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2025-09-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med innredningsartikler ikke nevnt annet sted",
@@ -30,17 +43,23 @@
   },
   "navn": "BEST FRONT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "936243924",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2025-09-25",
   "registreringsdatoForetaksregisteret": "2025-09-25",
+  "registreringsdatoMerverdiavgiftsregisteret": "2025-11-10",
+  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-11-13",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": false,
+  "registrertIMvaregisteret": true,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

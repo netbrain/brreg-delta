@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/965600892"
+    }
+  },
   "aktivitet": [
     "Anleggsvirksomhet, service, handel, investering og",
     "alt som står i naturlig forbindelse med dette,",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 800000,
+    "fulltInnbetalt": true,
+    "innbetalt": 800000,
+    "innfortDato": "2004-01-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Spesialisert byggevirksomhet i forbindelse med anleggsarbeid",
@@ -30,9 +43,13 @@
   },
   "navn": "LARSEN ANLEGGSSERVICE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "965600892",
   "paategninger": [],

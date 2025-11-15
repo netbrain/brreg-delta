@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935457084"
+    }
+  },
   "aktivitet": [
     "Bergverksdrift og utvinning, bryting og bergverksdrift ellers, Annen",
     "bryting og utvinning."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 45000,
+    "fulltInnbetalt": true,
+    "innbetalt": 45000,
+    "innfortDato": "2025-05-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen bryting og utvinning ikke nevnt annet sted",
@@ -32,9 +45,13 @@
   },
   "navn": "METALL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "935457084",
   "paategninger": [],

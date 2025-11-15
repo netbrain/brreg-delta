@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/946205575"
+    }
+  },
   "aktivitet": [
     "Å eie og drive fast eiendom samt alt som står i forbindelse med dette,",
     "samt investeringer i aksjer og eierandeler i andre selskaper.",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2420,
+    "belop": 1234200,
+    "fulltInnbetalt": true,
+    "innbetalt": 1234200,
+    "innfortDato": "2006-12-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
@@ -33,9 +46,13 @@
   },
   "navn": "GJØVIK INSTALLASJON AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "946205575",
   "paategninger": [],

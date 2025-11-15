@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/963022158"
+    }
+  },
   "aktivitet": [
     "Eie og drive kraftverk, herunder produksjon av elektrisk energi, samt",
     "annen virksomhet som står i naturlig forbindelse med dette."
@@ -25,8 +30,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 2600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2600000,
+    "innfortDato": "2020-08-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
@@ -34,9 +47,13 @@
   },
   "navn": "TELEMARK ENERGI PRODUKSJON AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "963022158",
   "paategninger": [],

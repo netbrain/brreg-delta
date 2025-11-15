@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/960068424"
+    }
+  },
   "aktivitet": [
     "Handel, produksjon og byggevirksomhet, samt alt",
     "annet som har naturlig sammenheng med dette,",
@@ -22,9 +27,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2001-01-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2023-09-12",
-  "links": [],
   "maalform": "Nynorsk",
   "mobil": "40409656",
   "naeringskode1": {
@@ -37,9 +50,13 @@
   },
   "navn": "LEIGLAND BYGG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "960068424",
   "paategninger": [],

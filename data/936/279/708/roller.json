@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936279708/roller"
     }
   },
-  "organisasjonsnummer": "936279708",
   "rollegrupper": [
     {
       "roller": [
@@ -71,13 +70,34 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
+            "fodselsdato": "1966-02-15",
+            "navn": {
+              "etternavn": "Dyrkorn",
+              "fornavn": "Sivert Petter"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
             "fodselsdato": "1940-12-21",
             "navn": {
               "etternavn": "Furseth",
               "fornavn": "Astor Borge"
             }
           },
-          "rekkefolge": 1,
+          "rekkefolge": 2,
           "type": {
             "_links": {
               "self": {
@@ -99,7 +119,49 @@
               "mellomnavn": "Endresen"
             }
           },
-          "rekkefolge": 2,
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1966-05-11",
+            "navn": {
+              "etternavn": "Seljebotn",
+              "fornavn": "Sølvi Lill"
+            }
+          },
+          "rekkefolge": 4,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1959-10-05",
+            "navn": {
+              "etternavn": "Midtbust",
+              "fornavn": "Bjørnar"
+            }
+          },
+          "rekkefolge": 5,
           "type": {
             "_links": {
               "self": {
@@ -111,7 +173,7 @@
           }
         }
       ],
-      "sistEndret": "2025-10-13",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -120,19 +182,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2025-10-13",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

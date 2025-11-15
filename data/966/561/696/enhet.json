@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/966561696"
+    }
+  },
   "aktivitet": [
     "Produksjon, service, reparasjon, kjøp og salg",
     "vedrørende mekanisk virksomhet og alt som står i",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 60,
+    "belop": 900000,
+    "fulltInnbetalt": true,
+    "innbetalt": 900000,
+    "innfortDato": "2005-11-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
@@ -33,9 +46,13 @@
   },
   "navn": "MEKANISK SERVICE HALDEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "966561696",
   "paategninger": [],

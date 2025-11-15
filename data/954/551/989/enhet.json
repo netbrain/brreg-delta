@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/954551989"
+    }
+  },
   "aktivitet": [
     "Eie og drive utleie av fast eiendom, å eie aksjer i andre selskaper,",
     "foreta investeringer og finansielle plasseringer og alt som står i",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 245000,
+    "fulltInnbetalt": true,
+    "innbetalt": 245000,
+    "innfortDato": "2007-12-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "930 04 065",
   "naeringskode1": {
@@ -40,9 +53,13 @@
   },
   "navn": "GAOT EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "954551989",
   "paategninger": [],

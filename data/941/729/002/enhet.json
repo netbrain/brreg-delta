@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/941729002"
+    }
+  },
   "aktivitet": [
     "Drift av kjøreskole, herunder trafikkopplæring, salg av materiell m.v.",
     "og enhver annen økonomisk virksomhet styret måtte godkjenne, samt",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 270,
+    "belop": 135000,
+    "fulltInnbetalt": true,
+    "innbetalt": 135000,
+    "innfortDato": "2010-02-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Undervisning ved godkjente trafikkskoler",
@@ -32,9 +45,13 @@
   },
   "navn": "STANGE TRAFIKKSKOLE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "941729002",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/945061510"
+    }
+  },
   "aktivitet": [
     "Drive eiendomsutvikling, kjøp og salg av",
     "selskaper, eiendommer, aksjer, forsikring,",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 350000,
+    "belop": 35000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 35000000,
+    "innfortDato": "1998-12-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90 06 50 00",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "M-D Eiendom AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "945061510",
   "paategninger": [],

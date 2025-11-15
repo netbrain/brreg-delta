@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/960623282"
+    }
+  },
   "aktivitet": [
     "Handel og alt som står i forbindelse hermed, samt",
     "deltagelse i annen virksomhet, herunder",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3500,
+    "belop": 3500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3500000,
+    "innfortDato": "2006-12-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av yttertøy",
@@ -35,9 +48,13 @@
   },
   "navn": "ARKTIS HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "960623282",
   "paategninger": [],
