@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991532285"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet"
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Limited liability company",
+    "beskrivelseBokmaal": "Selskap med begrenset ansvar",
+    "kode": "LLC"
+  },
   "forretningsadresse": {
     "adresse": [
       "16201 East Main Street"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "AMNOR L.L.C.",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "991532285",
   "paategninger": [],
@@ -41,5 +54,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2004-03-30",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Baton Rouge"
+    ],
+    "land": "USA",
+    "poststed": "Louisiana"
+  },
+  "utenlandskRegisterNavn": "Secretary of State of the State of Louisiana"
 }

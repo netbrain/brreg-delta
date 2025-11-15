@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987832851"
+    }
+  },
   "aktivitet": [
     "Konsulenttjenester innen shipping/finansiering, eiendom og andre",
     "bransjer, investeringi shipping, fast eiendom, aksjer, andre bransjer."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 177000,
+    "fulltInnbetalt": true,
+    "innbetalt": 177000,
+    "innfortDato": "2024-11-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "97160345",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "VÅGE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987832851",
   "paategninger": [],

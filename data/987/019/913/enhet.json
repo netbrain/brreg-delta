@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987019913"
+    }
+  },
   "aktivitet": [
     "Investering i og drift av fast eiendom samt investering i aksjer og",
     "andeler i andre selskaper og hertil knyttet virksomhet."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 665,
+    "belop": 1600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1600000,
+    "innfortDato": "2005-12-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "91140609",
   "naeringskode1": {
@@ -30,9 +43,13 @@
   },
   "navn": "SANDBERG EIENDOM HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987019913",
   "paategninger": [],

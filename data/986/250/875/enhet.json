@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986250875"
+    }
+  },
   "aktivitet": [
     "Næringsutvikling, herunder oppkjøp av selskaper, eie aksjer i andre",
     "selskaper, fast eiendom og hva dermed naturlig står i forbindelse."
@@ -20,8 +25,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 90000,
+    "belop": 9000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 9000000,
+    "innfortDato": "2009-04-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "SIRKULA NÆRING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "986250875",
   "paategninger": [],

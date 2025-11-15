@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989299565"
+    }
+  },
   "aktivitet": [
     "Byggentreprise. Oppføring av bygninger og andre konstruksjoner.",
     "Snekkerarbeid, malerarbeid, glassarbeid, blikkenslagerarbeid og annet",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100500,
+    "fulltInnbetalt": true,
+    "innbetalt": 100500,
+    "innfortDato": "2024-01-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "40004432",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "SMARTBO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989299565",
   "paategninger": [],

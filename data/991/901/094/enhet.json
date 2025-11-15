@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991901094"
+    }
+  },
   "aktivitet": [
     "Selskapet si verksemd er investering i aksjar og andre verdipapir,",
     "investering i fast eigedom, å gje lån og garantiar, samt anna verksemd",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 160,
+    "belop": 160000,
+    "fulltInnbetalt": true,
+    "innbetalt": 160000,
+    "innfortDato": "2021-10-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Materialgjenvinning",
@@ -34,9 +47,13 @@
   },
   "navn": "JENS VIDAR SUNDE HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "991901094",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987343478"
+    }
+  },
   "aktivitet": [
     "Investeringer i verdipapirer, aksjer, fast eiendom, kjøp av maskiner /",
     "utstyr til vedlikehold og utbedring av eiendommer mv."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 88000,
+    "fulltInnbetalt": true,
+    "innbetalt": 88000,
+    "innfortDato": "2025-10-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "970 46 094",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "REN-VAKT HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987343478",
   "paategninger": [],

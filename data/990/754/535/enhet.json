@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990754535"
+    }
+  },
   "aktivitet": [
     "Investeringer, eiendom, aksjer, agenturer, import av varer og annen",
     "virksomhet beslektet med disse, samt å investere i selskaper med",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 617304.32,
+    "fulltInnbetalt": true,
+    "innbetalt": 617304.32,
+    "innfortDato": "2010-11-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "40416145",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "TTP INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990754535",
   "paategninger": [],

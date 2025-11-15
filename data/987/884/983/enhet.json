@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987884983"
+    }
+  },
   "aktivitet": [
     "Utenlandsk foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Enkeltpersonforetak",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ENK"
+  },
   "forretningsadresse": {
     "adresse": [
       "32-865"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "JERZY WAS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "987884983",
   "paategninger": [],
@@ -32,5 +45,6 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2004-05-18",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Polen"
 }

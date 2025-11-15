@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992656069"
+    }
+  },
   "aktivitet": [
     "Drive trykkerivirksomhet og enhver annen beslektet virksomhet, samt",
     "ved aksjetegning eller på annen måte delta i selskaper."
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 60000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000000,
+    "innfortDato": "2024-04-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Trykking av aviser",
@@ -37,9 +50,13 @@
   },
   "navn": "POLARIS TRYKK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "992656069",
   "paategninger": [],

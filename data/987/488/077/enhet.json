@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987488077"
+    }
+  },
   "aktivitet": [
     "Hovedforetak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Private limited company",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "LTD"
+  },
   "forretningsadresse": {
     "adresse": [
       "5TH Floor 100 Victoria Street"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "SIFT GROUP LIMITED",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "987488077",
   "paategninger": [],
@@ -33,5 +46,16 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1996-07-26",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Storbritannia",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "4th Floor",
+      "Edinburgh Quay 2",
+      "139 Fountainbridge"
+    ],
+    "land": "Storbritannia",
+    "poststed": "Edinburgh EH3 9FF"
+  },
+  "utenlandskRegisterNavn": "Companies House"
 }

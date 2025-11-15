@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988876860"
+    }
+  },
   "aktivitet": [
     "Eie og drive fast eiendom, investeringer i aksjer og andre",
     "verdipapirer og det som derved er forbundet."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50,
+    "belop": 550000,
+    "fulltInnbetalt": true,
+    "innbetalt": 550000,
+    "innfortDato": "2023-12-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bygging av vann- og kloakkanlegg",
@@ -33,9 +46,13 @@
   },
   "navn": "TERO EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "988876860",
   "paategninger": [],

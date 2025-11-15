@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987871040"
+    }
+  },
   "aktivitet": [
     "Produksjon, montering og handelsvirksomhet, innen svakstrømsteknik,",
     "delta i andre selskaper med lignende virksomhet, samt kjøp og salg av",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 700000,
+    "belop": 700000,
+    "fulltInnbetalt": true,
+    "innbetalt": 700000,
+    "innfortDato": "2015-07-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
@@ -33,9 +46,13 @@
   },
   "navn": "BORG SVAKSTRØM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987871040",
   "paategninger": [],

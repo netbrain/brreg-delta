@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991900845"
+    }
+  },
   "aktivitet": [
     "Investeringer i aksjer, andeler og fast eiendom, samt handel med",
     "aksjer og verdipapirer, herunder lånefinansierte verdipapirer og",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 255000,
+    "fulltInnbetalt": true,
+    "innbetalt": 255000,
+    "innfortDato": "2023-12-22",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "93227160",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "NICON HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "991900845",
   "paategninger": [],

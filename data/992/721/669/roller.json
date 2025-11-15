@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992721669/roller"
     }
   },
-  "organisasjonsnummer": "992721669",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -81,41 +85,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1986-05-05",
-            "navn": {
-              "etternavn": "Tømmernes",
-              "fornavn": "Therese"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
-              }
-            },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
-          }
-        }
-      ],
-      "sistEndret": "2025-06-26",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {
@@ -172,74 +141,6 @@
           "enhet": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934965310"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "AMESTO ACCOUNTHOUSE BERGEN AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "934965310"
-          },
-          "fratraadt": false,
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
-              }
-            },
-            "beskrivelse": "Regnskapsfører",
-            "kode": "REGN"
-          }
-        },
-        {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/957170005"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "AMESTO ACCOUNTHOUSE AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "957170005"
-          },
-          "fratraadt": false,
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
-              }
-            },
-            "beskrivelse": "Regnskapsfører",
-            "kode": "REGN"
-          }
-        },
-        {
-          "enhet": {
-            "_links": {
-              "self": {
                 "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992556668"
               }
             },
@@ -259,7 +160,7 @@
             "organisasjonsnummer": "992556668"
           },
           "fratraadt": false,
-          "rekkefolge": 2,
+          "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
@@ -271,7 +172,7 @@
           }
         }
       ],
-      "sistEndret": "2025-07-03",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {

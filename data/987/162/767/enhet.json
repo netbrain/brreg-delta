@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987162767"
+    }
+  },
   "aktivitet": [
     "Drift av forsikringsvirksomhet, forvaltning av kapital samt annen",
     "økonomisk virksomhet."
@@ -24,8 +29,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 35000,
+    "fulltInnbetalt": true,
+    "innbetalt": 35000,
+    "innfortDato": "2021-04-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Tjenester tilknyttet forsikringsvirksomhet ikke nevnt annet sted",
@@ -33,9 +46,13 @@
   },
   "navn": "VIKA MANAGEMENT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987162767",
   "paategninger": [],

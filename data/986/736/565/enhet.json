@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/986736565"
+    }
+  },
   "aktivitet": [
     "(A) drive virksomhet knyttet til å gjøre, legge til rette for,",
     "engasjere seg i og oppfordre til investeringer og tilknyttede",
@@ -39,8 +44,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100200,
+    "fulltInnbetalt": true,
+    "innbetalt": 100200,
+    "innfortDato": "2021-11-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vindkraft",
@@ -48,9 +61,13 @@
   },
   "navn": "TYSVÆR VINDPARK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "986736565",
   "paategninger": [],

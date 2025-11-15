@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990926581/roller"
     }
   },
-  "organisasjonsnummer": "990926581",
   "rollegrupper": [
     {
       "roller": [
@@ -67,12 +66,17 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
         },
         {
-          "fratraadt": false,
+          "fratraadt": true,
           "person": {
             "erDoed": false,
             "fodselsdato": "1962-01-10",
@@ -93,7 +97,7 @@
           }
         }
       ],
-      "sistEndret": "2023-06-22",
+      "sistEndret": "2025-11-14",
       "type": {
         "_links": {
           "self": {

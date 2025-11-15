@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989140116"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet generelt, samt kjøp, salg og drift av fast",
     "eiendom, verdipapirer og deltakelse i annen næringsvirkomhet og alt",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 450,
+    "belop": 135000,
+    "fulltInnbetalt": true,
+    "innbetalt": 135000,
+    "innfortDato": "2006-01-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "922 92 873",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "SELSA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989140116",
   "paategninger": [],

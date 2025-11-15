@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990501300"
+    }
+  },
   "aktivitet": [
     "Handel med deler til kjøretøy samt alt som dermed står i forbindelse",
     "med dette, samt deltakelse i andre selskap med lignende virksomhet."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 4000,
+    "belop": 66667,
+    "fulltInnbetalt": true,
+    "innbetalt": 66667,
+    "innfortDato": "2021-06-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med deler og utstyr for motorvogner",
@@ -30,9 +43,13 @@
   },
   "navn": "ROMNES ROGALAND AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990501300",
   "paategninger": [],

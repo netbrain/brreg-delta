@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988222968"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg, utleie, utvikling og drift av fast eiendom herunder",
     "tjenester som naturlig faller sammen med dette og alt som hermed står",
@@ -24,9 +29,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2005-05-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2022-06-01",
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "97027850",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "KRISTIANSAND FERIELEILIGHETER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "988222968",
   "paategninger": [],

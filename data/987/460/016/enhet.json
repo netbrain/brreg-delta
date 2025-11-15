@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987460016"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, eiendomsvirksomhet og annen virksomhet som har",
     "tilknytning til dette. Selskapet har også anledning til å drive",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2100,
+    "belop": 210000,
+    "fulltInnbetalt": true,
+    "innbetalt": 210000,
+    "innfortDato": "2005-11-22",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90722222",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "ESCAMA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987460016",
   "paategninger": [],

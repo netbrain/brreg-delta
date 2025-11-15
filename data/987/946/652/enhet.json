@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987946652"
+    }
+  },
   "aktivitet": [
     "Investeringer i verdipapirer/aksjer. Investeringer i fast eiendom.",
     "Konsulentvirksomhet IT/ledelse. Varehandel.",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 118,
+    "belop": 141600,
+    "fulltInnbetalt": true,
+    "innbetalt": 141600,
+    "innfortDato": "2022-11-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "91548750",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "KAO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987946652",
   "paategninger": [],

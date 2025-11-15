@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991200703"
+    }
+  },
   "aktivitet": [
     "Utenlandsk foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Société à responsabilité limitée",
+    "beskrivelseBokmaal": "aksjeselskap",
+    "kode": "SARL"
+  },
   "forretningsadresse": {
     "adresse": [
       "Ch des Muriers 1"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "INTUITIVE SURGICAL SARL",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "991200703",
   "paategninger": [],
@@ -33,5 +46,12 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2007-01-25",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [],
+    "land": "Sveits",
+    "poststed": "Genève"
+  },
+  "utenlandskRegisterNavn": "Registre du Commerce de Genève"
 }

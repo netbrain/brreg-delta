@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987832916"
+    }
+  },
   "aktivitet": [
     "Tenesteytande innan revisjon og rådgiving samt rekneskapsføring",
     "medrekna deltaking i andre selskap med liknande føremål."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1437500,
+    "belop": 143750,
+    "fulltInnbetalt": true,
+    "innbetalt": 143750,
+    "innfortDato": "2016-11-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "naeringskode1": {
     "beskrivelse": "Revisjon",
@@ -32,9 +45,13 @@
   },
   "navn": "HOVDEN \u0026 VATNE STATSAUTORISERTE REVISORAR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987832916",
   "paategninger": [],

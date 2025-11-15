@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/988903337"
+    }
+  },
   "aktivitet": [
     "Utenlandsk foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Orionstrasse 18"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "INFOTECHNIK GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "988903337",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2003-10-28",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Pacellistrasse 5"
+    ],
+    "land": "Tyskland",
+    "poststed": "80315  MÜNCHEN"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht München"
 }

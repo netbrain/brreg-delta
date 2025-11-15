@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987477555"
+    }
+  },
   "aktivitet": [
     "Hovedforetak."
   ],
   "epostadresse": "info@skm.se",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Wallingatan 5",
@@ -16,13 +26,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.skm.se",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "SVENSK KRAFTMÄKLING AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "987477555",
   "paategninger": [],
@@ -35,5 +48,14 @@
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/985675279"
+    }
+  },
   "aktivitet": [
     "Økonomiske og administrative tjenester, kjøp salg av utestående",
     "fordringer, regnskapsføring, kjøp og salg av konkursbo og eiendommer."
@@ -23,8 +28,16 @@
     "beskrivelse": "Finansieringsforetak",
     "kode": "3600"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 12000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 12000000,
+    "innfortDato": "2020-11-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen kredittgivning",
@@ -32,9 +45,13 @@
   },
   "navn": "ALEKTUM FINANS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "985675279",
   "paategninger": [],

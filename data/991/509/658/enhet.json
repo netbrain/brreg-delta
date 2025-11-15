@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991509658"
+    }
+  },
   "aktivitet": [
     "Eiendomsvirksomhet, (eie, utleie, forvaltning, drift, vedlikehold,",
     "salg, eventuelt kjøp av fast eiendom)."
@@ -24,8 +29,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 3200,
+    "belop": 3200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3200000,
+    "innfortDato": "2007-08-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "951 45 280",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "BLÆSTAD EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "991509658",
   "paategninger": [],

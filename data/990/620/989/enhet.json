@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990620989"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Aplerbecker Strasse 308"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "DOMO INDUSTRIE SERVICE GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "990620989",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "stiftelsesdato": "2001-07-27",
   "telefon": "+492312061525",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Gerichtstrasse 1"
+    ],
+    "land": "Tyskland",
+    "poststed": "44135 Dortmund"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Dortmund"
 }

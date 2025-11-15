@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987921927"
+    }
+  },
   "aktivitet": [
     "Alle former for renhold til privatpersoner og selskaper samt",
     "deltagelse i andre selskaper og alt som har naturlig sammenheng med",
@@ -24,9 +29,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2005-02-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2024-09-26",
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "920 24 612",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "KPS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987921927",
   "paategninger": [],

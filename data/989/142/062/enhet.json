@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989142062"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomhet, herunder investeringer i aksjer, obligasjoner,",
     "selskapsandeler, verdipapirer, fast eiendom, utlånsvirksomhet eller",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 160000,
+    "belop": 320000,
+    "fulltInnbetalt": true,
+    "innbetalt": 320000,
+    "innfortDato": "2005-12-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
@@ -30,9 +43,13 @@
   },
   "navn": "MYBEE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989142062",
   "paategninger": [],

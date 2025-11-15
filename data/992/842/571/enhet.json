@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992842571"
+    }
+  },
   "aktivitet": [
     "Investering i verdipapirer, kjøp, salg og forvaltning av fast eiendom,",
     "heunder utleie, samt deltakelse i andre selskaper og annen",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 17000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 17000000,
+    "innfortDato": "2008-08-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -37,9 +50,13 @@
   },
   "navn": "T. ENGENE INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "992842571",
   "paategninger": [],

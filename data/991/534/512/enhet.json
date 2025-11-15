@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991534512"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av kjøretøy, omsetning av verdipapir og valuta, kjøp og",
     "salg av eiendommer innlands/utlands. Kjøp og salg av fritidsbåter,",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 190000,
+    "fulltInnbetalt": true,
+    "innbetalt": 190000,
+    "innfortDato": "2007-08-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90527429",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "GSI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "991534512",
   "paategninger": [],

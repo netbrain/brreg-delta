@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987316144"
+    }
+  },
   "aktivitet": [
     "Yte service innenfor skipsfart, handel, finansiering, ekspedisjon,",
     "spedisjon, transport, befraktning, megler-, konsulent-, stevedoring-,",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 300000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 300000000,
+    "innfortDato": "2015-12-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Logistikktjenester",
@@ -38,9 +51,13 @@
   },
   "navn": "WILHELMSEN MARITIME SERVICES AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987316144",
   "paategninger": [],

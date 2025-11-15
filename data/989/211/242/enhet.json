@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989211242"
+    }
+  },
   "aktivitet": [
     "Selskapets formål er investering i aksjer, og fast eiendom, herunder",
     "også utleie av fast eiendom samt hva hermed står i forbindelse,",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 13246,
+    "belop": 397380,
+    "fulltInnbetalt": true,
+    "innbetalt": 397380,
+    "innfortDato": "2006-12-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "All annen faglig, vitenskapelig og teknisk virksomhet ikke nevnt annet sted",
@@ -34,9 +47,13 @@
   },
   "navn": "ONAFYR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989211242",
   "paategninger": [],

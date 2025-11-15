@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987055707"
+    }
+  },
   "aktivitet": [
     "Tjenester innen mur, flislegging og lignende. Kan også delta i",
     "eierposter i andre virksomheter med økonomisk formål."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 210,
+    "belop": 210000,
+    "fulltInnbetalt": true,
+    "innbetalt": 210000,
+    "innfortDato": "2004-07-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Gulvlegging og tapetsering",
@@ -30,9 +43,13 @@
   },
   "navn": "NORMUR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987055707",
   "paategninger": [],

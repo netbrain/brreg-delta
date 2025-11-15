@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992086068"
+    }
+  },
   "aktivitet": [
     "Eie og investere i aksjer og andre og andre verdipapir, og andre",
     "selskaper og samt deltakelse av enhver art i andre virksomheter og hva",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 100000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000000,
+    "innfortDato": "2007-12-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Rengjøring av bygninger",
@@ -34,9 +47,13 @@
   },
   "navn": "ISS HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "992086068",
   "paategninger": [],

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987271329"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Corporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "CORP"
+  },
   "forretningsadresse": {
     "adresse": [
       "11900 Blue Way"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "GEIR CORPORATION",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "987271329",
   "paategninger": [],
@@ -33,5 +46,15 @@
   "respons_klasse": "Enhet",
   "telefon": "+14052620237",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "2300 N Lincoln Blvd. Room 101",
+      "Oklahoma City"
+    ],
+    "land": "USA",
+    "poststed": "73105-4897 Oklahoma"
+  },
+  "utenlandskRegisterNavn": "Oklahoma Secretary of State  "
 }

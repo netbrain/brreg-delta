@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990999120"
+    }
+  },
   "aktivitet": [
     "Eie, drive og kontrahere supply skip samt annen virksomhet som dertil",
     "hører ved, herunder eie og investere i andre selskaper."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 500600,
+    "fulltInnbetalt": true,
+    "innbetalt": 500600,
+    "innfortDato": "2023-10-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Forsyning for offshore",
@@ -29,9 +42,13 @@
   },
   "navn": "DDW OFFSHORE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990999120",
   "paategninger": [],

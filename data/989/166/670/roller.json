@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989166670/roller"
     }
   },
-  "organisasjonsnummer": "989166670",
   "rollegrupper": [
     {
       "roller": [
@@ -274,10 +273,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1960-08-02",
+            "fodselsdato": "1971-04-16",
             "navn": {
-              "etternavn": "Olsen",
-              "fornavn": "Leif Vidar"
+              "etternavn": "Hjelmevoll",
+              "fornavn": "Stig Ove"
             }
           },
           "rekkefolge": 0,
@@ -337,10 +336,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1942-12-11",
+            "fodselsdato": "1956-06-21",
             "navn": {
-              "etternavn": "Lindkvist",
-              "fornavn": "Knut Bjørn"
+              "etternavn": "Seppola",
+              "fornavn": "Anne Therese",
+              "mellomnavn": "Hognestad"
             }
           },
           "rekkefolge": 3,
@@ -358,11 +358,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1956-06-21",
+            "fodselsdato": "1968-04-20",
             "navn": {
-              "etternavn": "Seppola",
-              "fornavn": "Anne Therese",
-              "mellomnavn": "Hognestad"
+              "etternavn": "Olsen",
+              "fornavn": "Ole Håvard"
             }
           },
           "rekkefolge": 4,
@@ -380,10 +379,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1983-05-21",
+            "fodselsdato": "1969-12-30",
             "navn": {
-              "etternavn": "Johnsen",
-              "fornavn": "Evelyn"
+              "etternavn": "Nygård",
+              "fornavn": "Liv Jorunn",
+              "mellomnavn": "Lauritsen"
             }
           },
           "rekkefolge": 5,
@@ -397,6 +397,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -426,34 +431,13 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1957-06-30",
-            "navn": {
-              "etternavn": "Tjernstad",
-              "fornavn": "Marit"
-            }
-          },
-          "rekkefolge": 7,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
-              }
-            },
-            "beskrivelse": "Varamedlem",
-            "kode": "VARA"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
             "fodselsdato": "1967-01-24",
             "navn": {
               "etternavn": "Bursta",
               "fornavn": "Beate Lill"
             }
           },
-          "rekkefolge": 8,
+          "rekkefolge": 7,
           "type": {
             "_links": {
               "self": {
@@ -475,6 +459,28 @@
               "mellomnavn": "Gamvik"
             }
           },
+          "rekkefolge": 8,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1984-01-24",
+            "navn": {
+              "etternavn": "Eliassen",
+              "fornavn": "Ulf Terje",
+              "mellomnavn": "Nyheim"
+            }
+          },
           "rekkefolge": 9,
           "type": {
             "_links": {
@@ -490,10 +496,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1968-09-16",
+            "fodselsdato": "1968-06-01",
             "navn": {
-              "etternavn": "Øfeldt",
-              "fornavn": "Lise Birgitte"
+              "etternavn": "Esp",
+              "fornavn": "Unni",
+              "mellomnavn": "Lauritsen"
             }
           },
           "rekkefolge": 10,
@@ -511,11 +518,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1989-10-07",
+            "fodselsdato": "1973-12-28",
             "navn": {
-              "etternavn": "Bergsåker",
-              "fornavn": "Jon Trygve",
-              "mellomnavn": "Røkeberg"
+              "etternavn": "Mølmann",
+              "fornavn": "Nina",
+              "mellomnavn": "Planting"
             }
           },
           "rekkefolge": 11,
@@ -529,12 +536,17 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
         }
       ],
-      "sistEndret": "2020-10-12",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {
@@ -543,19 +555,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2011-01-06",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     },
     {

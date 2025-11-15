@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989170899"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte aksjer og selskapsandeler i andre selskaper, samt eie",
     "og forvalte fast eiendom, og dermed forbunden virksomhet."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 251000,
+    "fulltInnbetalt": true,
+    "innbetalt": 251000,
+    "innfortDato": "2020-12-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av hoteller",
@@ -34,9 +47,13 @@
   },
   "navn": "SM BUICK HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989170899",
   "paategninger": [],

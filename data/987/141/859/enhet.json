@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987141859"
+    }
+  },
   "aktivitet": [
     "Kjøp/salg av aksjer, deltagelse i ans, ks og",
     "is, investering i shipping og fast eiendom og ellers alt hva dermed",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 149000,
+    "fulltInnbetalt": true,
+    "innbetalt": 149000,
+    "innfortDato": "2004-08-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "926 33 676",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "E. B. AABYS REDERI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987141859",
   "paategninger": [],

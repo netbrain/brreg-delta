@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987493739"
+    }
+  },
   "aktivitet": [
     "Transport og alt hva dette innebærer. Selskapetddriver også med handel",
     "av maskiner og kjøretøy. Selskapet kan leie utdog eie fast eiendom."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 125,
+    "belop": 125000,
+    "fulltInnbetalt": true,
+    "innbetalt": 125000,
+    "innfortDato": "2021-12-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "91745690",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "SLR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987493739",
   "paategninger": [],

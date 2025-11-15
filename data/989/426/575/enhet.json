@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989426575"
+    }
+  },
   "aktivitet": [
     "Eie foretak som skal benyttes i prosjekter tilrettelagt av",
     "Skandinaviska Ensilda Banken AB (publ) (SEB) eller selskap i samme",
@@ -22,8 +27,15 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "belop": 250000,
+    "fulltInnbetalt": true,
+    "innbetalt": 250000,
+    "innfortDato": "2006-03-01",
+    "type": "Grunnkapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet finansieringsvirksomhet og kollektive investeringsfond",
@@ -31,9 +43,13 @@
   },
   "navn": "STIFTELSEN OBLIGOR",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/STI"
+      }
+    },
     "beskrivelse": "Stiftelse",
-    "kode": "STI",
-    "links": []
+    "kode": "STI"
   },
   "organisasjonsnummer": "989426575",
   "paategninger": [],

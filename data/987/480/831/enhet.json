@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987480831"
+    }
+  },
   "aktivitet": [
     "Opprette og utvikle websider og apper. Dette gjelder både offentlige",
     "nettsider og også en del CRM systemer."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 160000,
+    "fulltInnbetalt": true,
+    "innbetalt": 160000,
+    "innfortDato": "2004-11-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "938 50 555",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "SPIFFY AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987480831",
   "paategninger": [],

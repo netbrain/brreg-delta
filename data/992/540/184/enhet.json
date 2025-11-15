@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992540184"
+    }
+  },
   "aktivitet": [
     "Utenlandsk foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Zivnost",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ZIV"
+  },
   "forretningsadresse": {
     "adresse": [
       "253 Mikszatha St."
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "X-CITE SK. MILAN KIS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "992540184",
   "paategninger": [],
@@ -33,5 +46,15 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2007-06-05",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Slovakia",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Ministerstvo spravodlivosti SR",
+      "Zupné námestie"
+    ],
+    "land": "Slovakia",
+    "poststed": "811 03 Bratislava"
+  },
+  "utenlandskRegisterNavn": "Obchodný register"
 }

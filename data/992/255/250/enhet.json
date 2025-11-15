@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992255250"
+    }
+  },
   "aktivitet": [
     "Investerings- og holdingsvirksomhet samt alt som står i forbindelse",
     "med dette."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 12100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 12100000,
+    "innfortDato": "2010-12-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av optiske instrumenter, magnetiske og optiske media og fotografisk utstyr",
@@ -35,9 +48,13 @@
   },
   "navn": "VTI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "992255250",
   "paategninger": [],

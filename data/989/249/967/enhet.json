@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989249967"
+    }
+  },
   "aktivitet": [
     "Eie og utleie av fast eiendom, drive handel i tilknytning til dette,",
     "delta i andre selskaper og alt som hermed står i forbindelse."
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2640,
+    "belop": 264000,
+    "fulltInnbetalt": true,
+    "innbetalt": 264000,
+    "innfortDato": "2023-12-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -38,9 +51,13 @@
   },
   "navn": "SKREKKELIG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989249967",
   "paategninger": [],

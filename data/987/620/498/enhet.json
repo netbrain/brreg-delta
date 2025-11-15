@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987620498"
+    }
+  },
   "aktivitet": [
     "Kapitalplasseringer, herunder spesielt kjøp og salg av aksjer, kjøp og",
     "utleie av eiendom, forretningsførsel, samt deltakelse i virksomheter",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 741000,
+    "fulltInnbetalt": true,
+    "innbetalt": 741000,
+    "innfortDato": "2015-11-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "95739430",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "KR. INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987620498",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990412367"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i andre selskaper samt forvalte eierinteressene av disse.",
     "Eie og drift av eiendom, forretningsmessig tjenesteyting og hva dermed",
@@ -7,15 +12,16 @@
   "erIKonsern": false,
   "forretningsadresse": {
     "adresse": [
-      "C/O Jon Erik Solheim",
-      "Nedre Nøttveit 42"
+      "c/o Jon Erik Solheim",
+      "Bruksenhetsnummer H0301",
+      "Paradisalléen 5"
     ],
     "kommune": "BERGEN",
     "kommunenummer": "4601",
     "land": "Norge",
     "landkode": "NO",
-    "postnummer": "5238",
-    "poststed": "RÅDAL"
+    "postnummer": "5232",
+    "poststed": "PARADIS"
   },
   "fravalgRevisjonBeslutningsDato": "2018-08-28",
   "fravalgRevisjonDato": "2018-09-17",
@@ -24,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 54046,
+    "belop": 100525.56,
+    "fulltInnbetalt": true,
+    "innbetalt": 100525.56,
+    "innfortDato": "2006-10-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -33,9 +47,13 @@
   },
   "navn": "JES AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990412367",
   "paategninger": [],

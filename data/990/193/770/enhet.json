@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990193770"
+    }
+  },
   "aktivitet": [
     "Deltagelse i alminnelig næringsvirksomhet. Deltagelse som nevnt skal",
     "fortrinnsvis skje ved kjøp og salg av aksjer og fast eiendom."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3200,
+    "belop": 320000,
+    "fulltInnbetalt": true,
+    "innbetalt": 320000,
+    "innfortDato": "2010-08-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "474 54 006",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "OLEKA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990193770",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987047720"
+    }
+  },
   "aktivitet": [
     "Import og salg av testsystem i Skandinavia, være holdingselskap samt",
     "alt hva hermed står i forbindelse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 880,
+    "belop": 88000,
+    "fulltInnbetalt": true,
+    "innbetalt": 88000,
+    "innfortDato": "2019-12-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uspesifisert engroshandel",
@@ -31,9 +44,13 @@
   },
   "navn": "SCANDITEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987047720",
   "paategninger": [],

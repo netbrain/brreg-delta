@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987004886/roller"
     }
   },
-  "organisasjonsnummer": "987004886",
   "rollegrupper": [
     {
       "roller": [
@@ -31,30 +30,9 @@
             "beskrivelse": "Forretningsfører",
             "kode": "FFØR"
           }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1959-04-24",
-            "navn": {
-              "etternavn": "Skrefsrud",
-              "fornavn": "Iver"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
-              }
-            },
-            "beskrivelse": "Forretningsfører",
-            "kode": "FFØR"
-          }
         }
       ],
-      "sistEndret": "2025-05-11",
+      "sistEndret": "2025-11-13",
       "type": {
         "_links": {
           "self": {
@@ -164,16 +142,51 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2006-01-19",
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919763558"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "JI THOMASSEN REGNSKAP AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "919763558"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-11",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

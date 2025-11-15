@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990288062"
+    }
+  },
   "aktivitet": [
     "Eie og drift av fast eiendom. Konsulentvirksomhet og tjenester for",
     "andre eiendomseiende personer og selskaper, samt av eierskap av",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 24000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 24000000,
+    "innfortDato": "2023-10-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av parkeringsplasser og parkeringshus",
@@ -38,9 +51,13 @@
   },
   "navn": "INDIGO MANAGEMENT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "990288062",
   "paategninger": [],

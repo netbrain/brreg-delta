@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987625465"
+    }
+  },
   "aktivitet": [
     "Eie aksjer i andre selskap, investere i aksjer, andre verdipapirer og",
     "fast eiendom, eiendomsutvikling og utleie av fast eiendom,",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 400000,
+    "belop": 105200,
+    "fulltInnbetalt": true,
+    "innbetalt": 105200,
+    "innfortDato": "2007-05-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "950 85 914",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "TIMMUNO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987625465",
   "paategninger": [],

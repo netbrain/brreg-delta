@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989174231"
+    }
+  },
   "aktivitet": [
     "Eie og drive skipsvirksomhet (herunder utleie av kapitalgjenstander),",
     "samt annen virksomhet som står i forbindelse med dette."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1,
+    "belop": 3750000,
+    "fulltInnbetalt": true,
+    "innbetalt": 3750000,
+    "innfortDato": "2025-11-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Forsyning for offshore",
@@ -29,9 +42,13 @@
   },
   "navn": "STRIL MYSTER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "989174231",
   "paategninger": [],

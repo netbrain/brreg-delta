@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987761881"
+    }
+  },
   "aktivitet": [
     "Yte konsulentvirksomhet i forbindelse med utvikling, kjøp, salg og",
     "investeringer, herunder innen fast eiendom og investeringsvirksomhet i",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1500,
+    "belop": 165000,
+    "fulltInnbetalt": true,
+    "innbetalt": 165000,
+    "innfortDato": "2006-01-14",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "92265631",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "GULBRANDSEN UTVIKLING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "987761881",
   "paategninger": [],
