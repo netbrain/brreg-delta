@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999533930"
+    }
+  },
   "aktivitet": [
     "Investering og deltagelse i andre selskaper, samt alt annet som står i",
     "naturlig forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 210000,
+    "fulltInnbetalt": true,
+    "innbetalt": 210000,
+    "innfortDato": "2013-07-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
@@ -33,9 +46,13 @@
   },
   "navn": "R. O. HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999533930",
   "paategninger": [],

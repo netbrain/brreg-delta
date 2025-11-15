@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994261649/roller"
     }
   },
-  "organisasjonsnummer": "994261649",
   "rollegrupper": [
     {
       "roller": [
@@ -89,6 +88,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -103,76 +107,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1967-06-22",
-            "navn": {
-              "etternavn": "Berge",
-              "fornavn": "Inge"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
-              }
-            },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
-          }
-        }
-      ],
-      "sistEndret": "2009-06-27",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1971-02-20",
-            "navn": {
-              "etternavn": "Lunde",
-              "fornavn": "Arne"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/PROK"
-              }
-            },
-            "beskrivelse": "Prokura",
-            "kode": "PROK"
-          }
-        }
-      ],
-      "sistEndret": "2011-01-19",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

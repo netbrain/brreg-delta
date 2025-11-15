@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996520293"
+    }
+  },
   "aktivitet": [
     "Konsulentvirksomhet og prosjektledelse innenfor utvikling, oppbygging",
     "og drift av prosjekter innenfor fast eiendom og finans, samt",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2011-02-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "907 88 345",
   "naeringskode1": {
@@ -35,19 +48,21 @@
   },
   "navn": "AASE PROJECT MANAGEMENT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "996520293",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2011-02-05",
   "registreringsdatoForetaksregisteret": "2011-02-05",
-  "registreringsdatoMerverdiavgiftsregisteret": "2011-03-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2011-03-24",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

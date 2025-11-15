@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993853712"
+    }
+  },
   "aktivitet": [
     "Handel, investering i fast eiendom og verdipapirer samt annen",
     "virksomhet i tilknytning til dette, herunder deltagelse i andre",
@@ -31,8 +36,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 100000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000000,
+    "innfortDato": "2010-08-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
@@ -40,9 +53,13 @@
   },
   "navn": "AARS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993853712",
   "paategninger": [],

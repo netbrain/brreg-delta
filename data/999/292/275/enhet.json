@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999292275"
+    }
+  },
   "aktivitet": [
     "Produksjon innen stål og annet hotell, samt enhver virksomhet som står",
     "i forbindelse med dette, herunder å eie aksjer i andre selskaper."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 250000,
+    "fulltInnbetalt": true,
+    "innbetalt": 250000,
+    "innfortDato": "2012-12-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "98266001",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "FANA STÅL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999292275",
   "paategninger": [],

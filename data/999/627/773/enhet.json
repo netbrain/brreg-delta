@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999627773"
+    }
+  },
   "aktivitet": [
     "Investeringer i annen virksomhet, aksjer, selskaper og eiendom, samt",
     "alt som står i naturlig forbindelse med dette."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 60000,
+    "belop": 610000,
+    "fulltInnbetalt": true,
+    "innbetalt": 610000,
+    "innfortDato": "2013-06-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -34,9 +47,13 @@
   },
   "navn": "BRØDØY HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999627773",
   "paategninger": [],

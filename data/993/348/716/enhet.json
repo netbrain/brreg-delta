@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993348716"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er kjøp og salg av aksjer, investering i fast",
     "eiendom og det som naturlig hører til."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 150,
+    "belop": 150000,
+    "fulltInnbetalt": true,
+    "innbetalt": 150000,
+    "innfortDato": "2024-05-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Maler- og glassarbeid",
@@ -34,9 +47,13 @@
   },
   "navn": "KRIMA HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993348716",
   "paategninger": [],

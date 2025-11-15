@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998040256"
+    }
+  },
   "aktivitet": [
     "Investering i og forvaltning av eiendeler,",
     "herunder fast eiendom, verdipapirer,selskapsandeler, aksjer i norske",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 40000,
+    "fulltInnbetalt": true,
+    "innbetalt": 40000,
+    "innfortDato": "2012-03-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "480 56 430",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "SVACO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998040256",
   "paategninger": [],

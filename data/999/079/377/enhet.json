@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999079377"
+    }
+  },
   "aktivitet": [
     "Eiendomsmegling"
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 214,
+    "belop": 2211476,
+    "fulltInnbetalt": true,
+    "innbetalt": 2211476,
+    "innfortDato": "2025-10-01",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Eiendomsmegling og andre formidlingstjenester for eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "AKTIV STJØRDAL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999079377",
   "paategninger": [],

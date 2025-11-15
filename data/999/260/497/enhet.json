@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999260497"
+    }
+  },
   "aktivitet": [
     "Lovisenberg sykehusapotek AS har ikke erverv til formål. Lovisenberg",
     "sykehusapotek AS drives i overensstemmelse med verdigrunnlag og formål",
@@ -37,8 +42,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2013-08-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med apotekvarer og medisinske varer",
@@ -46,9 +59,13 @@
   },
   "navn": "LOVISENBERG UTVIKLING 3 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999260497",
   "paategninger": [],

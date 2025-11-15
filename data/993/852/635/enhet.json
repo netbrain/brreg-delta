@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993852635"
+    }
+  },
   "aktivitet": [
     "Utleie av fast eiendom Salg av fast eiendom Kjøp av fast eiendom Drift",
     "av fast eiendom"
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 2000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2000000,
+    "innfortDato": "2015-10-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "412 94 862",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "ÅSE UTLEIEBYGG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993852635",
   "paategninger": [],

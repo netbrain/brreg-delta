@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993410489"
+    }
+  },
   "aktivitet": [
     "Å erverve, oppføre eller leie og drive faste eiendommer, samt kjøp og",
     "salg av aksjer og andeler i andre selskaper med tilsvarende formål, og",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 60000,
+    "belop": 52044,
+    "fulltInnbetalt": true,
+    "innbetalt": 52044,
+    "innfortDato": "2017-06-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -37,9 +50,13 @@
   },
   "navn": "1912 NÆRING 1 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993410489",
   "paategninger": [],

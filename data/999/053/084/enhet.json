@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999053084"
+    }
+  },
   "aktivitet": [
     "Planlegging og utbygging av infrastruktur."
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 118226,
+    "belop": 1182260,
+    "fulltInnbetalt": true,
+    "innbetalt": 1182260,
+    "innfortDato": "2015-02-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bygging av andre anlegg ikke nevnt annet sted",
@@ -29,9 +42,13 @@
   },
   "navn": "SANDNES INDRE HAVN INFRASTRUKTUR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999053084",
   "paategninger": [],

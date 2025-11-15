@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996271196"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og forvaltning av verdipapirer og fast eiendom, og hva som",
     "står i forbindelse, herunder eie selskaper som har slikt formål, samt",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 33333,
+    "belop": 100332.33,
+    "fulltInnbetalt": true,
+    "innbetalt": 100332.33,
+    "innfortDato": "2010-12-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "PSM INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "996271196",
   "paategninger": [],

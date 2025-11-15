@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999542670"
+    }
+  },
   "aktivitet": [
     "Finans: Kjøp og salg av aksjer, eiendeler, herunder også kjøp og salg",
     "av leiligheter. Deltakelse i andre selskaper."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2650,
+    "belop": 265000,
+    "fulltInnbetalt": true,
+    "innbetalt": 265000,
+    "innfortDato": "2020-07-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "STANDNES INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999542670",
   "paategninger": [],

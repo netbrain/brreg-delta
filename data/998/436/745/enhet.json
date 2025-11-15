@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998436745"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Seestrasse 141"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "ORGELBAU KUHN AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "998436745",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "stiftelsesdato": "1925-02-10",
   "telefon": "+414398434550",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sveits",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Bleicherweg 5"
+    ],
+    "land": "Sveits",
+    "poststed": "8001 ZÜRICH"
+  },
+  "utenlandskRegisterNavn": "Handelsregisteramt des Kantons Zürich - Hauptregister"
 }

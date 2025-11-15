@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993971286"
+    }
+  },
   "aktivitet": [
     "Å drive med konsulentvirksomhet. I tillegg skal selskapet drive med",
     "kjøp og salg av fast eiendom, verdipapir,løsøre og annen drift som",
@@ -25,8 +30,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
-  "konkurs": false,
-  "links": [],
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2009-04-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
+  "konkurs": true,
+  "konkursdato": "2025-11-13",
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -34,9 +48,13 @@
   },
   "navn": "WH GRUPPEN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993971286",
   "paategninger": [],

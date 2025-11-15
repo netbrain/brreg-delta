@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997711580"
+    }
+  },
   "aktivitet": [
     "Investere i aksjer, verdipapirer, andre selskapsandeler og fast",
     "eiendom, samt alt hva hermed står i forbindelse."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 25000,
+    "belop": 375000,
+    "fulltInnbetalt": true,
+    "innbetalt": 375000,
+    "innfortDato": "2023-12-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -29,9 +42,13 @@
   },
   "navn": "AM VESTERLIE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997711580",
   "paategninger": [],

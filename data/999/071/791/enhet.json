@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999071791"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og utleie av fast eiendom."
   ],
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 4700,
+    "belop": 7050000,
+    "fulltInnbetalt": true,
+    "innbetalt": 7050000,
+    "innfortDato": "2022-06-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "957 05 162",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "OCKA EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999071791",
   "paategninger": [],

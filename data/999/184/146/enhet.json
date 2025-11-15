@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999184146"
+    }
+  },
   "aktivitet": [
     "Utvikling, forvaltning og eierskap av fast eiendom."
   ],
@@ -23,8 +28,16 @@
     "beskrivelse": "Statlig eide aksjeselskaper mv.",
     "kode": "1120"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 101000,
+    "fulltInnbetalt": true,
+    "innbetalt": 101000,
+    "innfortDato": "2025-11-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -32,9 +45,13 @@
   },
   "navn": "GRENSTØLVEIEN 40 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999184146",
   "paategninger": [],

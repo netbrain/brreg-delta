@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993903264"
+    }
+  },
   "aktivitet": [
     "Direkte eller gjennom datterselskap og for egen",
     "eller annens regning å utøve selskapsadministrasjon, herunder knyttet",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 120000,
+    "fulltInnbetalt": true,
+    "innbetalt": 120000,
+    "innfortDato": "2013-04-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Pr og kommunikasjonstjenester",
@@ -34,9 +47,13 @@
   },
   "navn": "CISION NORGE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993903264",
   "paategninger": [],

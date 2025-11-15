@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998636140/roller"
     }
   },
-  "organisasjonsnummer": "998636140",
   "rollegrupper": [
     {
       "roller": [
@@ -69,6 +68,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -88,73 +92,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-08-20",
-            "navn": {
-              "etternavn": "Arnesen",
-              "fornavn": "Arthur Oddvar",
-              "mellomnavn": "Darre"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932082837"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "BOK AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "932082837"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
               }
             },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         }
       ],
-      "sistEndret": "2012-07-21",
+      "sistEndret": "2025-11-14",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-08-20",
-            "navn": {
-              "etternavn": "Arnesen",
-              "fornavn": "Arthur Oddvar",
-              "mellomnavn": "Darre"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/PROK"
-              }
-            },
-            "beskrivelse": "Prokura",
-            "kode": "PROK"
-          }
-        }
-      ],
-      "sistEndret": "2012-07-21",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

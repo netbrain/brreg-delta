@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999332234"
+    }
+  },
   "aktivitet": [
     "Rådgivning. Investeringer i oppstartselskaper, kjøp og salg av",
     "verdipapirer og kjøp, salg og utleie av eiendom."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 64000,
+    "fulltInnbetalt": true,
+    "innbetalt": 64000,
+    "innfortDato": "2013-11-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "958 91 500",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "BINARI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999332234",
   "paategninger": [],

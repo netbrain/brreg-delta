@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994931369"
+    }
+  },
   "aktivitet": [
     "Rådgivning, forretningsførsel, forvaltning, og utvikling innen",
     "eiendom, samt all annen virksomhet som står i forbindelse med dette."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50000,
+    "belop": 1550000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1550000,
+    "innfortDato": "2024-12-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
@@ -30,9 +43,13 @@
   },
   "navn": "STOR-OSLO EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "994931369",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999513271"
+    }
+  },
   "aktivitet": [
     "Innen industri, handel og investeringer med formål å investere i",
     "noterte og unoterte bedrifter, derunder deltagelse i andre",
@@ -25,8 +30,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 400,
+    "belop": 60000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000,
+    "innfortDato": "2013-03-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Spesielle holdingselskaper",
@@ -34,9 +47,13 @@
   },
   "navn": "SILVER WILLOW INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999513271",
   "paategninger": [],

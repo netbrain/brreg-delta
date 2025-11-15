@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998601924"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "SAP PARTNER-PORT",
@@ -15,13 +25,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.vistex.com",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "VISTEX GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "998601924",
   "paategninger": [],
@@ -36,5 +49,15 @@
   "stiftelsesdato": "2007-04-19",
   "telefon": "+496227/73153",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Schloss, Westflügel",
+      "Bismarckstr. 14"
+    ],
+    "land": "Tyskland",
+    "poststed": "68159 Mannheim"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Mannheim"
 }

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998077141"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Limited liability company",
+    "beskrivelseBokmaal": "Selskap med begrenset ansvar",
+    "kode": "LLC"
+  },
   "forretningsadresse": {
     "adresse": [
       "2103 CityWest Blvd. Bldg. 4, Suite",
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "EQUINOR US OPERATIONS LLC",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "998077141",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2004-01-21",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "P.O. Box 898"
+    ],
+    "land": "USA",
+    "poststed": "Dover Delaware 19903"
+  },
+  "utenlandskRegisterNavn": "Secretary of State for the State of Delaware"
 }

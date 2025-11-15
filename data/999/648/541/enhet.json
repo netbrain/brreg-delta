@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999648541"
+    }
+  },
   "aktivitet": [
     "Å etablere nødvendig infrastruktur og drive",
     "transport av masse i forbindelse med produksjon av pukk."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 10000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 10000000,
+    "innfortDato": "2013-02-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bygging av veier og motorveier",
@@ -29,9 +42,13 @@
   },
   "navn": "VS STEIN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999648541",
   "paategninger": [],

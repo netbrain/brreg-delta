@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995819600"
+    }
+  },
   "aktivitet": [
     "Tilby et stort spekter av arbeidsløsninger, produkter og tjenester til",
     "både enkeltpersoner så vel som selskaper. Selskapet kan tilby ulike",
@@ -30,8 +35,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1200,
+    "belop": 264000,
+    "fulltInnbetalt": true,
+    "innbetalt": 264000,
+    "innfortDato": "2025-04-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Annen forretningsmessig tjenesteyting ikke nevnt annet sted",
@@ -39,9 +52,13 @@
   },
   "navn": "DEVELOPMENT NORWAY 01 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995819600",
   "paategninger": [],

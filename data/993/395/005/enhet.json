@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993395005"
+    }
+  },
   "aktivitet": [
     "Kapitalplassering og annen investeringsvirksomhet, herunder deltagelse",
     "i andre selskaper, som aksjeeier eller ansvarlig deltaker, og hva som",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 102000,
+    "belop": 102000,
+    "fulltInnbetalt": true,
+    "innbetalt": 102000,
+    "innfortDato": "2008-12-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "97162642",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "MMØ HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993395005",
   "paategninger": [],

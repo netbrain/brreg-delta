@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999000630"
+    }
+  },
   "aktivitet": [
     "Rørleggervirksomhet, agenturvirksomhet, drift av faste eiendommer, eie",
     "og forvalte aksjer og verdipapirer, deltagelse i andre",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1105,
+    "belop": 110500,
+    "fulltInnbetalt": true,
+    "innbetalt": 110500,
+    "innfortDato": "2014-04-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "VVS-arbeid",
@@ -32,9 +45,13 @@
   },
   "navn": "MILJØHUSET OSLO AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999000630",
   "paategninger": [],

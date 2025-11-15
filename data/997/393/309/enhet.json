@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997393309"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er selv, gjennom hel- og eller deleide selskaper",
     "eller ved samarbeid med andre virksomheter, å forestå drift, utvikling",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 150,
+    "belop": 110250,
+    "fulltInnbetalt": true,
+    "innbetalt": 110250,
+    "innfortDato": "2011-10-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -34,9 +47,13 @@
   },
   "navn": "ACB EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997393309",
   "paategninger": [],

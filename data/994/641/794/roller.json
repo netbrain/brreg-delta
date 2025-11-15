@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994641794/roller"
     }
   },
-  "organisasjonsnummer": "994641794",
   "rollegrupper": [
     {
       "roller": [
@@ -32,6 +31,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -57,6 +61,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -71,118 +80,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-01-13",
-            "navn": {
-              "etternavn": "Hågensen",
-              "fornavn": "Freddy Andre"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIFE"
-              }
-            },
-            "beskrivelse": "Signatur i fellesskap",
-            "kode": "SIFE"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1965-02-17",
-            "navn": {
-              "etternavn": "Wikhaug",
-              "fornavn": "Kai Harry"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIFE"
-              }
-            },
-            "beskrivelse": "Signatur i fellesskap",
-            "kode": "SIFE"
-          }
-        }
-      ],
-      "sistEndret": "2018-02-27",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-01-13",
-            "navn": {
-              "etternavn": "Hågensen",
-              "fornavn": "Freddy Andre"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1965-02-17",
-            "navn": {
-              "etternavn": "Wikhaug",
-              "fornavn": "Kai Harry"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        }
-      ],
-      "sistEndret": "2018-02-27",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

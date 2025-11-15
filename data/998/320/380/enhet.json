@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998320380"
+    }
+  },
   "aktivitet": [
     "Investment. Holding. Kjøp og salg av aksjer."
   ],
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 99999,
+    "fulltInnbetalt": true,
+    "innbetalt": 99999,
+    "innfortDato": "2014-12-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Spesialiserte legetjenester, unntatt psykiatriske legetjenester",
@@ -33,9 +46,13 @@
   },
   "navn": "CALIGULA HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998320380",
   "paategninger": [],

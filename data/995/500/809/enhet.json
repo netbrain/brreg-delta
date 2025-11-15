@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995500809"
+    }
+  },
   "aktivitet": [
     "Eie, leie og utvikle fast eiendom, herunder gjennom deltakelse i andre",
     "selskaper og det som står i forbindelse med dette."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 110000,
+    "belop": 330000,
+    "fulltInnbetalt": true,
+    "innbetalt": 330000,
+    "innfortDato": "2024-10-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -35,9 +48,13 @@
   },
   "navn": "SJØHUSET GISMERØYA AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995500809",
   "paategninger": [],

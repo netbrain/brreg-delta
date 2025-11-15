@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994344609"
+    }
+  },
   "aktivitet": [
     "Inneha aksjer og investeringer i andre selskaper, yte management",
     "tjenester til slike selskaper, samt forestå virksomhet i tilknytning",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200000,
+    "belop": 400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 400000,
+    "innfortDato": "2017-01-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Teknisk prøving og analyse",
@@ -34,9 +47,13 @@
   },
   "navn": "VYSUS NORWAY HOLDINGS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "994344609",
   "paategninger": [],

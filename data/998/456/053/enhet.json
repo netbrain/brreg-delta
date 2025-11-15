@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998456053"
+    }
+  },
   "aktivitet": [
     "Bygg og anlegg: Oppføring, renovering og rehabilitering av bygninger."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 50000,
+    "fulltInnbetalt": true,
+    "innbetalt": 50000,
+    "innfortDato": "2012-06-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -30,9 +43,13 @@
   },
   "navn": "ABC HÅNDVERKEREN FRANKIEWICZ AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998456053",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999538444"
+    }
+  },
   "aktivitet": [
     "Kjøp, sal og forvaltning av eigedom og aksjar, og alt står i samband",
     "med dette samt oppgåver som normalt ligg under rolla som",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10300,
+    "belop": 401700,
+    "fulltInnbetalt": true,
+    "innbetalt": 401700,
+    "innfortDato": "2023-12-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Nynorsk",
   "mobil": "99257711",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "HOLSVIK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999538444",
   "paategninger": [],

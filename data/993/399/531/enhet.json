@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993399531"
+    }
+  },
   "aktivitet": [
     "Investere i fast eiendom, aksjer og andre verdipapirer, valuta, annen",
     "virksomhet samt øvrige investeringer av enhver art, og alt som står i",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 21000,
+    "belop": 2100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2100000,
+    "innfortDato": "2008-12-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
@@ -37,9 +50,13 @@
   },
   "navn": "JOHN FADUM EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993399531",
   "paategninger": [],

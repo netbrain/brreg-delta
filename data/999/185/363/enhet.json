@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999185363"
+    }
+  },
   "aktivitet": [
     "Eie og drive eiendommen Strandgaten 9, gnr.165, bnr. 16 i Bergen"
   ],
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 25000,
+    "belop": 25000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 25000000,
+    "innfortDato": "2012-11-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "992 36 650",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "STRANDGATEN 9 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999185363",
   "paategninger": [],

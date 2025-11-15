@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995842718"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av aksjer, eiendom og alt som hermed står i forbindelse.",
     "Selskapet kan videre delta i andre selskap gjennom aksjetegning eller",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1276596,
+    "belop": 1787234.4,
+    "fulltInnbetalt": true,
+    "innbetalt": 1787234.4,
+    "innfortDato": "2025-10-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
@@ -34,9 +47,13 @@
   },
   "navn": "FIRENOR INTERNATIONAL AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995842718",
   "paategninger": [],

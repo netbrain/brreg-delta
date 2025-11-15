@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999242456"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "info@denkvikkemurer.dk",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Enkeltmandsfirma",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ENK"
+  },
   "forretningsadresse": {
     "adresse": [
       "Fynsvej 1"
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "DEN KVIKKE MURER V/RIKKE ANDERSEN",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999242456",
   "paategninger": [],
@@ -32,5 +45,6 @@
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Danmark"
 }

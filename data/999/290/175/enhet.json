@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999290175"
+    }
+  },
   "aktivitet": [
     "Å eie aksjer eller andeler i andre selskaper og eiendommer og alt som",
     "står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3000,
+    "belop": 600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 600000,
+    "innfortDato": "2016-05-18",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Treningssentervirksomhet",
@@ -33,9 +46,13 @@
   },
   "navn": "BOLEYN HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999290175",
   "paategninger": [],

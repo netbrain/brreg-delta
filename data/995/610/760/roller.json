@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995610760/roller"
     }
   },
-  "organisasjonsnummer": "995610760",
   "rollegrupper": [
     {
       "roller": [
@@ -215,6 +214,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -241,6 +245,11 @@
             "kode": "MEDL"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -288,6 +297,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -302,141 +316,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2010-06-10",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1971-08-10",
-            "navn": {
-              "etternavn": "Bolstad",
-              "fornavn": "Bodil",
-              "mellomnavn": "Huus"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1978-05-27",
-            "navn": {
-              "etternavn": "Nesse",
-              "fornavn": "Knut Olav"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1965-05-06",
-            "navn": {
-              "etternavn": "Brurås",
-              "fornavn": "Terje"
-            }
-          },
-          "rekkefolge": 2,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1979-12-22",
-            "navn": {
-              "etternavn": "Solvi",
-              "fornavn": "Christine",
-              "mellomnavn": "Brurås"
-            }
-          },
-          "rekkefolge": 3,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1964-02-01",
-            "navn": {
-              "etternavn": "Eilertsen",
-              "fornavn": "Sissel",
-              "mellomnavn": "Sandvik"
-            }
-          },
-          "rekkefolge": 4,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/POHV"
-              }
-            },
-            "beskrivelse": "Prokura hver for seg",
-            "kode": "POHV"
-          }
-        }
-      ],
-      "sistEndret": "2023-06-23",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
       }
     },
     {

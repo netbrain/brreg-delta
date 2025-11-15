@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999515312"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg og utleie av anleggsmaskiner samt tjenesteyting og det som",
     "naturlig hører inn under dette."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 630,
+    "belop": 630000,
+    "fulltInnbetalt": true,
+    "innbetalt": 630000,
+    "innfortDato": "2015-08-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Engroshandel med maskiner og utstyr ellers",
@@ -31,9 +44,13 @@
   },
   "navn": "NETLANDSNES MASKINPARK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999515312",
   "paategninger": [],

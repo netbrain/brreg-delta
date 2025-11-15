@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999261698"
+    }
+  },
   "aktivitet": [
     "Eie, kjøpe, selge og forvalte aksjer og verdipapirer."
   ],
@@ -19,8 +24,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 388582,
+    "belop": 194291,
+    "fulltInnbetalt": true,
+    "innbetalt": 194291,
+    "innfortDato": "2024-01-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -28,9 +41,13 @@
   },
   "navn": "FREYER FORVALTNING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999261698",
   "paategninger": [],

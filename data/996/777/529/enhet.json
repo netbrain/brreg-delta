@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996777529"
+    }
+  },
   "aktivitet": [
     "Salg av personbiler, nye og brukte.",
     "Utleie av personbiler (uten fører)."
@@ -21,9 +26,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2011-04-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2025-05-14",
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "400 44 454",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "NOR-TRADE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "996777529",
   "paategninger": [],

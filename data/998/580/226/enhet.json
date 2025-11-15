@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998580226"
+    }
+  },
   "aktivitet": [
     "Salg av konsulenttjenester direkte og/eller indirekte relatert til",
     "bedriftsrådgivning, markedsføring, økonomistyring, programmering,",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 600000,
+    "innfortDato": "2020-09-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -37,9 +50,13 @@
   },
   "navn": "TERMINAL INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998580226",
   "paategninger": [],

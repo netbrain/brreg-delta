@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996684075"
+    }
+  },
   "aktivitet": [
     "Drift av lotteri knyttet til panteautomater i Norge. Dette omfatter",
     "innkjøp, installering og kontroll av nødvendige installasjoner knyttet",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1100000,
+    "belop": 1100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1100000,
+    "innfortDato": "2011-06-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Lotteri- og gamblingvirksomhet",
@@ -32,9 +45,13 @@
   },
   "navn": "NORSK PANTELOTTERI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "996684075",
   "paategninger": [],

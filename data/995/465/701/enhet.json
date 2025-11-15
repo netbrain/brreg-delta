@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995465701"
+    }
+  },
   "aktivitet": [
     "Utleie av fast eiendom."
   ],
@@ -22,8 +27,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 110000,
+    "fulltInnbetalt": true,
+    "innbetalt": 110000,
+    "innfortDato": "2012-12-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -31,9 +44,13 @@
   },
   "navn": "LEIRAVEIEN 16 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995465701",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999612210"
+    }
+  },
   "aktivitet": [
     "Grossistvirksomhet innen  solcelleanlegg og andre produkter/tjenester",
     "som naturlig hører sammen med dette."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 10000,
+    "belop": 33333.33,
+    "fulltInnbetalt": true,
+    "innbetalt": 33333.33,
+    "innfortDato": "2023-02-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "976 62 021",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "SOLAR SOLUTION AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999612210",
   "paategninger": [],

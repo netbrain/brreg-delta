@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999575013"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte formuesgjenstander og verdipapirer av hvilken som",
     "helst art."
@@ -21,8 +26,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 140000,
+    "fulltInnbetalt": true,
+    "innbetalt": 140000,
+    "innfortDato": "2013-01-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "959 22 341",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "ØSTENÅ INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999575013",
   "paategninger": [],

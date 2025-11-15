@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995823012"
+    }
+  },
   "aktivitet": [
     "Eierposisjoner i datterselskaper, herunder forvaltning av finansaktiva",
     "og fast eiendom"
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 120000,
+    "belop": 1200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1200000,
+    "innfortDato": "2010-08-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Teknisk prøving og analyse",
@@ -33,9 +46,13 @@
   },
   "navn": "XAFE HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995823012",
   "paategninger": [],

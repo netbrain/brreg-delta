@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993462101"
+    }
+  },
   "aktivitet": [
     "Investering i alle aktiva klasser, herunder i unoterte aksjer.",
     "Kjøp/salg/utvikling og utleie av eiendommer og andre kapitalprodukter.",
@@ -23,8 +28,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 100000,
+    "belop": 450000,
+    "fulltInnbetalt": true,
+    "innbetalt": 450000,
+    "innfortDato": "2011-12-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -32,9 +45,13 @@
   },
   "navn": "ANKER MANAGEMENT HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993462101",
   "paategninger": [],

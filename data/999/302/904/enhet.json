@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999302904"
+    }
+  },
   "aktivitet": [
     "Eie og drive fast eiendom, samt å delta som aksjonær i andre selskaper",
     "og hva dermed står i forbindelse."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50,
+    "belop": 52517,
+    "fulltInnbetalt": true,
+    "innbetalt": 52517,
+    "innfortDato": "2012-12-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "93024705",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "TVEIT EIENDOMSINVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999302904",
   "paategninger": [],

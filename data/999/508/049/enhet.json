@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999508049"
+    }
+  },
   "aktivitet": [
     "Investering i, aktiv forvaltning av og salg av verdipapirer og",
     "selskaper. Selskapet kan også tilby rådgivningstjenester."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 319580000,
+    "belop": 1278320,
+    "fulltInnbetalt": true,
+    "innbetalt": 1278320,
+    "innfortDato": "2020-12-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
@@ -33,9 +46,13 @@
   },
   "navn": "TELEMARK GROUP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999508049",
   "paategninger": [],

@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993865249/roller"
     }
   },
-  "organisasjonsnummer": "993865249",
   "rollegrupper": [
     {
       "roller": [
@@ -186,20 +185,41 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2009-04-21",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/825704922"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "REGNSKAP 4U AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "825704922"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
           }
         },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [
         {
           "enhet": {
             "_links": {
@@ -223,7 +243,7 @@
             "organisasjonsnummer": "930698423"
           },
           "fratraadt": false,
-          "rekkefolge": 0,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -235,7 +255,7 @@
           }
         }
       ],
-      "sistEndret": "2023-02-24",
+      "sistEndret": "2025-11-12",
       "type": {
         "_links": {
           "self": {

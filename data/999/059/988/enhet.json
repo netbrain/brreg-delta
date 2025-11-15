@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999059988"
+    }
+  },
   "aktivitet": [
     "Utleie og omsetting av egen eller leid fast eiendom."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 200,
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2025-11-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -30,9 +43,13 @@
   },
   "navn": "REM EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999059988",
   "paategninger": [],
@@ -48,8 +65,9 @@
   "stiftelsesdato": "2012-09-20",
   "underAvvikling": false,
   "underTvangsavviklingEllerTvangsopplosning": false,
-  "vedtektsdato": "2020-03-20",
+  "vedtektsdato": "2025-11-06",
   "vedtektsfestetFormaal": [
-    "Utleie og omsetting av egen eller leid fast eiendom."
+    "Utleie og omsetning av egen eller leid fast eiendom. Selskapet kan",
+    "også eie aksjer og andeler i andre selskap."
   ]
 }

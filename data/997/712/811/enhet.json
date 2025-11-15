@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997712811"
+    }
+  },
   "aktivitet": [
     "Virksomhet relatert til eie, utleie, utvikling og salg av fast",
     "eiendom, eie aksjer i andre selskaper samt alt som hermed står i",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2880,
+    "belop": 1497600,
+    "fulltInnbetalt": true,
+    "innbetalt": 1497600,
+    "innfortDato": "2021-12-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -32,9 +45,13 @@
   },
   "navn": "HOMME TOMTEUTVIKLING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997712811",
   "paategninger": [],

@@ -1,9 +1,19 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999514545"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "epostadresse": "info@aerzen.se",
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Östra Bangatan 20"
@@ -15,13 +25,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.aerzen.no",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "AERZEN SCANDINAVIA AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999514545",
   "paategninger": [],
@@ -37,6 +50,15 @@
   "telefon": "+46859441880",
   "underAvvikling": false,
   "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket",
   "vedtektsfestetFormaal": [
     "Utenlandsk foretak"
   ]

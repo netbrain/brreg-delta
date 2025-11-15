@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996742318"
+    }
+  },
   "aktivitet": [
     "Investeringsvirksomh, herunder investeringer i aksjer, obligasjoner,",
     "selskapsandeler, verdipapirer og fast eiendom, utlån eller annen",
@@ -29,8 +34,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 50000,
+    "belop": 60000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 60000000,
+    "innfortDato": "2017-12-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -38,9 +51,13 @@
   },
   "navn": "VEDAL INVESTOR AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "996742318",
   "paategninger": [],

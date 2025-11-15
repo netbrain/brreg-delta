@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998602300"
+    }
+  },
   "aktivitet": [
     "Drive erverv, kjøp og salg av faste eiendommer, utbygging og drift av",
     "faste eiendommer og anlegg og alt som står i forbindelse med dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 100,
+    "belop": 42000,
+    "fulltInnbetalt": true,
+    "innbetalt": 42000,
+    "innfortDato": "2020-01-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "996 91 891",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "ALLEY OOP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998602300",
   "paategninger": [],

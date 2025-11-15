@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999647251"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av andre selskaper, direkte og indirekte deltakelse i",
     "selskaper med lignende eller annet formål, låneopptak, garanti- og",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 114274,
+    "belop": 114274,
+    "fulltInnbetalt": true,
+    "innbetalt": 114274,
+    "innfortDato": "2017-05-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
@@ -37,9 +50,13 @@
   },
   "navn": "ITSL HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999647251",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999258867"
+    }
+  },
   "aktivitet": [
     "Selskapet skal kjøpe, selge og eie aksjer og eiendom. Selskapet skal",
     "også drive finansieringsvirksomhet ovenfor de samme selskapene."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30,
+    "belop": 270000,
+    "fulltInnbetalt": true,
+    "innbetalt": 270000,
+    "innfortDato": "2013-12-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Avvirkning",
@@ -34,9 +47,13 @@
   },
   "navn": "UNNEBERG HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999258867",
   "paategninger": [],

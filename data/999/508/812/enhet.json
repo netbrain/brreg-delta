@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999508812"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Västerberga Alle 32"
@@ -14,13 +24,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.armedia.se",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "AR MEDIA INTERNATIONAL AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999508812",
   "paategninger": [],
@@ -35,5 +48,14 @@
   "stiftelsesdato": "1990-01-03",
   "telefon": "+46855630680",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

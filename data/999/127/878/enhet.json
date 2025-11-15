@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999127878"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap med mulighet for å investere i",
     "ethvert formuesobjekt, herunder å gjøre seg interessert i andre",
@@ -23,8 +28,16 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "antallAksjer": 24000,
+    "belop": 2400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2400000,
+    "innfortDato": "2025-06-28",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre egeninvesteringsselskaper",
@@ -32,9 +45,13 @@
   },
   "navn": "HAREJSÅNÆRSAGT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999127878",
   "paategninger": [],

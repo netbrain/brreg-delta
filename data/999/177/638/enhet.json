@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999177638"
+    }
+  },
   "aktivitet": [
     "Utvikle, bygge, eie og drive produksjonsanlegg for vindkraft, samt",
     "produksjon og salg av elektrisk kraft og virksomhet som er forbundet",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 385839,
+    "belop": 38583900,
+    "fulltInnbetalt": true,
+    "innbetalt": 38583900,
+    "innfortDato": "2016-01-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vindkraft",
@@ -31,9 +44,13 @@
   },
   "navn": "HAMNEFJELL VINDKRAFT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999177638",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999203876"
+    }
+  },
   "aktivitet": [
     "Utvikling, salg og vedlikehold av dataprogramvare",
     "Investeringsvirksomhet. Investere i andre selskap."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 600,
+    "belop": 600000,
+    "fulltInnbetalt": true,
+    "innbetalt": 600000,
+    "innfortDato": "2012-11-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
@@ -30,9 +43,13 @@
   },
   "navn": "INVID AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999203876",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999575684"
+    }
+  },
   "aktivitet": [
     "Drift av campingplass og andre produkt/tjenester som naturlig hører",
     "sammen med dette. Delta i andre selskap med lignende virksomhet."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 45,
+    "belop": 45000,
+    "fulltInnbetalt": true,
+    "innbetalt": 45000,
+    "innfortDato": "2013-02-11",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Drift av campingplasser",
@@ -30,9 +43,13 @@
   },
   "navn": "STORVANNET NAF CAMPING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999575684",
   "paategninger": [],

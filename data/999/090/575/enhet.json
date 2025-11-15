@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999090575"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Private limited company",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "LTD"
+  },
   "forretningsadresse": {
     "adresse": [
       "R1 BIC Wearfield"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "IQ MANAGEMENT SYSTEMS LTD (IQMS)",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999090575",
   "paategninger": [],
@@ -32,5 +45,15 @@
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Storbritannia",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Crown Way",
+      "Maindy"
+    ],
+    "land": "Storbritannia",
+    "poststed": "Cardiff CF14 3UZ"
+  },
+  "utenlandskRegisterNavn": "Companies House"
 }

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999104118"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Limited",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "LTD"
+  },
   "forretningsadresse": {
     "adresse": [
       "19 Peel Road"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "ASTRAL INTERNATIONAL LIMITED",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999104118",
   "paategninger": [],
@@ -33,5 +46,16 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1997-05-12",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Man",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "PO Box 345",
+      "St George's Court",
+      "Upper Church Street"
+    ],
+    "land": "Man",
+    "poststed": "Douglas IM99 2QS"
+  },
+  "utenlandskRegisterNavn": "Companies Registry"
 }

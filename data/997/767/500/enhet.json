@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997767500"
+    }
+  },
   "aktivitet": [
     "Eie andre selskaper helt eller delevis. Selskapet skal",
     "også drifte andre selskaper og ta betalt for dette. Selskapet skal",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 1750000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1750000,
+    "innfortDato": "2021-09-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
@@ -37,9 +50,13 @@
   },
   "navn": "SOLY GROUP AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997767500",
   "paategninger": [],

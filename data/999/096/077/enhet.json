@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999096077"
+    }
+  },
   "aktivitet": [
     "Tannpleiertjenester, tjenester innen salg, økonomi, organisasjon og",
     "ledelse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 450,
+    "belop": 45000,
+    "fulltInnbetalt": true,
+    "innbetalt": 45000,
+    "innfortDato": "2013-03-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Andre helsetjenester ellers",
@@ -31,9 +44,13 @@
   },
   "navn": "NIPE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999096077",
   "paategninger": [],

@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993560170"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Gesellschaft mit beschränkter Häftung",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "GMBH"
+  },
   "forretningsadresse": {
     "adresse": [
       "Zeyerstr 16-24"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "RAYTHEON ANSCHÜTZ GMBH",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "993560170",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1972-06-06",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Deliusstrasse 22"
+    ],
+    "land": "Tyskland",
+    "poststed": "24114 Kiel"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Kiel"
 }

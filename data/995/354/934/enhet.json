@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995354934"
+    }
+  },
   "aktivitet": [
     "Generell tannlegevirksomhet, kjøp/salg, import, investeringer i fast",
     "eiendom, investeringer i aksjer, deltagelse i andre virksomheter og",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1520,
+    "belop": 152000,
+    "fulltInnbetalt": true,
+    "innbetalt": 152000,
+    "innfortDato": "2011-09-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Tannlegetjenester",
@@ -31,9 +44,13 @@
   },
   "navn": "RØDTVEDT TANNHELSESENTER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995354934",
   "paategninger": [],

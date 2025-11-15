@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996081680/roller"
     }
   },
-  "organisasjonsnummer": "996081680",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -102,54 +106,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/914549140"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "SYNEGA REGNSKAP AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "914549140"
-          },
-          "fratraadt": false,
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
-              }
-            },
-            "beskrivelse": "Regnskapsfører",
-            "kode": "REGN"
-          }
-        }
-      ],
-      "sistEndret": "2022-08-24",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
-          }
-        },
-        "beskrivelse": "Regnskapsfører",
-        "kode": "REGN"
       }
     }
   ]

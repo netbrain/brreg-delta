@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995583550/roller"
     }
   },
-  "organisasjonsnummer": "995583550",
   "rollegrupper": [
     {
       "roller": [
@@ -17,7 +16,7 @@
             "erDoed": false,
             "fodselsdato": "1980-09-02",
             "navn": {
-              "etternavn": "Bakanova",
+              "etternavn": "Bakkeli",
               "fornavn": "Iryna"
             }
           },
@@ -32,6 +31,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -42,7 +46,7 @@
             "erDoed": false,
             "fodselsdato": "1984-03-02",
             "navn": {
-              "etternavn": "Bakanov",
+              "etternavn": "Bakkeli",
               "fornavn": "Alexei"
             }
           },
@@ -57,6 +61,11 @@
             "kode": "VARA"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -71,41 +80,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1980-09-02",
-            "navn": {
-              "etternavn": "Bakanova",
-              "fornavn": "Iryna"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIGN"
-              }
-            },
-            "beskrivelse": "Signatur",
-            "kode": "SIGN"
-          }
-        }
-      ],
-      "sistEndret": "2010-06-16",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

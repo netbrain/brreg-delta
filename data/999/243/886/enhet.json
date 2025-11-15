@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999243886"
+    }
+  },
   "aktivitet": [
     "Tilby regnskapsføring, årsregnskap, rapportering, lønn, fakturering og",
     "rådgivning, samt annet som naturlig faller inn under dette for små og",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 199,
+    "belop": 59700,
+    "fulltInnbetalt": true,
+    "innbetalt": 59700,
+    "innfortDato": "2013-06-10",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "94 22 02 20",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "ACCOUNTING 4 YOU AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999243886",
   "paategninger": [],

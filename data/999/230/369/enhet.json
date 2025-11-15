@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999230369"
+    }
+  },
   "aktivitet": [
     "Fast eiendom, herunder å eie, drive og selge fast eiendom, samt annen",
     "virksomhet som naturlig faller inn under denne beskrivelsen."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3746377,
+    "belop": 3746377,
+    "fulltInnbetalt": true,
+    "innbetalt": 3746377,
+    "innfortDato": "2013-10-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90955715",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "STORENGVEIEN 8 KONTOR I AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999230369",
   "paategninger": [],

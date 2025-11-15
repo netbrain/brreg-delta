@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994249398"
+    }
+  },
   "aktivitet": [
     "Handel av finansielle instrumenter i kapitalmarkeder, herunder aksjer,",
     "derivater og kontrakter for differanse med mulighet for å handle med",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 2000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2000000,
+    "innfortDato": "2009-06-30",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Agenturhandel med bredt vareutvalg",
@@ -32,9 +45,13 @@
   },
   "navn": "BULK MARINE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "994249398",
   "paategninger": [],

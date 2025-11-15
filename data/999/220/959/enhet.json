@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999220959"
+    }
+  },
   "aktivitet": [
     "Oppføring og salg av boliger og næringsbygg, utleie av boliger og",
     "næringsbygg, andre finansaktive og dertil beslektede tjenester, samt",
@@ -21,9 +26,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 500000,
+    "innfortDato": "2024-07-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2025-08-21",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -31,9 +44,13 @@
   },
   "navn": "MESTERBYGG VESTFOLD AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999220959",
   "paategninger": [],

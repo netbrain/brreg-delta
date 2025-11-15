@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999221645"
+    }
+  },
   "aktivitet": [
     "Investering i alle former for noterte eller unoterte aksjer. Kjøp og",
     "utleie av fast eiendom. Kjøp, salg og tjenester knyttet til foto og",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 18000,
+    "belop": 180000,
+    "fulltInnbetalt": true,
+    "innbetalt": 180000,
+    "innfortDato": "2014-12-19",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "928 41 810",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "INVENIO INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999221645",
   "paategninger": [],

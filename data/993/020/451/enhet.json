@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993020451"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Corporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "CORP"
+  },
   "forretningsadresse": {
     "adresse": [
       "New Orchard Road Armonk"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "993020451",
   "paategninger": [],
@@ -33,5 +46,12 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1911-06-16",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [],
+    "land": "USA",
+    "poststed": "Philadelphia PA 19255"
+  },
+  "utenlandskRegisterNavn": "Department of the Treasury Internal Revenue Service"
 }

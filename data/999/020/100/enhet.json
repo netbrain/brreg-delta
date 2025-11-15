@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999020100"
+    }
+  },
   "aktivitet": [
     "Aksjeinvesteringer, kjøp, salg og utleie av",
     "eiendom, kjøp og salg av verdipapirer, samt deltagelse i andre",
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1200000,
+    "belop": 1200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1200000,
+    "innfortDato": "2012-10-17",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "404 32 600",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "SFP HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999020100",
   "paategninger": [],

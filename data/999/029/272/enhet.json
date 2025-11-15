@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999029272"
+    }
+  },
   "aktivitet": [
     "Lysarmaturdesign."
   ],
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 175,
+    "belop": 175000,
+    "fulltInnbetalt": true,
+    "innbetalt": 175000,
+    "innfortDato": "2012-10-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "452 50 746",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "TARJE SKJEFSTAD AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999029272",
   "paategninger": [],

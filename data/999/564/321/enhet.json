@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999564321"
+    }
+  },
   "aktivitet": [
     "Finansieringsvirksomhet, herunder forskuttering og sikring av",
     "felleskostnader overfor selskaper som forvaltes og/eller eies av",
@@ -25,8 +30,16 @@
     "beskrivelse": "Finansieringsforetak",
     "kode": "3600"
   },
+  "kapital": {
+    "antallAksjer": 116000,
+    "belop": 58000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 58000000,
+    "innfortDato": "2013-11-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "911 59 033",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "VESTBO FINANS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999564321",
   "paategninger": [],

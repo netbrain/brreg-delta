@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999312535"
+    }
+  },
   "aktivitet": [
     "Investeringer i eiendomsselskaper og virksomhet som henger naturlig",
     "sammen med dette."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 1020000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1020000,
+    "innfortDato": "2013-01-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "926 44 953",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "NORDRE AKER EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999312535",
   "paategninger": [],

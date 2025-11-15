@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998682932/roller"
     }
   },
-  "organisasjonsnummer": "998682932",
   "rollegrupper": [
     {
       "roller": [
@@ -67,6 +66,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
             "beskrivelse": "Representant for A-aksjonærene",
             "kode": "A-AK"
           }
@@ -105,32 +109,6 @@
       }
     },
     {
-      "roller": [],
-      "sistEndret": "2012-08-13",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
-      }
-    },
-    {
-      "roller": [],
-      "sistEndret": "2012-08-13",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/PROK"
-          }
-        },
-        "beskrivelse": "Prokura",
-        "kode": "PROK"
-      }
-    },
-    {
       "roller": [
         {
           "enhet": {
@@ -165,43 +143,9 @@
             "beskrivelse": "Regnskapsfører",
             "kode": "REGN"
           }
-        },
-        {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926732072"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "ACCOUNT GROUP AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "926732072"
-          },
-          "fratraadt": false,
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
-              }
-            },
-            "beskrivelse": "Regnskapsfører",
-            "kode": "REGN"
-          }
         }
       ],
-      "sistEndret": "2025-09-17",
+      "sistEndret": "2025-11-10",
       "type": {
         "_links": {
           "self": {

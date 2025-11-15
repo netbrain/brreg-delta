@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994525492/roller"
     }
   },
-  "organisasjonsnummer": "994525492",
   "rollegrupper": [
     {
       "roller": [
@@ -32,6 +31,11 @@
             "kode": "LEDE"
           },
           "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/AREP"
+              }
+            },
             "beskrivelse": "Representant for de ansatte",
             "kode": "AREP"
           }
@@ -131,63 +135,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1978-07-21",
-            "navn": {
-              "etternavn": "Sand",
-              "fornavn": "Thom Patrick"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIFE"
-              }
-            },
-            "beskrivelse": "Signatur i fellesskap",
-            "kode": "SIFE"
-          }
-        },
-        {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1964-04-19",
-            "navn": {
-              "etternavn": "Gabrielsen",
-              "fornavn": "Anne Lise",
-              "mellomnavn": "Merkesdal Karlsen"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIFE"
-              }
-            },
-            "beskrivelse": "Signatur i fellesskap",
-            "kode": "SIFE"
-          }
-        }
-      ],
-      "sistEndret": "2021-04-10",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

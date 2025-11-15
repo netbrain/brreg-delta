@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999282539"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap, herunder investering i aksjer, andeler i selskap",
     "etter selskapsloven, obligasjoner, fast eiendom, og annet som står i",
@@ -28,8 +33,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1572,
+    "belop": 487320,
+    "fulltInnbetalt": true,
+    "innbetalt": 487320,
+    "innfortDato": "2020-08-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av andre metallvarer ikke nevnt annet sted",
@@ -37,9 +50,13 @@
   },
   "navn": "OLAISEN GRUPPEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999282539",
   "paategninger": [],

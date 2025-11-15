@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996069044"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak"
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Enkeltmandsfirma",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ENK"
+  },
   "forretningsadresse": {
     "adresse": [
       "Havenvej 7, Tejn"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "TEJN SMEDEFORRETNING",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "996069044",
   "paategninger": [],
@@ -32,5 +45,14 @@
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Danmark",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Langelinie Allé 17"
+    ],
+    "land": "Danmark",
+    "poststed": "2100 København Ø"
+  },
+  "utenlandskRegisterNavn": "Erhvervsstyrelsen"
 }

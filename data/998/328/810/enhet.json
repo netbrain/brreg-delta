@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998328810"
+    }
+  },
   "aktivitet": [
     "Eie og forvalte aksjer, obligasjoner, andre verdipapirer og deltagelse",
     "i andre selskaper, samt hva som står i forbindelse hermed."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 80000,
+    "fulltInnbetalt": true,
+    "innbetalt": 80000,
+    "innfortDato": "2012-12-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
@@ -33,9 +46,13 @@
   },
   "navn": "V HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998328810",
   "paategninger": [],

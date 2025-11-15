@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999639968"
+    }
+  },
   "aktivitet": [
     "Næringsdrift, i hovedsak kjøp og salg av fast eiendom og alt hva",
     "herved er forbundet, investeringsvirksomhet og deltakelse i andre",
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 26000,
+    "belop": 50180,
+    "fulltInnbetalt": true,
+    "innbetalt": 50180,
+    "innfortDato": "2020-02-06",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "98829139",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "BYLAND AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999639968",
   "paategninger": [],

@@ -7,18 +7,52 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/994081276/roller"
     }
   },
-  "organisasjonsnummer": "994081276",
   "rollegrupper": [
     {
       "roller": [
         {
-          "fratraadt": true,
+          "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1990-07-20",
+            "fodselsdato": "1950-10-13",
             "navn": {
-              "etternavn": "Larsen",
-              "fornavn": "Kim"
+              "etternavn": "Fostervoll",
+              "fornavn": "Odd"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-14",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1950-10-13",
+            "navn": {
+              "etternavn": "Fostervoll",
+              "fornavn": "Odd"
             }
           },
           "rekkefolge": 0,
@@ -36,34 +70,13 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1950-10-13",
-            "navn": {
-              "etternavn": "Fostervoll",
-              "fornavn": "Odd"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
-              }
-            },
-            "beskrivelse": "Nestleder",
-            "kode": "NEST"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
             "fodselsdato": "1999-11-04",
             "navn": {
               "etternavn": "Moe",
               "fornavn": "Ingerid"
             }
           },
-          "rekkefolge": 2,
+          "rekkefolge": 1,
           "type": {
             "_links": {
               "self": {
@@ -84,7 +97,7 @@
               "fornavn": "Ellen"
             }
           },
-          "rekkefolge": 3,
+          "rekkefolge": 2,
           "type": {
             "_links": {
               "self": {
@@ -105,7 +118,7 @@
               "fornavn": "Ove"
             }
           },
-          "rekkefolge": 4,
+          "rekkefolge": 3,
           "type": {
             "_links": {
               "self": {
@@ -126,7 +139,7 @@
               "fornavn": "Sissel Rita"
             }
           },
-          "rekkefolge": 5,
+          "rekkefolge": 4,
           "type": {
             "_links": {
               "self": {
@@ -138,7 +151,7 @@
           }
         }
       ],
-      "sistEndret": "2025-08-24",
+      "sistEndret": "2025-11-14",
       "type": {
         "_links": {
           "self": {
@@ -147,64 +160,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1963-03-26",
-            "navn": {
-              "etternavn": "Neteland",
-              "fornavn": "Eva",
-              "mellomnavn": "Haugen"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1995-02-02",
-            "navn": {
-              "etternavn": "Skalstad",
-              "fornavn": "Kjetil André",
-              "mellomnavn": "Holmen"
-            }
-          },
-          "rekkefolge": 1,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/SIHV"
-              }
-            },
-            "beskrivelse": "Signatur hver for seg",
-            "kode": "SIHV"
-          }
-        }
-      ],
-      "sistEndret": "2024-09-11",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/SIGN"
-          }
-        },
-        "beskrivelse": "Signatur",
-        "kode": "SIGN"
       }
     }
   ]

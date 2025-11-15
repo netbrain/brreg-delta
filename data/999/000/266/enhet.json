@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999000266"
+    }
+  },
   "aktivitet": [
     "Investering i aksjer og eiendom samt hva som herved står i",
     "forbindelse."
@@ -21,8 +26,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 65,
+    "belop": 65000,
+    "fulltInnbetalt": true,
+    "innbetalt": 65000,
+    "innfortDato": "2012-10-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "90 05 39 47",
   "naeringskode1": {
@@ -31,9 +44,13 @@
   },
   "navn": "GIRON HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999000266",
   "paategninger": [],

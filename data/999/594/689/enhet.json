@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999594689"
+    }
+  },
   "aktivitet": [
     "Hav- og kystfiske med egne fartøy, herunder deltakelse i andre",
     "selskaper."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 400,
+    "belop": 400000,
+    "fulltInnbetalt": true,
+    "innbetalt": 400000,
+    "innfortDato": "2013-01-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
@@ -31,9 +44,13 @@
   },
   "navn": "LANGNESVÆRING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999594689",
   "paategninger": [],

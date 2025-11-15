@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997466535"
+    }
+  },
   "aktivitet": [
     "Kjøp, utvikling og salg av eiendom, finansaktiva, aksjer og",
     "rettigheter til eiendom, finansaktiva og aksjer, og alt som står i",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 61000000,
+    "belop": 61000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 61000000,
+    "innfortDato": "2013-09-05",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -34,9 +47,13 @@
   },
   "navn": "INEO EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997466535",
   "paategninger": [],

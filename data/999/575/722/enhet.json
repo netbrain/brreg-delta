@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999575722"
+    }
+  },
   "aktivitet": [
     "Utvikling, forvaltning av fast eiendom samt utleie av leiligheter og",
     "forretningslokale."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 300,
+    "belop": 900000,
+    "fulltInnbetalt": true,
+    "innbetalt": 900000,
+    "innfortDato": "2013-01-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "915 69 420",
   "naeringskode1": {
@@ -35,9 +48,13 @@
   },
   "navn": "BALCHENGAARDEN AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999575722",
   "paategninger": [],

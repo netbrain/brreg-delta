@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999072046"
+    }
+  },
   "aktivitet": [
     "Kjøp, salg, eierskap og utvikling av fast eiendom, herunder deltagelse",
     "i andre selskaper og alt som står i forbindelse med det."
@@ -26,8 +31,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 128000,
+    "belop": 1408000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1408000,
+    "innfortDato": "2018-12-04",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "240 28 000",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "FRØYA INDUSTRIEIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999072046",
   "paategninger": [],

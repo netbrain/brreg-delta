@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999336744"
+    }
+  },
   "aktivitet": [
     "Kurs, opplevelsesvirksomhet, skjøtselsarbeid, kulturlandskapsarbeider,",
     "og annet som står i tilknytning til dette."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 250000,
+    "fulltInnbetalt": true,
+    "innbetalt": 250000,
+    "innfortDato": "2013-01-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "955 57 920",
   "naeringskode1": {
@@ -34,9 +47,13 @@
   },
   "navn": "KULTURLANDSKAPERNE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999336744",
   "paategninger": [],

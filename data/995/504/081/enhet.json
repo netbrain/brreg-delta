@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995504081"
+    }
+  },
   "aktivitet": [
     "Industriell produksjon, konsulentvirksomhet, eie fast eiendom, samt",
     "delta i andre selskaper."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1100000,
+    "innfortDato": "2010-11-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av ovner og permanente varmeapparater til bruk i husholdninger",
@@ -32,9 +45,13 @@
   },
   "navn": "C H EVENSEN INDUSTRIOVNER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "995504081",
   "paategninger": [],

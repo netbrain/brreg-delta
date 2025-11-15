@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999167608"
+    }
+  },
   "aktivitet": [
     "Eiendomsforvaltning og alt som har tilknytning til dette, dessuten ved",
     "aksjer eller på annen måte å investere i annen virksomhet."
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 189000,
+    "fulltInnbetalt": true,
+    "innbetalt": 189000,
+    "innfortDato": "2012-11-26",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "415 60 070",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "STRYKERVEIEN 24 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999167608",
   "paategninger": [],

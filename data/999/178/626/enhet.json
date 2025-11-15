@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999178626"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av eiendom. Herunder også kjøp av aksjer og andeler i",
     "andre selskap."
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 40000,
+    "belop": 3399990,
+    "fulltInnbetalt": true,
+    "innbetalt": 3399990,
+    "innfortDato": "2015-11-12",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "952 16 191",
   "naeringskode1": {
@@ -30,9 +43,13 @@
   },
   "navn": "IQI PROSJEKT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999178626",
   "paategninger": [],

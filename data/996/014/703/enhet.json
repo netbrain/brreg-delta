@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996014703"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Corporation",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "CORP"
+  },
   "forretningsadresse": {
     "adresse": [
       "15 Mountain View Road"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "FEDERAL INSURANCE COMPANY",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "996014703",
   "paategninger": [],
@@ -33,5 +46,15 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1990-03-02",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "USA",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "302 West Washington Street",
+      "Room E018"
+    ],
+    "land": "USA",
+    "poststed": "Indianapolis, IN 46204"
+  },
+  "utenlandskRegisterNavn": "Indiana Secretary of State"
 }

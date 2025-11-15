@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999509037"
+    }
+  },
   "aktivitet": [
     "Drive fiskerivirksomhet, eie og forvalte verdipapirer og fast eiendom,",
     "drive handel og tjenesteytende virksomhet og produksjon samt alt hva",
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2500,
+    "belop": 2905000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2905000,
+    "innfortDato": "2023-12-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
@@ -29,9 +42,13 @@
   },
   "navn": "EIDESVIK FISKERI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999509037",
   "paategninger": [],

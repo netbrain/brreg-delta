@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999065767"
+    }
+  },
   "aktivitet": [
     "Utvikling, kjøp, salg, leie og utleie av fast eiendom,"
   ],
@@ -19,9 +24,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2012-10-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2025-04-03",
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -29,9 +42,13 @@
   },
   "navn": "LENTUS EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999065767",
   "paategninger": [],

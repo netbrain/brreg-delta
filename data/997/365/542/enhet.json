@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997365542"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er selv, gjennom hel- eller deleide selskaper",
     "eller ved samarbeid med andre virksomheter, å eie og drive fast",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 500,
+    "belop": 486000,
+    "fulltInnbetalt": true,
+    "innbetalt": 486000,
+    "innfortDato": "2011-09-24",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Produksjon av karosserier og tilhengere",
@@ -34,9 +47,13 @@
   },
   "navn": "VALSTADSVINGEN EIENDOM AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997365542",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997737032"
+    }
+  },
   "aktivitet": [
     "Investering i andre selskap, eiendom, utførelse av konsulenttjenester",
     "og annen tjenesteyting, samt hva ellers står i forbindelse."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 100000,
+    "fulltInnbetalt": true,
+    "innbetalt": 100000,
+    "innfortDato": "2012-01-02",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "48003162",
   "naeringskode1": {
@@ -32,19 +45,21 @@
   },
   "navn": "JAREK INVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997737032",
   "paategninger": [],
   "registreringsdatoEnhetsregisteret": "2012-01-02",
   "registreringsdatoForetaksregisteret": "2012-01-02",
-  "registreringsdatoMerverdiavgiftsregisteret": "2014-01-01",
-  "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2015-02-18",
   "registrertIForetaksregisteret": true,
   "registrertIFrivillighetsregisteret": false,
-  "registrertIMvaregisteret": true,
+  "registrertIMvaregisteret": false,
   "registrertIPartiregisteret": false,
   "registrertIStiftelsesregisteret": false,
   "respons_klasse": "Enhet",

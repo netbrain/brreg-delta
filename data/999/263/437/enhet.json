@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999263437"
+    }
+  },
   "aktivitet": [
     "Foredling av sand og videresalg av sand."
   ],
@@ -20,8 +25,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 7,
+    "belop": 70000,
+    "fulltInnbetalt": true,
+    "innbetalt": 70000,
+    "innfortDato": "2013-01-16",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvinning fra grus- og sandtak, og utvinning av leire og kaolin",
@@ -29,9 +42,13 @@
   },
   "navn": "MODALEN SANDTAK AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999263437",
   "paategninger": [],

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999666965"
+    }
+  },
   "aktivitet": [
     "Drive helsesenter, helsetjenester, salg samt deltagelse i selskaper av",
     "samme eller annen art gjennom aksjetegning eller på annen måte. Videre",
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 550,
+    "belop": 550000,
+    "fulltInnbetalt": true,
+    "innbetalt": 550000,
+    "innfortDato": "2016-03-29",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Allmennlegetjenester",
@@ -34,9 +47,13 @@
   },
   "navn": "INNHERRED HELSEHUS AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999666965",
   "paategninger": [],

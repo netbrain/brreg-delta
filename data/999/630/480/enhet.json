@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999630480"
+    }
+  },
   "aktivitet": [
     "Investering i aksjeselskaper Formidling av person og skadeforsikringer",
     "til private og næringslivet Kjøp og salg av fast eiendom."
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 302,
+    "belop": 30200,
+    "fulltInnbetalt": true,
+    "innbetalt": 30200,
+    "innfortDato": "2024-10-08",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
@@ -31,9 +44,13 @@
   },
   "navn": "JI HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999630480",
   "paategninger": [],

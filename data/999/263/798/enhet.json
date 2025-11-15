@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999263798"
+    }
+  },
   "aktivitet": [
     "Tilby kraft til konkurransedyktige betingelser til kunder i og utenfor",
     "eget konsesjonsområde. Selskapet skal drives på forretningsmessig",
@@ -25,8 +30,16 @@
     "beskrivelse": "Kommunalt eide aksjeselskaper mv.",
     "kode": "1520"
   },
+  "kapital": {
+    "antallAksjer": 10,
+    "belop": 1000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1000000,
+    "innfortDato": "2020-01-20",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Handel med elektrisitet",
@@ -38,9 +51,13 @@
   },
   "navn": "NOTODDEN ENERGI AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999263798",
   "paategninger": [],

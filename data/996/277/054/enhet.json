@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996277054"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Enskild näringsidkare",
+    "beskrivelseBokmaal": "Enkeltpersonforetak",
+    "kode": "ENSKILD"
+  },
   "forretningsadresse": {
     "adresse": [
       "c/o Jansic",
@@ -14,13 +24,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "NV BYGG \u0026 ENTREPRENAD",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "996277054",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "2010-10-18",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

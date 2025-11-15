@@ -7,7 +7,6 @@
       "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993861715/roller"
     }
   },
-  "organisasjonsnummer": "993861715",
   "rollegrupper": [
     {
       "roller": [
@@ -235,9 +234,30 @@
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1976-12-30",
+            "navn": {
+              "etternavn": "Madsen",
+              "fornavn": "Martin"
+            }
+          },
+          "rekkefolge": 9,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-01-30",
+      "sistEndret": "2025-11-15",
       "type": {
         "_links": {
           "self": {
@@ -246,6 +266,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/937195281"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "AS STETTE DATA"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "937195281"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-15",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

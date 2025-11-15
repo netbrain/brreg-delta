@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995753766"
+    }
+  },
   "aktivitet": [
     "Utenlandsk foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Allment aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Braunstrabe 7"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "VNG- VERBUNDNETZ GAS AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "995753766",
   "paategninger": [],
@@ -33,5 +46,14 @@
   "respons_klasse": "Enhet",
   "stiftelsesdato": "1990-06-29",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Bernhard-Göring-Str 64"
+    ],
+    "land": "Tyskland",
+    "poststed": "04275 Leipzig"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Leipzig"
 }

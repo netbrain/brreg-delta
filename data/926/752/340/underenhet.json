@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974774909"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926752340"
+    }
+  },
   "antallAnsatte": 6,
   "beliggenhetsadresse": {
     "adresse": [
@@ -13,7 +21,6 @@
     "poststed": "MÅLØY"
   },
   "harRegistrertAntallAnsatte": true,
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Sykepleietjenester og andre helsetjenester i hjemmet",
     "kode": "86.941"
@@ -26,12 +33,16 @@
     "beskrivelse": "Praktisk bistand i hjemmet",
     "kode": "88.101"
   },
-  "navn": "KINN TILDELING MÅLØY",
+  "navn": "MÅLØY TILDELINGSKONTOR",
   "oppstartsdato": "2021-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926752340",
   "overordnetEnhet": "974774909",

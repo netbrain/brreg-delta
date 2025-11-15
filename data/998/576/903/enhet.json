@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998576903"
+    }
+  },
   "aktivitet": [
     "Selskapets virksomhet er investering i aksjer og andre eiendeler i",
     "andre selskaper og foretak, samt all annen virksomhet som hermed står",
@@ -26,8 +31,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 420,
+    "belop": 42000,
+    "fulltInnbetalt": true,
+    "innbetalt": 42000,
+    "innfortDato": "2012-07-03",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "970 83 600",
   "naeringskode1": {
@@ -36,9 +49,13 @@
   },
   "navn": "GRØNVOLD HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998576903",
   "paategninger": [],

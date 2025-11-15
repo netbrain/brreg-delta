@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993567078"
+    }
+  },
   "aktivitet": [
     "Drive boligfinansiering innenfor 75 % av takst. Utlånsvirksomheten",
     "finansieres gjennom utstedelse av fortrinnsberettigede obligasjoner."
@@ -23,8 +28,16 @@
     "beskrivelse": "Kredittforetak",
     "kode": "3500"
   },
+  "kapital": {
+    "antallAksjer": 150000,
+    "belop": 525000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 525000000,
+    "innfortDato": "2020-09-15",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "91784403",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "FANA SPAREBANK BOLIGKREDITT AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993567078",
   "paategninger": [],

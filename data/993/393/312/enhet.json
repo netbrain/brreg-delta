@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993393312"
+    }
+  },
   "aktivitet": [
     "Kjøp, utvikling, utleie og salg av fast eiendom og annen relatert",
     "virksomhet, herunder deltakelse i andre virksomheter."
@@ -18,8 +23,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 2500,
+    "belop": 2500000,
+    "fulltInnbetalt": true,
+    "innbetalt": 2500000,
+    "innfortDato": "2008-12-23",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -27,9 +40,13 @@
   },
   "navn": "SALMAR-TUNET AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "993393312",
   "paategninger": [],

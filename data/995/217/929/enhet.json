@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995217929"
+    }
+  },
   "aktivitet": [
     "Å oppføre, administrere og leie ut bygningen på eiendommen gnr 21, bnr",
     "38, 49 og 199 i Råde kommune, enten gjennom stiftelsen eller gjennom",
@@ -26,8 +31,15 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "belop": 200000,
+    "fulltInnbetalt": true,
+    "innbetalt": 200000,
+    "innfortDato": "2010-03-10",
+    "type": "Grunnkapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -35,9 +47,13 @@
   },
   "navn": "STIFTELSEN NYE OVEN LEIR",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/STI"
+      }
+    },
     "beskrivelse": "Stiftelse",
-    "kode": "STI",
-    "links": []
+    "kode": "STI"
   },
   "organisasjonsnummer": "995217929",
   "paategninger": [],

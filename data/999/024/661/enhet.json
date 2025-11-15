@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999024661"
+    }
+  },
   "aktivitet": [
     "Omsetning av frimerker, mynter og andre samleobjekter, detalj og",
     "engros, og hva hermed står i forbindelse, herunder å delta i andre",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 1030000,
+    "fulltInnbetalt": true,
+    "innbetalt": 1030000,
+    "innfortDato": "2013-05-07",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med brukte varer",
@@ -32,9 +45,13 @@
   },
   "navn": "SKANFIL FOR SAMLERE AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999024661",
   "paategninger": [],

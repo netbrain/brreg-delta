@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/996767272"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Aktiengesellschaft",
+    "beskrivelseBokmaal": "Allment aksjeselskap",
+    "kode": "AG"
+  },
   "forretningsadresse": {
     "adresse": [
       "Rheinmetall Platz 1"
@@ -13,13 +23,16 @@
   },
   "harRegistrertAntallAnsatte": false,
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "RHEINMETALL AG",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "996767272",
   "paategninger": [],
@@ -34,5 +47,14 @@
   "stiftelsesdato": "1889-04-13",
   "telefon": "+492114734358",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Tyskland",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Werdener Str. 1"
+    ],
+    "land": "Tyskland",
+    "poststed": "40227 Düsseldorf"
+  },
+  "utenlandskRegisterNavn": "Amtsgericht Düsseldorf"
 }

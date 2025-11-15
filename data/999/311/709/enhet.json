@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999311709"
+    }
+  },
   "aktivitet": [
     "Tømrer, bygg og anlegg, tilbygg, nyanlegg, restaurering,",
     "murervirksomhet, betong, håndverkstjenester, konsulenttjenester, kjøp,",
@@ -22,8 +27,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 360,
+    "belop": 180000,
+    "fulltInnbetalt": true,
+    "innbetalt": 180000,
+    "innfortDato": "2015-03-25",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "977 91 045",
   "naeringskode1": {
@@ -32,9 +45,13 @@
   },
   "navn": "INNLANDET TRE \u0026 BETONG AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999311709",
   "paategninger": [],

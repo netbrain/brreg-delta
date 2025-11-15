@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998994705"
+    }
+  },
   "aktivitet": [
     "Kjøp og salg av aksjer, aksjefond og andre",
     "finansielle instrumenter og hva herved står i forbindelse."
@@ -24,8 +29,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 4200,
+    "belop": 42000,
+    "fulltInnbetalt": true,
+    "innbetalt": 42000,
+    "innfortDato": "2012-10-13",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
@@ -33,9 +46,13 @@
   },
   "navn": "GULLREGNINVEST AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "998994705",
   "paategninger": [],

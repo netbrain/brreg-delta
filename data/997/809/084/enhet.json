@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997809084"
+    }
+  },
   "aktivitet": [
     "Investeringsselskap med fokus på noterte og unoterte aksjer,",
     "aksjefond, rentefond, fast eiendom og annet med tilknytning til dette."
@@ -25,8 +30,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 1000,
+    "belop": 110000,
+    "fulltInnbetalt": true,
+    "innbetalt": 110000,
+    "innfortDato": "2012-01-09",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Tannlegetjenester",
@@ -34,9 +47,13 @@
   },
   "navn": "POLDER HOLDING AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997809084",
   "paategninger": [],

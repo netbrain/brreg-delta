@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997721934"
+    }
+  },
   "aktivitet": [
     "Salg av juridisk tjenesteyting/advokatvirksomhet, inkasso,",
     "eiendomsmegling, eiendomsinvestering samt likartet virksomhet."
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 3440,
+    "belop": 344000,
+    "fulltInnbetalt": true,
+    "innbetalt": 344000,
+    "innfortDato": "2021-08-31",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
@@ -32,9 +45,13 @@
   },
   "navn": "ADVOKATFIRMAET FRØY AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "997721934",
   "paategninger": [],

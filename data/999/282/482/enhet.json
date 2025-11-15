@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999282482"
+    }
+  },
   "aktivitet": [
     "Forvalte de egenkapitalbevis den ble tilført ved opprettelsen og",
     "senere, utøve et langsiktig eierskap i Sparebanken Sør og for øvrig",
@@ -22,8 +27,15 @@
     "beskrivelse": "Øvrige finansielle foretak unntatt forsikring",
     "kode": "4900"
   },
+  "kapital": {
+    "belop": 306000000,
+    "fulltInnbetalt": true,
+    "innbetalt": 306000000,
+    "innfortDato": "2012-12-21",
+    "type": "Grunnkapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Finansstiftelser",
@@ -31,9 +43,13 @@
   },
   "navn": "SPAREBANKSTIFTELSEN SPAREBANKEN SØR",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/STI"
+      }
+    },
     "beskrivelse": "Stiftelse",
-    "kode": "STI",
-    "links": []
+    "kode": "STI"
   },
   "organisasjonsnummer": "999282482",
   "paategninger": [],

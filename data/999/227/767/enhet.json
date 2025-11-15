@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999227767"
+    }
+  },
   "aktivitet": [
     "Å eie, drive, utvikle og selge",
     "boligprosjekter på gnr. 129, bnr. 38 (Malerhaugveien 20) i Oslo",
@@ -23,8 +28,16 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 52255,
+    "belop": 104510,
+    "fulltInnbetalt": true,
+    "innbetalt": 104510,
+    "innfortDato": "2022-11-21",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "naeringskode1": {
     "beskrivelse": "Utvikling og salg av byggeprosjekter",
@@ -32,9 +45,13 @@
   },
   "navn": "MALERHAUGVEIEN 20 AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999227767",
   "paategninger": [],

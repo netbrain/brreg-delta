@@ -1,8 +1,18 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999654215"
+    }
+  },
   "aktivitet": [
     "Utenlandsk enhet/foretak."
   ],
   "erIKonsern": false,
+  "foretaksformIHjemlandet": {
+    "beskrivelse": "Privata Aktiebolag",
+    "beskrivelseBokmaal": "Aksjeselskap",
+    "kode": "AB"
+  },
   "forretningsadresse": {
     "adresse": [
       "Gustavsviksvägen 7"
@@ -14,13 +24,16 @@
   "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.maetcenter.com",
   "konkurs": false,
-  "links": [],
   "maalform": "Bokmål",
   "navn": "SVENSKA MÄTCENTER AB",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/UTLA"
+      }
+    },
     "beskrivelse": "Utenlandsk enhet",
-    "kode": "UTLA",
-    "links": []
+    "kode": "UTLA"
   },
   "organisasjonsnummer": "999654215",
   "paategninger": [],
@@ -35,5 +48,14 @@
   "stiftelsesdato": "1995-04-06",
   "telefon": "+4619-100661",
   "underAvvikling": false,
-  "underTvangsavviklingEllerTvangsopplosning": false
+  "underTvangsavviklingEllerTvangsopplosning": false,
+  "underlagtLovgivningLand": "Sverige",
+  "utenlandskRegisterAdresse": {
+    "adresse": [
+      "Stuvarvägen 21"
+    ],
+    "land": "Sverige",
+    "poststed": "851 81 SUNDSVALL"
+  },
+  "utenlandskRegisterNavn": "Bolagsverket"
 }

@@ -1,4 +1,9 @@
 {
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999057853"
+    }
+  },
   "aktivitet": [
     "Malerarbeid samt vedlikehold, rengjøring av bygninger samt tjenester",
     "som naturlig hører til dette."
@@ -22,9 +27,17 @@
     "beskrivelse": "Private aksjeselskaper mv.",
     "kode": "2100"
   },
+  "kapital": {
+    "antallAksjer": 30000,
+    "belop": 30000,
+    "fulltInnbetalt": true,
+    "innbetalt": 30000,
+    "innfortDato": "2012-10-27",
+    "type": "Aksjekapital",
+    "valuta": "NOK"
+  },
   "konkurs": true,
   "konkursdato": "2025-10-17",
-  "links": [],
   "maalform": "Bokmål",
   "mobil": "456 90 456",
   "naeringskode1": {
@@ -33,9 +46,13 @@
   },
   "navn": "ROMERIKE MALER AS",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+      }
+    },
     "beskrivelse": "Aksjeselskap",
-    "kode": "AS",
-    "links": []
+    "kode": "AS"
   },
   "organisasjonsnummer": "999057853",
   "paategninger": [],
