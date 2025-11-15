@@ -98,8 +98,8 @@ jobs:
             echo "  Max duration: ${{ inputs.max-duration }} minutes"
           else
             # Scheduled run - use defaults with 3-hour limit
-            FLAGS="$FLAGS -rate-limit 20.0 -rate-burst 40 -max-duration 180"
-            echo "Running with default configuration (20 req/s, burst 40, 3-hour limit)"
+            FLAGS="$FLAGS -rate-limit 40.0 -rate-burst 60 -max-duration 180"
+            echo "Running with default configuration (40 req/s, burst 60, 3-hour limit)"
           fi
 
           go run . $FLAGS
