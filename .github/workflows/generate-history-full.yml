@@ -2,6 +2,12 @@ name: Generate All Entity History Pages (Full Rebuild)
 
 on:
   workflow_dispatch:
+    inputs:
+      clean_slate:
+        description: 'Delete all existing content and rebuild from scratch'
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: brreg-data-workflows
@@ -104,11 +110,35 @@ jobs:
           docker-images: true
           swap-storage: true
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
+      - name: Setup gh-pages branch
+        run: |
+          if [ "${{ inputs.clean_slate }}" = "true" ]; then
+            echo "Clean slate mode: Recreating gh-pages branch from scratch"
+
+            # Create fresh gh-pages directory
+            mkdir -p gh-pages
+            cd gh-pages
+            git init
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            # Create .nojekyll file
+            touch .nojekyll
+
+            # Set up remote
+            git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+            # Create initial commit
+            git add .nojekyll
+            git commit -m "Initialize gh-pages (clean slate)"
+
+            # Force push to recreate branch
+            git push -f origin HEAD:gh-pages
+          else
+            echo "Incremental mode: Checking out existing gh-pages branch"
+            git clone --single-branch --branch gh-pages \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
+          fi
 
       - name: Download and merge shard artifacts
         run: |
