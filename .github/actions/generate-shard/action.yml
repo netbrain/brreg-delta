@@ -76,6 +76,6 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: shard-${{ inputs.shard }}
-        path: output/${{ inputs.shard }}
+        path: output/
         retention-days: 1
         if-no-files-found: ignore
