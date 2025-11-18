@@ -14,10 +14,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1984-12-20",
+            "fodselsdato": "1987-12-20",
             "navn": {
-              "etternavn": "Høyland",
-              "fornavn": "Gaute"
+              "etternavn": "Ollendorff",
+              "fornavn": "Knut Harald"
             }
           },
           "rekkefolge": 0,
@@ -29,16 +29,26 @@
             },
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
           }
         },
         {
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1985-08-13",
+            "fodselsdato": "1983-03-07",
             "navn": {
-              "etternavn": "Olstad",
-              "fornavn": "Kjell Kristian"
+              "etternavn": "Gregersen",
+              "fornavn": "Anders",
+              "mellomnavn": "Teigen"
             }
           },
           "rekkefolge": 1,
@@ -56,11 +66,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1983-03-07",
+            "fodselsdato": "1973-11-04",
             "navn": {
-              "etternavn": "Gregersen",
-              "fornavn": "Anders",
-              "mellomnavn": "Teigen"
+              "etternavn": "Foss",
+              "fornavn": "Stein Arne"
             }
           },
           "rekkefolge": 2,
@@ -72,31 +81,19 @@
             },
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
-          }
-        },
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1987-12-20",
-            "navn": {
-              "etternavn": "Ollendorff",
-              "fornavn": "Knut Harald"
-            }
           },
-          "rekkefolge": 3,
-          "type": {
+          "valgtAv": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
               }
             },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
           }
         }
       ],
-      "sistEndret": "2025-06-17",
+      "sistEndret": "2025-11-18",
       "type": {
         "_links": {
           "self": {
@@ -105,6 +102,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993606650"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "BDO AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "993606650"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-18",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+          }
+        },
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

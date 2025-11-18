@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925905879"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926130935"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Morkamyra 20"
@@ -10,8 +18,9 @@
     "postnummer": "6105",
     "poststed": "VOLDA"
   },
+  "epostadresse": "kontakt@tilhengar.no",
   "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "hjemmeside": "www.tilhengar.no",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med motorvogner",
     "kode": "47.810"
@@ -19,9 +28,13 @@
   "navn": "TILHENGAR AS",
   "oppstartsdato": "2020-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926130935",
   "overordnetEnhet": "925905879",
@@ -29,5 +42,6 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-01-10",
   "registreringsdatoEnhetsregisteret": "2020-12-08",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet"
+  "respons_klasse": "Underenhet",
+  "telefon": "70 01 11 13"
 }
