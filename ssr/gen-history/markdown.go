@@ -75,15 +75,10 @@ func GenerateTimelineMarkdown(orgnum string, changes []EntityChange) (string, er
 			// Find change index in original changes array
 			changeIdx := findChangeIndex(changes, change.CommitHash, change.FilePath)
 
-			// Find previous change of the same file type, excluding changes from the same date
-			currentDate := change.Date.Format("2006-01-02")
+			// Find previous change of the same file type
 			var prevChange *EntityChange
 			for j := changeIdx + 1; j < len(changes); j++ {
 				if changes[j].FilePath == change.FilePath {
-					// Skip if this change is from the same date (same group)
-					if changes[j].Date.Format("2006-01-02") == currentDate {
-						continue
-					}
 					prevChange = &changes[j]
 					break
 				}

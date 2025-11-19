@@ -232,7 +232,7 @@ func generateIncremental(dataDir, templateDir, output string, workers int) error
 }
 
 func generateAll(dataDir, templateDir, output string, workers int) error {
-	log.Printf("Generating histories for ALL entities with %d workers", workers)
+	log.Printf("Generating histories for ALL entities", workers)
 	log.Println("WARNING: This will take a very long time (hours to days)")
 
 	// Get all top-level shard directories (000-999)
