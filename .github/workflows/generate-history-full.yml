@@ -140,25 +140,28 @@ jobs:
               https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
           fi
 
-      - name: Download and merge shard artifacts
+      - name: Download, merge, and commit shards individually
         run: |
           # Get list of shards from prepare-cache output
           SHARDS='${{ needs.prepare-cache.outputs.shards }}'
           echo "Processing shards: $SHARDS"
 
-          # Function to download and merge a single shard
-          process_shard() {
-            local shard=$1
-            local run_id=$2
-            local repo=$3
-            local temp_dir=$(mktemp -d)
+          # Configure git once
+          cd gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cd ..
 
-            echo "Downloading shard $shard..."
+          # Process each shard sequentially: download, merge, commit, push
+          echo "$SHARDS" | jq -r '.[]' | while read -r shard; do
+            temp_dir=$(mktemp -d)
+
+            echo "Processing shard $shard..."
 
             # Download this shard's artifact with retries
             download_success=false
             for i in 1 2 3; do
-              if gh run download "$run_id" -n "shard-$shard" -D "$temp_dir" -R "$repo"; then
+              if gh run download "${{ github.run_id }}" -n "shard-$shard" -D "$temp_dir" -R "${{ github.repository }}"; then
                 download_success=true
                 break
               else
@@ -170,7 +173,7 @@ jobs:
             if [ "$download_success" = false ]; then
               echo "Shard $shard not found or failed after 3 attempts, skipping"
               rm -rf "$temp_dir"
-              return
+              continue
             fi
 
             echo "Download complete for shard $shard"
@@ -179,38 +182,43 @@ jobs:
             if [ -d "$temp_dir/$shard" ]; then
               rsync -a "$temp_dir/$shard/" "gh-pages/$shard/"
               echo "Merged shard $shard"
+
+              # Commit and push this shard immediately
+              cd gh-pages
+              git add "$shard"
+
+              if git diff --staged --quiet; then
+                echo "No changes for shard $shard"
+              else
+                git commit -m "Update shard $shard"
+
+                # Push with retries
+                push_success=false
+                for i in 1 2 3; do
+                  if git push; then
+                    push_success=true
+                    echo "Shard $shard pushed successfully"
+                    break
+                  else
+                    echo "Push attempt $i failed for shard $shard"
+                    sleep 10
+                  fi
+                done
+
+                if [ "$push_success" = false ]; then
+                  echo "Failed to push shard $shard after 3 attempts"
+                  exit 1
+                fi
+              fi
+              cd ..
             else
               echo "Warning: Shard directory $shard not found in artifact"
             fi
 
             # Cleanup
             rm -rf "$temp_dir"
-          }
+          done
 
-          export -f process_shard
-          export GH_TOKEN
-          export RUN_ID="${{ github.run_id }}"
-          export REPO="${{ github.repository }}"
-
-          # Process shards in parallel with 4 workers
-          echo $SHARDS | jq -r '.[]' | xargs -n 1 -P 4 -I {} bash -c 'process_shard {} "$RUN_ID" "$REPO"'
-
-          echo "All shards merged"
+          echo "All shards processed"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit and push to gh-pages
-        run: |
-          cd gh-pages
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add .
-
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Full rebuild $(date +%Y-%m-%d)"
-            git push
-            echo "Changes pushed successfully"
-          fi
