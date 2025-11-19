@@ -195,7 +195,7 @@ jobs:
                 # Push with retries
                 push_success=false
                 for i in 1 2 3; do
-                  if git push; then
+                  if git push origin gh-pages; then
                     push_success=true
                     echo "Shard $shard pushed successfully"
                     break
