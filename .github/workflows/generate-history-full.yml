@@ -119,6 +119,7 @@ jobs:
             mkdir -p gh-pages
             cd gh-pages
             git init
+            git checkout -b gh-pages
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -133,12 +134,17 @@ jobs:
             git commit -m "Initialize gh-pages (clean slate)"
 
             # Force push to recreate branch
-            git push -f origin HEAD:gh-pages
+            git push -f origin gh-pages
           else
             echo "Incremental mode: Checking out existing gh-pages branch"
             git clone --single-branch --branch gh-pages \
               https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
           fi
+
+          # Verify branch setup
+          cd gh-pages
+          echo "Current branch: $(git branch --show-current)"
+          echo "Remote branches: $(git branch -r)"
 
       - name: Download, merge, and commit shards individually
         run: |
