@@ -135,16 +135,20 @@ jobs:
 
             # Force push to recreate branch
             git push -f origin gh-pages
+
+            # Verify branch setup
+            echo "Current branch: $(git branch --show-current)"
+            echo "Remote branches: $(git branch -r)"
           else
             echo "Incremental mode: Checking out existing gh-pages branch"
             git clone --single-branch --branch gh-pages \
               https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
-          fi
 
-          # Verify branch setup
-          cd gh-pages
-          echo "Current branch: $(git branch --show-current)"
-          echo "Remote branches: $(git branch -r)"
+            # Verify branch setup
+            cd gh-pages
+            echo "Current branch: $(git branch --show-current)"
+            echo "Remote branches: $(git branch -r)"
+          fi
 
       - name: Download, merge, and commit shards individually
         run: |
