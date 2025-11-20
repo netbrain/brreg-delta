@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930005789"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982622417"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Truls Gulbrandsen",
@@ -11,10 +19,7 @@
     "postnummer": "1359",
     "poststed": "EIKSMARKA"
   },
-  "epostadresse": "usbl@usbl.no",
   "harRegistrertAntallAnsatte": false,
-  "links": [],
-  "mobil": "91166561",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -22,9 +27,13 @@
   "navn": "EIKSMARKA GARASJER AS",
   "oppstartsdato": "1995-02-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982622417",
   "overordnetEnhet": "930005789",
@@ -41,6 +50,5 @@
   },
   "registreringsdatoEnhetsregisteret": "2000-11-21",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet",
-  "telefon": "22 44 72 70"
+  "respons_klasse": "Underenhet"
 }
