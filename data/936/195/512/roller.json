@@ -14,6 +14,41 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
+            "fodselsdato": "1956-10-17",
+            "navn": {
+              "etternavn": "Aa",
+              "fornavn": "Tor Øyvind"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+              }
+            },
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-21",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+          }
+        },
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
             "fodselsdato": "1951-06-25",
             "navn": {
               "etternavn": "Aa",
@@ -30,9 +65,30 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1951-01-01",
+            "navn": {
+              "etternavn": "Hjorteset",
+              "fornavn": "Ingebrigt Einar"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-09-18",
+      "sistEndret": "2025-11-21",
       "type": {
         "_links": {
           "self": {
@@ -41,6 +97,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/814930262"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "FJORD ØKONOMI AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "814930262"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-21",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

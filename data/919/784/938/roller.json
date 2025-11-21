@@ -25,42 +25,6 @@
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
-              }
-            },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
-          }
-        }
-      ],
-      "sistEndret": "2025-06-30",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
-          }
-        },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
-      }
-    },
-    {
-      "roller": [
-        {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1992-07-28",
-            "navn": {
-              "etternavn": "Fagerheim",
-              "fornavn": "Nora Marie",
-              "mellomnavn": "Tagesdatter"
-            }
-          },
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
                 "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
               }
             },
@@ -165,6 +129,54 @@
         },
         "beskrivelse": "Revisor",
         "kode": "REVI"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/968784358"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "WIIKS REGNSKAPSKONTOR AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "968784358"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-21",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
