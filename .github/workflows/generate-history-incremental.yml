@@ -15,42 +15,17 @@ permissions:
   contents: write
 
 jobs:
-  prepare-cache:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
-    outputs:
-      cache-key: ${{ steps.cache-key.outputs.key }}
-
-    steps:
-      - name: Generate cache key
-        id: cache-key
-        run: echo "key=data-git-${{ github.run_id }}-${{ github.run_attempt }}" >> $GITHUB_OUTPUT
-
-      - name: Clone data branch (sparse, no checkout)
-        run: |
-          git clone --sparse --no-checkout --branch data \
-            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
-
-      - name: Cache git repository
-        uses: actions/cache/save@v4
-        with:
-          path: brreg-data/.git
-          key: ${{ steps.cache-key.outputs.key }}
-
   find-changed-shards:
-    needs: prepare-cache
     runs-on: ubuntu-latest
     outputs:
       shards: ${{ steps.find-shards.outputs.shards }}
       has_changes: ${{ steps.find-shards.outputs.has_changes }}
 
     steps:
-      - name: Restore cached git repository
-        uses: actions/cache/restore@v4
-        with:
-          path: brreg-data/.git
-          key: ${{ needs.prepare-cache.outputs.cache-key }}
-          fail-on-cache-miss: true
+      - name: Clone data branch (sparse checkout for state file)
+        run: |
+          git clone --sparse --filter=blob:none --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
 
       - name: Sparse checkout for state file
         run: |
@@ -99,7 +74,7 @@ jobs:
           echo "Found shards: $SHARDS"
 
   generate-shard:
-    needs: [prepare-cache, find-changed-shards]
+    needs: find-changed-shards
     if: needs.find-changed-shards.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -117,11 +92,10 @@ jobs:
         uses: ./.github/actions/generate-shard
         with:
           shard: ${{ matrix.shard }}
-          cache-key: ${{ needs.prepare-cache.outputs.cache-key }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
   finalize:
-    needs: [prepare-cache, find-changed-shards, generate-shard]
+    needs: [find-changed-shards, generate-shard]
     if: needs.find-changed-shards.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
 
@@ -132,12 +106,10 @@ jobs:
           ref: master
           path: brreg-delta
 
-      - name: Restore cached git repository
-        uses: actions/cache/restore@v4
-        with:
-          path: brreg-data/.git
-          key: ${{ needs.prepare-cache.outputs.cache-key }}
-          fail-on-cache-miss: true
+      - name: Clone data branch (sparse checkout for state file)
+        run: |
+          git clone --sparse --filter=blob:none --branch data \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git brreg-data
 
       - name: Sparse checkout state file
         run: |

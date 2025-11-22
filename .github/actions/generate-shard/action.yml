@@ -5,9 +5,6 @@ inputs:
   shard:
     description: 'Shard number to process'
     required: true
-  cache-key:
-    description: 'Cache key for git repository'
-    required: true
   github-token:
     description: 'GitHub token for authentication'
     required: true
@@ -15,16 +12,11 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Restore cached git repository
-      uses: actions/cache/restore@v4
-      with:
-        path: brreg-data/.git
-        key: ${{ inputs.cache-key }}
-        fail-on-cache-miss: true
-
-    - name: Sparse checkout shard ${{ inputs.shard }}
+    - name: Clone data branch and checkout shard ${{ inputs.shard }}
       shell: bash
       run: |
+        git clone --sparse --filter=blob:none --branch data \
+          https://x-access-token:${{ inputs.github-token }}@github.com/${{ github.repository }}.git brreg-data
         cd brreg-data
         git sparse-checkout set data/${{ inputs.shard }}
         git checkout
