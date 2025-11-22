@@ -30,9 +30,9 @@ jobs:
       - name: Sparse checkout for state file
         run: |
           cd brreg-data
-          git sparse-checkout init --cone
+          git sparse-checkout init --no-cone
           git sparse-checkout set .last-history-commit
-          git checkout data
+          git checkout
 
       - name: Find changed shards
         id: find-shards
@@ -114,6 +114,7 @@ jobs:
       - name: Sparse checkout state file
         run: |
           cd brreg-data
+          git sparse-checkout init --no-cone
           git sparse-checkout set .last-history-commit
           git checkout
 
