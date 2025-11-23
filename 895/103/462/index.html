@@ -1,0 +1,33 @@
+<article id=article><h1 id=dpend-construction-as-895103462>DPEND CONSTRUCTION AS (895103462)</h1><details open><summary><strong>15.11.2025</strong></summary><div style=display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem><article style=display:flex;flex-direction:column><div style=flex:1><h4>Enhetsendringer</h4><p>16 felt endret</p><ul><li>Fjernet _links.enhet</li><li>La til _links.overordnetEnhet</li><li>_links.self.href endret fra <a href=https://data.brreg.no/enhetsregisteret/api/enheter/895082562/roller>https://data.brreg.no/enhetsregisteret/api/enheter/895082562/roller</a> til <a href=https://data.brreg.no/enhetsregisteret/api/underenheter/895103462>https://data.brreg.no/enhetsregisteret/api/underenheter/895103462</a></li><li>La til Beliggenhetsadresse</li><li>harRegistrertAntallAnsatte satt til nei</li><li>La til hjelpeenhetskode</li><li>La til Næringskode</li><li>Navneendring fra «null» til «DPEND CONSTRUCTION AS»</li><li>oppstartsdato satt til 2010-01-27</li><li>La til Organisasjonsform</li><li>Organisasjonsnummer endret fra 895082562 til 895103462</li><li>Overordnet enhet satt til 993109738</li><li>Registreringsdato satt til 2010-01-28</li><li>MVA-registrering endret</li><li>respons_klasse satt til Underenhet</li><li>Fjernet Lars Sverre Friisk (Daglig leder), Lars Sverre Friisk (Styrets leder); Fjernet rollegruppe: Daglig leder; Fjernet rollegruppe: Styre; Fjernet rollegruppe: Regnskapsfører</li></ul><footer><details><summary>Vis git diff</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-diff data-lang=diff><span style=display:flex><span>diff --git a/data/895/103/462/underenhet.json b/data/895/103/462/underenhet.json
+</span></span><span style=display:flex><span>index a8b0a01b5f618..9127ea6f3e1e5 100644
+</span></span><span style=display:flex><span><span style=color:#f92672>--- a/data/895/103/462/underenhet.json
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+++ b/data/895/103/462/underenhet.json
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span><span style=color:#75715e>@@ -1,0 +2,8 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>+  &#34;_links&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    &#34;overordnetEnhet&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+      &#34;href&#34;: &#34;https://data.brreg.no/enhetsregisteret/api/enheter/993109738&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    },
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    &#34;self&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+      &#34;href&#34;: &#34;https://data.brreg.no/enhetsregisteret/api/underenheter/895103462&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    }
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+  },
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span><span style=color:#75715e>@@ -13 +20,0 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>-  &#34;epostadresse&#34;: &#34;post@holtefjell.no&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#75715e>@@ -19,2 +25,0 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>-  &#34;hjemmeside&#34;: &#34;www.dpend.no&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#f92672>-  &#34;links&#34;: [],
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#75715e>@@ -27,0 +33,5 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>+    &#34;_links&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+      &#34;self&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        &#34;href&#34;: &#34;https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+      }
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    },
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span><span style=color:#75715e>@@ -29,2 +39 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>-    &#34;kode&#34;: &#34;BEDR&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#f92672>-    &#34;links&#34;: []
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+    &#34;kode&#34;: &#34;BEDR&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span><span style=color:#75715e>@@ -36,2 +45 @@
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>-  &#34;respons_klasse&#34;: &#34;Underenhet&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#f92672>-  &#34;telefon&#34;: &#34;32 89 92 20&#34;
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+  &#34;respons_klasse&#34;: &#34;Underenhet&#34;
+</span></span></span></code></pre></div></details></footer></div></article><article style=display:flex;flex-direction:column><div style=flex:1><h4>Rolleendringer</h4><p>Registrerte roller</p><p>Ingen roller registrert</p></div></article></div></details><details open><summary><strong>10.11.2025</strong></summary><article style=display:flex;flex-direction:column><div style=flex:1><h4>Enhetsendringer</h4><p>Registrert i Enhetsregisteret</p></div></article></details></article>
