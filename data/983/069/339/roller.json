@@ -11,15 +11,28 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1955-11-17",
-            "navn": {
-              "etternavn": "Ødegård",
-              "fornavn": "Grethe"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926980300"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ANDERSENS ALLSERVICE AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "926980300"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
@@ -32,7 +45,7 @@
           }
         }
       ],
-      "sistEndret": "2002-01-10",
+      "sistEndret": "2025-11-24",
       "type": {
         "_links": {
           "self": {
@@ -49,10 +62,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1955-11-17",
+            "fodselsdato": "1969-04-29",
             "navn": {
-              "etternavn": "Ødegård",
-              "fornavn": "Grethe"
+              "etternavn": "Andersen",
+              "fornavn": "Maria Catarina"
             }
           },
           "rekkefolge": 0,
@@ -67,7 +80,7 @@
           }
         }
       ],
-      "sistEndret": "2019-05-31",
+      "sistEndret": "2025-11-24",
       "type": {
         "_links": {
           "self": {
@@ -105,10 +118,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1983-02-03",
+            "fodselsdato": "1997-06-19",
             "navn": {
-              "etternavn": "Jakobsen",
-              "fornavn": "Morten"
+              "etternavn": "Kjernes",
+              "fornavn": "André"
             }
           },
           "rekkefolge": 1,
@@ -123,7 +136,7 @@
           }
         }
       ],
-      "sistEndret": "2023-06-08",
+      "sistEndret": "2025-11-24",
       "type": {
         "_links": {
           "self": {
@@ -132,6 +145,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926980300"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ANDERSENS ALLSERVICE AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "926980300"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-24",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
