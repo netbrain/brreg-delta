@@ -11,42 +11,55 @@
     {
       "roller": [
         {
-          "fratraadt": true,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1981-04-04",
-            "navn": {
-              "etternavn": "Van Middelaar",
-              "fornavn": "Jacoba Gerarda Maria"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925924679"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "NIELVE AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "925924679"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
               }
             },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
+            "beskrivelse": "Forretningsfører",
+            "kode": "FFØR"
           }
         }
       ],
-      "sistEndret": "2025-11-19",
+      "sistEndret": "2025-11-24",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/FFØR"
           }
         },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
+        "beskrivelse": "Forretningsfører",
+        "kode": "FFØR"
       }
     },
     {
       "roller": [
         {
-          "fratraadt": false,
+          "fratraadt": true,
           "person": {
             "erDoed": false,
             "fodselsdato": "1980-09-28",
@@ -88,7 +101,7 @@
           }
         },
         {
-          "fratraadt": false,
+          "fratraadt": true,
           "person": {
             "erDoed": false,
             "fodselsdato": "1995-01-26",
@@ -131,7 +144,7 @@
           }
         }
       ],
-      "sistEndret": "2025-11-19",
+      "sistEndret": "2025-11-21",
       "type": {
         "_links": {
           "self": {
