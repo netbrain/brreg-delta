@@ -11,36 +11,84 @@
     {
       "roller": [
         {
-          "fratraadt": true,
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/997586484"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "YBIN AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "997586484"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REPR"
+              }
+            },
+            "beskrivelse": "Norsk repr. for utenl. enhet",
+            "kode": "REPR"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-26",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REPR"
+          }
+        },
+        "beskrivelse": "Norsk repr. for utenl. enhet",
+        "kode": "REPR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1966-12-06",
+            "fodselsdato": "1972-11-02",
             "navn": {
-              "etternavn": "Andreasen",
-              "fornavn": "Søren Grove"
+              "etternavn": "Häusler",
+              "fornavn": "Michael Cornelius"
             }
           },
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
               }
             },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
           }
         }
       ],
-      "sistEndret": "2025-10-30",
+      "sistEndret": "2025-11-26",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
           }
         },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
       }
     },
     {
