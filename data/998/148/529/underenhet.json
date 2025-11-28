@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998044553"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/998148529"
+    }
+  },
   "antallAnsatte": 8,
   "beliggenhetsadresse": {
     "adresse": [
@@ -11,9 +19,7 @@
     "postnummer": "5226",
     "poststed": "NESTTUN"
   },
-  "epostadresse": "thomas@sandland.as",
   "harRegistrertAntallAnsatte": true,
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
     "kode": "43.120"
@@ -21,9 +27,13 @@
   "navn": "PRESIS INFRA AS",
   "oppstartsdato": "2012-02-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "998148529",
   "overordnetEnhet": "998044553",
@@ -43,6 +53,5 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "2012-03-21",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet",
-  "telefon": "55 52 61 70"
+  "respons_klasse": "Underenhet"
 }
