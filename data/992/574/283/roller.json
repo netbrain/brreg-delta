@@ -11,36 +11,49 @@
     {
       "roller": [
         {
-          "fratraadt": false,
-          "person": {
-            "erDoed": false,
-            "fodselsdato": "1967-05-16",
-            "navn": {
-              "etternavn": "Vedø",
-              "fornavn": "John Karsten"
-            }
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/946450197"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "VESTBO BBL"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BBL"
+                }
+              },
+              "beskrivelse": "Boligbyggelag",
+              "kode": "BBL"
+            },
+            "organisasjonsnummer": "946450197"
           },
+          "fratraadt": false,
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
               }
             },
-            "beskrivelse": "Kontaktperson",
-            "kode": "KONT"
+            "beskrivelse": "Forretningsfører",
+            "kode": "FFØR"
           }
         }
       ],
-      "sistEndret": "2008-05-15",
+      "sistEndret": "2025-11-28",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/FFØR"
           }
         },
-        "beskrivelse": "Kontaktperson",
-        "kode": "KONT"
+        "beskrivelse": "Forretningsfører",
+        "kode": "FFØR"
       }
     },
     {
@@ -119,6 +132,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/946450197"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "VESTBO BBL"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BBL"
+                }
+              },
+              "beskrivelse": "Boligbyggelag",
+              "kode": "BBL"
+            },
+            "organisasjonsnummer": "946450197"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-11-28",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
