@@ -14,33 +14,33 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1980-11-01",
+            "fodselsdato": "1966-09-04",
             "navn": {
-              "etternavn": "Sæther",
-              "fornavn": "Ola Inge"
+              "etternavn": "Smevoll",
+              "fornavn": "Olav"
             }
           },
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
               }
             },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
           }
         }
       ],
-      "sistEndret": "2017-10-05",
+      "sistEndret": "2025-12-01",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
           }
         },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
       }
     },
     {
@@ -49,10 +49,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1948-06-19",
+            "fodselsdato": "1971-10-02",
             "navn": {
-              "etternavn": "Sæther",
-              "fornavn": "Ingvar Terje"
+              "etternavn": "Breivik",
+              "fornavn": "Lars Ove"
             }
           },
           "rekkefolge": 0,
@@ -70,9 +70,9 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1971-10-02",
+            "fodselsdato": "1992-05-08",
             "navn": {
-              "etternavn": "Breivik",
+              "etternavn": "Løseth",
               "fornavn": "Lars Ove"
             }
           },
@@ -88,13 +88,13 @@
           }
         },
         {
-          "fratraadt": true,
+          "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1962-01-21",
+            "fodselsdato": "1970-09-09",
             "navn": {
-              "etternavn": "Kverndal",
-              "fornavn": "Arnt Ivar"
+              "etternavn": "Sørlien",
+              "fornavn": "Arild"
             }
           },
           "rekkefolge": 2,
@@ -107,9 +107,30 @@
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1980-11-01",
+            "navn": {
+              "etternavn": "Sæther",
+              "fornavn": "Ola Inge"
+            }
+          },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2024-12-04",
+      "sistEndret": "2025-12-01",
       "type": {
         "_links": {
           "self": {
@@ -118,6 +139,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993606650"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "BDO AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "993606650"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-01",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+          }
+        },
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     }
   ]
