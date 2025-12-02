@@ -14,11 +14,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1988-08-18",
+            "fodselsdato": "1981-05-06",
             "navn": {
-              "etternavn": "Djuve",
-              "fornavn": "Kristian",
-              "mellomnavn": "Brekke"
+              "etternavn": "Hayes",
+              "fornavn": "Andrew James"
             }
           },
           "rekkefolge": 0,
@@ -31,9 +30,30 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1981-09-08",
+            "navn": {
+              "etternavn": "Chubb",
+              "fornavn": "Thomas Christopher"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-09-05",
+      "sistEndret": "2025-12-02",
       "type": {
         "_links": {
           "self": {
@@ -42,6 +62,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/831087692"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ECONPARTNER AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "831087692"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-02",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
