@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/968548352"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972379026"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kjelsåsveien 174"
@@ -11,7 +19,6 @@
     "poststed": "OSLO"
   },
   "harRegistrertAntallAnsatte": false,
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,14 +26,21 @@
   "navn": "KJELSÅSVEIEN 174 AS",
   "oppstartsdato": "1994-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972379026",
   "overordnetEnhet": "968548352",
   "postadresse": {
-    "adresse": [],
+    "adresse": [
+      "c/o Metro Utvikling AS",
+      "Frysjaveien 35"
+    ],
     "kommune": "OSLO",
     "kommunenummer": "0301",
     "land": "Norge",

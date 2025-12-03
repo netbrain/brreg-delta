@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999629806"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/919015896"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ringeriksveien 243"
@@ -12,8 +20,6 @@
   },
   "epostadresse": "tilian@isotak.no",
   "harRegistrertAntallAnsatte": false,
-  "hjemmeside": "www.norinvestas.no",
-  "links": [],
   "mobil": "474 08 025",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -22,9 +28,13 @@
   "navn": "RINGERIKSVEIEN 243 AS",
   "oppstartsdato": "2017-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "919015896",
   "overordnetEnhet": "999629806",
