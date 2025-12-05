@@ -65,9 +65,39 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1989-04-08",
+            "navn": {
+              "etternavn": "Gylam Hasan",
+              "fornavn": "Hosain"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
         }
       ],
-      "sistEndret": "2024-04-16",
+      "sistEndret": "2025-12-05",
       "type": {
         "_links": {
           "self": {
@@ -76,54 +106,6 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
-      }
-    },
-    {
-      "roller": [
-        {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990422052"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "EIRA REVISJON \u0026 RÅDGIVNING AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "990422052"
-          },
-          "fratraadt": true,
-          "rekkefolge": 0,
-          "type": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
-              }
-            },
-            "beskrivelse": "Revisor",
-            "kode": "REVI"
-          }
-        }
-      ],
-      "sistEndret": "2025-09-30",
-      "type": {
-        "_links": {
-          "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
-          }
-        },
-        "beskrivelse": "Revisor",
-        "kode": "REVI"
       }
     }
   ]
