@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/984106777"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/984124562"
+    }
+  },
   "antallAnsatte": 6,
   "beliggenhetsadresse": {
     "adresse": [
@@ -11,10 +19,9 @@
     "postnummer": "0369",
     "poststed": "OSLO"
   },
-  "epostadresse": "clas.svanteson@rif.no",
+  "epostadresse": "atle@rif.no",
   "harRegistrertAntallAnsatte": true,
   "hjemmeside": "www.rif.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Forsikringsformidling",
     "kode": "66.220"
@@ -22,9 +29,13 @@
   "navn": "RIF FORSIKRINGSSERVICE AS",
   "oppstartsdato": "2002-01-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "984124562",
   "overordnetEnhet": "984106777",
@@ -43,6 +54,5 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2002-01-19",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet",
-  "telefon": "22 85 34 78"
+  "respons_klasse": "Underenhet"
 }
