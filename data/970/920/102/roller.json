@@ -65,9 +65,40 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1961-12-28",
+            "navn": {
+              "etternavn": "Eriksen-Deinoff",
+              "fornavn": "Tina Eva",
+              "mellomnavn": "Svedenborg"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/NEST"
+              }
+            },
+            "beskrivelse": "Nestleder",
+            "kode": "NEST"
+          },
+          "valgtAv": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/representanter/A-AK"
+              }
+            },
+            "beskrivelse": "Representant for A-aksjonærene",
+            "kode": "A-AK"
+          }
         }
       ],
-      "sistEndret": "2019-07-17",
+      "sistEndret": "2025-12-09",
       "type": {
         "_links": {
           "self": {
@@ -76,6 +107,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918494138"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "MPR REVISJON AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "918494138"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-09",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+          }
+        },
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {

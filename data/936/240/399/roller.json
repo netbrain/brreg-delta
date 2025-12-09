@@ -36,10 +36,10 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1995-05-23",
+            "fodselsdato": "1979-06-14",
             "navn": {
-              "etternavn": "Gjerstad",
-              "fornavn": "Peder"
+              "etternavn": "Hammertrø",
+              "fornavn": "Håvard"
             }
           },
           "rekkefolge": 1,
@@ -52,9 +52,51 @@
             "beskrivelse": "Styremedlem",
             "kode": "MEDL"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1972-04-08",
+            "navn": {
+              "etternavn": "Johnsen",
+              "fornavn": "Tåle"
+            }
+          },
+          "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1995-05-23",
+            "navn": {
+              "etternavn": "Gjerstad",
+              "fornavn": "Peder"
+            }
+          },
+          "rekkefolge": 3,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+              }
+            },
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
+          }
         }
       ],
-      "sistEndret": "2025-11-11",
+      "sistEndret": "2025-12-09",
       "type": {
         "_links": {
           "self": {
@@ -63,6 +105,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/976389387"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "ERNST \u0026 YOUNG AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "976389387"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-09",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+          }
+        },
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     }
   ]

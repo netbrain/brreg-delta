@@ -50,10 +50,11 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1958-07-11",
+            "fodselsdato": "1980-03-03",
             "navn": {
-              "etternavn": "Langemyr",
-              "fornavn": "Frode"
+              "etternavn": "Larsen",
+              "fornavn": "Runar",
+              "mellomnavn": "Skoglund"
             }
           },
           "rekkefolge": 0,
@@ -201,22 +202,21 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1980-03-03",
+            "fodselsdato": "1958-07-11",
             "navn": {
-              "etternavn": "Larsen",
-              "fornavn": "Runar",
-              "mellomnavn": "Skoglund"
+              "etternavn": "Langemyr",
+              "fornavn": "Frode"
             }
           },
           "rekkefolge": 5,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
               }
             },
-            "beskrivelse": "Styremedlem",
-            "kode": "MEDL"
+            "beskrivelse": "Varamedlem",
+            "kode": "VARA"
           },
           "valgtAv": {
             "_links": {
@@ -229,7 +229,7 @@
           }
         }
       ],
-      "sistEndret": "2025-06-25",
+      "sistEndret": "2025-12-09",
       "type": {
         "_links": {
           "self": {
@@ -238,6 +238,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/943708428"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "REVISJON SØR AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "943708428"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REVI"
+              }
+            },
+            "beskrivelse": "Revisor",
+            "kode": "REVI"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-09",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REVI"
+          }
+        },
+        "beskrivelse": "Revisor",
+        "kode": "REVI"
       }
     },
     {
