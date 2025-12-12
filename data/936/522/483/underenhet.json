@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/874761532"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936522483"
+    }
+  },
+  "antallAnsatte": 5,
   "beliggenhetsadresse": {
     "adresse": [
       "Brannvaktsgate 7"
@@ -11,8 +20,7 @@
     "poststed": "LARVIK"
   },
   "epostadresse": "post.okokrim@politiet.no",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter utført av politi- og påtalemyndighet",
     "kode": "84.240"
@@ -20,9 +28,13 @@
   "navn": "ØKOKRIM- LARVIK",
   "oppstartsdato": "2025-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936522483",
   "overordnetEnhet": "874761532",
@@ -37,6 +49,8 @@
     "postnummer": "0125",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-11-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

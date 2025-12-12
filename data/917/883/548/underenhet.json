@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917807523"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/917883548"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Haraldrudveien 11"
@@ -12,13 +19,12 @@
     "poststed": "OSLO"
   },
   "epostadresse": "henrik@porterbuddy.com",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
   },
   "hjemmeside": "www.porterbuddy.com",
-  "links": [],
   "mobil": "951 24 110",
   "naeringskode1": {
     "beskrivelse": "Godstransport på vei",
@@ -27,9 +33,13 @@
   "navn": "PORTER AS",
   "oppstartsdato": "2016-09-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "917883548",
   "overordnetEnhet": "917807523",
@@ -44,8 +54,6 @@
     "postnummer": "0214",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2016-10-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

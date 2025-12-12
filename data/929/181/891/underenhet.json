@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929168437"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929181891"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Rolf Risvik",
@@ -12,8 +19,7 @@
     "postnummer": "7224",
     "poststed": "MELHUS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Materialgjenvinning",
     "kode": "38.210"
@@ -21,14 +27,16 @@
   "navn": "GJENVINNING TRØNDELAG AS",
   "oppstartsdato": "2022-05-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "929181891",
   "overordnetEnhet": "929168437",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2022-05-10",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

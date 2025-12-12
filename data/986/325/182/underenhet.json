@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998543916"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/986325182"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Nordmarkveien 9"
@@ -11,8 +19,7 @@
     "poststed": "HARSTAD"
   },
   "datoEierskifte": "2012-06-15",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
     "kode": "43.210"
@@ -20,9 +27,13 @@
   "navn": "FUNKER ELEKTRO AS",
   "oppstartsdato": "2003-11-27",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "986325182",
   "overordnetEnhet": "998543916",
@@ -37,8 +48,6 @@
     "postnummer": "9487",
     "poststed": "HARSTAD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2003-12-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

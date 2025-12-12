@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/899654862"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936159095"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Lingedalsvegen 6-10"
@@ -10,8 +18,7 @@
     "postnummer": "6415",
     "poststed": "MOLDE"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -19,9 +26,13 @@
   "navn": "FUNKY KIOSKDRIFT AS AVD ROSEBY",
   "oppstartsdato": "2025-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936159095",
   "overordnetEnhet": "899654862",
@@ -36,6 +47,8 @@
     "postnummer": "0351",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-09-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

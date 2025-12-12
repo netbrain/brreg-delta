@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918162658"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918282157"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sørehavnveien 47"
@@ -10,8 +18,7 @@
     "postnummer": "5179",
     "poststed": "GODVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Kjøp og salg av egen fast eiendom",
     "kode": "68.110"
@@ -19,9 +26,13 @@
   "navn": "BRU AS",
   "oppstartsdato": "2016-11-22",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918282157",
   "overordnetEnhet": "918162658",
@@ -37,6 +48,8 @@
     "postnummer": "5179",
     "poststed": "GODVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2016-12-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

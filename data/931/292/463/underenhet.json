@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974540827"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931292463"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kaiveien 10"
@@ -10,8 +18,7 @@
     "postnummer": "9152",
     "poststed": "SØRKJOSEN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Fiske og fangst i sjø",
     "kode": "03.110"
@@ -19,9 +26,13 @@
   "navn": "SØRKJOSEN FISKEMOTTAK SA",
   "oppstartsdato": "2022-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931292463",
   "overordnetEnhet": "974540827",
@@ -36,6 +47,8 @@
     "postnummer": "9157",
     "poststed": "STORSLETT"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2023-04-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

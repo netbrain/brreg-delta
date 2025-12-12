@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/995899752"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930587931"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Paragon Gruppen AS",
@@ -11,8 +19,7 @@
     "postnummer": "1366",
     "poststed": "LYSAKER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Eiendomsforvaltning på oppdrag",
     "kode": "68.320"
@@ -20,9 +27,13 @@
   "navn": "FORVALTNING 1 AS",
   "oppstartsdato": "2023-01-04",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930587931",
   "overordnetEnhet": "995899752",
@@ -38,8 +49,6 @@
     "postnummer": "1309",
     "poststed": "RUD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2023-01-05",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

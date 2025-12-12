@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936056490"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936192971"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "11654 Plaza America Dr. #774"
@@ -7,8 +15,7 @@
     "landkode": "US",
     "poststed": "RESTON VA 20190"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet informasjonsteknologi",
     "kode": "62.900"
@@ -16,9 +23,13 @@
   "navn": "VOLEXITY, INC. NUF",
   "oppstartsdato": "2025-09-17",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "936192971",
   "overordnetEnhet": "936056490",
@@ -34,6 +45,8 @@
     "postnummer": "0125",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-09-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/836228952"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936541666"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o KCO Advokater",
@@ -11,8 +19,7 @@
     "postnummer": "1337",
     "poststed": "SANDVIKA"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
     "kode": "69.100"
@@ -20,9 +27,13 @@
   "navn": "ADVOKATFIRMA FRIIS-MØLLER AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936541666",
   "overordnetEnhet": "836228952",
@@ -37,6 +48,8 @@
     "postnummer": "1302",
     "poststed": "SANDVIKA"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-11-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

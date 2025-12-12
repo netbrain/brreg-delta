@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933241130"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933335984"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skolegata 11"
@@ -11,8 +19,7 @@
     "poststed": "TISTEDAL"
   },
   "epostadresse": "fersten@vp.pl",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "mobil": "925 35 742",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -21,9 +28,13 @@
   "navn": "BYGG24 TJENESTER AS",
   "oppstartsdato": "2024-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933335984",
   "overordnetEnhet": "933241130",
@@ -38,6 +49,8 @@
     "postnummer": "1724",
     "poststed": "SARPSBORG"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2024-04-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

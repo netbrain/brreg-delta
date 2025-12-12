@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/999224253"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/999283179"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ørsjøsætervegen 702"
@@ -12,8 +19,7 @@
     "poststed": "TRYSIL"
   },
   "epostadresse": "post@lovas-snekkertjenester.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "91784420",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -22,14 +28,16 @@
   "navn": "LØVÅS SNEKKERTJENESTER AS",
   "oppstartsdato": "2013-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "999283179",
   "overordnetEnhet": "999224253",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-12-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-12-10",
   "registreringsdatoEnhetsregisteret": "2012-12-18",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

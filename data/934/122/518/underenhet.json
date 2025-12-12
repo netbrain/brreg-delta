@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934004701"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934122518"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Autonomia Kalea 26, Abando"
@@ -8,8 +15,7 @@
     "landkode": "ES",
     "poststed": "ES-48010 BILBAO, BIZKAIA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
     "kode": "71.129"
@@ -17,14 +23,16 @@
   "navn": "BOSLAN INGENIERIA NUF",
   "oppstartsdato": "2024-09-18",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "934122518",
   "overordnetEnhet": "934004701",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2024-09-18",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

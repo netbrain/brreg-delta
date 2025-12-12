@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993525162"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/924340622"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rådhusveien 5"
@@ -12,8 +19,7 @@
     "poststed": "LINDESNES"
   },
   "epostadresse": "post@lindesnes.frivilligsentral.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "414 41 551",
   "naeringskode1": {
     "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
@@ -22,9 +28,13 @@
   "navn": "LINDESNES FRIVILLIGSENTRAL",
   "oppstartsdato": "2020-01-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "924340622",
   "overordnetEnhet": "993525162",
@@ -39,8 +49,6 @@
     "postnummer": "4523",
     "poststed": "LINDESNES"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2020-01-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

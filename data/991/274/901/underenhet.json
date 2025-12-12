@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/993102016"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/991274901"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Eidesøra",
@@ -12,8 +20,7 @@
     "poststed": "LEVANGER"
   },
   "datoEierskifte": "2008-07-01",
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "mobil": "902 06 472",
   "naeringskode1": {
     "beskrivelse": "Murerarbeid",
@@ -22,9 +29,13 @@
   "navn": "MURMESTER SIVERTSEN AS",
   "oppstartsdato": "2007-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "991274901",
   "overordnetEnhet": "993102016",
@@ -39,6 +50,8 @@
     "postnummer": "7600",
     "poststed": "LEVANGER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2007-05-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

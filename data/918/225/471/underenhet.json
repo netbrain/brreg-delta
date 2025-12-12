@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/984403968"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918225471"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bærumsveien 385"
@@ -10,8 +18,7 @@
     "postnummer": "1346",
     "poststed": "GJETTUM"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -19,9 +26,13 @@
   "navn": "FAST GROWING CONCEPTS AS",
   "oppstartsdato": "2015-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918225471",
   "overordnetEnhet": "984403968",
@@ -36,6 +47,8 @@
     "postnummer": "1394",
     "poststed": "NESBRU"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2016-12-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

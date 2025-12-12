@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933455254"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933475352"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Noor Alowaid",
@@ -12,8 +19,7 @@
     "postnummer": "2420",
     "poststed": "TRYSIL"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
     "kode": "81.100"
@@ -21,14 +27,16 @@
   "navn": "HYTTE EIENDOMSFORVALTNING- ALOWAID",
   "oppstartsdato": "2024-05-06",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933475352",
   "overordnetEnhet": "933455254",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2024-05-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

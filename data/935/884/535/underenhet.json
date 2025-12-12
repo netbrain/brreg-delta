@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935864976"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935884535"
+    }
+  },
+  "antallAnsatte": 6,
   "beliggenhetsadresse": {
     "adresse": [
       "Bygdøy allé 62"
@@ -10,8 +19,7 @@
     "postnummer": "0265",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -19,9 +27,13 @@
   "navn": "VINE \u0026 OLIVES AS",
   "oppstartsdato": "2025-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935884535",
   "overordnetEnhet": "935864976",
@@ -36,6 +48,8 @@
     "postnummer": "0950",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-07-26",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

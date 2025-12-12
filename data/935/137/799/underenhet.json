@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934993330"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/935137799"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Buevegen 4"
@@ -10,8 +18,7 @@
     "postnummer": "4360",
     "poststed": "VARHAUG"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
     "kode": "95.310"
@@ -19,9 +26,13 @@
   "navn": "BILPLEIE WARDAH",
   "oppstartsdato": "2025-01-29",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "935137799",
   "overordnetEnhet": "934993330",
@@ -36,6 +47,8 @@
     "postnummer": "4344",
     "poststed": "BRYNE"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-03-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

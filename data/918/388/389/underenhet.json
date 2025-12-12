@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982107520"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/918388389"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kokstadvegen 23"
@@ -10,8 +18,7 @@
     "postnummer": "5257",
     "poststed": "KOKSTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "93017848",
   "naeringskode1": {
     "beskrivelse": "Oppføring av bygninger",
@@ -20,9 +27,13 @@
   "navn": "BERGEN BYGG OPPDRAG AS",
   "oppstartsdato": "2017-01-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "918388389",
   "overordnetEnhet": "982107520",
@@ -38,8 +49,6 @@
     "postnummer": "5257",
     "poststed": "KOKSTAD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-05-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-05-10",
   "registreringsdatoEnhetsregisteret": "2017-01-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

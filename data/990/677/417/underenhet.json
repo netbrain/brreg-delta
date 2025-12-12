@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990599890"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/990677417"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Askvollvegen 419"
@@ -10,12 +18,11 @@
     "postnummer": "6980",
     "poststed": "ASKVOLL"
   },
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med jernvarer, byggevarer, fargevarer og glass",
     "kode": "47.520"
@@ -23,9 +30,13 @@
   "navn": "KYSTEIGEDOM AS",
   "oppstartsdato": "2006-12-14",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "990677417",
   "overordnetEnhet": "990599890",
@@ -42,6 +53,8 @@
     "postnummer": "6980",
     "poststed": "ASKVOLL"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2006-12-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 58,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/983501451"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/983547389"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Drammensveien 30"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "sumo@sinco.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.sumorestaurant.no",
-  "links": [],
   "mobil": "934 69 738",
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
@@ -23,9 +29,13 @@
   "navn": "SUMO SOLLI PLASS AS",
   "oppstartsdato": "2001-06-19",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "983547389",
   "overordnetEnhet": "983501451",
@@ -40,8 +50,6 @@
     "postnummer": "5015",
     "poststed": "BERGEN"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2001-07-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

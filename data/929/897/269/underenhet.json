@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/916779100"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/929897269"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Grane Dyreklinikk",
@@ -11,8 +19,7 @@
     "postnummer": "8683",
     "poststed": "TROFORS"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Veterinærtjenester",
     "kode": "75.000"
@@ -20,9 +27,13 @@
   "navn": "VETERINÆR OG BIOLOG STURLA MOLDEN",
   "oppstartsdato": "2022-05-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "929897269",
   "overordnetEnhet": "916779100",
@@ -37,6 +48,8 @@
     "postnummer": "8681",
     "poststed": "TROFORS"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2022-09-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

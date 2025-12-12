@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917223262"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/817276482"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [],
     "kommune": "FOLLDAL",
@@ -8,8 +16,7 @@
     "postnummer": "2584",
     "poststed": "DALHOLEN"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av idrettsanlegg",
     "kode": "93.110"
@@ -17,9 +24,13 @@
   "navn": "FJELLSYN CAMPING OG SKIHEIS AS",
   "oppstartsdato": "2016-05-30",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "817276482",
   "overordnetEnhet": "917223262",
@@ -34,6 +45,8 @@
     "postnummer": "2584",
     "poststed": "DALHOLEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2016-06-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

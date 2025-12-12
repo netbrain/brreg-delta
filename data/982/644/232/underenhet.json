@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/959238782"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982644232"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [],
     "kommune": "ÅLESUND",
@@ -8,8 +16,7 @@
     "postnummer": "6240",
     "poststed": "ØRSKOG"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -17,9 +24,13 @@
   "navn": "LIED EIENDOM AS",
   "oppstartsdato": "1995-02-20",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982644232",
   "overordnetEnhet": "959238782",
@@ -34,6 +45,8 @@
     "postnummer": "6240",
     "poststed": "ØRSKOG"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2000-11-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

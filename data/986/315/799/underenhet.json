@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 8,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991596852"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/986315799"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kvalamarka 27B"
@@ -13,8 +20,7 @@
   },
   "datoEierskifte": "2007-08-29",
   "epostadresse": "post@enkon.as",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "VVS-arbeid",
     "kode": "43.220"
@@ -22,14 +28,16 @@
   "navn": "VPN DRIFT INVEST AS",
   "oppstartsdato": "2003-11-24",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "986315799",
   "overordnetEnhet": "991596852",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2003-12-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

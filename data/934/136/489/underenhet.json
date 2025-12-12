@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934101170"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934136489"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Husebybakken 28B"
@@ -10,8 +18,7 @@
     "postnummer": "0379",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Aktiviteter utført av utflukts- og eventarrangører",
     "kode": "79.121"
@@ -19,9 +26,13 @@
   "navn": "ICONIC AS",
   "oppstartsdato": "2024-09-11",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934136489",
   "overordnetEnhet": "934101170",
@@ -36,6 +47,8 @@
     "postnummer": "0152",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2024-09-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921010354"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/921024401"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hamarbispens vei 81"
@@ -11,8 +18,7 @@
     "postnummer": "3531",
     "poststed": "KROKKLEIVA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med sportsvarer",
     "kode": "47.631"
@@ -20,14 +26,16 @@
   "navn": "TYGK AS",
   "oppstartsdato": "2018-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "921024401",
   "overordnetEnhet": "921010354",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2018-06-19",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

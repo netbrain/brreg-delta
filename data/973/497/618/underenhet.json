@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/963950926"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/973497618"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "LAVIKDAL"
@@ -10,8 +18,7 @@
     "postnummer": "6947",
     "poststed": "LAVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
     "kode": "43.120"
@@ -19,9 +26,13 @@
   "navn": "SOLHEIM HENRY",
   "oppstartsdato": "1992-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "973497618",
   "overordnetEnhet": "963950926",
@@ -36,6 +47,8 @@
     "postnummer": "6947",
     "poststed": "LAVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

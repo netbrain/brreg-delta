@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933741036"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933933601"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bjørnåsveien 92"
@@ -11,8 +18,7 @@
     "postnummer": "1270",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av restauranter",
     "kode": "56.110"
@@ -20,14 +26,16 @@
   "navn": "DIGG SMASH BURGER AS",
   "oppstartsdato": "2024-06-13",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933933601",
   "overordnetEnhet": "933741036",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "2024-08-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

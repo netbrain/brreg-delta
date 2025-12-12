@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/922707227"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/922887713"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tjuvholmen allé 3"
@@ -10,8 +18,7 @@
     "postnummer": "0252",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -19,9 +26,13 @@
   "navn": "SEMPERVIRENS INVEST AS",
   "oppstartsdato": "2019-04-12",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "922887713",
   "overordnetEnhet": "922707227",
@@ -36,6 +47,8 @@
     "postnummer": "1312",
     "poststed": "SLEPENDEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2019-06-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

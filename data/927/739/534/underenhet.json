@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/918677917"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/927739534"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Lørenveien 73A"
@@ -10,8 +18,7 @@
     "postnummer": "0585",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Dataprogrammeringstjenester",
     "kode": "62.100"
@@ -19,9 +26,13 @@
   "navn": "OMNII SYSTEMS AS",
   "oppstartsdato": "2021-05-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "927739534",
   "overordnetEnhet": "918677917",
@@ -37,6 +48,8 @@
     "postnummer": "1483",
     "poststed": "HAGAN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2021-09-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 18,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/816746442"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/916765223"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Ryggeveien 297"
@@ -12,8 +19,7 @@
     "poststed": "RYGGE"
   },
   "epostadresse": "post@vestre-bjolsund.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "474 86 625",
   "naeringskode1": {
     "beskrivelse": "Dyrking av grønnsaker, meloner, rot- og knollvekster",
@@ -22,14 +28,16 @@
   "navn": "VESTRE BJØLSUND GÅRD FINN-ERLING KRISTOFFERSEN",
   "oppstartsdato": "2016-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "916765223",
   "overordnetEnhet": "816746442",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2016-02-18",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

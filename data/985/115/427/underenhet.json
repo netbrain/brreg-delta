@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974344483"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/985115427"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gismerøyveien 221"
@@ -11,9 +18,8 @@
     "postnummer": "4515",
     "poststed": "MANDAL"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.agdermarine.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Bygging av havne- og damanlegg",
     "kode": "42.910"
@@ -21,14 +27,16 @@
   "navn": "AGDER MARINE AS AVD MANDAL",
   "oppstartsdato": "2001-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "985115427",
   "overordnetEnhet": "974344483",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-09-10",
   "registreringsdatoEnhetsregisteret": "2002-11-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

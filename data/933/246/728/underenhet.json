@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 24,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974634864"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933246728"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Skolegata 10B"
@@ -11,8 +18,7 @@
     "postnummer": "2150",
     "poststed": "ÅRNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
     "kode": "88.996"
@@ -20,9 +26,13 @@
   "navn": "NES FRIVILLIGSENTRAL",
   "oppstartsdato": "2024-04-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933246728",
   "overordnetEnhet": "974634864",
@@ -37,8 +47,6 @@
     "postnummer": "2151",
     "poststed": "ÅRNES"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2024-04-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

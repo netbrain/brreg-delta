@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929271009"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/829295482"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rådhusgata 11A"
@@ -10,8 +18,7 @@
     "postnummer": "2150",
     "poststed": "ÅRNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Frisering og barbering",
     "kode": "96.210"
@@ -19,9 +26,13 @@
   "navn": "ÅRNES FRISØR ANDERSEN",
   "oppstartsdato": "2022-08-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "829295482",
   "overordnetEnhet": "929271009",
@@ -36,8 +47,6 @@
     "postnummer": "2160",
     "poststed": "VORMSUND"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-01-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-01-10",
   "registreringsdatoEnhetsregisteret": "2022-06-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

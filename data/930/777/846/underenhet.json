@@ -1,6 +1,13 @@
 {
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930534862"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930777846"
+    }
+  },
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bygging av broer og tunneler",
     "kode": "42.130"
@@ -8,9 +15,13 @@
   "navn": "DAVAI BRIDGE \u0026 TUNNEL NUF",
   "oppstartsdato": "2023-10-05",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930777846",
   "overordnetEnhet": "930534862",
@@ -26,8 +37,6 @@
     "postnummer": "5417",
     "poststed": "STORD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2023-02-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

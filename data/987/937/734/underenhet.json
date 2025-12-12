@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987656328"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/987937734"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rolfsbuktveien 4C"
@@ -11,9 +18,8 @@
     "postnummer": "1364",
     "poststed": "FORNEBU"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.juniper.net",
-  "links": [],
   "mobil": "95230360",
   "naeringskode1": {
     "beskrivelse": "Markeds- og opinionsundersøkelser",
@@ -22,14 +28,16 @@
   "navn": "JUNIPER NETWORKS NORWAY AS",
   "oppstartsdato": "2004-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "987937734",
   "overordnetEnhet": "987656328",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-04-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-04-10",
   "registreringsdatoEnhetsregisteret": "2005-02-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

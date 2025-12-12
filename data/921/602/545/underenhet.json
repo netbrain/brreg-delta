@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/921584482"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/921602545"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Aad Gjelles gata 11"
@@ -11,8 +18,7 @@
     "postnummer": "5700",
     "poststed": "VOSS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
     "kode": "43.210"
@@ -20,14 +26,16 @@
   "navn": "TOVI ELEKTRO AS",
   "oppstartsdato": "2018-10-09",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "921602545",
   "overordnetEnhet": "921584482",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2018-10-24",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

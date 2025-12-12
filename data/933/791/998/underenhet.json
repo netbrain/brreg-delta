@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/925985279"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933791998"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Lingu AS",
@@ -12,8 +19,7 @@
     "postnummer": "4014",
     "poststed": "STAVANGER"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Guide- og reiseledervirksomhet",
     "kode": "79.902"
@@ -21,14 +27,16 @@
   "navn": "CONOCE NORUEGA AS",
   "oppstartsdato": "2024-07-03",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933791998",
   "overordnetEnhet": "925985279",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2024-07-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

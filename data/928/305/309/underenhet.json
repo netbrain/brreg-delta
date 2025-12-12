@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928103668"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928305309"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Marianne Ber",
@@ -11,8 +19,7 @@
     "postnummer": "8005",
     "poststed": "BODØ"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Produksjon av næringsmidler ikke nevnt annet sted",
     "kode": "10.890"
@@ -20,9 +27,13 @@
   "navn": "ARCTIC NATURAL NUTRITION AS",
   "oppstartsdato": "2021-10-25",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928305309",
   "overordnetEnhet": "928103668",
@@ -37,6 +48,8 @@
     "postnummer": "8005",
     "poststed": "BODØ"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2021-12-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

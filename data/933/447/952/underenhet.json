@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933337979"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933447952"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kingfisher House Radford Way"
@@ -7,8 +15,7 @@
     "landkode": "GB",
     "poststed": "BILLERICAY CM12 OEQ"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av arbeidskraft og andre personaladministrative tjenester",
     "kode": "78.200"
@@ -16,9 +23,13 @@
   "navn": "XLCC LIMITED",
   "oppstartsdato": "2024-05-14",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "933447952",
   "overordnetEnhet": "933337979",
@@ -34,8 +45,6 @@
     "postnummer": "1531",
     "poststed": "MOSS"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "2024-05-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

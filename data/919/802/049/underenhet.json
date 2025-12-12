@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/998130018"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/919802049"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Viktor Varan",
@@ -11,8 +19,7 @@
     "postnummer": "0571",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Produksjon av ferdigmat",
     "kode": "10.850"
@@ -20,14 +27,16 @@
   "navn": "MYFOOD AS",
   "oppstartsdato": "2012-03-07",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "919802049",
   "overordnetEnhet": "998130018",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-11-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-11-10",
   "registreringsdatoEnhetsregisteret": "2017-10-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

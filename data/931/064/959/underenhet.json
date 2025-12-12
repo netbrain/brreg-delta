@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 6,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931047477"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931064959"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Stavangerveien 28"
@@ -11,8 +18,7 @@
     "postnummer": "4313",
     "poststed": "SANDNES"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av maskiner",
     "kode": "33.120"
@@ -20,9 +26,13 @@
   "navn": "LH MEKANISKE AS",
   "oppstartsdato": "2023-02-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931064959",
   "overordnetEnhet": "931047477",
@@ -37,8 +47,6 @@
     "postnummer": "4054",
     "poststed": "TJELTA"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2023-03-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

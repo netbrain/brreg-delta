@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/979837062"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/927590611"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Munkedamsveien 45F"
@@ -11,8 +19,7 @@
     "poststed": "OSLO"
   },
   "epostadresse": "mj@scan-chemicals.no",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "90691337",
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
@@ -21,9 +28,13 @@
   "navn": "SCAN CHEMICALS AS",
   "oppstartsdato": "1998-05-10",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "927590611",
   "overordnetEnhet": "979837062",
@@ -38,8 +49,6 @@
     "postnummer": "0118",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2021-08-25",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

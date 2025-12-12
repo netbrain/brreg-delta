@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936509177"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936509185"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Tor Dalene Fiska",
@@ -11,8 +19,7 @@
     "postnummer": "4034",
     "poststed": "STAVANGER"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Andre post- og budtjenester",
     "kode": "53.200"
@@ -20,9 +27,13 @@
   "navn": "TORIT FISKAA BOS",
   "oppstartsdato": "2025-11-04",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936509185",
   "overordnetEnhet": "936509177",
@@ -37,6 +48,8 @@
     "postnummer": "4034",
     "poststed": "STAVANGER"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-11-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

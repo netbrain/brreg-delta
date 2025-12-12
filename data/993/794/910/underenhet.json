@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 8,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931764616"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/993794910"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Lagårdsveien 80"
@@ -12,8 +19,7 @@
     "poststed": "STAVANGER"
   },
   "datoEierskifte": "2018-01-01",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Konsulentvirksomhet tilknyttet informasjonsteknologi og forvaltning og drift av it-systemer",
     "kode": "62.200"
@@ -21,9 +27,13 @@
   "navn": "INFOR NORGE AS AVD SANDNES",
   "oppstartsdato": "2009-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "993794910",
   "overordnetEnhet": "931764616",
@@ -38,8 +48,6 @@
     "postnummer": "1326",
     "poststed": "LYSAKER"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2009-02-26",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

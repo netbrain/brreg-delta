@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 8,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/924786442"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972164267"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Haakon VII's gate 17B"
@@ -12,8 +19,7 @@
     "poststed": "TRONDHEIM"
   },
   "datoEierskifte": "2020-12-02",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Regnskapsføring og bokføring",
     "kode": "69.202"
@@ -21,14 +27,16 @@
   "navn": "ØKONOMISENTERET AS",
   "oppstartsdato": "1989-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972164267",
   "overordnetEnhet": "924786442",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-02-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-02-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

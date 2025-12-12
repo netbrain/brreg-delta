@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930611379"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930733180"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Trollbærveien 57"
@@ -10,8 +18,7 @@
     "postnummer": "4634",
     "poststed": "KRISTIANSAND S"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
     "kode": "71.121"
@@ -19,14 +26,16 @@
   "navn": "KOMPLETT BYGGESØKNAD",
   "oppstartsdato": "2023-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930733180",
   "overordnetEnhet": "930611379",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2023-01-27",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

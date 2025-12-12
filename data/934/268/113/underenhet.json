@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934231864"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934268113"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Åsane Senter 42"
@@ -11,8 +18,7 @@
     "postnummer": "5116",
     "poststed": "ULSET"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Frisering og barbering",
     "kode": "96.210"
@@ -20,14 +26,16 @@
   "navn": "STUDIO HIGHLIGHTS FRISØR OG DESIGN AS",
   "oppstartsdato": "2024-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934268113",
   "overordnetEnhet": "934231864",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2024-10-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

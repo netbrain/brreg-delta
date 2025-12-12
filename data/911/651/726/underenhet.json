@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/911637510"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/911651726"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gladengveien 15B"
@@ -11,8 +19,7 @@
     "poststed": "OSLO"
   },
   "epostadresse": "securecourier@live.com",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Godstransport på vei",
     "kode": "49.410"
@@ -20,9 +27,13 @@
   "navn": "SECURE COURIER AS",
   "oppstartsdato": "2013-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "911651726",
   "overordnetEnhet": "911637510",
@@ -37,8 +48,6 @@
     "postnummer": "0401",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2013-03-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

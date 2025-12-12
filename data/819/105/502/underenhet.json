@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982421284"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/819105502"
+    }
+  },
+  "antallAnsatte": 5,
   "beliggenhetsadresse": {
     "adresse": [
       "Johan Scharffenbergsvei 107-109"
@@ -11,9 +20,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "post@boalliansen.no",
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjemmeside": "www.jsbv.no",
-  "links": [],
   "mobil": "453 77 062",
   "naeringskode1": {
     "beskrivelse": "Aktiviteter i borettslag og boligsameier",
@@ -21,9 +29,13 @@
   },
   "navn": "SAMEIET JOHAN SCHARFFENBERGS VEI 107-109",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AAFY"
+      }
+    },
     "beskrivelse": "Underenhet til ikke-næringsdrivende",
-    "kode": "AAFY",
-    "links": []
+    "kode": "AAFY"
   },
   "organisasjonsnummer": "819105502",
   "overordnetEnhet": "982421284",
@@ -40,6 +52,8 @@
     "postnummer": "0615",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2017-06-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

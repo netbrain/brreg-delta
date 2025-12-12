@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 18,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931526626"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931558366"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vevelstadveien 109"
@@ -11,8 +18,7 @@
     "postnummer": "1404",
     "poststed": "SIGGERUD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bedriftsrådgivning og annen administrativ rådgivning",
     "kode": "70.200"
@@ -20,14 +26,16 @@
   "navn": "ODV CONSULTING",
   "oppstartsdato": "2023-05-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931558366",
   "overordnetEnhet": "931526626",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "2023-06-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

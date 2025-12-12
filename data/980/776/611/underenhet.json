@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/980001482"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/980776611"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gamle Ålgårdsveien 80"
@@ -11,12 +18,11 @@
     "postnummer": "4325",
     "poststed": "SANDNES"
   },
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjelpeenhetskode": {
     "beskrivelse": "Hovedkontortjenester",
     "kode": "70.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Kabelbasert, satellittbasert og trådløs telekommunikasjon",
     "kode": "61.100"
@@ -24,9 +30,13 @@
   "navn": "LYSE AS AVD SANDNES",
   "oppstartsdato": "1999-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "980776611",
   "overordnetEnhet": "980001482",
@@ -41,8 +51,6 @@
     "postnummer": "4068",
     "poststed": "STAVANGER"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1999-05-21",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

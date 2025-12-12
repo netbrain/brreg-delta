@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/989035924"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/989430157"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Gunnesgrenda"
@@ -11,8 +18,7 @@
     "postnummer": "7392",
     "poststed": "RENNEBU"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisitet fra vannkraft",
     "kode": "35.121"
@@ -20,14 +26,16 @@
   "navn": "GAUTVELLA KRAFTVERK AS",
   "oppstartsdato": "2005-11-14",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "989430157",
   "overordnetEnhet": "989035924",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-01-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-01-10",
   "registreringsdatoEnhetsregisteret": "2006-02-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

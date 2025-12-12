@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/927999773"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928032167"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Rolfsbuktveien 17"
@@ -10,8 +18,7 @@
     "postnummer": "1364",
     "poststed": "FORNEBU"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Produksjon av elektrisk og elektronisk utstyr til motorvogner",
     "kode": "29.310"
@@ -19,9 +26,13 @@
   "navn": "LADESYSTEM AS",
   "oppstartsdato": "2021-09-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928032167",
   "overordnetEnhet": "927999773",
@@ -36,8 +47,6 @@
     "postnummer": "5414",
     "poststed": "STORD"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-09-10",
   "registreringsdatoEnhetsregisteret": "2021-11-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

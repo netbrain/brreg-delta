@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/979505892"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/971778032"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Pinnerudvegen 58A"
@@ -11,8 +19,7 @@
     "poststed": "MOELV"
   },
   "datoEierskifte": "1997-12-31",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Engroshandel med maskiner og utstyr ellers",
     "kode": "46.640"
@@ -20,9 +27,13 @@
   "navn": "INNCON AS",
   "oppstartsdato": "1965-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "971778032",
   "overordnetEnhet": "979505892",
@@ -38,8 +49,6 @@
     "postnummer": "2320",
     "poststed": "FURNES"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

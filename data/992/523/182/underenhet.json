@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992460733"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/992523182"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "v/ Anders Olsen",
@@ -11,8 +19,7 @@
     "postnummer": "4180",
     "poststed": "KVITSØY"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "90510303",
   "naeringskode1": {
     "beskrivelse": "Annen teknisk konsulentvirksomhet",
@@ -21,9 +28,13 @@
   "navn": "VESTERLI MARINE AS",
   "oppstartsdato": "2008-04-07",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "992523182",
   "overordnetEnhet": "992460733",
@@ -38,8 +49,6 @@
     "postnummer": "4180",
     "poststed": "KVITSØY"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2019-07-13",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2019-07-10",
   "registreringsdatoEnhetsregisteret": "2008-04-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

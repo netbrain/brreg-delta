@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/876785722"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931031384"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Bekkefaret 3"
@@ -11,8 +18,7 @@
     "postnummer": "9513",
     "poststed": "ALTA"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Asylmottakstjenester",
     "kode": "87.992"
@@ -20,14 +26,16 @@
   "navn": "ALTA MOTTAKSSENTER",
   "oppstartsdato": "2023-04-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931031384",
   "overordnetEnhet": "876785722",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2023-03-15",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

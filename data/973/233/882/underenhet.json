@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/915450563"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/973233882"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [],
     "kommune": "ØKSNES",
@@ -9,8 +16,7 @@
     "postnummer": "8426",
     "poststed": "BARKESTAD"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Utleie av egen eller leid fast eiendom",
     "kode": "68.200"
@@ -18,9 +24,13 @@
   "navn": "FISKEVÆRET SKIPNES AS",
   "oppstartsdato": "1965-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "973233882",
   "overordnetEnhet": "915450563",
@@ -36,8 +46,6 @@
     "postnummer": "8312",
     "poststed": "HENNINGSVÆR"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "1995-03-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

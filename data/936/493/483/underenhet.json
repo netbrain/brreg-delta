@@ -1,4 +1,13 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/910478656"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936493483"
+    }
+  },
+  "antallAnsatte": 17,
   "beliggenhetsadresse": {
     "adresse": [
       "Korneliusmyrvegen 49"
@@ -10,12 +19,11 @@
     "postnummer": "2074",
     "poststed": "EIDSVOLL VERK"
   },
-  "harRegistrertAntallAnsatte": false,
+  "harRegistrertAntallAnsatte": true,
   "hjelpeenhetskode": {
     "beskrivelse": "Lagring",
     "kode": "52.100"
   },
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Engroshandel med jernvarer, rørleggerartikler og oppvarmingsutstyr",
     "kode": "46.840"
@@ -23,9 +31,13 @@
   "navn": "AHLSELL NORGE AS AVD LOGISTIKK",
   "oppstartsdato": "2025-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936493483",
   "overordnetEnhet": "910478656",
@@ -40,6 +52,8 @@
     "postnummer": "2051",
     "poststed": "JESSHEIM"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-11-01",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

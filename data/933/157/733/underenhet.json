@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933099334"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933157733"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Øygrenda 228"
@@ -11,8 +18,7 @@
     "postnummer": "7877",
     "poststed": "HØYLANDET"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Drift av mobile serveringssteder",
     "kode": "56.120"
@@ -20,14 +26,16 @@
   "navn": "THAI HØYLANDET TANGEN",
   "oppstartsdato": "2024-02-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933157733",
   "overordnetEnhet": "933099334",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2024-03-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

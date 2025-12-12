@@ -1,5 +1,13 @@
 {
-  "antallAnsatte": 43,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987017678"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/987423765"
+    }
+  },
+  "antallAnsatte": 42,
   "beliggenhetsadresse": {
     "adresse": [
       "Stafsbergvegen 110"
@@ -13,7 +21,6 @@
   },
   "epostadresse": "klukstuen@hamar.kommune.no",
   "harRegistrertAntallAnsatte": true,
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Helse- og omsorgstjenester i bofelleskap, samlokaliserte omsorgsboliger og lignende",
     "kode": "87.106"
@@ -25,9 +32,13 @@
   "navn": "HAMAR KOMMUNE KLUKSTUEN OMSORGSBOLIG",
   "oppstartsdato": "2004-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "987423765",
   "overordnetEnhet": "987017678",
@@ -42,8 +53,8 @@
     "postnummer": "2306",
     "poststed": "HAMAR"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2004-10-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936325173"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936368158"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Spannavegen 58"
@@ -10,8 +18,7 @@
     "postnummer": "5531",
     "poststed": "HAUGESUND"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Frisering og barbering",
     "kode": "96.210"
@@ -19,9 +26,13 @@
   "navn": "TURBO KLIPP HAUGESUND AS",
   "oppstartsdato": "2025-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936368158",
   "overordnetEnhet": "936325173",
@@ -37,6 +48,8 @@
     "postnummer": "5937",
     "poststed": "BØVÅGEN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-10-13",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

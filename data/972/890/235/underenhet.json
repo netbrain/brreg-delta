@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/992597046"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972890235"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Kremmergaarden",
@@ -13,8 +20,7 @@
     "poststed": "ÅLESUND"
   },
   "datoEierskifte": "2008-05-01",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
     "kode": "47.110"
@@ -22,14 +28,16 @@
   "navn": "PADMAX AS",
   "oppstartsdato": "1992-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972890235",
   "overordnetEnhet": "992597046",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-06-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

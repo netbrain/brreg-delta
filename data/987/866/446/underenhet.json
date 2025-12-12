@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/987808934"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/987866446"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Honnhammervegen 384"
@@ -11,8 +18,7 @@
     "postnummer": "6630",
     "poststed": "TINGVOLL"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "mobil": "90973758",
   "naeringskode1": {
     "beskrivelse": "Dyrking av annen frukt som vokser på trær eller busker samt nøtter",
@@ -21,14 +27,16 @@
   "navn": "THOMAS BRØNLUND",
   "oppstartsdato": "2004-01-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "987866446",
   "overordnetEnhet": "987808934",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2005-02-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

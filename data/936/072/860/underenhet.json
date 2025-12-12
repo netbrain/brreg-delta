@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/935963893"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936072860"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Elvevegen 13"
@@ -10,8 +18,7 @@
     "postnummer": "6800",
     "poststed": "FØRDE"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
     "kode": "69.100"
@@ -19,9 +26,13 @@
   "navn": "ADVOKATFIRMAET KONGSVIK AS",
   "oppstartsdato": "2025-09-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936072860",
   "overordnetEnhet": "935963893",
@@ -36,6 +47,8 @@
     "postnummer": "6803",
     "poststed": "FØRDE"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-09-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

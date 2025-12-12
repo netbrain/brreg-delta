@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 10,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/982103916"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/982126959"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Sjøhagen 2"
@@ -12,9 +19,8 @@
     "poststed": "STAVANGER"
   },
   "epostadresse": "post@verktoyas.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.verktoyas.no",
-  "links": [],
   "mobil": "900 43 223",
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med jernvarer, byggevarer, fargevarer og glass",
@@ -23,14 +29,16 @@
   "navn": "VERKTØY AS",
   "oppstartsdato": "2000-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "982126959",
   "overordnetEnhet": "982103916",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2000-06-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/952187627"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/994442252"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Torpehaugen 8"
@@ -10,8 +18,7 @@
     "postnummer": "1722",
     "poststed": "SARPSBORG"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Innsamling av ikke-farlig avfall",
     "kode": "38.110"
@@ -19,9 +26,13 @@
   "navn": "RAGN SELLS AS AVD SARPSBORG",
   "oppstartsdato": "2007-05-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "994442252",
   "overordnetEnhet": "952187627",
@@ -36,8 +47,6 @@
     "postnummer": "1471",
     "poststed": "LØRENSKOG"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-04-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-04-10",
   "registreringsdatoEnhetsregisteret": "2009-08-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

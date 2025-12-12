@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/919424001"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/934975219"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Torneveien 10"
@@ -10,8 +18,7 @@
     "postnummer": "1454",
     "poststed": "FAGERSTRAND"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Reparasjon og vedlikehold av motorvogner",
     "kode": "95.310"
@@ -19,9 +26,13 @@
   "navn": "OMNISERVICE AS AVD NESODDEN",
   "oppstartsdato": "2025-06-29",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "934975219",
   "overordnetEnhet": "919424001",
@@ -36,6 +47,8 @@
     "postnummer": "1411",
     "poststed": "KOLBOTN"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-02-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

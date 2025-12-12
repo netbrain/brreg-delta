@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/930117307"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/930141186"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Austefjordsvegen 194"
@@ -11,8 +18,7 @@
     "postnummer": "5379",
     "poststed": "STEINSLAND"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Grunnarbeid",
     "kode": "43.120"
@@ -20,14 +26,16 @@
   "navn": "STRAUMEGRUPPEN AS",
   "oppstartsdato": "2022-11-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "930141186",
   "overordnetEnhet": "930117307",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-08-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-08-10",
   "registreringsdatoEnhetsregisteret": "2022-11-02",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

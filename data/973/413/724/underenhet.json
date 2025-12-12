@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/957156126"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/973413724"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Fagerlivegen 5"
@@ -10,8 +18,7 @@
     "postnummer": "2818",
     "poststed": "GJØVIK"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Passasjertransport utenom rutetabell",
     "kode": "49.320"
@@ -19,9 +26,13 @@
   "navn": "BB-BUSS",
   "oppstartsdato": "1985-10-23",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "973413724",
   "overordnetEnhet": "957156126",
@@ -36,6 +47,8 @@
     "postnummer": "2816",
     "poststed": "GJØVIK"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

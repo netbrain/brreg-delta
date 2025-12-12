@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931168002"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/831169222"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Stigenga 26"
@@ -10,8 +18,7 @@
     "postnummer": "0979",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Uoppgitt",
     "kode": "00.000"
@@ -19,14 +26,16 @@
   "navn": "PMA DRIFT AS",
   "oppstartsdato": "2023-03-20",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "831169222",
   "overordnetEnhet": "931168002",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-03-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-03-10",
   "registreringsdatoEnhetsregisteret": "2023-04-08",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

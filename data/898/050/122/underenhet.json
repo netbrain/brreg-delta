@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 7,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936035345"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/898050122"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Orkdalsveien 178"
@@ -12,8 +19,7 @@
     "poststed": "ORKANGER"
   },
   "datoEierskifte": "2025-11-01",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Passasjertransport på forespørsel utført av fører med kjøretøy",
     "kode": "49.330"
@@ -21,14 +27,16 @@
   "navn": "MGT WITSØE-RØNNING",
   "oppstartsdato": "2012-02-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "898050122",
   "overordnetEnhet": "936035345",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2012-03-06",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 8,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/965676171"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972348929"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Alf Bjerckes vei 10"
@@ -12,9 +19,8 @@
     "poststed": "OSLO"
   },
   "epostadresse": "post@osloaudio.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.osloaudio.no",
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
     "kode": "90.390"
@@ -22,14 +28,16 @@
   "navn": "OSLO AUDIO AS",
   "oppstartsdato": "1993-05-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972348929",
   "overordnetEnhet": "965676171",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "1995-03-12",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

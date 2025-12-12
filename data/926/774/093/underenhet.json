@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926647393"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/926774093"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Vestre Ådal 275"
@@ -10,8 +18,7 @@
     "postnummer": "3516",
     "poststed": "HØNEFOSS"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med motorvogner",
     "kode": "47.810"
@@ -19,9 +26,13 @@
   "navn": "TT BILFORMIDLING AS",
   "oppstartsdato": "2021-05-02",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "926774093",
   "overordnetEnhet": "926647393",
@@ -36,8 +47,6 @@
     "postnummer": "3517",
     "poststed": "HØNEFOSS"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2023-04-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2023-04-10",
   "registreringsdatoEnhetsregisteret": "2021-03-11",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

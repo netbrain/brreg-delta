@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933903966"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933920429"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tangerudveien 72"
@@ -10,8 +18,7 @@
     "postnummer": "0982",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av gods- og transportsentraler",
     "kode": "52.211"
@@ -19,9 +26,13 @@
   "navn": "TAXI SENTER AS",
   "oppstartsdato": "2024-08-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933920429",
   "overordnetEnhet": "933903966",
@@ -37,6 +48,8 @@
     "postnummer": "0982",
     "poststed": "OSLO"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2024-08-14",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

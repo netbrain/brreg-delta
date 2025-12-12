@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/931771981"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/931901478"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Nansetgata 30"
@@ -10,8 +18,7 @@
     "postnummer": "3256",
     "poststed": "LARVIK"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
     "kode": "71.121"
@@ -19,9 +26,13 @@
   "navn": "REIS MANAGEMENT AS",
   "oppstartsdato": "2023-06-28",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "931901478",
   "overordnetEnhet": "931771981",
@@ -37,8 +48,6 @@
     "postnummer": "3256",
     "poststed": "LARVIK"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-06-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-06-10",
   "registreringsdatoEnhetsregisteret": "2023-08-16",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

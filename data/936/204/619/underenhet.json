@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936167934"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936204619"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Hertzbergs gate 34"
@@ -10,8 +18,7 @@
     "postnummer": "2318",
     "poststed": "HAMAR"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Byggeteknisk konsulentvirksomhet",
     "kode": "71.121"
@@ -19,9 +26,13 @@
   "navn": "SNO PROSJEKTUTVIKLING AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936204619",
   "overordnetEnhet": "936167934",
@@ -36,6 +47,8 @@
     "postnummer": "2307",
     "poststed": "HAMAR"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-09-20",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

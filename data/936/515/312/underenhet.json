@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/936491847"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/936515312"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "c/o Mesh",
@@ -11,8 +19,7 @@
     "postnummer": "0160",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Bygging av sivile skip og flytende materiell",
     "kode": "30.110"
@@ -20,9 +27,13 @@
   "navn": "M.E.N.S AS",
   "oppstartsdato": "2025-10-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "936515312",
   "overordnetEnhet": "936491847",
@@ -35,6 +46,8 @@
     "landkode": "RO",
     "poststed": "330113"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2025-11-04",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 5,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/974344483"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/913718941"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Thorøyaveien 21"
@@ -12,8 +19,7 @@
     "poststed": "SANDEFJORD"
   },
   "datoEierskifte": "2022-12-12",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Bygging av havne- og damanlegg",
     "kode": "42.910"
@@ -21,14 +27,16 @@
   "navn": "AGDER MARINE AS AVD SANDEFJORD",
   "oppstartsdato": "2014-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "913718941",
   "overordnetEnhet": "974344483",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-09-10",
   "registreringsdatoEnhetsregisteret": "2014-06-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

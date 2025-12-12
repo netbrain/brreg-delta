@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 12,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/928524159"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/928554708"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Markveien 50A"
@@ -11,8 +18,7 @@
     "postnummer": "0554",
     "poststed": "OSLO"
   },
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Catering for arrangementer",
     "kode": "56.210"
@@ -20,14 +26,16 @@
   "navn": "PACIFIC POKE 202 AS",
   "oppstartsdato": "2021-01-15",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "928554708",
   "overordnetEnhet": "928524159",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-10-14",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "2022-01-17",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 20,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/923147187"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972296538"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Tøyengata 3-9"
@@ -12,8 +19,7 @@
     "poststed": "OSLO"
   },
   "datoEierskifte": "2019-09-01",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
     "kode": "47.110"
@@ -21,9 +27,13 @@
   "navn": "NORBYGATA MAT AS",
   "oppstartsdato": "1992-03-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972296538",
   "overordnetEnhet": "923147187",
@@ -39,8 +49,6 @@
     "postnummer": "0190",
     "poststed": "OSLO"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-05-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-05-12",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",

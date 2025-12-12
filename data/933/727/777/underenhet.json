@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/933556182"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/933727777"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Barbros gate 14"
@@ -10,8 +18,7 @@
     "postnummer": "4550",
     "poststed": "FARSUND"
   },
-  "harRegistrertAntallAnsatte": false,
-  "links": [],
+  "harRegistrertAntallAnsatte": true,
   "naeringskode1": {
     "beskrivelse": "Drift av hoteller",
     "kode": "55.100"
@@ -19,9 +26,13 @@
   "navn": "TEAM SAVOY AS",
   "oppstartsdato": "2024-06-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "933727777",
   "overordnetEnhet": "933556182",
@@ -36,6 +47,8 @@
     "postnummer": "4552",
     "poststed": "FARSUND"
   },
+  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-12-11",
+  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-12-10",
   "registreringsdatoEnhetsregisteret": "2024-07-03",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

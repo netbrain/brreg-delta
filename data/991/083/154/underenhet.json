@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 11,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/990947295"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/991083154"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Møysalveien 3295"
@@ -12,9 +19,8 @@
     "poststed": "HENNES"
   },
   "epostadresse": "post@moeysalen.no",
-  "harRegistrertAntallAnsatte": true,
+  "harRegistrertAntallAnsatte": false,
   "hjemmeside": "www.moeysalen.no",
-  "links": [],
   "mobil": "90581503",
   "naeringskode1": {
     "beskrivelse": "Kombinerte tjenester tilknyttet eiendomsdrift",
@@ -27,14 +33,16 @@
   "navn": "MØYSALEN NASJONALPARKSENTER AS",
   "oppstartsdato": "2006-11-30",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "991083154",
   "overordnetEnhet": "990947295",
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2025-07-12",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-07-10",
   "registreringsdatoEnhetsregisteret": "2007-03-28",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet"

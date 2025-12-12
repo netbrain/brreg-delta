@@ -1,5 +1,12 @@
 {
-  "antallAnsatte": 12,
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/917832781"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/972106682"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "Møhlenpriskaien 6"
@@ -12,8 +19,7 @@
     "poststed": "BERGEN"
   },
   "datoEierskifte": "2025-05-28",
-  "harRegistrertAntallAnsatte": true,
-  "links": [],
+  "harRegistrertAntallAnsatte": false,
   "naeringskode1": {
     "beskrivelse": "Godstransport på vei",
     "kode": "49.410"
@@ -21,9 +27,13 @@
   "navn": "BERGEN SPESIAL TRANSPORT AS AVD MØHLENPRISKAIEN",
   "oppstartsdato": "1987-11-26",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "972106682",
   "overordnetEnhet": "917832781",
@@ -38,8 +48,6 @@
     "postnummer": "5293",
     "poststed": "LONEVÅG"
   },
-  "registreringsdatoAntallAnsatteEnhetsregisteret": "2024-09-11",
-  "registreringsdatoAntallAnsatteNAVAaregisteret": "2024-09-10",
   "registreringsdatoEnhetsregisteret": "1995-02-23",
   "registrertIMvaregisteret": false,
   "respons_klasse": "Underenhet",
