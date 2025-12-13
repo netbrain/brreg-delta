@@ -14,11 +14,45 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1988-08-18",
+            "fodselsdato": "1964-03-21",
             "navn": {
-              "etternavn": "Djuve",
-              "fornavn": "Kristian",
-              "mellomnavn": "Brekke"
+              "etternavn": "Holm",
+              "fornavn": "Per Christian"
+            }
+          },
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+              }
+            },
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-13",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+          }
+        },
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
+      }
+    },
+    {
+      "roller": [
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1985-09-07",
+            "navn": {
+              "etternavn": "Olsen",
+              "fornavn": "Peter Andre"
             }
           },
           "rekkefolge": 0,
@@ -31,9 +65,30 @@
             "beskrivelse": "Styrets leder",
             "kode": "LEDE"
           }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1964-03-21",
+            "navn": {
+              "etternavn": "Holm",
+              "fornavn": "Per Christian"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
         }
       ],
-      "sistEndret": "2025-09-30",
+      "sistEndret": "2025-12-13",
       "type": {
         "_links": {
           "self": {
@@ -42,6 +97,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/947857169"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "TANDEM AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "947857169"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-13",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]

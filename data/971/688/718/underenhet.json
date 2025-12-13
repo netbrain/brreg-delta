@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/934535545"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/971688718"
+    }
+  },
   "antallAnsatte": 17,
   "beliggenhetsadresse": {
     "adresse": [
@@ -11,8 +19,8 @@
     "postnummer": "0666",
     "poststed": "OSLO"
   },
+  "datoEierskifte": "2025-10-02",
   "harRegistrertAntallAnsatte": true,
-  "links": [],
   "naeringskode1": {
     "beskrivelse": "Elektrisk installasjonsarbeid",
     "kode": "43.210"
@@ -20,15 +28,19 @@
   "navn": "FLOVILD ELEKTRO AS",
   "oppstartsdato": "1965-12-31",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "971688718",
-  "overordnetEnhet": "911728516",
+  "overordnetEnhet": "934535545",
   "postadresse": {
     "adresse": [
-      "PB 182 Bryn"
+      "Postboks 182  Bryn"
     ],
     "kommune": "OSLO",
     "kommunenummer": "0301",
@@ -41,6 +53,5 @@
   "registreringsdatoAntallAnsatteNAVAaregisteret": "2025-10-10",
   "registreringsdatoEnhetsregisteret": "1995-02-22",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet",
-  "telefon": "23 24 40 10"
+  "respons_klasse": "Underenhet"
 }
