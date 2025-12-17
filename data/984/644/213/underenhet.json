@@ -1,4 +1,12 @@
 {
+  "_links": {
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/884571022"
+    },
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/underenheter/984644213"
+    }
+  },
   "beliggenhetsadresse": {
     "adresse": [
       "St. Olavs gate 28"
@@ -10,9 +18,7 @@
     "postnummer": "0166",
     "poststed": "OSLO"
   },
-  "epostadresse": "annelotte.gulbrandsen@rivrud.no",
   "harRegistrertAntallAnsatte": false,
-  "links": [],
   "mobil": "92032809",
   "naeringskode1": {
     "beskrivelse": "Juridisk tjenesteyting",
@@ -21,9 +27,13 @@
   "navn": "ADVOKAT ANNE LOTTE GULBRANDSEN",
   "oppstartsdato": "2002-07-01",
   "organisasjonsform": {
+    "_links": {
+      "self": {
+        "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/BEDR"
+      }
+    },
     "beskrivelse": "Underenhet til næringsdrivende og offentlig forvaltning",
-    "kode": "BEDR",
-    "links": []
+    "kode": "BEDR"
   },
   "organisasjonsnummer": "984644213",
   "overordnetEnhet": "884571022",
@@ -40,6 +50,5 @@
   },
   "registreringsdatoEnhetsregisteret": "2002-06-25",
   "registrertIMvaregisteret": false,
-  "respons_klasse": "Underenhet",
-  "telefon": "33 33 29 05"
+  "respons_klasse": "Underenhet"
 }

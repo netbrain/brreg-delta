@@ -24,23 +24,65 @@
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
               }
             },
-            "beskrivelse": "Kontaktperson",
-            "kode": "KONT"
+            "beskrivelse": "Styrets leder",
+            "kode": "LEDE"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1963-04-30",
+            "navn": {
+              "etternavn": "Roe",
+              "fornavn": "Jan Helge"
+            }
+          },
+          "rekkefolge": 1,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
+          }
+        },
+        {
+          "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1990-12-20",
+            "navn": {
+              "etternavn": "Klevar",
+              "fornavn": "Jon Endre"
+            }
+          },
+          "rekkefolge": 2,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/MEDL"
+              }
+            },
+            "beskrivelse": "Styremedlem",
+            "kode": "MEDL"
           }
         }
       ],
-      "sistEndret": "2025-07-02",
+      "sistEndret": "2025-12-17",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
           }
         },
-        "beskrivelse": "Kontaktperson",
-        "kode": "KONT"
+        "beskrivelse": "Styre",
+        "kode": "STYR"
       }
     }
   ]
