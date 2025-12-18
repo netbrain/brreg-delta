@@ -14,33 +14,33 @@
           "fratraadt": false,
           "person": {
             "erDoed": false,
-            "fodselsdato": "1975-08-03",
+            "fodselsdato": "1958-05-10",
             "navn": {
-              "etternavn": "Flaget",
-              "fornavn": "Kjetil"
+              "etternavn": "Bringo",
+              "fornavn": "Endre"
             }
           },
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/KONT"
               }
             },
-            "beskrivelse": "Daglig leder",
-            "kode": "DAGL"
+            "beskrivelse": "Kontaktperson",
+            "kode": "KONT"
           }
         }
       ],
-      "sistEndret": "2014-08-22",
+      "sistEndret": "2025-12-18",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/KONT"
           }
         },
-        "beskrivelse": "Daglig leder",
-        "kode": "DAGL"
+        "beskrivelse": "Kontaktperson",
+        "kode": "KONT"
       }
     },
     {
@@ -76,6 +76,54 @@
         },
         "beskrivelse": "Styre",
         "kode": "STYR"
+      }
+    },
+    {
+      "roller": [
+        {
+          "enhet": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/929395360"
+              }
+            },
+            "erSlettet": false,
+            "navn": [
+              "SNØGG ØKONOMI AS"
+            ],
+            "organisasjonsform": {
+              "_links": {
+                "self": {
+                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
+                }
+              },
+              "beskrivelse": "Aksjeselskap",
+              "kode": "AS"
+            },
+            "organisasjonsnummer": "929395360"
+          },
+          "fratraadt": false,
+          "rekkefolge": 0,
+          "type": {
+            "_links": {
+              "self": {
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/REGN"
+              }
+            },
+            "beskrivelse": "Regnskapsfører",
+            "kode": "REGN"
+          }
+        }
+      ],
+      "sistEndret": "2025-12-18",
+      "type": {
+        "_links": {
+          "self": {
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/REGN"
+          }
+        },
+        "beskrivelse": "Regnskapsfører",
+        "kode": "REGN"
       }
     }
   ]
