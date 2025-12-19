@@ -11,49 +11,36 @@
     {
       "roller": [
         {
-          "enhet": {
-            "_links": {
-              "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/enheter/926642510"
-              }
-            },
-            "erSlettet": false,
-            "navn": [
-              "AKSJEFABRIKKEN AS"
-            ],
-            "organisasjonsform": {
-              "_links": {
-                "self": {
-                  "href": "https://data.brreg.no/enhetsregisteret/api/organisasjonsformer/AS"
-                }
-              },
-              "beskrivelse": "Aksjeselskap",
-              "kode": "AS"
-            },
-            "organisasjonsnummer": "926642510"
-          },
           "fratraadt": false,
+          "person": {
+            "erDoed": false,
+            "fodselsdato": "1985-11-07",
+            "navn": {
+              "etternavn": "Tufte",
+              "fornavn": "Lasse"
+            }
+          },
           "rekkefolge": 0,
           "type": {
             "_links": {
               "self": {
-                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/FFØR"
+                "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
               }
             },
-            "beskrivelse": "Forretningsfører",
-            "kode": "FFØR"
+            "beskrivelse": "Daglig leder",
+            "kode": "DAGL"
           }
         }
       ],
-      "sistEndret": "2025-12-11",
+      "sistEndret": "2025-12-19",
       "type": {
         "_links": {
           "self": {
-            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/FFØR"
+            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
           }
         },
-        "beskrivelse": "Forretningsfører",
-        "kode": "FFØR"
+        "beskrivelse": "Daglig leder",
+        "kode": "DAGL"
       }
     },
     {
